@@ -6663,7 +6663,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 915
         Height = 682
-        ActivePage = tsCreatureLocation
+        ActivePage = tsSearchCreature
         Align = alClient
         MultiLine = True
         TabOrder = 0
@@ -16124,7 +16124,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 915
         Height = 682
-        ActivePage = tsEditGO
+        ActivePage = tsSearchGO
         Align = alClient
         TabOrder = 0
         object tsSearchGO: TTabSheet
@@ -18933,7 +18933,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 915
         Height = 682
-        ActivePage = tsItemTemplate
+        ActivePage = tsSearchItem
         Align = alClient
         TabOrder = 1
         object tsSearchItem: TTabSheet
@@ -27786,7 +27786,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 915
         Height = 682
-        ActivePage = tsCharacterScript
+        ActivePage = tsCharSearch
         Align = alClient
         TabOrder = 1
         object tsCharSearch: TTabSheet

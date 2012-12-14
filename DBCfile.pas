@@ -67,7 +67,7 @@ constructor TDBCFile.Create;
 begin
   data := NIL;
   fieldsOffset := NIL;
-  IsLocalized := true;
+  IsLocalized := false; // new dbc always only localized, no need offsets
 end;
 
 destructor TDBCFile.Destroy;

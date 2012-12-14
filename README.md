@@ -1,0 +1,4 @@
+quice
+=====
+
+MaNGOS DataBase Editor

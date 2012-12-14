@@ -1,0 +1,32 @@
+0;In use (can't interact with the object)
+1;Makes chests/doors locked (requiring a key to open)
+2;Untargetable
+3;Transport (Object can transport (elevator, boat, car))
+4;UNK_00000010
+5;No despawn (never despawn, typically for doors, they just change state)
+6;Triggered (typically, summoned objects. Triggered by spell or other events)
+7;UNK_00000080
+8;UNK_00000100
+9;UNK_00000200
+10;UNK_00000400
+11;UNK_00000800
+12;UNK_00001000
+13;UNK_00002000
+14;UNK_00004000
+15;UNK_00008000
+16;UNK_00010000
+17;UNK_00020000
+18;UNK_00040000
+19;UNK_00080000
+20;UNK_00100000
+21;UNK_00200000
+22;UNK_00400000
+23;UNK_00800000
+24;UNK_01000000
+25;UNK_02000000
+26;UNK_04000000
+27;UNK_08000000
+28;UNK_10000000
+29;UNK_20000000
+30;UNK_40000000
+31;UNK_80000000

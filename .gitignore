@@ -1,5 +1,8 @@
 *.dcu
 *.~*~
+*.2007
+*.dsk
+*.tvsconfig
 *.local
 *.identcache
 __history
@@ -7,4 +10,5 @@ __history
 *.map
 *.exe
 *.dll
+*.sql
 bin/*

@@ -56,6 +56,7 @@ const
   I_Map                  =  4;
   I_ItemPetFood          =  1;
   I_AreaTable            = 11;
+  I_CurrencyTypes        = 2;
   I_SpellName            = 21;
   I_SpellRank            = 22;
 
@@ -107,6 +108,8 @@ begin
     SL.Add(Format('ItemSet=%d',[I_ItemSet]));
     SL.Add(Format('Map=%d',[I_Map]));
     SL.Add(Format('ItemPetFood=%d',[I_ItemPetFood]));
+    SL.Add(Format('CurrencyTypes=%d',[I_CurrencyTypes]));
+
 
     // this values mean indexes of case
     SL.Add(Format('AreaTrigger=%d',[I_AREA_TRIGGER]));

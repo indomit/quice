@@ -210,14 +210,8 @@ type
     gbRequirementsEnd: TGroupBox;
     lbReqItemId1: TLabel;
     lbReqSourceId1: TLabel;
-    lbReqCreatureOrGOId4: TLabel;
-    lbReqCreatureOrGOId3: TLabel;
-    lbReqCreatureOrGOId2: TLabel;
     lbReqCreatureOrGOId1: TLabel;
     lbReqSpellCast1: TLabel;
-    lbReqSpellCast2: TLabel;
-    lbReqSpellCast3: TLabel;
-    lbReqSpellCast4: TLabel;
     edqtReqItemCount1: TLabeledEdit;
     edqtReqItemCount2: TLabeledEdit;
     edqtReqItemCount3: TLabeledEdit;
@@ -248,20 +242,8 @@ type
     edqtReqSpellCast4: TJvComboEdit;
     gbRewards: TGroupBox;
     lbRewChoiceItemId1: TLabel;
-    lbRewChoiceItemId2: TLabel;
-    lbRewChoiceItemId3: TLabel;
-    lbRewChoiceItemId4: TLabel;
-    lbRewChoiceItemId5: TLabel;
-    lbRewChoiceItemId6: TLabel;
     lbRewItemId1: TLabel;
-    lbRewItemId2: TLabel;
-    lbRewItemId3: TLabel;
-    lbRewItemId4: TLabel;
     lbRewRepFaction1: TLabel;
-    lbRewRepFaction2: TLabel;
-    lbRewRepFaction3: TLabel;
-    lbRewRepFaction4: TLabel;
-    lbRewRepFaction5: TLabel;
     lbRewSpell: TLabel;
     edqtRewChoiceItemCount1: TLabeledEdit;
     edqtRewChoiceItemCount2: TLabeledEdit;
@@ -297,12 +279,8 @@ type
     edqtRewRepFaction4: TJvComboEdit;
     edqtRewRepFaction5: TJvComboEdit;
     gbOther: TGroupBox;
-    edqtPointX: TLabeledEdit;
-    edqtPointY: TLabeledEdit;
-    edqtPointOpt: TLabeledEdit;
     edqtIncompleteEmote: TJvComboEdit;
     edqtCompleteEmote: TJvComboEdit;
-    edqtCompleteScript: TLabeledEdit;
     edqtDetailsEmote1: TJvComboEdit;
     edqtDetailsEmote2: TJvComboEdit;
     edqtDetailsEmote3: TJvComboEdit;
@@ -860,7 +838,6 @@ type
     edipitem: TJvComboEdit;
     btScriptProsLoot: TButton;
     btFullScriptProsLoot: TButton;
-    edqtStartScript: TLabeledEdit;
     tsStartScript: TTabSheet;
     tsCompleteScript: TTabSheet;
     lvqtStartScript: TJvListView;
@@ -1086,15 +1063,9 @@ type
     edcmorientation: TLabeledEdit;
     edcmmodel2: TLabeledEdit;
     lbqtDetailsEmote1: TLabel;
-    lbqtDetailsEmote2: TLabel;
-    lbqtDetailsEmote3: TLabel;
-    lbqtDetailsEmote4: TLabel;
     lbqtIncompleteEmote: TLabel;
     lbqtCompleteEmote: TLabel;
     lbqtOfferRewardEmote1: TLabel;
-    lbqtOfferRewardEmote2: TLabel;
-    lbqtOfferRewardEmote3: TLabel;
-    lbqtOfferRewardEmote4: TLabel;
     lbcaemote: TLabel;
     lbcmemote: TLabel;
     edclequipment_id: TLabeledEdit;
@@ -1177,8 +1148,6 @@ type
     lbglmap: TLabel;
     edclmap: TJvComboEdit;
     lbclmap: TLabel;
-    lbqtPointMapId: TLabel;
-    edqtPointMapId: TJvComboEdit;
     tsCharacter: TTabSheet;
     edhtaccount: TLabeledEdit;
     edhtname: TLabeledEdit;
@@ -1629,6 +1598,50 @@ type
     edotcondition_id: TLabeledEdit;
     edcscondition_id: TLabeledEdit;
     edimcondition_id: TLabeledEdit;
+    edqtReqSpellLearned: TJvComboEdit;
+    lbReqSpellLearned: TLabel;
+    edqtPortraitGiverName: TLabeledEdit;
+    edqtPortraitGiverText: TLabeledEdit;
+    edqtPortraitTurnInName: TLabeledEdit;
+    edqtPortraitTurnInText: TLabeledEdit;
+    edqtPortraitGiver: TJvComboEdit;
+    lbqtPortraitGiver: TLabel;
+    edqtPortraitTurnIn: TJvComboEdit;
+    lbqtPortraitTurnIn: TLabel;
+    edqtRewSkill: TJvComboEdit;
+    lbqtRewSkill: TLabel;
+    edqtRewSkillValue: TLabeledEdit;
+    edqtSoundAccept: TLabeledEdit;
+    edqtSoundTurnIn: TLabeledEdit;
+    edqtStartScript: TLabeledEdit;
+    edqtCompleteScript: TLabeledEdit;
+    lbqtReqCurrencyId1: TLabel;
+    edqtReqCurrencyCount1: TLabeledEdit;
+    edqtReqCurrencyCount2: TLabeledEdit;
+    edqtReqCurrencyCount3: TLabeledEdit;
+    edqtReqCurrencyCount4: TLabeledEdit;
+    edqtReqCurrencyId1: TJvComboEdit;
+    edqtReqCurrencyId2: TJvComboEdit;
+    edqtReqCurrencyId3: TJvComboEdit;
+    edqtReqCurrencyId4: TJvComboEdit;
+    lbqtRewCurrencyId1: TLabel;
+    edqtRewCurrencyCount1: TLabeledEdit;
+    edqtRewCurrencyCount2: TLabeledEdit;
+    edqtRewCurrencyCount3: TLabeledEdit;
+    edqtRewCurrencyCount4: TLabeledEdit;
+    edqtRewCurrencyId1: TJvComboEdit;
+    edqtRewCurrencyId2: TJvComboEdit;
+    edqtRewCurrencyId3: TJvComboEdit;
+    edqtRewCurrencyId4: TJvComboEdit;
+    edqtPointMapId: TJvComboEdit;
+    edqtPointX: TLabeledEdit;
+    edqtPointY: TLabeledEdit;
+    edqtPointOpt: TLabeledEdit;
+    lbqtPointMapId: TLabel;
+    edlqPortraitGiverName: TLabeledEdit;
+    edlqPortraitGiverText: TLabeledEdit;
+    edlqPortraitTurnInName: TLabeledEdit;
+    edlqPortraitTurnInText: TLabeledEdit;
     procedure FormActivate(Sender: TObject);
     procedure btSearchClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -1698,6 +1711,7 @@ type
     procedure edgttypeChange(Sender: TObject);
 
     procedure GetItem(Sender: TObject);
+    procedure GetCurrency(Sender: TObject);
     procedure GetCreatureOrGO(Sender: TObject);
     procedure GetFaction(Sender: TObject);
     procedure GetEmote(Sender: TObject);
@@ -2886,6 +2900,11 @@ begin
   end;
 end;
 
+procedure TMainForm.GetCurrency(Sender: TObject);
+begin
+  GetValueFromSimpleList(Sender, 16, 'CurrencyTypes', true);
+end;
+
 procedure TMainForm.GetCreatureOrGO(Sender: TObject);
 var
   edEdit: TJvComboEdit;
@@ -3029,10 +3048,11 @@ var
   loc: string;
 begin
   loc := LoadLocales();
-  MyQuery.SQL.Text := Format('SELECT Title' + loc + ', Details' + loc + ', Objectives' + loc + ', OfferRewardText' + loc
-    + ', RequestItemsText' + loc + ', EndText' + loc + ', CompletedText' + loc + ', ObjectiveText1' + loc +
-    ', ObjectiveText2' + loc + ', ObjectiveText3' + loc + ', ObjectiveText4' + loc +
-    ' FROM locales_quest WHERE entry=%d', [QuestID]);
+  MyQuery.SQL.Text := Format('SELECT Title%0:s, Details%0:s, Objectives%0:s, OfferRewardText%0:s,' +
+    'RequestItemsText%0:s, EndText%0:s, CompletedText%0:s,' +
+    'ObjectiveText1%0:s, ObjectiveText2%0:s, ObjectiveText3%0:s, ObjectiveText4%0:s,' +
+    'PortraitGiverName%0:s, PortraitGiverText%0:s, PortraitTurnInName%0:s, PortraitTurnInText%0:s ' +
+    'FROM locales_quest WHERE entry=%1:d', [loc, QuestID]);
   MyQuery.Open;
   edlqTitle.EditLabel.Caption := 'Title' + loc;
   l2Details.Caption := 'Details' + loc;
@@ -3059,6 +3079,10 @@ begin
     edlqObjectiveText2.Text := MyQuery.Fields[8].AsString;
     edlqObjectiveText3.Text := MyQuery.Fields[9].AsString;
     edlqObjectiveText4.Text := MyQuery.Fields[10].AsString;
+    edlqPortraitGiverName.Text := MyQuery.Fields[11].AsString;
+    edlqPortraitGiverText.Text := MyQuery.Fields[12].AsString;
+    edlqPortraitTurnInName.Text := MyQuery.Fields[13].AsString;
+    edlqPortraitTurnInText.Text := MyQuery.Fields[14].AsString;
     MyQuery.Next;
   end;
   MyQuery.Close;

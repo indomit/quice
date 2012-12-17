@@ -3,7 +3,7 @@ object MainForm: TMainForm
   Top = 66
   Caption = 'Quice'
   ClientHeight = 735
-  ClientWidth = 923
+  ClientWidth = 1008
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -24,7 +24,7 @@ object MainForm: TMainForm
   object PageControl1: TPageControl
     Left = 0
     Top = 0
-    Width = 923
+    Width = 1008
     Height = 735
     ActivePage = tsQuest
     Align = alClient
@@ -35,24 +35,27 @@ object MainForm: TMainForm
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    ExplicitWidth = 923
     object tsQuest: TTabSheet
       Caption = 'Quest'
       ImageIndex = 1
+      ExplicitWidth = 915
       object pnQuestTop: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
+        ExplicitWidth = 915
       end
       object PageControl2: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
-        ActivePage = tsSearch
+        ActivePage = tsLocalesQuest
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -64,18 +67,21 @@ object MainForm: TMainForm
         ParentShowHint = False
         ShowHint = False
         TabOrder = 0
+        ExplicitWidth = 915
         object tsSearch: TTabSheet
           Caption = 'Search'
           ImageIndex = 5
+          ExplicitWidth = 907
           object pnSearch: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 105
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               105)
             object lbQuestGiverSearch: TLabel
               Left = 8
@@ -194,7 +200,7 @@ object MainForm: TMainForm
               OnChange = edSearchChange
             end
             object btSearch: TBitBtn
-              Left = 820
+              Left = 905
               Top = 25
               Width = 75
               Height = 25
@@ -249,9 +255,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 6
               OnClick = btSearchClick
+              ExplicitLeft = 820
             end
             object btClear: TBitBtn
-              Left = 820
+              Left = 905
               Top = 56
               Width = 75
               Height = 25
@@ -261,6 +268,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 7
               OnClick = btClearClick
+              ExplicitLeft = 820
             end
             object gbSpecialFlags: TGroupBox
               Left = 616
@@ -423,7 +431,7 @@ object MainForm: TMainForm
           object lvQuest: TJvListView
             Left = 0
             Top = 105
-            Width = 907
+            Width = 992
             Height = 488
             Hint = 'Browse URL'
             Align = alClient
@@ -457,16 +465,18 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
           end
           object Panel2: TPanel
             Left = 0
             Top = 593
-            Width = 907
+            Width = 992
             Height = 61
             Align = alBottom
             TabOrder = 2
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               61)
             object btEditQuest: TBitBtn
               Left = 112
@@ -784,7 +794,7 @@ object MainForm: TMainForm
               OnClick = btCheckQuestClick
             end
             object btCheckAll: TBitBtn
-              Left = 792
+              Left = 877
               Top = 10
               Width = 110
               Height = 25
@@ -848,16 +858,18 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 5
               OnClick = btCheckAllClick
+              ExplicitLeft = 792
             end
             object StatusBar: TStatusBar
               Left = 1
               Top = 41
-              Width = 905
+              Width = 990
               Height = 19
               Panels = <
                 item
                   Width = 300
                 end>
+              ExplicitWidth = 905
             end
             object btBrowseQuestPopup: TBitBtn
               Left = 424
@@ -888,6 +900,7 @@ object MainForm: TMainForm
           Caption = 'Quest Part 1'
           ParentShowHint = False
           ShowHint = True
+          ExplicitWidth = 907
           object gbqtKeys: TGroupBox
             Left = 10
             Top = 8
@@ -1788,10 +1801,10 @@ object MainForm: TMainForm
             end
           end
           object gbDescription: TGroupBox
-            Left = 3
+            Left = 10
             Top = 160
-            Width = 867
-            Height = 441
+            Width = 865
+            Height = 481
             Caption = 'Description of quest'
             TabOrder = 5
             object lDetails: TLabel
@@ -1802,37 +1815,51 @@ object MainForm: TMainForm
               Caption = 'Details'
             end
             object lObjectives: TLabel
-              Left = 296
+              Left = 289
               Top = 56
               Width = 50
               Height = 13
               Caption = 'Objectives'
             end
             object lOfferRewardText: TLabel
-              Left = 8
-              Top = 258
+              Left = 577
+              Top = 56
               Width = 81
               Height = 13
               Caption = 'OfferRewardText'
             end
             object lRequestItemsText: TLabel
-              Left = 299
-              Top = 258
+              Left = 289
+              Top = 162
               Width = 86
               Height = 13
               Caption = 'RequestItemsText'
             end
             object lEndText: TLabel
-              Left = 584
-              Top = 56
+              Left = 577
+              Top = 162
               Width = 40
               Height = 13
               Caption = 'EndText'
             end
+            object lbqtPortraitGiver: TLabel
+              Left = 11
+              Top = 390
+              Width = 58
+              Height = 13
+              Caption = 'PortraitGiver'
+            end
+            object lbqtPortraitTurnIn: TLabel
+              Left = 9
+              Top = 433
+              Width = 64
+              Height = 13
+              Caption = 'PortraitTurnIn'
+            end
             object edqtTitle: TLabeledEdit
               Left = 8
               Top = 32
-              Width = 856
+              Width = 554
               Height = 21
               Hint = 'Title of the quest.'
               EditLabel.Width = 41
@@ -1844,25 +1871,25 @@ object MainForm: TMainForm
               Left = 8
               Top = 72
               Width = 275
-              Height = 180
+              Height = 185
               Hint = 'Long quest'#39's description.'
               ScrollBars = ssVertical
               TabOrder = 1
             end
             object edqtObjectives: TMemo
-              Left = 296
+              Left = 289
               Top = 72
               Width = 275
-              Height = 180
+              Height = 84
               Hint = 'Objectives of the quest.'
               ScrollBars = ssVertical
               TabOrder = 2
             end
             object edqtOfferRewardText: TMemo
-              Left = 8
-              Top = 276
+              Left = 577
+              Top = 72
               Width = 275
-              Height = 153
+              Height = 83
               Hint = 
                 'First text send to the player by the NPC when completing the que' +
                 'st.'
@@ -1870,10 +1897,10 @@ object MainForm: TMainForm
               TabOrder = 4
             end
             object edqtRequestItemsText: TMemo
-              Left = 296
-              Top = 276
+              Left = 289
+              Top = 181
               Width = 275
-              Height = 153
+              Height = 77
               Hint = 
                 'This text ist send to player, yet did not terminate the Quest an' +
                 'd speak with NPC again!'
@@ -1881,10 +1908,10 @@ object MainForm: TMainForm
               TabOrder = 5
             end
             object edqtEndText: TMemo
-              Left = 581
-              Top = 72
+              Left = 577
+              Top = 180
               Width = 275
-              Height = 141
+              Height = 77
               Hint = 
                 'This text is indicated to the player, if you open your Questlog ' +
                 'and wars send to player ingame.'
@@ -1892,9 +1919,9 @@ object MainForm: TMainForm
               TabOrder = 3
             end
             object edqtObjectiveText1: TLabeledEdit
-              Left = 616
-              Top = 297
-              Width = 185
+              Left = 9
+              Top = 318
+              Width = 381
               Height = 21
               EditLabel.Width = 72
               EditLabel.Height = 13
@@ -1902,9 +1929,9 @@ object MainForm: TMainForm
               TabOrder = 6
             end
             object edqtObjectiveText2: TLabeledEdit
-              Left = 616
-              Top = 334
-              Width = 185
+              Left = 396
+              Top = 318
+              Width = 381
               Height = 21
               EditLabel.Width = 72
               EditLabel.Height = 13
@@ -1912,9 +1939,9 @@ object MainForm: TMainForm
               TabOrder = 7
             end
             object edqtObjectiveText3: TLabeledEdit
-              Left = 617
-              Top = 371
-              Width = 185
+              Left = 9
+              Top = 360
+              Width = 381
               Height = 21
               EditLabel.Width = 72
               EditLabel.Height = 13
@@ -1922,9 +1949,9 @@ object MainForm: TMainForm
               TabOrder = 8
             end
             object edqtObjectiveText4: TLabeledEdit
-              Left = 616
-              Top = 407
-              Width = 185
+              Left = 396
+              Top = 360
+              Width = 381
               Height = 21
               EditLabel.Width = 72
               EditLabel.Height = 13
@@ -1932,14 +1959,138 @@ object MainForm: TMainForm
               TabOrder = 9
             end
             object edqtCompletedText: TLabeledEdit
-              Left = 581
-              Top = 231
-              Width = 275
+              Left = 8
+              Top = 276
+              Width = 554
               Height = 21
               EditLabel.Width = 71
               EditLabel.Height = 13
               EditLabel.Caption = 'CompletedText'
               TabOrder = 10
+            end
+            object edqtPortraitGiverName: TLabeledEdit
+              Left = 205
+              Top = 406
+              Width = 185
+              Height = 21
+              EditLabel.Width = 86
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitGiverName'
+              TabOrder = 11
+            end
+            object edqtPortraitGiverText: TLabeledEdit
+              Left = 396
+              Top = 406
+              Width = 381
+              Height = 21
+              EditLabel.Width = 79
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitGiverText'
+              TabOrder = 12
+            end
+            object edqtPortraitTurnInName: TLabeledEdit
+              Left = 205
+              Top = 449
+              Width = 185
+              Height = 21
+              EditLabel.Width = 92
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitTurnInName'
+              TabOrder = 13
+            end
+            object edqtPortraitTurnInText: TLabeledEdit
+              Left = 396
+              Top = 449
+              Width = 381
+              Height = 21
+              EditLabel.Width = 85
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitTurnInText'
+              TabOrder = 14
+            end
+            object edqtPortraitGiver: TJvComboEdit
+              Left = 9
+              Top = 406
+              Width = 190
+              Height = 21
+              Hint = 
+                '(value > 0) 1.-4. required creature/gameobject ID the player '#13#10'n' +
+                'eed to kill/use in order to complete the quest.'#13#10'If ReqSpellCast' +
+                'N > 0 then at ReqCreatureOrGOIdN '#13#10'must be casted spell ReqSpell' +
+                'CastN, if ReqSpellCastN = 0 '#13#10'then it must be killed.'
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 15
+              OnButtonClick = GetCreatureOrGO
+            end
+            object edqtPortraitTurnIn: TJvComboEdit
+              Left = 9
+              Top = 449
+              Width = 190
+              Height = 21
+              Hint = 
+                '(value > 0) 1.-4. required creature/gameobject ID the player '#13#10'n' +
+                'eed to kill/use in order to complete the quest.'#13#10'If ReqSpellCast' +
+                'N > 0 then at ReqCreatureOrGOIdN '#13#10'must be casted spell ReqSpell' +
+                'CastN, if ReqSpellCastN = 0 '#13#10'then it must be killed.'
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 16
+              OnButtonClick = GetCreatureOrGO
             end
           end
         end
@@ -1948,89 +2099,62 @@ object MainForm: TMainForm
           ImageIndex = 1
           ParentShowHint = False
           ShowHint = True
+          ExplicitWidth = 907
           object gbRequirementsEnd: TGroupBox
             Left = 8
             Top = 8
-            Width = 441
-            Height = 349
+            Width = 442
+            Height = 423
             Caption = 'Requirements for finish quest'
             TabOrder = 0
             object lbReqItemId1: TLabel
               Left = 8
               Top = 13
-              Width = 55
+              Width = 49
               Height = 13
-              Caption = 'ReqItemId..'
+              Caption = 'ReqItemId'
             end
             object lbReqSourceId1: TLabel
               Left = 192
               Top = 13
-              Width = 69
+              Width = 63
               Height = 13
-              Caption = 'ReqSourceId..'
-            end
-            object lbReqCreatureOrGOId4: TLabel
-              Left = 6
-              Top = 290
-              Width = 102
-              Height = 13
-              Caption = 'ReqCreatureOrGOId4'
-            end
-            object lbReqCreatureOrGOId3: TLabel
-              Left = 6
-              Top = 254
-              Width = 102
-              Height = 13
-              Caption = 'ReqCreatureOrGOId3'
-            end
-            object lbReqCreatureOrGOId2: TLabel
-              Left = 8
-              Top = 217
-              Width = 102
-              Height = 13
-              Caption = 'ReqCreatureOrGOId2'
+              Caption = 'ReqSourceId'
             end
             object lbReqCreatureOrGOId1: TLabel
               Left = 8
-              Top = 180
-              Width = 102
+              Top = 179
+              Width = 96
               Height = 13
-              Caption = 'ReqCreatureOrGOId1'
+              Caption = 'ReqCreatureOrGOId'
             end
             object lbReqSpellCast1: TLabel
-              Left = 225
-              Top = 180
-              Width = 70
+              Left = 8
+              Top = 300
+              Width = 64
               Height = 13
-              Caption = 'ReqSpellCast1'
-            end
-            object lbReqSpellCast2: TLabel
-              Left = 225
-              Top = 217
-              Width = 70
-              Height = 13
-              Caption = 'ReqSpellCast2'
-            end
-            object lbReqSpellCast3: TLabel
-              Left = 223
-              Top = 254
-              Width = 70
-              Height = 13
-              Caption = 'ReqSpellCast3'
-            end
-            object lbReqSpellCast4: TLabel
-              Left = 223
-              Top = 290
-              Width = 70
-              Height = 13
-              Caption = 'ReqSpellCast4'
+              Caption = 'ReqSpellCast'
             end
             object lbqtRepObjectiveFaction: TLabel
-              Left = 320
-              Top = 180
+              Left = 192
+              Top = 132
               Width = 100
               Height = 13
               Caption = 'RepObjectiveFaction'
+            end
+            object lbReqSpellLearned: TLabel
+              Left = 103
+              Top = 374
+              Width = 82
+              Height = 13
+              Caption = 'ReqSpellLearned'
+            end
+            object lbqtReqCurrencyId1: TLabel
+              Left = 206
+              Top = 179
+              Width = 71
+              Height = 13
+              Caption = 'ReqCurrencyId'
             end
             object edqtReqItemCount1: TLabeledEdit
               Left = 96
@@ -2038,9 +2162,9 @@ object MainForm: TMainForm
               Width = 85
               Height = 21
               Hint = 'ReqItemCount1'
-              EditLabel.Width = 74
+              EditLabel.Width = 28
               EditLabel.Height = 13
-              EditLabel.Caption = 'ReqItemCount..'
+              EditLabel.Caption = 'Count'
               TabOrder = 1
             end
             object edqtReqItemCount2: TLabeledEdit
@@ -2049,9 +2173,8 @@ object MainForm: TMainForm
               Width = 85
               Height = 21
               Hint = 'ReqItemCount2'
-              EditLabel.Width = 95
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqItemCount2'
               TabOrder = 3
             end
             object edqtReqItemCount3: TLabeledEdit
@@ -2060,9 +2183,8 @@ object MainForm: TMainForm
               Width = 85
               Height = 21
               Hint = 'ReqItemCount3'
-              EditLabel.Width = 95
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqItemCount3'
               TabOrder = 5
             end
             object edqtReqItemCount4: TLabeledEdit
@@ -2071,105 +2193,98 @@ object MainForm: TMainForm
               Width = 85
               Height = 21
               Hint = 'ReqItemCount4'
-              EditLabel.Width = 95
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqItemCount4'
               TabOrder = 7
             end
             object edqtReqCreatureOrGOCount4: TLabeledEdit
-              Left = 144
-              Top = 306
+              Left = 119
+              Top = 276
               Width = 73
               Height = 21
               Hint = 
                 'Number of kills needed on 1.-4. creature or activations on first' +
                 ' gameobject.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count4'
               TabOrder = 26
             end
             object edqtReqCreatureOrGOCount3: TLabeledEdit
-              Left = 144
-              Top = 270
+              Left = 119
+              Top = 249
               Width = 73
               Height = 21
               Hint = 
                 'Number of kills needed on 1.-4. creature or activations on first' +
                 ' gameobject.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count3'
               TabOrder = 23
             end
             object edqtReqCreatureOrGOCount2: TLabeledEdit
-              Left = 144
-              Top = 233
+              Left = 119
+              Top = 222
               Width = 73
               Height = 21
               Hint = 
                 'Number of kills needed on 1.-4. creature or activations on first' +
                 ' gameobject.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count2'
               TabOrder = 20
             end
             object edqtReqCreatureOrGOCount1: TLabeledEdit
-              Left = 144
-              Top = 196
+              Left = 119
+              Top = 195
               Width = 73
               Height = 21
               Hint = 
                 'Number of kills needed on 1.-4. creature or activations on first' +
                 ' gameobject.'
-              EditLabel.Width = 43
+              EditLabel.Width = 28
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count1'
+              EditLabel.Caption = 'Count'
               TabOrder = 17
             end
             object edqtReqSourceCount1: TLabeledEdit
-              Left = 319
+              Left = 309
               Top = 29
-              Width = 111
+              Width = 73
               Height = 21
               Hint = 'Count of Source Items'
-              EditLabel.Width = 88
+              EditLabel.Width = 28
               EditLabel.Height = 13
-              EditLabel.Caption = 'ReqSourceCount..'
+              EditLabel.Caption = 'Count'
               TabOrder = 9
             end
             object edqtReqSourceCount2: TLabeledEdit
-              Left = 319
+              Left = 309
               Top = 54
-              Width = 111
+              Width = 73
               Height = 21
               Hint = 'Count of Source Items'
-              EditLabel.Width = 109
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqSourceCount2'
               TabOrder = 11
             end
             object edqtReqSourceCount3: TLabeledEdit
-              Left = 319
+              Left = 309
               Top = 80
-              Width = 111
+              Width = 73
               Height = 21
               Hint = 'Count of Source Items'
-              EditLabel.Width = 109
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqSourceCount3'
               TabOrder = 13
             end
             object edqtReqSourceCount4: TLabeledEdit
-              Left = 319
+              Left = 309
               Top = 105
-              Width = 111
+              Width = 73
               Height = 21
               Hint = 'Count of Source Items'
-              EditLabel.Width = 109
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqSourceCount4'
               TabOrder = 15
             end
             object edqtReqItemId1: TJvComboEdit
@@ -2518,8 +2633,8 @@ object MainForm: TMainForm
             end
             object edqtReqCreatureOrGOId4: TJvComboEdit
               Left = 8
-              Top = 306
-              Width = 129
+              Top = 277
+              Width = 105
               Height = 21
               Hint = 
                 '(value > 0) 1.-4. required creature/gameobject ID the player '#13#10'n' +
@@ -2560,8 +2675,8 @@ object MainForm: TMainForm
             end
             object edqtReqCreatureOrGOId3: TJvComboEdit
               Left = 8
-              Top = 270
-              Width = 129
+              Top = 249
+              Width = 105
               Height = 21
               Hint = 
                 '(value > 0) 1.-4. required creature/gameobject ID the player '#13#10'n' +
@@ -2602,8 +2717,8 @@ object MainForm: TMainForm
             end
             object edqtReqCreatureOrGOId2: TJvComboEdit
               Left = 8
-              Top = 233
-              Width = 129
+              Top = 222
+              Width = 105
               Height = 21
               Hint = 
                 '(value > 0) 1.-4. required creature/gameobject ID the player '#13#10'n' +
@@ -2644,8 +2759,8 @@ object MainForm: TMainForm
             end
             object edqtReqCreatureOrGOId1: TJvComboEdit
               Left = 8
-              Top = 196
-              Width = 129
+              Top = 195
+              Width = 105
               Height = 21
               Hint = 
                 '(value > 0) 1.-4. required creature/gameobject ID the player '#13#10'n' +
@@ -2685,8 +2800,8 @@ object MainForm: TMainForm
               OnButtonClick = GetCreatureOrGO
             end
             object edqtReqSpellCast1: TJvComboEdit
-              Left = 225
-              Top = 196
+              Left = 8
+              Top = 316
               Width = 81
               Height = 21
               Hint = 
@@ -2727,8 +2842,8 @@ object MainForm: TMainForm
               OnButtonClick = GetSpell
             end
             object edqtReqSpellCast2: TJvComboEdit
-              Left = 225
-              Top = 233
+              Left = 8
+              Top = 342
               Width = 81
               Height = 21
               Hint = 
@@ -2769,8 +2884,8 @@ object MainForm: TMainForm
               OnButtonClick = GetSpell
             end
             object edqtReqSpellCast3: TJvComboEdit
-              Left = 225
-              Top = 267
+              Left = 8
+              Top = 368
               Width = 81
               Height = 21
               Hint = 
@@ -2811,8 +2926,8 @@ object MainForm: TMainForm
               OnButtonClick = GetSpell
             end
             object edqtReqSpellCast4: TJvComboEdit
-              Left = 225
-              Top = 306
+              Left = 8
+              Top = 394
               Width = 81
               Height = 21
               Hint = 
@@ -2853,19 +2968,19 @@ object MainForm: TMainForm
               OnButtonClick = GetSpell
             end
             object edqtRepObjectiveValue: TLabeledEdit
-              Left = 320
-              Top = 233
-              Width = 105
+              Left = 309
+              Top = 148
+              Width = 73
               Height = 21
-              EditLabel.Width = 92
+              EditLabel.Width = 27
               EditLabel.Height = 13
-              EditLabel.Caption = 'RepObjectiveValue'
+              EditLabel.Caption = 'Value'
               TabOrder = 29
             end
             object edqtRepObjectiveFaction: TJvComboEdit
-              Left = 320
-              Top = 196
-              Width = 105
+              Left = 192
+              Top = 148
+              Width = 111
               Height = 21
               ButtonWidth = 22
               ClickKey = 13
@@ -2943,9 +3058,8 @@ object MainForm: TMainForm
               Width = 85
               Height = 21
               Hint = 'ReqItemCount5'
-              EditLabel.Width = 95
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqItemCount5'
               TabOrder = 31
             end
             object edqtReqItemCount6: TLabeledEdit
@@ -2954,9 +3068,8 @@ object MainForm: TMainForm
               Width = 85
               Height = 21
               Hint = 'ReqItemCount6'
-              EditLabel.Width = 95
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'edqtReqItemCount6'
               TabOrder = 32
             end
             object edqtReqItemId6: TJvComboEdit
@@ -2997,132 +3110,284 @@ object MainForm: TMainForm
               TabOrder = 33
               OnButtonClick = GetItem
             end
+            object edqtReqSpellLearned: TJvComboEdit
+              Left = 103
+              Top = 390
+              Width = 89
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 34
+              OnButtonClick = GetSpell
+            end
+            object edqtReqCurrencyCount1: TLabeledEdit
+              Left = 309
+              Top = 195
+              Width = 73
+              Height = 21
+              EditLabel.Width = 28
+              EditLabel.Height = 13
+              EditLabel.Caption = 'Count'
+              TabOrder = 35
+            end
+            object edqtReqCurrencyCount2: TLabeledEdit
+              Left = 309
+              Top = 222
+              Width = 73
+              Height = 21
+              EditLabel.Width = 3
+              EditLabel.Height = 13
+              TabOrder = 36
+            end
+            object edqtReqCurrencyCount3: TLabeledEdit
+              Left = 309
+              Top = 249
+              Width = 73
+              Height = 21
+              EditLabel.Width = 3
+              EditLabel.Height = 13
+              TabOrder = 37
+            end
+            object edqtReqCurrencyCount4: TLabeledEdit
+              Left = 309
+              Top = 276
+              Width = 73
+              Height = 21
+              EditLabel.Width = 3
+              EditLabel.Height = 13
+              TabOrder = 38
+            end
+            object edqtReqCurrencyId1: TJvComboEdit
+              Left = 206
+              Top = 195
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 39
+              OnButtonClick = GetCurrency
+            end
+            object edqtReqCurrencyId2: TJvComboEdit
+              Left = 206
+              Top = 222
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 40
+              OnButtonClick = GetCurrency
+            end
+            object edqtReqCurrencyId3: TJvComboEdit
+              Left = 206
+              Top = 249
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 41
+              OnButtonClick = GetCurrency
+            end
+            object edqtReqCurrencyId4: TJvComboEdit
+              Left = 206
+              Top = 276
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 42
+              OnButtonClick = GetCurrency
+            end
           end
           object gbRewards: TGroupBox
             Left = 456
             Top = 8
-            Width = 385
-            Height = 494
+            Width = 533
+            Height = 423
             Caption = 'Rewards for quest'
             TabOrder = 1
             object lbRewChoiceItemId1: TLabel
               Left = 8
               Top = 16
-              Width = 90
+              Width = 84
               Height = 13
-              Caption = 'RewChoiceItemId1'
-            end
-            object lbRewChoiceItemId2: TLabel
-              Left = 8
-              Top = 56
-              Width = 90
-              Height = 13
-              Caption = 'RewChoiceItemId2'
-            end
-            object lbRewChoiceItemId3: TLabel
-              Left = 8
-              Top = 96
-              Width = 90
-              Height = 13
-              Caption = 'RewChoiceItemId3'
-            end
-            object lbRewChoiceItemId4: TLabel
-              Left = 8
-              Top = 136
-              Width = 90
-              Height = 13
-              Caption = 'RewChoiceItemId4'
-            end
-            object lbRewChoiceItemId5: TLabel
-              Left = 8
-              Top = 176
-              Width = 90
-              Height = 13
-              Caption = 'RewChoiceItemId5'
-            end
-            object lbRewChoiceItemId6: TLabel
-              Left = 8
-              Top = 216
-              Width = 90
-              Height = 13
-              Caption = 'RewChoiceItemId6'
+              Caption = 'RewChoiceItemId'
             end
             object lbRewItemId1: TLabel
-              Left = 198
-              Top = 16
-              Width = 57
+              Left = 8
+              Top = 195
+              Width = 51
               Height = 13
-              Caption = 'RewItemId1'
-            end
-            object lbRewItemId2: TLabel
-              Left = 198
-              Top = 56
-              Width = 57
-              Height = 13
-              Caption = 'RewItemId2'
-            end
-            object lbRewItemId3: TLabel
-              Left = 198
-              Top = 96
-              Width = 57
-              Height = 13
-              Caption = 'RewItemId3'
-            end
-            object lbRewItemId4: TLabel
-              Left = 198
-              Top = 136
-              Width = 57
-              Height = 13
-              Caption = 'RewItemId4'
+              Caption = 'RewItemId'
             end
             object lbRewRepFaction1: TLabel
-              Left = 9
-              Top = 253
-              Width = 83
+              Left = 200
+              Top = 16
+              Width = 77
               Height = 13
-              Caption = 'RewRepFaction1'
-            end
-            object lbRewRepFaction2: TLabel
-              Left = 9
-              Top = 293
-              Width = 83
-              Height = 13
-              Caption = 'RewRepFaction2'
-            end
-            object lbRewRepFaction3: TLabel
-              Left = 9
-              Top = 333
-              Width = 83
-              Height = 13
-              Caption = 'RewRepFaction3'
-            end
-            object lbRewRepFaction4: TLabel
-              Left = 9
-              Top = 373
-              Width = 83
-              Height = 13
-              Caption = 'RewRepFaction4'
-            end
-            object lbRewRepFaction5: TLabel
-              Left = 9
-              Top = 413
-              Width = 83
-              Height = 13
-              Caption = 'RewRepFaction5'
+              Caption = 'RewRepFaction'
             end
             object lbRewSpell: TLabel
-              Left = 301
-              Top = 176
+              Left = 8
+              Top = 320
               Width = 45
               Height = 13
               Caption = 'RewSpell'
             end
             object lbRewSpellCast: TLabel
-              Left = 301
-              Top = 216
+              Left = 87
+              Top = 320
               Width = 66
               Height = 13
               Caption = 'RewSpellCast'
+            end
+            object lbqtRewSkill: TLabel
+              Left = 174
+              Top = 320
+              Width = 41
+              Height = 13
+              Caption = 'RewSkill'
+            end
+            object lbqtRewCurrencyId1: TLabel
+              Left = 200
+              Top = 195
+              Width = 73
+              Height = 13
+              Caption = 'RewCurrencyId'
             end
             object edqtRewChoiceItemCount1: TLabeledEdit
               Left = 108
@@ -3130,113 +3395,105 @@ object MainForm: TMainForm
               Width = 70
               Height = 21
               Hint = 'Number of Charges in the 1.-6. rewarded item available.'
-              EditLabel.Width = 43
+              EditLabel.Width = 28
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count1'
+              EditLabel.Caption = 'Count'
               TabOrder = 1
             end
             object edqtRewChoiceItemCount2: TLabeledEdit
               Left = 108
-              Top = 72
+              Top = 59
               Width = 70
               Height = 21
               Hint = 'Number of Charges in the 1.-6. rewarded item available.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count2'
               TabOrder = 3
             end
             object edqtRewChoiceItemCount3: TLabeledEdit
               Left = 108
-              Top = 112
+              Top = 86
               Width = 70
               Height = 21
               Hint = 'Number of Charges in the 1.-6. rewarded item available.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count3'
               TabOrder = 5
             end
             object edqtRewChoiceItemCount4: TLabeledEdit
               Left = 108
-              Top = 152
+              Top = 113
               Width = 70
               Height = 21
               Hint = 'Number of Charges in the 1.-6. rewarded item available.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count4'
               TabOrder = 7
             end
             object edqtRewChoiceItemCount5: TLabeledEdit
               Left = 108
-              Top = 192
+              Top = 140
               Width = 70
               Height = 21
               Hint = 'Number of Charges in the 1.-6. rewarded item available.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count5'
               TabOrder = 9
             end
             object edqtRewChoiceItemCount6: TLabeledEdit
               Left = 108
-              Top = 232
+              Top = 167
               Width = 70
               Height = 21
               Hint = 'Number of Charges in the 1.-6. rewarded item available.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count6'
               TabOrder = 11
             end
             object edqtRewItemCount1: TLabeledEdit
-              Left = 301
-              Top = 32
-              Width = 73
+              Left = 108
+              Top = 211
+              Width = 70
               Height = 21
               Hint = 'Number of RewItem1-4.'
-              EditLabel.Width = 43
+              EditLabel.Width = 28
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count1'
+              EditLabel.Caption = 'Count'
               TabOrder = 13
             end
             object edqtRewItemCount2: TLabeledEdit
-              Left = 301
-              Top = 72
-              Width = 73
+              Left = 108
+              Top = 238
+              Width = 70
               Height = 21
               Hint = 'Number of RewItem1-4.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count1'
               TabOrder = 15
             end
             object edqtRewItemCount3: TLabeledEdit
-              Left = 301
-              Top = 112
-              Width = 73
+              Left = 108
+              Top = 265
+              Width = 70
               Height = 21
               Hint = 'Number of RewItem1-4.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count3'
               TabOrder = 17
             end
             object edqtRewItemCount4: TLabeledEdit
-              Left = 301
-              Top = 152
-              Width = 73
+              Left = 108
+              Top = 292
+              Width = 70
               Height = 21
               Hint = 'Number of RewItem1-4.'
-              EditLabel.Width = 43
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Count4'
               TabOrder = 19
             end
             object edqtRewRepValue1: TLabeledEdit
-              Left = 108
-              Top = 269
+              Left = 408
+              Top = 32
               Width = 73
               Height = 21
               Hint = 
@@ -3244,14 +3501,14 @@ object MainForm: TMainForm
                 'st completion.'#13#10'This is special reputation rewarding. Normal rep' +
                 'utation reward to quest '#13#10'rewarding creature faction calculated ' +
                 'and added authomaticly.'
-              EditLabel.Width = 42
+              EditLabel.Width = 27
               EditLabel.Height = 13
-              EditLabel.Caption = '...Value1'
+              EditLabel.Caption = 'Value'
               TabOrder = 24
             end
             object edqtRewRepValue2: TLabeledEdit
-              Left = 108
-              Top = 309
+              Left = 408
+              Top = 59
               Width = 73
               Height = 21
               Hint = 
@@ -3259,14 +3516,13 @@ object MainForm: TMainForm
                 'st completion.'#13#10'This is special reputation rewarding. Normal rep' +
                 'utation reward to quest '#13#10'rewarding creature faction calculated ' +
                 'and added authomaticly.'
-              EditLabel.Width = 42
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Value2'
               TabOrder = 26
             end
             object edqtRewOrReqMoney: TLabeledEdit
-              Left = 198
-              Top = 192
+              Left = 8
+              Top = 379
               Width = 97
               Height = 21
               Hint = 
@@ -3278,8 +3534,8 @@ object MainForm: TMainForm
               TabOrder = 20
             end
             object edqtRewMoneyMaxLevel: TLabeledEdit
-              Left = 198
-              Top = 232
+              Left = 111
+              Top = 379
               Width = 97
               Height = 21
               Hint = 'Money given when completing the quest at max level.'
@@ -3289,8 +3545,8 @@ object MainForm: TMainForm
               TabOrder = 21
             end
             object edqtRewRepValue3: TLabeledEdit
-              Left = 108
-              Top = 349
+              Left = 408
+              Top = 86
               Width = 73
               Height = 21
               Hint = 
@@ -3298,14 +3554,13 @@ object MainForm: TMainForm
                 'st completion.'#13#10'This is special reputation rewarding. Normal rep' +
                 'utation reward to quest '#13#10'rewarding creature faction calculated ' +
                 'and added authomaticly.'
-              EditLabel.Width = 42
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Value3'
               TabOrder = 28
             end
             object edqtRewRepValue4: TLabeledEdit
-              Left = 108
-              Top = 389
+              Left = 408
+              Top = 113
               Width = 73
               Height = 21
               Hint = 
@@ -3313,14 +3568,13 @@ object MainForm: TMainForm
                 'st completion.'#13#10'This is special reputation rewarding. Normal rep' +
                 'utation reward to quest '#13#10'rewarding creature faction calculated ' +
                 'and added authomaticly.'
-              EditLabel.Width = 42
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Value4'
               TabOrder = 30
             end
             object edqtRewRepValue5: TLabeledEdit
-              Left = 108
-              Top = 429
+              Left = 408
+              Top = 140
               Width = 73
               Height = 21
               Hint = 
@@ -3328,9 +3582,8 @@ object MainForm: TMainForm
                 'st completion.'#13#10'This is special reputation rewarding. Normal rep' +
                 'utation reward to quest '#13#10'rewarding creature faction calculated ' +
                 'and added authomaticly.'
-              EditLabel.Width = 42
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = '...Value5'
               TabOrder = 32
             end
             object edqtRewChoiceItemId1: TJvComboEdit
@@ -3372,8 +3625,8 @@ object MainForm: TMainForm
               OnButtonClick = GetItem
             end
             object edqtRewItemId1: TJvComboEdit
-              Left = 198
-              Top = 32
+              Left = 8
+              Top = 211
               Width = 97
               Height = 21
               Hint = '1.-4. item Id given for reward (no choice).'
@@ -3410,8 +3663,8 @@ object MainForm: TMainForm
               OnButtonClick = GetItem
             end
             object edqtRewRepFaction1: TJvComboEdit
-              Left = 9
-              Top = 269
+              Left = 200
+              Top = 32
               Width = 97
               Height = 21
               Hint = 'Faction Id for which the quest give reputation points.'
@@ -3448,8 +3701,8 @@ object MainForm: TMainForm
               OnButtonClick = GetFaction
             end
             object edqtRewSpell: TJvComboEdit
-              Left = 301
-              Top = 192
+              Left = 8
+              Top = 336
               Width = 73
               Height = 21
               Hint = 
@@ -3490,7 +3743,7 @@ object MainForm: TMainForm
             end
             object edqtRewChoiceItemId2: TJvComboEdit
               Left = 8
-              Top = 72
+              Top = 59
               Width = 97
               Height = 21
               Hint = 'Id of the 1.-6. Item available for reward choice.'
@@ -3528,7 +3781,7 @@ object MainForm: TMainForm
             end
             object edqtRewChoiceItemId3: TJvComboEdit
               Left = 8
-              Top = 112
+              Top = 86
               Width = 97
               Height = 21
               Hint = 'Id of the 1.-6. Item available for reward choice.'
@@ -3566,7 +3819,7 @@ object MainForm: TMainForm
             end
             object edqtRewChoiceItemId4: TJvComboEdit
               Left = 8
-              Top = 152
+              Top = 113
               Width = 97
               Height = 21
               Hint = 'Id of the 1.-6. Item available for reward choice.'
@@ -3604,7 +3857,7 @@ object MainForm: TMainForm
             end
             object edqtRewChoiceItemId5: TJvComboEdit
               Left = 8
-              Top = 192
+              Top = 140
               Width = 97
               Height = 21
               Hint = 'Id of the 1.-6. Item available for reward choice.'
@@ -3642,7 +3895,7 @@ object MainForm: TMainForm
             end
             object edqtRewChoiceItemId6: TJvComboEdit
               Left = 8
-              Top = 232
+              Top = 167
               Width = 97
               Height = 21
               Hint = 'Id of the 1.-6. Item available for reward choice.'
@@ -3679,8 +3932,8 @@ object MainForm: TMainForm
               OnButtonClick = GetItem
             end
             object edqtRewItemId2: TJvComboEdit
-              Left = 198
-              Top = 72
+              Left = 8
+              Top = 238
               Width = 97
               Height = 21
               Hint = '1.-4. item Id given for reward (no choice).'
@@ -3717,8 +3970,8 @@ object MainForm: TMainForm
               OnButtonClick = GetItem
             end
             object edqtRewItemId3: TJvComboEdit
-              Left = 198
-              Top = 112
+              Left = 8
+              Top = 265
               Width = 97
               Height = 21
               Hint = '1.-4. item Id given for reward (no choice).'
@@ -3755,8 +4008,8 @@ object MainForm: TMainForm
               OnButtonClick = GetItem
             end
             object edqtRewItemId4: TJvComboEdit
-              Left = 198
-              Top = 152
+              Left = 8
+              Top = 292
               Width = 97
               Height = 21
               Hint = '1.-4. item Id given for reward (no choice).'
@@ -3793,8 +4046,8 @@ object MainForm: TMainForm
               OnButtonClick = GetItem
             end
             object edqtRewRepFaction2: TJvComboEdit
-              Left = 9
-              Top = 309
+              Left = 200
+              Top = 59
               Width = 97
               Height = 21
               Hint = 'Faction Id for which the quest give reputation points.'
@@ -3831,8 +4084,8 @@ object MainForm: TMainForm
               OnButtonClick = GetFaction
             end
             object edqtRewRepFaction3: TJvComboEdit
-              Left = 9
-              Top = 349
+              Left = 200
+              Top = 86
               Width = 97
               Height = 21
               Hint = 'Faction Id for which the quest give reputation points.'
@@ -3869,8 +4122,8 @@ object MainForm: TMainForm
               OnButtonClick = GetFaction
             end
             object edqtRewRepFaction4: TJvComboEdit
-              Left = 9
-              Top = 389
+              Left = 200
+              Top = 113
               Width = 97
               Height = 21
               Hint = 'Faction Id for which the quest give reputation points.'
@@ -3907,8 +4160,8 @@ object MainForm: TMainForm
               OnButtonClick = GetFaction
             end
             object edqtRewRepFaction5: TJvComboEdit
-              Left = 9
-              Top = 429
+              Left = 200
+              Top = 140
               Width = 97
               Height = 21
               Hint = 'Faction Id for which the quest give reputation points.'
@@ -3945,8 +4198,8 @@ object MainForm: TMainForm
               OnButtonClick = GetFaction
             end
             object edqtRewSpellCast: TJvComboEdit
-              Left = 301
-              Top = 232
+              Left = 87
+              Top = 336
               Width = 73
               Height = 21
               ButtonWidth = 22
@@ -3982,9 +4235,9 @@ object MainForm: TMainForm
               OnButtonClick = GetSpell
             end
             object edqtRewMailTemplateId: TLabeledEdit
-              Left = 8
-              Top = 467
-              Width = 97
+              Left = 401
+              Top = 272
+              Width = 99
               Height = 21
               EditLabel.Width = 94
               EditLabel.Height = 13
@@ -3992,9 +4245,9 @@ object MainForm: TMainForm
               TabOrder = 34
             end
             object edqtRewMailDelaySecs: TLabeledEdit
-              Left = 108
-              Top = 467
-              Width = 70
+              Left = 401
+              Top = 311
+              Width = 98
               Height = 21
               EditLabel.Width = 92
               EditLabel.Height = 13
@@ -4002,9 +4255,9 @@ object MainForm: TMainForm
               TabOrder = 35
             end
             object edqtRewHonorAddition: TLabeledEdit
-              Left = 209
-              Top = 467
-              Width = 87
+              Left = 401
+              Top = 195
+              Width = 98
               Height = 21
               Hint = 
                 'Number of honorable kill honor rewarded for completing this ques' +
@@ -4018,277 +4271,338 @@ object MainForm: TMainForm
               TabOrder = 36
             end
             object edqtRewHonorMultiplier: TLabeledEdit
-              Left = 301
-              Top = 467
-              Width = 73
+              Left = 401
+              Top = 233
+              Width = 98
               Height = 21
               Hint = 'RewHonorMultiplier'
-              EditLabel.Width = 79
+              EditLabel.Width = 92
               EditLabel.Height = 13
-              EditLabel.Caption = 'RewHonorMultip'
+              EditLabel.Caption = 'RewHonorMultiplier'
               TabOrder = 37
             end
             object edqtRewRepValueId1: TLabeledEdit
-              Left = 198
-              Top = 269
+              Left = 303
+              Top = 32
               Width = 99
               Height = 21
-              EditLabel.Width = 84
+              EditLabel.Width = 78
               EditLabel.Height = 13
-              EditLabel.Caption = 'RewRepValueId1'
+              EditLabel.Caption = 'RewRepValueId'
               TabOrder = 38
             end
             object edqtRewRepValueId2: TLabeledEdit
-              Left = 198
-              Top = 309
+              Left = 303
+              Top = 59
               Width = 99
               Height = 21
-              EditLabel.Width = 84
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'RewRepValueId2'
               TabOrder = 39
             end
             object edqtRewRepValueId3: TLabeledEdit
-              Left = 198
-              Top = 349
+              Left = 303
+              Top = 86
               Width = 99
               Height = 21
-              EditLabel.Width = 84
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'RewRepValueId3'
               TabOrder = 40
             end
             object edqtRewRepValueId4: TLabeledEdit
-              Left = 198
-              Top = 389
+              Left = 303
+              Top = 113
               Width = 99
               Height = 21
-              EditLabel.Width = 84
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'RewRepValueId4'
               TabOrder = 41
             end
             object edqtRewRepValueId5: TLabeledEdit
-              Left = 198
-              Top = 429
+              Left = 303
+              Top = 140
               Width = 99
               Height = 21
-              EditLabel.Width = 84
+              EditLabel.Width = 3
               EditLabel.Height = 13
-              EditLabel.Caption = 'RewRepValueId5'
               TabOrder = 42
+            end
+            object edqtRewSkill: TJvComboEdit
+              Left = 174
+              Top = 336
+              Width = 73
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 43
+              OnButtonClick = GetSkill
+            end
+            object edqtRewSkillValue: TLabeledEdit
+              Left = 253
+              Top = 336
+              Width = 76
+              Height = 21
+              EditLabel.Width = 68
+              EditLabel.Height = 13
+              EditLabel.Caption = 'RewSkillValue'
+              TabOrder = 44
+            end
+            object edqtRewCurrencyCount1: TLabeledEdit
+              Left = 303
+              Top = 211
+              Width = 73
+              Height = 21
+              EditLabel.Width = 28
+              EditLabel.Height = 13
+              EditLabel.Caption = 'Count'
+              TabOrder = 45
+            end
+            object edqtRewCurrencyCount2: TLabeledEdit
+              Left = 303
+              Top = 238
+              Width = 73
+              Height = 21
+              EditLabel.Width = 3
+              EditLabel.Height = 13
+              TabOrder = 46
+            end
+            object edqtRewCurrencyCount3: TLabeledEdit
+              Left = 303
+              Top = 265
+              Width = 73
+              Height = 21
+              EditLabel.Width = 3
+              EditLabel.Height = 13
+              TabOrder = 47
+            end
+            object edqtRewCurrencyCount4: TLabeledEdit
+              Left = 303
+              Top = 292
+              Width = 73
+              Height = 21
+              EditLabel.Width = 3
+              EditLabel.Height = 13
+              TabOrder = 48
+            end
+            object edqtRewCurrencyId1: TJvComboEdit
+              Left = 200
+              Top = 211
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 49
+              OnButtonClick = GetCurrency
+            end
+            object edqtRewCurrencyId2: TJvComboEdit
+              Left = 200
+              Top = 238
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 50
+              OnButtonClick = GetCurrency
+            end
+            object edqtRewCurrencyId3: TJvComboEdit
+              Left = 200
+              Top = 265
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 51
+              OnButtonClick = GetCurrency
+            end
+            object edqtRewCurrencyId4: TJvComboEdit
+              Left = 200
+              Top = 292
+              Width = 97
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 52
+              OnButtonClick = GetCurrency
             end
           end
           object gbOther: TGroupBox
             Left = 8
-            Top = 363
+            Top = 431
             Width = 441
-            Height = 254
+            Height = 186
             Caption = 'Emotions'
             TabOrder = 2
             object lbqtDetailsEmote1: TLabel
-              Left = 6
-              Top = 49
-              Width = 68
+              Left = 8
+              Top = 16
+              Width = 62
               Height = 13
-              Caption = 'DetailsEmote1'
-            end
-            object lbqtDetailsEmote2: TLabel
-              Left = 6
-              Top = 90
-              Width = 68
-              Height = 13
-              Caption = 'DetailsEmote2'
-            end
-            object lbqtDetailsEmote3: TLabel
-              Left = 6
-              Top = 129
-              Width = 68
-              Height = 13
-              Caption = 'DetailsEmote3'
-            end
-            object lbqtDetailsEmote4: TLabel
-              Left = 6
-              Top = 170
-              Width = 68
-              Height = 13
-              Caption = 'DetailsEmote4'
+              Caption = 'DetailsEmote'
             end
             object lbqtIncompleteEmote: TLabel
-              Left = 84
-              Top = 208
+              Left = 90
+              Top = 140
               Width = 82
               Height = 13
               Caption = 'IncompleteEmote'
             end
             object lbqtCompleteEmote: TLabel
-              Left = 6
-              Top = 208
+              Left = 8
+              Top = 142
               Width = 74
               Height = 13
               Caption = 'CompleteEmote'
             end
             object lbqtOfferRewardEmote1: TLabel
-              Left = 179
-              Top = 50
-              Width = 96
-              Height = 13
-              Caption = 'OfferRewardEmote1'
-            end
-            object lbqtOfferRewardEmote2: TLabel
-              Left = 179
-              Top = 90
-              Width = 96
-              Height = 13
-              Caption = 'OfferRewardEmote2'
-            end
-            object lbqtOfferRewardEmote3: TLabel
-              Left = 179
-              Top = 129
-              Width = 96
-              Height = 13
-              Caption = 'OfferRewardEmote3'
-            end
-            object lbqtOfferRewardEmote4: TLabel
-              Left = 179
-              Top = 170
-              Width = 96
-              Height = 13
-              Caption = 'OfferRewardEmote4'
-            end
-            object lbqtPointMapId: TLabel
-              Left = 6
-              Top = 11
-              Width = 54
-              Height = 13
-              Caption = 'PointMapId'
-            end
-            object edqtPointX: TLabeledEdit
-              Left = 78
-              Top = 27
+              Left = 181
+              Top = 17
               Width = 90
-              Height = 21
-              EditLabel.Width = 52
-              EditLabel.Height = 13
-              EditLabel.Caption = 'edqtPointX'
-              TabOrder = 1
-            end
-            object edqtPointY: TLabeledEdit
-              Left = 179
-              Top = 30
-              Width = 90
-              Height = 21
-              EditLabel.Width = 52
-              EditLabel.Height = 13
-              EditLabel.Caption = 'edqtPointY'
-              TabOrder = 2
-            end
-            object edqtPointOpt: TLabeledEdit
-              Left = 280
-              Top = 30
-              Width = 90
-              Height = 21
-              EditLabel.Width = 62
-              EditLabel.Height = 13
-              EditLabel.Caption = 'edqtPointOpt'
-              TabOrder = 3
+              Height = 13
+              Caption = 'OfferRewardEmote'
             end
             object edqtIncompleteEmote: TJvComboEdit
-              Left = 78
-              Top = 224
+              Left = 90
+              Top = 157
               Width = 90
               Height = 21
               Hint = 
                 'Emote that creature show at request quest details, '#13#10'show incomp' +
                 'leted quest and completing quest'
-              ButtonWidth = 22
-              ClickKey = 13
-              Glyph.Data = {
-                36030000424D3603000000000000360000002800000010000000100000000100
-                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
-                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
-                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
-                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
-                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
-                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
-                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 8
-              OnButtonClick = GetEmote
-            end
-            object edqtCompleteEmote: TJvComboEdit
-              Left = 6
-              Top = 223
-              Width = 60
-              Height = 21
-              Hint = 
-                'Emote that creature show at request quest details, '#13#10'show incomp' +
-                'leted quest and completing quest'
-              ButtonWidth = 22
-              ClickKey = 13
-              Glyph.Data = {
-                36030000424D3603000000000000360000002800000010000000100000000100
-                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
-                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
-                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
-                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
-                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
-                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
-                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 9
-              OnButtonClick = GetEmote
-            end
-            object edqtCompleteScript: TLabeledEdit
-              Left = 280
-              Top = 224
-              Width = 90
-              Height = 21
-              EditLabel.Width = 92
-              EditLabel.Height = 13
-              EditLabel.Hint = 'id for Complete Script (quest_end_scripts)'
-              EditLabel.Caption = 'edqtCompleteScript'
-              TabOrder = 11
-            end
-            object edqtDetailsEmote1: TJvComboEdit
-              Left = 6
-              Top = 65
-              Width = 60
-              Height = 21
               ButtonWidth = 22
               ClickKey = 13
               Glyph.Data = {
@@ -4321,11 +4635,14 @@ object MainForm: TMainForm
               TabOrder = 4
               OnButtonClick = GetEmote
             end
-            object edqtDetailsEmote2: TJvComboEdit
-              Left = 6
-              Top = 105
-              Width = 60
+            object edqtCompleteEmote: TJvComboEdit
+              Left = 8
+              Top = 157
+              Width = 76
               Height = 21
+              Hint = 
+                'Emote that creature show at request quest details, '#13#10'show incomp' +
+                'leted quest and completing quest'
               ButtonWidth = 22
               ClickKey = 13
               Glyph.Data = {
@@ -4358,10 +4675,158 @@ object MainForm: TMainForm
               TabOrder = 5
               OnButtonClick = GetEmote
             end
-            object edqtDetailsEmote3: TJvComboEdit
-              Left = 6
-              Top = 145
+            object edqtDetailsEmote1: TJvComboEdit
+              Left = 8
+              Top = 32
               Width = 60
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 0
+              OnButtonClick = GetEmote
+            end
+            object edqtDetailsEmote2: TJvComboEdit
+              Left = 8
+              Top = 59
+              Width = 60
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 1
+              OnButtonClick = GetEmote
+            end
+            object edqtDetailsEmote3: TJvComboEdit
+              Left = 8
+              Top = 86
+              Width = 60
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 2
+              OnButtonClick = GetEmote
+            end
+            object edqtDetailsEmote4: TJvComboEdit
+              Left = 8
+              Top = 113
+              Width = 60
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 3
+              OnButtonClick = GetEmote
+            end
+            object edqtOfferRewardEmote1: TJvComboEdit
+              Left = 181
+              Top = 32
+              Width = 90
               Height = 21
               ButtonWidth = 22
               ClickKey = 13
@@ -4395,10 +4860,10 @@ object MainForm: TMainForm
               TabOrder = 6
               OnButtonClick = GetEmote
             end
-            object edqtDetailsEmote4: TJvComboEdit
-              Left = 6
-              Top = 185
-              Width = 60
+            object edqtOfferRewardEmote2: TJvComboEdit
+              Left = 181
+              Top = 59
+              Width = 90
               Height = 21
               ButtonWidth = 22
               ClickKey = 13
@@ -4432,83 +4897,9 @@ object MainForm: TMainForm
               TabOrder = 7
               OnButtonClick = GetEmote
             end
-            object edqtOfferRewardEmote1: TJvComboEdit
-              Left = 179
-              Top = 65
-              Width = 90
-              Height = 21
-              ButtonWidth = 22
-              ClickKey = 13
-              Glyph.Data = {
-                36030000424D3603000000000000360000002800000010000000100000000100
-                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
-                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
-                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
-                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
-                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
-                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
-                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 12
-              OnButtonClick = GetEmote
-            end
-            object edqtOfferRewardEmote2: TJvComboEdit
-              Left = 179
-              Top = 105
-              Width = 90
-              Height = 21
-              ButtonWidth = 22
-              ClickKey = 13
-              Glyph.Data = {
-                36030000424D3603000000000000360000002800000010000000100000000100
-                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
-                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
-                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
-                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
-                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
-                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
-                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 13
-              OnButtonClick = GetEmote
-            end
             object edqtOfferRewardEmote3: TJvComboEdit
-              Left = 179
-              Top = 145
+              Left = 181
+              Top = 86
               Width = 90
               Height = 21
               ButtonWidth = 22
@@ -4540,12 +4931,12 @@ object MainForm: TMainForm
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 14
+              TabOrder = 8
               OnButtonClick = GetEmote
             end
             object edqtOfferRewardEmote4: TJvComboEdit
-              Left = 179
-              Top = 185
+              Left = 181
+              Top = 113
               Width = 90
               Height = 21
               ButtonWidth = 22
@@ -4577,159 +4968,125 @@ object MainForm: TMainForm
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 15
+              TabOrder = 9
               OnButtonClick = GetEmote
             end
-            object edqtStartScript: TLabeledEdit
-              Left = 178
-              Top = 223
-              Width = 90
-              Height = 21
-              EditLabel.Width = 70
-              EditLabel.Height = 13
-              EditLabel.Hint = 'id for Start Script (quest_start_scripts)'
-              EditLabel.Caption = 'edqtStartScript'
-              TabOrder = 10
-            end
-            object edqtPointMapId: TJvComboEdit
-              Left = 6
-              Top = 27
-              Width = 60
-              Height = 21
-              ButtonWidth = 22
-              ClickKey = 13
-              Glyph.Data = {
-                36030000424D3603000000000000360000002800000010000000100000000100
-                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
-                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
-                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
-                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
-                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
-                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
-                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
-              TabOrder = 0
-              OnButtonClick = GetMap
-            end
             object edqtDetailsEmoteDelay1: TLabeledEdit
-              Left = 77
-              Top = 65
+              Left = 79
+              Top = 32
               Width = 90
               Height = 21
               Hint = 'DetailsEmoteDelay1'
-              EditLabel.Width = 116
+              EditLabel.Width = 27
               EditLabel.Height = 13
               EditLabel.Hint = 'DetailsEmoteDelay1'
-              EditLabel.Caption = 'edqtDetailsEmoteDelay1'
-              TabOrder = 16
+              EditLabel.Caption = 'Delay'
+              TabOrder = 10
             end
             object edqtDetailsEmoteDelay2: TLabeledEdit
-              Left = 77
-              Top = 105
+              Left = 79
+              Top = 59
               Width = 90
               Height = 21
               Hint = 'DetailsEmoteDelay2'
-              EditLabel.Width = 116
+              EditLabel.Width = 3
               EditLabel.Height = 13
               EditLabel.Hint = 'DetailsEmoteDelay2'
-              EditLabel.Caption = 'edqtDetailsEmoteDelay2'
-              TabOrder = 17
+              TabOrder = 11
             end
             object edqtDetailsEmoteDelay3: TLabeledEdit
-              Left = 77
-              Top = 145
+              Left = 79
+              Top = 86
               Width = 90
               Height = 21
               Hint = 'DetailsEmoteDelay3'
-              EditLabel.Width = 116
+              EditLabel.Width = 3
               EditLabel.Height = 13
               EditLabel.Hint = 'DetailsEmoteDelay3'
-              EditLabel.Caption = 'edqtDetailsEmoteDelay1'
-              TabOrder = 18
+              TabOrder = 12
             end
             object edqtDetailsEmoteDelay4: TLabeledEdit
-              Left = 77
-              Top = 185
+              Left = 79
+              Top = 113
               Width = 90
               Height = 21
               Hint = 'DetailsEmoteDelay4'
-              EditLabel.Width = 116
+              EditLabel.Width = 3
               EditLabel.Height = 13
               EditLabel.Hint = 'DetailsEmoteDelay4'
-              EditLabel.Caption = 'edqtDetailsEmoteDelay1'
-              TabOrder = 19
+              TabOrder = 13
             end
             object edqtOfferRewardEmoteDelay1: TLabeledEdit
-              Left = 280
-              Top = 65
+              Left = 282
+              Top = 32
               Width = 90
               Height = 21
               Hint = 'OfferRewardEmoteDelay1'
-              EditLabel.Width = 144
+              EditLabel.Width = 27
               EditLabel.Height = 13
               EditLabel.Hint = 'OfferRewardEmoteDelay1'
-              EditLabel.Caption = 'edqtOfferRewardEmoteDelay1'
-              TabOrder = 20
+              EditLabel.Caption = 'Delay'
+              TabOrder = 14
             end
             object edqtOfferRewardEmoteDelay2: TLabeledEdit
-              Left = 280
-              Top = 105
+              Left = 282
+              Top = 59
               Width = 90
               Height = 21
               Hint = 'OfferRewardEmoteDelay2'
-              EditLabel.Width = 144
+              EditLabel.Width = 3
               EditLabel.Height = 13
               EditLabel.Hint = 'OfferRewardEmoteDelay2'
-              EditLabel.Caption = 'edqtOfferRewardEmoteDelay2'
-              TabOrder = 21
+              TabOrder = 15
             end
             object edqtOfferRewardEmoteDelay3: TLabeledEdit
-              Left = 280
-              Top = 145
+              Left = 282
+              Top = 86
               Width = 90
               Height = 21
               Hint = 'OfferRewardEmoteDelay3'
-              EditLabel.Width = 144
+              EditLabel.Width = 3
               EditLabel.Height = 13
               EditLabel.Hint = 'OfferRewardEmoteDelay3'
-              EditLabel.Caption = 'edqtOfferRewardEmoteDelay3'
-              TabOrder = 22
+              TabOrder = 16
             end
             object edqtOfferRewardEmoteDelay4: TLabeledEdit
-              Left = 280
-              Top = 185
+              Left = 282
+              Top = 113
               Width = 90
               Height = 21
               Hint = 'OfferRewardEmoteDelay4'
-              EditLabel.Width = 144
+              EditLabel.Width = 3
               EditLabel.Height = 13
               EditLabel.Hint = 'OfferRewardEmoteDelay4'
-              EditLabel.Caption = 'edqtOfferRewardEmoteDelay4'
-              TabOrder = 23
+              TabOrder = 17
+            end
+            object edqtSoundAccept: TLabeledEdit
+              Left = 186
+              Top = 157
+              Width = 90
+              Height = 21
+              EditLabel.Width = 65
+              EditLabel.Height = 13
+              EditLabel.Caption = 'SoundAccept'
+              TabOrder = 18
+            end
+            object edqtSoundTurnIn: TLabeledEdit
+              Left = 287
+              Top = 157
+              Width = 90
+              Height = 21
+              EditLabel.Width = 62
+              EditLabel.Height = 13
+              EditLabel.Caption = 'SoundTurnIn'
+              TabOrder = 19
             end
           end
           object gbAreatrigger: TGroupBox
             Left = 455
-            Top = 501
-            Width = 385
-            Height = 116
+            Top = 437
+            Width = 534
+            Height = 188
             Caption = 'Other'
             TabOrder = 3
             object lbAreatrigger: TLabel
@@ -4745,6 +5102,13 @@ object MainForm: TMainForm
               Width = 60
               Height = 13
               Caption = 'SpecialFlags'
+            end
+            object lbqtPointMapId: TLabel
+              Left = 10
+              Top = 140
+              Width = 54
+              Height = 13
+              Caption = 'PointMapId'
             end
             object edqtAreatrigger: TJvComboEdit
               Left = 8
@@ -4879,13 +5243,103 @@ object MainForm: TMainForm
               EditLabel.Caption = 'BonusTalents'
               TabOrder = 6
             end
+            object edqtStartScript: TLabeledEdit
+              Left = 8
+              Top = 113
+              Width = 160
+              Height = 21
+              EditLabel.Width = 70
+              EditLabel.Height = 13
+              EditLabel.Hint = 'id for Start Script (quest_start_scripts)'
+              EditLabel.Caption = 'edqtStartScript'
+              TabOrder = 7
+            end
+            object edqtCompleteScript: TLabeledEdit
+              Left = 181
+              Top = 113
+              Width = 191
+              Height = 21
+              EditLabel.Width = 92
+              EditLabel.Height = 13
+              EditLabel.Hint = 'id for Complete Script (quest_end_scripts)'
+              EditLabel.Caption = 'edqtCompleteScript'
+              TabOrder = 8
+            end
+            object edqtPointMapId: TJvComboEdit
+              Left = 10
+              Top = 156
+              Width = 60
+              Height = 21
+              ButtonWidth = 22
+              ClickKey = 13
+              Glyph.Data = {
+                36030000424D3603000000000000360000002800000010000000100000000100
+                18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+              TabOrder = 9
+              OnButtonClick = GetMap
+            end
+            object edqtPointX: TLabeledEdit
+              Left = 82
+              Top = 156
+              Width = 90
+              Height = 21
+              EditLabel.Width = 52
+              EditLabel.Height = 13
+              EditLabel.Caption = 'edqtPointX'
+              TabOrder = 10
+            end
+            object edqtPointY: TLabeledEdit
+              Left = 183
+              Top = 159
+              Width = 90
+              Height = 21
+              EditLabel.Width = 52
+              EditLabel.Height = 13
+              EditLabel.Caption = 'edqtPointY'
+              TabOrder = 11
+            end
+            object edqtPointOpt: TLabeledEdit
+              Left = 284
+              Top = 159
+              Width = 90
+              Height = 21
+              EditLabel.Width = 62
+              EditLabel.Height = 13
+              EditLabel.Caption = 'edqtPointOpt'
+              TabOrder = 12
+            end
           end
         end
         object tsQuestGiver: TTabSheet
           Caption = 'Quest Givers'
           ImageIndex = 3
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbQuestGiverInfo: TLabel
             Left = 8
@@ -5025,7 +5479,7 @@ object MainForm: TMainForm
           object lvqtGiverTemplate: TJvListView
             Left = 8
             Top = 53
-            Width = 890
+            Width = 975
             Height = 151
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -5064,11 +5518,12 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object lvqtGiverLocation: TJvListView
             Left = 8
             Top = 229
-            Width = 890
+            Width = 975
             Height = 305
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -5140,13 +5595,15 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
         end
         object tsQuestTaker: TTabSheet
           Caption = 'Quest Takers'
           ImageIndex = 4
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbQuestTakerInfo: TLabel
             Left = 8
@@ -5286,7 +5743,7 @@ object MainForm: TMainForm
           object lvqtTakerTemplate: TJvListView
             Left = 8
             Top = 53
-            Width = 890
+            Width = 975
             Height = 151
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -5325,11 +5782,12 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object lvqtTakerLocation: TJvListView
             Left = 8
             Top = 229
-            Width = 890
+            Width = 975
             Height = 305
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -5381,13 +5839,15 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
         end
         object tsStartScript: TTabSheet
           Caption = 'Start Script'
           ImageIndex = 6
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object btssAdd: TSpeedButton
             Left = 784
@@ -5578,7 +6038,7 @@ object MainForm: TMainForm
           object lvqtStartScript: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 393
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -5672,6 +6132,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edsscommand: TJvComboEdit
             Left = 192
@@ -5910,8 +6371,9 @@ object MainForm: TMainForm
         object tsCompleteScript: TTabSheet
           Caption = 'Complete Script'
           ImageIndex = 7
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object btesAdd: TSpeedButton
             Left = 786
@@ -6104,7 +6566,7 @@ object MainForm: TMainForm
           object lvqtEndScript: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 393
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -6198,6 +6660,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edescommand: TJvComboEdit
             Left = 192
@@ -6436,11 +6899,12 @@ object MainForm: TMainForm
         object tsLocalesQuest: TTabSheet
           Caption = 'Locales Quest'
           ImageIndex = 9
+          ExplicitWidth = 907
           object gbLocalesQuest: TGroupBox
             Left = 3
             Top = 3
             Width = 870
-            Height = 478
+            Height = 486
             Caption = 'Locales'
             TabOrder = 0
             object l2Details: TLabel
@@ -6458,22 +6922,22 @@ object MainForm: TMainForm
               Caption = 'Objectives'
             end
             object l2EndText: TLabel
-              Left = 584
-              Top = 56
+              Left = 583
+              Top = 156
               Width = 40
               Height = 13
               Caption = 'EndText'
             end
             object l2RequestItemsText: TLabel
-              Left = 296
-              Top = 240
+              Left = 302
+              Top = 156
               Width = 86
               Height = 13
               Caption = 'RequestItemsText'
             end
             object l2OfferRewardText: TLabel
-              Left = 5
-              Top = 240
+              Left = 584
+              Top = 57
               Width = 81
               Height = 13
               Caption = 'OfferRewardText'
@@ -6481,7 +6945,7 @@ object MainForm: TMainForm
             object edlqTitle: TLabeledEdit
               Left = 3
               Top = 34
-              Width = 856
+              Width = 575
               Height = 21
               Hint = 'Title of the quest.'
               EditLabel.Width = 20
@@ -6492,8 +6956,8 @@ object MainForm: TMainForm
             object edlqDetails: TMemo
               Left = 3
               Top = 73
-              Width = 275
-              Height = 153
+              Width = 287
+              Height = 180
               Hint = 'Long quest'#39's description.'
               ScrollBars = ssVertical
               TabOrder = 1
@@ -6502,16 +6966,16 @@ object MainForm: TMainForm
               Left = 303
               Top = 75
               Width = 275
-              Height = 153
+              Height = 78
               Hint = 'Objectives of the quest.'
               ScrollBars = ssVertical
               TabOrder = 2
             end
             object edlqEndText: TMemo
-              Left = 584
-              Top = 72
+              Left = 583
+              Top = 175
               Width = 275
-              Height = 153
+              Height = 81
               Hint = 
                 'This text is indicated to the player, if you open your Questlog ' +
                 'and wars send to player ingame.'
@@ -6519,10 +6983,10 @@ object MainForm: TMainForm
               TabOrder = 3
             end
             object edlqOfferRewardText: TMemo
-              Left = 5
-              Top = 256
+              Left = 584
+              Top = 76
               Width = 275
-              Height = 182
+              Height = 77
               Hint = 
                 'First text send to the player by the NPC when completing the que' +
                 'st.'
@@ -6530,10 +6994,10 @@ object MainForm: TMainForm
               TabOrder = 4
             end
             object edlqRequestItemsText: TMemo
-              Left = 296
-              Top = 256
+              Left = 302
+              Top = 175
               Width = 275
-              Height = 182
+              Height = 78
               Hint = 
                 'This text ist send to player, yet did not terminate the Quest an' +
                 'd speak with NPC again!'
@@ -6541,8 +7005,8 @@ object MainForm: TMainForm
               TabOrder = 5
             end
             object edlqObjectiveText1: TLabeledEdit
-              Left = 584
-              Top = 296
+              Left = 4
+              Top = 317
               Width = 275
               Height = 21
               EditLabel.Width = 72
@@ -6551,8 +7015,8 @@ object MainForm: TMainForm
               TabOrder = 6
             end
             object edlqObjectiveText2: TLabeledEdit
-              Left = 584
-              Top = 336
+              Left = 303
+              Top = 317
               Width = 275
               Height = 21
               EditLabel.Width = 72
@@ -6561,8 +7025,8 @@ object MainForm: TMainForm
               TabOrder = 7
             end
             object edlqObjectiveText3: TLabeledEdit
-              Left = 584
-              Top = 376
+              Left = 3
+              Top = 357
               Width = 275
               Height = 21
               EditLabel.Width = 72
@@ -6571,8 +7035,8 @@ object MainForm: TMainForm
               TabOrder = 8
             end
             object edlqObjectiveText4: TLabeledEdit
-              Left = 584
-              Top = 416
+              Left = 303
+              Top = 357
               Width = 275
               Height = 21
               EditLabel.Width = 72
@@ -6581,14 +7045,54 @@ object MainForm: TMainForm
               TabOrder = 9
             end
             object edlqCompletedText: TLabeledEdit
-              Left = 583
-              Top = 256
-              Width = 275
+              Left = 3
+              Top = 277
+              Width = 574
               Height = 21
               EditLabel.Width = 71
               EditLabel.Height = 13
               EditLabel.Caption = 'CompletedText'
               TabOrder = 10
+            end
+            object edlqPortraitGiverName: TLabeledEdit
+              Left = 3
+              Top = 402
+              Width = 185
+              Height = 21
+              EditLabel.Width = 86
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitGiverName'
+              TabOrder = 11
+            end
+            object edlqPortraitGiverText: TLabeledEdit
+              Left = 194
+              Top = 402
+              Width = 384
+              Height = 21
+              EditLabel.Width = 79
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitGiverText'
+              TabOrder = 12
+            end
+            object edlqPortraitTurnInName: TLabeledEdit
+              Left = 3
+              Top = 445
+              Width = 185
+              Height = 21
+              EditLabel.Width = 92
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitTurnInName'
+              TabOrder = 13
+            end
+            object edlqPortraitTurnInText: TLabeledEdit
+              Left = 194
+              Top = 445
+              Width = 384
+              Height = 21
+              EditLabel.Width = 85
+              EditLabel.Height = 13
+              EditLabel.Caption = 'PortraitTurnInText'
+              TabOrder = 14
             end
           end
           object btlqShowFullLocalesScript: TButton
@@ -6605,12 +7109,13 @@ object MainForm: TMainForm
           Caption = 'SQL-Script Tab'
           ImageIndex = 2
           OnShow = tsScriptTabShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object btCopyToClipboard: TButton
-            Left = 761
-            Top = 508
+            Left = 852
+            Top = 595
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -6619,8 +7124,8 @@ object MainForm: TMainForm
             OnClick = btCopyToClipboardClick
           end
           object btExecuteScript: TButton
-            Left = 761
-            Top = 540
+            Left = 852
+            Top = 626
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -6630,9 +7135,9 @@ object MainForm: TMainForm
           end
           object meqtLog: TMemo
             Left = 8
-            Top = 472
-            Width = 738
-            Height = 97
+            Top = 504
+            Width = 823
+            Height = 147
             Anchors = [akLeft, akTop, akRight]
             ScrollBars = ssVertical
             TabOrder = 1
@@ -6640,8 +7145,8 @@ object MainForm: TMainForm
           object meqtScript: TMemo
             Left = 3
             Top = 9
-            Width = 891
-            Height = 457
+            Width = 976
+            Height = 489
             Anchors = [akLeft, akTop, akRight]
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clNavy
@@ -6658,26 +7163,32 @@ object MainForm: TMainForm
     object tsCreature: TTabSheet
       Caption = 'Creature'
       ImageIndex = 2
+      ExplicitWidth = 915
       object PageControl3: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
         ActivePage = tsSearchCreature
         Align = alClient
         MultiLine = True
         TabOrder = 0
+        ExplicitWidth = 915
         object tsSearchCreature: TTabSheet
           Caption = 'Search'
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object Panel4: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 105
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               105)
             object edSearchCreatureEntry: TLabeledEdit
               Left = 8
@@ -6704,7 +7215,7 @@ object MainForm: TMainForm
               OnChange = edSearchCreatureChange
             end
             object btSearchCreature: TBitBtn
-              Left = 823
+              Left = 908
               Top = 23
               Width = 75
               Height = 25
@@ -6759,9 +7270,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 4
               OnClick = btSearchCreatureClick
+              ExplicitLeft = 823
             end
             object btClearSearchCreature: TBitBtn
-              Left = 822
+              Left = 907
               Top = 56
               Width = 75
               Height = 25
@@ -6771,6 +7283,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 5
               OnClick = btClearSearchCreatureClick
+              ExplicitLeft = 822
             end
             object edSearchCreatureSubName: TLabeledEdit
               Left = 264
@@ -6883,8 +7396,8 @@ object MainForm: TMainForm
           object lvSearchCreature: TJvListView
             Left = 0
             Top = 105
-            Width = 907
-            Height = 452
+            Width = 992
+            Height = 470
             Align = alClient
             BorderStyle = bsNone
             Columns = <
@@ -6950,14 +7463,18 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
+            ExplicitHeight = 452
           end
           object Panel5: TPanel
             Left = 0
-            Top = 557
-            Width = 907
+            Top = 575
+            Width = 992
             Height = 61
             Align = alBottom
             TabOrder = 2
+            ExplicitTop = 557
+            ExplicitWidth = 907
             object btEditCreature: TBitBtn
               Left = 112
               Top = 10
@@ -7211,12 +7728,13 @@ object MainForm: TMainForm
             object StatusBarCreature: TStatusBar
               Left = 1
               Top = 41
-              Width = 905
+              Width = 990
               Height = 19
               Panels = <
                 item
                   Width = 300
                 end>
+              ExplicitWidth = 905
             end
             object btBrowseCreaturePopup: TBitBtn
               Left = 424
@@ -7246,6 +7764,9 @@ object MainForm: TMainForm
         object tsEditCreature: TTabSheet
           Caption = 'Creature Template'
           ImageIndex = 1
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object lbctmechanic_immune_mask: TLabel
             Left = 240
             Top = 454
@@ -9341,9 +9862,12 @@ object MainForm: TMainForm
         object tsCreatureLocation: TTabSheet
           Caption = 'Creature Location'
           ImageIndex = 2
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbclCreatureLocationHint: TLabel
             Left = 8
             Top = 8
@@ -9370,7 +9894,7 @@ object MainForm: TMainForm
           object lvclCreatureLocation: TJvListView
             Left = 3
             Top = 26
-            Width = 890
+            Width = 975
             Height = 350
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -9418,6 +9942,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edclguid: TLabeledEdit
             Left = 8
@@ -9626,7 +10151,7 @@ object MainForm: TMainForm
             OnClick = btScriptCreatureLocationCustomToAllClick
           end
           object btFullScriptCreatureLocation: TButton
-            Left = 688
+            Left = 773
             Top = 520
             Width = 210
             Height = 25
@@ -9637,6 +10162,7 @@ object MainForm: TMainForm
             Caption = 'Show FULL Creature Location Script'
             TabOrder = 22
             OnClick = btFullScriptCreatureLocationClick
+            ExplicitLeft = 688
           end
           object edclequipment_id: TLabeledEdit
             Left = 672
@@ -9748,13 +10274,16 @@ object MainForm: TMainForm
           Caption = 'Model Info'
           ImageIndex = 13
           OnShow = tsCreatureModelInfoShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lvCreatureModelSearch: TJvListView
             Left = 11
             Top = 50
-            Width = 886
+            Width = 971
             Height = 223
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -9803,20 +10332,22 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 886
           end
           object Panel24: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 50
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               50)
             object btCreatureModelSearch: TBitBtn
-              Left = 822
+              Left = 907
               Top = 16
               Width = 75
               Height = 25
@@ -9871,6 +10402,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 1
               OnClick = btCreatureModelSearchClick
+              ExplicitLeft = 822
             end
             object edCreatureModelSearch: TLabeledEdit
               Left = 9
@@ -9960,14 +10492,18 @@ object MainForm: TMainForm
           Caption = 'Equip Template'
           ImageIndex = 14
           OnShow = tsCreatureEquipTemplateShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object Panel23: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 50
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 0
+            ExplicitWidth = 907
             object lbceequipentry2: TLabel
               Left = 211
               Top = 4
@@ -10127,9 +10663,12 @@ object MainForm: TMainForm
         object tsCreatureLoot: TTabSheet
           Caption = 'Creature Loot'
           ImageIndex = 4
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcoitem: TLabel
             Left = 97
             Top = 476
@@ -10329,7 +10868,7 @@ object MainForm: TMainForm
           object lvcoCreatureLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -10398,6 +10937,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcoentry: TLabeledEdit
             Left = 9
@@ -10575,9 +11115,12 @@ object MainForm: TMainForm
         object tsPickpocketLoot: TTabSheet
           Caption = 'Pickpocket Loot'
           ImageIndex = 7
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcpitem: TLabel
             Left = 96
             Top = 474
@@ -10777,7 +11320,7 @@ object MainForm: TMainForm
           object lvcoPickpocketLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -10845,6 +11388,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcpentry: TLabeledEdit
             Left = 8
@@ -11022,9 +11566,12 @@ object MainForm: TMainForm
         object tsSkinLoot: TTabSheet
           Caption = 'Skin Loot'
           ImageIndex = 8
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcsitem: TLabel
             Left = 97
             Top = 475
@@ -11224,7 +11771,7 @@ object MainForm: TMainForm
           object lvcoSkinLoot: TJvListView
             Left = 3
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -11292,6 +11839,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcsentry: TLabeledEdit
             Left = 9
@@ -11469,9 +12017,12 @@ object MainForm: TMainForm
         object tsNPCVendor: TTabSheet
           Caption = 'NPC Vendor'
           ImageIndex = 5
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcvitem: TLabel
             Left = 96
             Top = 475
@@ -11668,7 +12219,7 @@ object MainForm: TMainForm
           object lvcvNPCVendor: TJvListView
             Left = 14
             Top = 34
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -11712,6 +12263,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcventry: TLabeledEdit
             Left = 8
@@ -11839,9 +12391,12 @@ object MainForm: TMainForm
         object tsNPCTrainer: TTabSheet
           Caption = 'NPC Trainer'
           ImageIndex = 6
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcrspell: TLabel
             Left = 96
             Top = 479
@@ -12038,7 +12593,7 @@ object MainForm: TMainForm
           object lvcrNPCTrainer: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -12087,6 +12642,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcrentry: TLabeledEdit
             Left = 8
@@ -12226,6 +12782,9 @@ object MainForm: TMainForm
           Caption = 'Creature Template Addon'
           ImageIndex = 16
           OnShow = tsCreatureTemplateAddonShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object lbcdCreatureTemplateAddonHint: TLabel
             Left = 8
             Top = 8
@@ -12368,6 +12927,9 @@ object MainForm: TMainForm
           Caption = 'Creature Addon'
           ImageIndex = 9
           OnShow = reaShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object lbcaCreatureAddonHint: TLabel
             Left = 8
             Top = 8
@@ -12509,6 +13071,9 @@ object MainForm: TMainForm
           Caption = 'NPC gossip'
           ImageIndex = 10
           OnShow = tsNPCgossipShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object lbHintNPCGossip: TLabel
             Left = 8
             Top = 8
@@ -12660,9 +13225,12 @@ object MainForm: TMainForm
         object tsCreatureMovement: TTabSheet
           Caption = 'Creature Movement'
           ImageIndex = 12
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbHintCreatureMovement: TLabel
             Left = 8
             Top = 8
@@ -12852,7 +13420,7 @@ object MainForm: TMainForm
           object lvcmMovement: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 345
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -12957,6 +13525,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object btShowCreatureMovementScript: TButton
             Left = 16
@@ -13188,6 +13757,9 @@ object MainForm: TMainForm
           Caption = 'On Kill Reputation'
           ImageIndex = 15
           OnShow = tsCreatureOnKillReputationShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object lbckRewOnKillRepFaction1: TLabel
             Left = 17
             Top = 64
@@ -13366,20 +13938,25 @@ object MainForm: TMainForm
           Caption = 'Involved in'
           ImageIndex = 11
           OnShow = tsCreatureUsedShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           object pcCreatureInfo: TPageControl
             Left = 0
             Top = 41
-            Width = 907
+            Width = 992
             Height = 417
             ActivePage = tsCreatureObjectiveOf
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             object tsCreatureStarts: TTabSheet
               Caption = 'Starts'
+              ExplicitWidth = 899
               object lvCreatureStarts: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -13428,15 +14005,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsCreatureEnds: TTabSheet
               Caption = 'Ends'
               ImageIndex = 1
+              ExplicitWidth = 899
               object lvCreatureEnds: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -13485,15 +14064,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsCreatureObjectiveOf: TTabSheet
               Caption = 'Objective of'
               ImageIndex = 2
+              ExplicitWidth = 899
               object lvCreatureObjectiveOf: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -13541,25 +14122,30 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
           end
           object Panel20: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 41
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 1
+            ExplicitWidth = 907
           end
         end
         object tsCreatureEventAI: TTabSheet
           Caption = 'Event AI'
           ImageIndex = 17
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcnevent_type: TLabel
             Left = 3
             Top = 347
@@ -13872,7 +14458,7 @@ object MainForm: TMainForm
             OnClick = btEventAIDelClick
           end
           object Button1: TButton
-            Left = 723
+            Left = 808
             Top = 575
             Width = 169
             Height = 25
@@ -13880,6 +14466,7 @@ object MainForm: TMainForm
             Caption = 'Show FULL EventAI Script'
             TabOrder = 22
             OnClick = Button1Click
+            ExplicitLeft = 723
           end
           object Button2: TButton
             Left = 688
@@ -13893,7 +14480,7 @@ object MainForm: TMainForm
           object lvcnEventAI: TJvListView
             Left = -4
             Top = 30
-            Width = 890
+            Width = 975
             Height = 278
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -14024,6 +14611,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcnid: TLabeledEdit
             Left = 3
@@ -14736,14 +15324,17 @@ object MainForm: TMainForm
           Caption = 'Script'
           ImageIndex = 3
           OnShow = tsCreatureScriptShow
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object mectScript: TMemo
             Left = 13
             Top = 9
-            Width = 891
-            Height = 457
+            Width = 976
+            Height = 481
             Anchors = [akLeft, akTop, akRight]
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clNavy
@@ -14756,16 +15347,16 @@ object MainForm: TMainForm
           end
           object mectLog: TMemo
             Left = 8
-            Top = 472
-            Width = 738
-            Height = 97
+            Top = 496
+            Width = 823
+            Height = 137
             Anchors = [akLeft, akTop, akRight]
             ScrollBars = ssVertical
             TabOrder = 1
           end
           object btCopyToClipboardCreature: TButton
-            Left = 761
-            Top = 508
+            Left = 852
+            Top = 577
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -14774,8 +15365,8 @@ object MainForm: TMainForm
             OnClick = btCopyToClipboardCreatureClick
           end
           object btExecuteCreatureScript: TButton
-            Left = 761
-            Top = 540
+            Left = 852
+            Top = 608
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -14787,11 +15378,14 @@ object MainForm: TMainForm
         object tsLocalesNPCText: TTabSheet
           Caption = 'Locales NPC Text'
           ImageIndex = 18
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           inline NPCTextLoc1: TNPCTextLoc
             Left = 0
             Top = 0
-            Width = 907
-            Height = 618
+            Width = 992
+            Height = 636
             Align = alClient
             TabOrder = 0
             ExplicitWidth = 907
@@ -14819,9 +15413,12 @@ object MainForm: TMainForm
         object tsCreatureMovementScript: TTabSheet
           Caption = 'Creature Movement Scripts'
           ImageIndex = 19
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object btcmsAdd: TSpeedButton
             Left = 784
             Top = 456
@@ -15205,7 +15802,7 @@ object MainForm: TMainForm
           object lvcmsCreatureMovementScript: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 393
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -15299,6 +15896,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcmsdataint2: TLabeledEdit
             Left = 359
@@ -15352,9 +15950,12 @@ object MainForm: TMainForm
         object tsNPCVendorTemplate: TTabSheet
           Caption = 'NPC Vendor Template'
           ImageIndex = 20
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object Label6: TLabel
             Left = 8
             Top = 8
@@ -15673,7 +16274,7 @@ object MainForm: TMainForm
           object lvcvtNPCVendor: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -15717,14 +16318,18 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
         end
         object tsNPCTrainerTemplate: TTabSheet
           Caption = 'NPC Trainer Template'
           ImageIndex = 21
+          ExplicitTop = 60
+          ExplicitWidth = 907
+          ExplicitHeight = 618
           DesignSize = (
-            907
-            618)
+            992
+            636)
           object lbcrtreqskill: TLabel
             Left = 288
             Top = 479
@@ -15921,7 +16526,7 @@ object MainForm: TMainForm
           object lvcrtNPCTrainer: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -15970,6 +16575,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edcrtentry: TLabeledEdit
             Left = 8
@@ -16109,35 +16715,40 @@ object MainForm: TMainForm
       object Panel3: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
+        ExplicitWidth = 915
       end
     end
     object tsGameObject: TTabSheet
       Caption = 'Game Object'
       ImageIndex = 3
+      ExplicitWidth = 915
       object PageControl4: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
         ActivePage = tsSearchGO
         Align = alClient
         TabOrder = 0
+        ExplicitWidth = 915
         object tsSearchGO: TTabSheet
           Caption = 'Search'
+          ExplicitWidth = 907
           object Panel6: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 105
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               105)
             object lbSearchGOtype: TLabel
               Left = 264
@@ -16178,7 +16789,7 @@ object MainForm: TMainForm
               OnChange = edSearchGOChange
             end
             object btSearchGO: TBitBtn
-              Left = 822
+              Left = 907
               Top = 24
               Width = 75
               Height = 25
@@ -16233,9 +16844,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 4
               OnClick = btSearchGOClick
+              ExplicitLeft = 822
             end
             object btClearSearchGO: TBitBtn
-              Left = 822
+              Left = 907
               Top = 56
               Width = 75
               Height = 25
@@ -16245,6 +16857,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 5
               OnClick = btClearSearchGOClick
+              ExplicitLeft = 822
             end
             object edSearchGOtype: TJvComboEdit
               Left = 264
@@ -16361,7 +16974,7 @@ object MainForm: TMainForm
           object lvSearchGO: TJvListView
             Left = 0
             Top = 105
-            Width = 907
+            Width = 992
             Height = 488
             Align = alClient
             BorderStyle = bsNone
@@ -16400,7 +17013,7 @@ object MainForm: TMainForm
             ViewStyle = vsReport
             OnChange = lvSearchGOChange
             OnDblClick = lvSearchGODblClick
-            ColumnsOrder = '0=60,1=180,2=180,3=50,4=50,5=194,6=193'
+            ColumnsOrder = '0=60,1=180,2=180,3=50,4=50,5=236,6=236'
             ExtendedColumns = <
               item
               end
@@ -16416,14 +17029,16 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
           end
           object Panel7: TPanel
             Left = 0
             Top = 593
-            Width = 907
+            Width = 992
             Height = 61
             Align = alBottom
             TabOrder = 2
+            ExplicitWidth = 907
             object btEditGO: TBitBtn
               Left = 112
               Top = 10
@@ -16677,12 +17292,13 @@ object MainForm: TMainForm
             object StatusBarGO: TStatusBar
               Left = 1
               Top = 41
-              Width = 905
+              Width = 990
               Height = 19
               Panels = <
                 item
                   Width = 300
                 end>
+              ExplicitWidth = 905
             end
             object btBrowseGOPopup: TBitBtn
               Left = 424
@@ -16712,6 +17328,7 @@ object MainForm: TMainForm
         object tsEditGO: TTabSheet
           Caption = 'GO Template'
           ImageIndex = 1
+          ExplicitWidth = 907
           object gbGO1: TGroupBox
             Left = 3
             Top = 6
@@ -17353,8 +17970,9 @@ object MainForm: TMainForm
         object tsGOLocation: TTabSheet
           Caption = 'GO Location'
           ImageIndex = 2
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbglGOLocationHint: TLabel
             Left = 8
@@ -17382,7 +18000,7 @@ object MainForm: TMainForm
           object lvglGOLocation: TJvListView
             Left = 3
             Top = 27
-            Width = 890
+            Width = 975
             Height = 390
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -17430,6 +18048,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edglguid: TLabeledEdit
             Left = 8
@@ -17580,7 +18199,7 @@ object MainForm: TMainForm
             TabOrder = 14
           end
           object btFullScriptGOLocation: TButton
-            Left = 697
+            Left = 782
             Top = 568
             Width = 201
             Height = 25
@@ -17588,6 +18207,7 @@ object MainForm: TMainForm
             Caption = 'Show FULL GO Location Script'
             TabOrder = 16
             OnClick = btFullScriptGOLocationClick
+            ExplicitLeft = 697
           end
           object edglmap: TJvComboEdit
             Left = 200
@@ -17679,8 +18299,9 @@ object MainForm: TMainForm
           Caption = 'GO Loot'
           ImageIndex = 4
           OnShow = tsGOLootShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbgoitem: TLabel
             Left = 97
@@ -17887,7 +18508,7 @@ object MainForm: TMainForm
           object lvgoGOLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 449
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -17955,6 +18576,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edgoentry: TLabeledEdit
             Left = 9
@@ -18133,8 +18755,9 @@ object MainForm: TMainForm
           Caption = 'GO Script'
           ImageIndex = 6
           OnShow = tsButtonScriptShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbhintGOButtonScript: TLabel
             Left = 8
@@ -18325,7 +18948,7 @@ object MainForm: TMainForm
           object lvgbButtonScript: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 393
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -18419,6 +19042,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edgbo: TLabeledEdit
             Left = 520
@@ -18667,20 +19291,23 @@ object MainForm: TMainForm
           Caption = 'Involved in'
           ImageIndex = 5
           OnShow = tsGOInvolvedInShow
+          ExplicitWidth = 907
           object pcGameObjectInfo: TPageControl
             Left = 0
             Top = 41
-            Width = 907
+            Width = 992
             Height = 417
             ActivePage = tsGOObjectiveOf
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             object tsGOStarts: TTabSheet
               Caption = 'Starts'
+              ExplicitWidth = 899
               object lvGameObjectStarts: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -18728,15 +19355,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsGOEnds: TTabSheet
               Caption = 'Ends'
               ImageIndex = 1
+              ExplicitWidth = 899
               object lvGameObjectEnds: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -18784,15 +19413,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsGOObjectiveOf: TTabSheet
               Caption = 'Objective of'
               ImageIndex = 2
+              ExplicitWidth = 899
               object lvGameObjectObjectiveOf: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -18840,31 +19471,34 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
           end
           object Panel21: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 41
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 1
+            ExplicitWidth = 907
           end
         end
         object tsGOScript: TTabSheet
           Caption = 'Script'
           ImageIndex = 3
           OnShow = tsGOScriptShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object megoScript: TMemo
             Left = 8
             Top = 8
-            Width = 891
-            Height = 457
+            Width = 976
+            Height = 498
             Anchors = [akLeft, akTop, akRight]
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clNavy
@@ -18877,16 +19511,16 @@ object MainForm: TMainForm
           end
           object megoLog: TMemo
             Left = 8
-            Top = 472
-            Width = 738
-            Height = 97
+            Top = 512
+            Width = 823
+            Height = 139
             Anchors = [akLeft, akTop, akRight]
             ScrollBars = ssVertical
             TabOrder = 1
           end
           object btCopyToClipboardGO: TButton
-            Left = 761
-            Top = 508
+            Left = 852
+            Top = 595
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -18895,8 +19529,8 @@ object MainForm: TMainForm
             OnClick = btCopyToClipboardGOClick
           end
           object btExecuteGOScript: TButton
-            Left = 761
-            Top = 540
+            Left = 852
+            Top = 626
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -18909,44 +19543,50 @@ object MainForm: TMainForm
       object Panel8: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
+        ExplicitWidth = 915
       end
     end
     object tsItem: TTabSheet
       Caption = 'Item'
       ImageIndex = 3
+      ExplicitWidth = 915
       object Panel9: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitWidth = 915
       end
       object PageControl5: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
         ActivePage = tsSearchItem
         Align = alClient
         TabOrder = 1
+        ExplicitWidth = 915
         object tsSearchItem: TTabSheet
           Caption = 'Search'
+          ExplicitWidth = 907
           object Panel10: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 105
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               105)
             object lbSearchItemSubClass: TLabel
               Left = 308
@@ -19015,7 +19655,7 @@ object MainForm: TMainForm
               OnChange = edSearchItemChange
             end
             object btSearchItem: TBitBtn
-              Left = 822
+              Left = 907
               Top = 24
               Width = 75
               Height = 25
@@ -19070,9 +19710,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 7
               OnClick = btSearchItemClick
+              ExplicitLeft = 822
             end
             object btClearSearchItem: TBitBtn
-              Left = 822
+              Left = 907
               Top = 56
               Width = 75
               Height = 25
@@ -19082,6 +19723,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 8
               OnClick = btClearSearchItemClick
+              ExplicitLeft = 822
             end
             object edSearchItemClass: TJvComboEdit
               Left = 223
@@ -19325,7 +19967,7 @@ object MainForm: TMainForm
           object lvSearchItem: TJvListView
             Left = 0
             Top = 105
-            Width = 907
+            Width = 992
             Height = 488
             Align = alClient
             BorderStyle = bsNone
@@ -19401,14 +20043,16 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
           end
           object Panel11: TPanel
             Left = 0
             Top = 593
-            Width = 907
+            Width = 992
             Height = 61
             Align = alBottom
             TabOrder = 2
+            ExplicitWidth = 907
             object btEditItem: TBitBtn
               Left = 112
               Top = 10
@@ -19662,12 +20306,13 @@ object MainForm: TMainForm
             object StatusBarItem: TStatusBar
               Left = 1
               Top = 41
-              Width = 905
+              Width = 990
               Height = 19
               Panels = <
                 item
                   Width = 300
                 end>
+              ExplicitWidth = 905
             end
             object btBrowseItemPopup: TBitBtn
               Left = 424
@@ -19697,6 +20342,7 @@ object MainForm: TMainForm
         object tsItemTemplate: TTabSheet
           Caption = 'Item Template'
           ImageIndex = 1
+          ExplicitWidth = 907
           object lbitentry: TLabel
             Left = 8
             Top = 2
@@ -22843,8 +23489,9 @@ object MainForm: TMainForm
           Caption = 'Item Loot'
           ImageIndex = 4
           OnShow = tsItemLootShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbilitem: TLabel
             Left = 96
@@ -23051,7 +23698,7 @@ object MainForm: TMainForm
           object lvitItemLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -23119,6 +23766,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edilentry: TLabeledEdit
             Left = 8
@@ -23297,8 +23945,9 @@ object MainForm: TMainForm
           Caption = 'Disenchant Loot'
           ImageIndex = 4
           OnShow = tsDisenchantLootShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbiditem: TLabel
             Left = 96
@@ -23505,7 +24154,7 @@ object MainForm: TMainForm
           object lvitDisLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -23573,6 +24222,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edidentry: TLabeledEdit
             Left = 8
@@ -23751,8 +24401,9 @@ object MainForm: TMainForm
           Caption = 'Prospecting Loot'
           ImageIndex = 5
           OnShow = tsProspectingLootShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbipitem: TLabel
             Left = 96
@@ -23959,7 +24610,7 @@ object MainForm: TMainForm
           object lvitProsLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -24027,6 +24678,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edipentry: TLabeledEdit
             Left = 8
@@ -24205,8 +24857,9 @@ object MainForm: TMainForm
           Caption = 'Milling Loot'
           ImageIndex = 9
           OnShow = tsMillingLootShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object Label2: TLabel
             Left = 96
@@ -24404,7 +25057,7 @@ object MainForm: TMainForm
           object lvitMillingLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -24472,6 +25125,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edimitem: TJvComboEdit
             Left = 96
@@ -24649,8 +25303,9 @@ object MainForm: TMainForm
         object tsReferenceLoot: TTabSheet
           Caption = 'Reference Loot'
           ImageIndex = 10
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object Label1: TLabel
             Left = 96
@@ -24855,7 +25510,7 @@ object MainForm: TMainForm
           object lvitReferenceLoot: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -24923,6 +25578,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object ediritem: TJvComboEdit
             Left = 96
@@ -25144,8 +25800,9 @@ object MainForm: TMainForm
           Caption = 'Enchantment'
           ImageIndex = 6
           OnShow = tsEnchantmentShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object btieEnchAdd: TSpeedButton
             Left = 736
@@ -25340,7 +25997,7 @@ object MainForm: TMainForm
           object lvitEnchantment: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -25369,6 +26026,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edieentry: TLabeledEdit
             Left = 8
@@ -25423,10 +26081,11 @@ object MainForm: TMainForm
           Caption = 'Looted From'
           ImageIndex = 7
           OnShow = tsItemLootedFromShow
+          ExplicitWidth = 907
           object lvitItemLootedFrom: TJvListView
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 654
             Align = alClient
             BorderStyle = bsNone
@@ -25491,35 +26150,40 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
           end
         end
         object tsItemInvolvedIn: TTabSheet
           Caption = 'Involved in'
           ImageIndex = 8
           OnShow = tsItemInvolvedInShow
+          ExplicitWidth = 907
           object Panel22: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 41
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 0
+            ExplicitWidth = 907
           end
           object pcItemInfo: TPageControl
             Left = 0
             Top = 41
-            Width = 907
+            Width = 992
             Height = 417
             ActivePage = tsItemRewardFrom
             Align = alTop
             TabOrder = 1
+            ExplicitWidth = 907
             object tsItemStarts: TTabSheet
               Caption = 'Starts'
+              ExplicitWidth = 899
               object lvItemStarts: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -25567,15 +26231,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsItemObjectiveOf: TTabSheet
               Caption = 'Objective of'
               ImageIndex = 2
+              ExplicitWidth = 899
               object lvItemObjectiveOf: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -25623,15 +26289,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsItemSourceFor: TTabSheet
               Caption = 'Source for'
               ImageIndex = 2
+              ExplicitWidth = 899
               object lvItemSourceFor: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -25679,15 +26347,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsItemProvidedFor: TTabSheet
               Caption = 'Provided for'
               ImageIndex = 3
+              ExplicitWidth = 899
               object lvItemProvidedFor: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -25735,15 +26405,17 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
             object tsItemRewardFrom: TTabSheet
               Caption = 'Reward from'
               ImageIndex = 4
+              ExplicitWidth = 899
               object lvItemRewardFrom: TJvListView
                 Left = 0
                 Top = 0
-                Width = 899
+                Width = 984
                 Height = 389
                 Align = alClient
                 Columns = <
@@ -25791,6 +26463,7 @@ object MainForm: TMainForm
                   end
                   item
                   end>
+                ExplicitWidth = 899
               end
             end
           end
@@ -25799,14 +26472,15 @@ object MainForm: TMainForm
           Caption = 'Script'
           ImageIndex = 3
           OnShow = tsItemScriptShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object meitScript: TMemo
             Left = 8
             Top = 8
-            Width = 891
-            Height = 457
+            Width = 976
+            Height = 506
             Anchors = [akLeft, akTop, akRight]
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clNavy
@@ -25819,16 +26493,16 @@ object MainForm: TMainForm
           end
           object meitLog: TMemo
             Left = 8
-            Top = 472
-            Width = 738
-            Height = 97
+            Top = 520
+            Width = 823
+            Height = 131
             Anchors = [akLeft, akTop, akRight]
             ScrollBars = ssVertical
             TabOrder = 1
           end
           object btCopyToClipboardItem: TButton
-            Left = 761
-            Top = 508
+            Left = 852
+            Top = 595
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -25837,8 +26511,8 @@ object MainForm: TMainForm
             OnClick = btCopyToClipboardItemClick
           end
           object btExecuteItemScript: TButton
-            Left = 761
-            Top = 540
+            Left = 852
+            Top = 626
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -25852,28 +26526,32 @@ object MainForm: TMainForm
     object tsOther: TTabSheet
       Caption = 'Other'
       ImageIndex = 4
+      ExplicitWidth = 915
       object Panel12: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitWidth = 915
       end
       object PageControl6: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
         ActivePage = tsFishingLoot
         Align = alClient
         TabOrder = 1
+        ExplicitWidth = 915
         object tsFishingLoot: TTabSheet
           Caption = 'Fishing Loot'
           ImageIndex = 4
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbotitem: TLabel
             Left = 96
@@ -26085,7 +26763,7 @@ object MainForm: TMainForm
           object lvotFishingLoot: TJvListView
             Left = 8
             Top = 72
-            Width = 890
+            Width = 975
             Height = 409
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -26153,6 +26831,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edotChanceOrQuestChance: TLabeledEdit
             Left = 9
@@ -26403,10 +27082,11 @@ object MainForm: TMainForm
         object tsPageText: TTabSheet
           Caption = 'Page Text'
           ImageIndex = 2
+          ExplicitWidth = 907
           object lvSearchPageText: TJvListView
             Left = 0
             Top = 89
-            Width = 907
+            Width = 992
             Height = 347
             Align = alClient
             BorderStyle = bsNone
@@ -26438,19 +27118,21 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
           end
           object GroupBox1: TGroupBox
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 89
             Align = alTop
             TabOrder = 1
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               89)
             object btClearSearchPageText: TBitBtn
-              Left = 822
+              Left = 907
               Top = 56
               Width = 75
               Height = 25
@@ -26460,9 +27142,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 4
               OnClick = btClearClick
+              ExplicitLeft = 822
             end
             object btSearchPageText: TBitBtn
-              Left = 822
+              Left = 907
               Top = 24
               Width = 75
               Height = 25
@@ -26517,6 +27200,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 3
               OnClick = btSearchPageTextClick
+              ExplicitLeft = 822
             end
             object edSearchPageTextNextPage: TLabeledEdit
               Left = 536
@@ -26552,13 +27236,14 @@ object MainForm: TMainForm
           object Panel13: TPanel
             Left = 0
             Top = 436
-            Width = 907
+            Width = 992
             Height = 218
             Align = alBottom
             BevelOuter = bvNone
             TabOrder = 2
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               218)
             object lbptentry: TLabel
               Left = 8
@@ -26690,11 +27375,12 @@ object MainForm: TMainForm
             object edpttext: TMemo
               Left = 88
               Top = 33
-              Width = 809
+              Width = 894
               Height = 176
               Anchors = [akLeft, akTop, akRight, akBottom]
               ScrollBars = ssVertical
               TabOrder = 2
+              ExplicitWidth = 809
             end
             object btScriptPageText: TButton
               Left = 8
@@ -26711,18 +27397,20 @@ object MainForm: TMainForm
         object tsGameEvents: TTabSheet
           Caption = 'Game Events'
           ImageIndex = 3
+          ExplicitWidth = 907
           object GroupBox2: TGroupBox
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 89
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               89)
             object btClearSearchGameEvent: TBitBtn
-              Left = 822
+              Left = 907
               Top = 56
               Width = 75
               Height = 25
@@ -26732,9 +27420,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 0
               OnClick = btClearClick
+              ExplicitLeft = 822
             end
             object btSearchGameEvent: TBitBtn
-              Left = 822
+              Left = 907
               Top = 24
               Width = 75
               Height = 25
@@ -26789,6 +27478,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 1
               OnClick = btSearchGameEventClick
+              ExplicitLeft = 822
             end
             object edSearchGameEventDesc: TLabeledEdit
               Left = 96
@@ -26814,13 +27504,14 @@ object MainForm: TMainForm
           object pnSelectedEventInfo: TPanel
             Left = 0
             Top = 362
-            Width = 907
+            Width = 992
             Height = 292
             Align = alBottom
             Enabled = False
             TabOrder = 1
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               292)
             object edGameEventCreatureHint: TLabel
               Left = 8
@@ -27365,7 +28056,7 @@ object MainForm: TMainForm
               OnButtonClick = edgeGOguidButtonClick
             end
             object btScriptGameEvent: TButton
-              Left = 680
+              Left = 765
               Top = 256
               Width = 217
               Height = 25
@@ -27374,19 +28065,21 @@ object MainForm: TMainForm
               Enabled = False
               TabOrder = 4
               OnClick = btScriptFishingLootClick
+              ExplicitLeft = 680
             end
           end
           object Panel17: TPanel
             Left = 0
             Top = 89
-            Width = 907
+            Width = 992
             Height = 273
             Align = alClient
             TabOrder = 2
+            ExplicitWidth = 907
             object lvSearchGameEvent: TJvListView
               Left = 1
               Top = 1
-              Width = 905
+              Width = 990
               Height = 212
               Align = alClient
               BorderStyle = bsNone
@@ -27443,15 +28136,17 @@ object MainForm: TMainForm
                 end
                 item
                 end>
+              ExplicitWidth = 905
             end
             object Panel18: TPanel
               Left = 1
               Top = 213
-              Width = 905
+              Width = 990
               Height = 59
               Align = alBottom
               BevelOuter = bvNone
               TabOrder = 1
+              ExplicitWidth = 905
               object btGameEventDel: TSpeedButton
                 Left = 843
                 Top = 27
@@ -27716,14 +28411,15 @@ object MainForm: TMainForm
           Caption = 'Script'
           ImageIndex = 3
           OnShow = tsOtherScriptShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object meotScript: TMemo
             Left = 8
             Top = 8
-            Width = 891
-            Height = 457
+            Width = 976
+            Height = 506
             Anchors = [akLeft, akTop, akRight]
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clNavy
@@ -27736,16 +28432,16 @@ object MainForm: TMainForm
           end
           object meotLog: TMemo
             Left = 8
-            Top = 472
-            Width = 738
-            Height = 97
+            Top = 520
+            Width = 823
+            Height = 131
             Anchors = [akLeft, akTop, akRight]
             ScrollBars = ssVertical
             TabOrder = 1
           end
           object btCopyToClipboardOther: TButton
-            Left = 761
-            Top = 508
+            Left = 852
+            Top = 595
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -27754,8 +28450,8 @@ object MainForm: TMainForm
             OnClick = btCopyToClipboardOtherClick
           end
           object btExecuteOtherScript: TButton
-            Left = 761
-            Top = 540
+            Left = 852
+            Top = 626
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -27769,10 +28465,11 @@ object MainForm: TMainForm
     object tsChars: TTabSheet
       Caption = 'Character'
       ImageIndex = 6
+      ExplicitWidth = 915
       object Panel1: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
@@ -27780,26 +28477,30 @@ object MainForm: TMainForm
           'This is alpha character editor. Use it at your own risk, and mak' +
           'e sure you have backup!'
         TabOrder = 0
+        ExplicitWidth = 915
       end
       object PageControl8: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
         ActivePage = tsCharSearch
         Align = alClient
         TabOrder = 1
+        ExplicitWidth = 915
         object tsCharSearch: TTabSheet
           Caption = 'Search'
+          ExplicitWidth = 907
           object Panel16: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 105
             Align = alTop
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               105)
             object edCharGuid: TLabeledEdit
               Left = 8
@@ -27826,7 +28527,7 @@ object MainForm: TMainForm
               OnChange = edSearchCreatureChange
             end
             object btCharSearch: TBitBtn
-              Left = 822
+              Left = 907
               Top = 24
               Width = 75
               Height = 25
@@ -27881,9 +28582,10 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 2
               OnClick = btCharSearchClick
+              ExplicitLeft = 822
             end
             object btCharClear: TBitBtn
-              Left = 822
+              Left = 907
               Top = 56
               Width = 75
               Height = 25
@@ -27893,6 +28595,7 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 3
               OnClick = btCharClearClick
+              ExplicitLeft = 822
             end
             object edCharAccount: TLabeledEdit
               Left = 88
@@ -27911,7 +28614,7 @@ object MainForm: TMainForm
           object lvSearchChar: TJvListView
             Left = 0
             Top = 105
-            Width = 907
+            Width = 992
             Height = 530
             Align = alClient
             BorderStyle = bsNone
@@ -27961,23 +28664,26 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 907
           end
           object StatusBarChar: TStatusBar
             Left = 0
             Top = 635
-            Width = 907
+            Width = 992
             Height = 19
             Panels = <
               item
                 Width = 50
               end>
+            ExplicitWidth = 907
           end
         end
         object tsCharacter: TTabSheet
           Caption = 'Character'
           ImageIndex = 1
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object lbhtdata: TLabel
             Left = 19
@@ -28293,7 +28999,7 @@ object MainForm: TMainForm
           object edhtdata: TJvComboEdit
             Left = 19
             Top = 100
-            Width = 873
+            Width = 958
             Height = 21
             Anchors = [akLeft, akTop, akRight]
             ButtonWidth = 22
@@ -28327,6 +29033,7 @@ object MainForm: TMainForm
               FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
             TabOrder = 27
             OnButtonClick = edhtdataButtonClick
+            ExplicitWidth = 873
           end
           object edhtrace: TJvComboEdit
             Left = 374
@@ -28579,8 +29286,9 @@ object MainForm: TMainForm
         object tsCharacterInventory: TTabSheet
           Caption = 'Inventory'
           ImageIndex = 3
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object btCharInvDel: TSpeedButton
             Left = 800
@@ -28790,7 +29498,7 @@ object MainForm: TMainForm
           object lvCharacterInventory: TJvListView
             Left = 8
             Top = 32
-            Width = 890
+            Width = 975
             Height = 434
             Anchors = [akLeft, akTop, akRight]
             Columns = <
@@ -28834,6 +29542,7 @@ object MainForm: TMainForm
               end
               item
               end>
+            ExplicitWidth = 890
           end
           object edhiguid: TLabeledEdit
             Left = 8
@@ -28917,14 +29626,15 @@ object MainForm: TMainForm
           Caption = 'Script'
           ImageIndex = 2
           OnShow = tsCharacterScriptShow
+          ExplicitWidth = 907
           DesignSize = (
-            907
+            992
             654)
           object mehtScript: TMemo
             Left = 8
             Top = 8
-            Width = 891
-            Height = 457
+            Width = 976
+            Height = 506
             Anchors = [akLeft, akTop, akRight]
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clNavy
@@ -28937,16 +29647,16 @@ object MainForm: TMainForm
           end
           object mehtLog: TMemo
             Left = 8
-            Top = 472
-            Width = 738
-            Height = 97
+            Top = 520
+            Width = 823
+            Height = 131
             Anchors = [akLeft, akTop, akRight]
             ScrollBars = ssVertical
             TabOrder = 1
           end
           object btCopyToClipboardChar: TButton
-            Left = 761
-            Top = 508
+            Left = 852
+            Top = 595
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -28955,8 +29665,8 @@ object MainForm: TMainForm
             OnClick = btCopyToClipboardCharClick
           end
           object btExecuteScriptChar: TButton
-            Left = 761
-            Top = 540
+            Left = 852
+            Top = 626
             Width = 137
             Height = 25
             Anchors = [akTop, akRight]
@@ -28970,38 +29680,43 @@ object MainForm: TMainForm
     object tsSQL: TTabSheet
       Caption = 'SQL'
       ImageIndex = 5
+      ExplicitWidth = 915
       object Panel14: TPanel
         Left = 0
         Top = 0
-        Width = 915
+        Width = 1000
         Height = 25
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 0
+        ExplicitWidth = 915
       end
       object PageControl7: TPageControl
         Left = 0
         Top = 25
-        Width = 915
+        Width = 1000
         Height = 682
         ActivePage = tsSQL1
         Align = alClient
         TabOrder = 1
+        ExplicitWidth = 915
         object tsSQL1: TTabSheet
           Caption = 'Recordset1'
+          ExplicitWidth = 907
           object Panel15: TPanel
             Left = 0
             Top = 0
-            Width = 907
+            Width = 992
             Height = 113
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 0
+            ExplicitWidth = 907
             DesignSize = (
-              907
+              992
               113)
             object btSQLOpen: TBitBtn
-              Left = 824
+              Left = 909
               Top = 8
               Width = 75
               Height = 25
@@ -29011,11 +29726,12 @@ object MainForm: TMainForm
               ParentDoubleBuffered = False
               TabOrder = 0
               OnClick = btSQLOpenClick
+              ExplicitLeft = 824
             end
             object SQLEdit: TMemo
               Left = 8
               Top = 8
-              Width = 809
+              Width = 894
               Height = 89
               Anchors = [akLeft, akTop, akRight]
               Font.Charset = RUSSIAN_CHARSET
@@ -29031,12 +29747,13 @@ object MainForm: TMainForm
               ParentFont = False
               ScrollBars = ssVertical
               TabOrder = 1
+              ExplicitWidth = 809
             end
           end
           object JvDBGrid1: TJvDBGrid
             Left = 0
             Top = 113
-            Width = 907
+            Width = 992
             Height = 541
             Align = alClient
             Ctl3D = False
@@ -29215,8 +29932,8 @@ object MainForm: TMainForm
     Top = 9
   end
   object pmCreature: TPopupMenu
-    Left = 753
-    Top = 586
+    Left = 937
+    Top = 122
     object nEditCreature: TMenuItem
       Caption = 'Edit Creature'
       OnClick = btEditCreatureClick
@@ -29241,8 +29958,8 @@ object MainForm: TMainForm
     end
   end
   object pmGO: TPopupMenu
-    Left = 689
-    Top = 586
+    Left = 873
+    Top = 122
     object nEditGO: TMenuItem
       Caption = 'Edit GO'
       OnClick = btEditCreatureClick
@@ -29264,8 +29981,8 @@ object MainForm: TMainForm
   end
   object pmBrowseSite: TPopupMenu
     AutoPopup = False
-    Left = 657
-    Top = 586
+    Left = 841
+    Top = 122
     object pmwowhead: TMenuItem
       Caption = 'wowhead'
       OnClick = pmSiteClick
@@ -29288,8 +30005,8 @@ object MainForm: TMainForm
     end
   end
   object pmItem: TPopupMenu
-    Left = 721
-    Top = 586
+    Left = 905
+    Top = 122
     object nEditItem: TMenuItem
       Caption = 'Edit Item'
       OnClick = btEditItemClick
@@ -29311,18 +30028,18 @@ object MainForm: TMainForm
   end
   object DataSource: TDataSource
     DataSet = MySQLQuery
-    Left = 721
-    Top = 554
+    Left = 905
+    Top = 90
   end
   object MySQLQuery: TZQuery
     Connection = MyMangosConnection
     Params = <>
-    Left = 753
-    Top = 554
+    Left = 937
+    Top = 90
   end
   object ActionList1: TActionList
-    Left = 688
-    Top = 553
+    Left = 872
+    Top = 89
     object BrowseURL1: TBrowseURL
       Category = 'Internet'
       Caption = '&Browse URL'
@@ -29338,8 +30055,8 @@ object MainForm: TMainForm
     ProxyIgnoreList = '<local>'
     OnDoneStream = JvHttpUrlGrabberDoneStream
     OnError = JvHttpUrlGrabberError
-    Left = 656
-    Top = 553
+    Left = 840
+    Top = 89
   end
   object ZSQLProcessor: TZSQLProcessor
     Params = <>
@@ -29351,7 +30068,7 @@ object MainForm: TMainForm
   object Timer1: TTimer
     Interval = 60000
     OnTimer = Timer1Timer
-    Left = 784
-    Top = 554
+    Left = 968
+    Top = 90
   end
 end

@@ -640,14 +640,6 @@ type
     editspellid_3: TJvComboEdit;
     editspellid_4: TJvComboEdit;
     editspellid_5: TJvComboEdit;
-    gbitDamage: TGroupBox;
-    lbitdmg_type: TLabel;
-    editdmg_min1: TLabeledEdit;
-    editdmg_max1: TLabeledEdit;
-    editdmg_min2: TLabeledEdit;
-    editdmg_max2: TLabeledEdit;
-    editdmg_type1: TJvComboEdit;
-    editdmg_type2: TJvComboEdit;
     gbitstats: TGroupBox;
     lbitstat_type: TLabel;
     editstat_value1: TLabeledEdit;
@@ -670,13 +662,6 @@ type
     editstat_type8: TJvComboEdit;
     editstat_type9: TJvComboEdit;
     editstat_type10: TJvComboEdit;
-    gbitResistance: TGroupBox;
-    editholy_res: TLabeledEdit;
-    editfire_res: TLabeledEdit;
-    editnature_res: TLabeledEdit;
-    editfrost_res: TLabeledEdit;
-    editshadow_res: TLabeledEdit;
-    editarcane_res: TLabeledEdit;
     gbitsocket: TGroupBox;
     editsocketColor_1: TLabeledEdit;
     editsocketContent_1: TLabeledEdit;
@@ -706,11 +691,8 @@ type
     gbitAmmo: TGroupBox;
     lbitbonding: TLabel;
     lbititemset: TLabel;
-    editarmor: TLabeledEdit;
     editdelay: TLabeledEdit;
-    editammo_type: TLabeledEdit;
     editRangedModRange: TLabeledEdit;
-    editblock: TLabeledEdit;
     editMaxDurability: TLabeledEdit;
     editbonding: TJvComboEdit;
     edititemset: TJvComboEdit;
@@ -1335,7 +1317,6 @@ type
     edqtZoneOrSort: TJvComboEdit;
     rbqtQuestSort: TRadioButton;
     rbqtZoneID: TRadioButton;
-    edctPetSpellDataId: TLabeledEdit;
     edqtRewMailTemplateId: TLabeledEdit;
     edqtRewMailDelaySecs: TLabeledEdit;
     edctdifficulty_entry_1: TJvComboEdit;
@@ -1370,9 +1351,7 @@ type
     edlqObjectiveText4: TLabeledEdit;
     btlqShowFullLocalesScript: TButton;
     editScalingStatDistribution: TLabeledEdit;
-    editScalingStatValue: TLabeledEdit;
     editItemLimitCategory: TLabeledEdit;
-    editStatsCount: TLabeledEdit;
     edqtPlayersSlain: TLabeledEdit;
     edqtBonusTalents: TLabeledEdit;
     tsMillingLoot: TTabSheet;
@@ -1494,8 +1473,6 @@ type
     gbGOgolds: TGroupBox;
     edgtmaxgold: TLabeledEdit;
     edgtmingold: TLabeledEdit;
-    lbctflags_extra: TLabel;
-    edctflags_extra: TJvComboEdit;
     edgbdatalong3: TLabeledEdit;
     edgbdatalong4: TLabeledEdit;
     edgbdata_flags: TLabeledEdit;
@@ -1642,6 +1619,39 @@ type
     edlqPortraitGiverText: TLabeledEdit;
     edlqPortraitTurnInName: TLabeledEdit;
     edlqPortraitTurnInText: TLabeledEdit;
+    editstat_unk1_1: TLabeledEdit;
+    editstat_unk1_2: TLabeledEdit;
+    editstat_unk1_3: TLabeledEdit;
+    editstat_unk1_4: TLabeledEdit;
+    editstat_unk1_5: TLabeledEdit;
+    editstat_unk1_6: TLabeledEdit;
+    editstat_unk1_7: TLabeledEdit;
+    editstat_unk1_8: TLabeledEdit;
+    editstat_unk1_9: TLabeledEdit;
+    editstat_unk1_10: TLabeledEdit;
+    editstat_unk2_1: TLabeledEdit;
+    editstat_unk2_2: TLabeledEdit;
+    editstat_unk2_3: TLabeledEdit;
+    editstat_unk2_4: TLabeledEdit;
+    editstat_unk2_5: TLabeledEdit;
+    editstat_unk2_6: TLabeledEdit;
+    editstat_unk2_7: TLabeledEdit;
+    editstat_unk2_8: TLabeledEdit;
+    editstat_unk2_9: TLabeledEdit;
+    editstat_unk2_10: TLabeledEdit;
+    editStatScalingFactor: TLabeledEdit;
+    editDamageType: TJvComboEdit;
+    lbitDamageType: TLabel;
+    editUnknown: TLabeledEdit;
+    editUnknown1: TLabeledEdit;
+    editUnknown2: TLabeledEdit;
+    editUnknown400_1: TLabeledEdit;
+    editUnknown400_2: TLabeledEdit;
+    edctPetSpellDataId: TLabeledEdit;
+    edctflags_extra: TJvComboEdit;
+    lbctflags_extra: TLabel;
+    edctunit_flags2: TJvComboEdit;
+    Label7: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btSearchClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -1953,7 +1963,7 @@ type
     procedure GetSpellTrigger(Sender: TObject);
     procedure GetUnitFlags(Sender: TObject);
     procedure GetFlagsExtra(Sender: TObject);
-    procedure GetCreatureFlag1(Sender: TObject);
+    procedure GetCreatureTypeFlags(Sender: TObject);
     procedure GetCreatureDynamicFlags(Sender: TObject);
     procedure GetGOFlags(Sender: TObject);
     procedure GetMovementType(Sender: TObject);
@@ -2014,6 +2024,7 @@ type
     procedure btTrainerTemplateAddClick(Sender: TObject);
     procedure btTrainerTemplateUpdClick(Sender: TObject);
     procedure btTrainerTemplateDelClick(Sender: TObject);
+    procedure GetUnitFlags2(Sender: TObject);
 
   private
     { Private declarations }
@@ -3699,10 +3710,11 @@ end;
 
 procedure TMainForm.edirentryButtonClick(Sender: TObject);
 begin
-  ClearFields(ttItem);
+{  ClearFields(ttItem);
   LoadQueryToListView(Format('SELECT rlt.*, i.`name` FROM `reference_loot_template`' +
-    ' rlt LEFT OUTER JOIN `item_template` i ON i.`entry` = rlt.`entry`' + ' WHERE (rlt.`entry`=%d)',
+    ' rlt LEFT OUTER JOIN `item_template` i ON i.`entry` = rlt.`item` WHERE (rlt.`entry`=%d)',
     [StrToIntDef(edirentry.Text, 0)]), lvitReferenceLoot);
+}
 end;
 
 procedure TMainForm.JvHttpUrlGrabberDoneStream(Sender: TObject; Stream: TStream; StreamSize: Integer; Url: string);
@@ -5085,9 +5097,9 @@ begin
   GetValueFromSimpleList(Sender, 0, 'CreatureMovementType', false);
 end;
 
-procedure TMainForm.GetCreatureFlag1(Sender: TObject);
+procedure TMainForm.GetCreatureTypeFlags(Sender: TObject);
 begin
-  GetSomeFlags(Sender, 'CreatureFlag1');
+  GetSomeFlags(Sender, 'CreatureTypeFlags');
 end;
 
 procedure TMainForm.GetSomeFlags(Sender: TObject; What: string);
@@ -5921,6 +5933,11 @@ end;
 procedure TMainForm.edcttypeButtonClick(Sender: TObject);
 begin
   GetValueFromSimpleList(Sender, 85, 'CreatureType', false);
+end;
+
+procedure TMainForm.GetUnitFlags2(Sender: TObject);
+begin
+    GetSomeFlags(Sender, 'CreatureFlags2');
 end;
 
 procedure TMainForm.edctvendor_idButtonClick(Sender: TObject);
@@ -8474,7 +8491,7 @@ end;
 procedure TMainForm.btFullScriptReferenceLootClick(Sender: TObject);
 begin
   PageControl5.ActivePageIndex := SCRIPT_TAB_NO_ITEM;
-  ShowFullLootScript('reference_loot_template', lvitReferenceLoot, meitScript, editentry.Text);
+  ShowFullLootScript('reference_loot_template', lvitReferenceLoot, meitScript, edirentry.Text);
 end;
 
 procedure TMainForm.btShowCharacterScriptClick(Sender: TObject);

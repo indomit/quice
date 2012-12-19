@@ -1990,7 +1990,7 @@ object AboutBox: TAboutBox
         Width = 106
         Height = 15
         AutoSize = False
-        Caption = #169' indomit, 2007-2011'
+        Caption = #169' indomit, 2007-2012'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clGray
         Font.Height = -11

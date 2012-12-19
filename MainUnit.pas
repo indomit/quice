@@ -3785,7 +3785,7 @@ begin
   if MessageBox(Application.Handle, PChar(dmMain.Text[140]), 'Uninstall', MB_ICONQUESTION or MB_YESNOCANCEL) <>
     ID_YES then
     Exit;
-  {with TRegistry.Create do
+  with TRegistry.Create do
   try
     RootKey := HKEY_CURRENT_USER;
     S := 'Software\' + SoftwareCompany + '\' + Trim(ProgramName) + '\';
@@ -3798,9 +3798,9 @@ begin
     DeleteKey(S);
   finally
     Free;
-  end;  }
+  end;
   S := dmMain.ProgramDir;
- { DeleteFile(S + 'CSV\ActionType.csv');
+  DeleteFile(S + 'CSV\ActionType.csv');
   DeleteFile(S + 'CSV\AreaTable.csv');
   DeleteFile(S + 'CSV\class.csv');
   DeleteFile(S + 'CSV\Classes.csv');
@@ -3862,7 +3862,7 @@ begin
   DeleteFile(S + 'LANG\Russian.lng');
   DeleteFile(S + 'LANG\Czech.lng');
   RemoveDir(S + 'LANG');
-  DeleteFile(S + 'Quice.sql');  }
+  DeleteFile(S + 'Quice.sql');
 
   with TStringList.Create do
   try

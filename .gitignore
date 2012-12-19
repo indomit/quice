@@ -11,4 +11,5 @@ __history
 *.exe
 *.dll
 *.sql
+*.bat
 bin/*

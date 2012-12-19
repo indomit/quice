@@ -19,7 +19,7 @@ const
   VERSION_EXE = VERSION_1 + '.' + VERSION_2 + '.' + VERSION_3;
 
   SCRIPT_TAB_NO_QUEST = 8;
-  SCRIPT_TAB_NO_CREATURE = 17;
+  SCRIPT_TAB_NO_CREATURE = 21;
   SCRIPT_TAB_NO_GAMEOBJECT = 6;
   SCRIPT_TAB_NO_ITEM = 10;
   SCRIPT_TAB_NO_OTHER = 3;
@@ -214,7 +214,6 @@ type
     lbReqSpellCast1: TLabel;
     edqtReqItemCount1: TLabeledEdit;
     edqtReqItemCount2: TLabeledEdit;
-    edqtReqItemCount3: TLabeledEdit;
     edqtReqItemCount4: TLabeledEdit;
     edqtReqCreatureOrGOCount4: TLabeledEdit;
     edqtReqCreatureOrGOCount3: TLabeledEdit;
@@ -1117,7 +1116,7 @@ type
     btgbDel: TSpeedButton;
     btgbUpd: TSpeedButton;
     btgbAdd: TSpeedButton;
-    btgbShowButtonScriptScript: TButton;
+    btgbShowFullScript: TButton;
     btBrowseQuestPopup: TBitBtn;
     btBrowseCreaturePopup: TBitBtn;
     btBrowseGOPopup: TBitBtn;
@@ -1473,28 +1472,28 @@ type
     gbGOgolds: TGroupBox;
     edgtmaxgold: TLabeledEdit;
     edgtmingold: TLabeledEdit;
-    edgbdatalong3: TLabeledEdit;
-    edgbdatalong4: TLabeledEdit;
+    edgbbuddy_entry: TLabeledEdit;
+    edgbsearch_radius: TLabeledEdit;
     edgbdata_flags: TLabeledEdit;
-    edssdatalong3: TLabeledEdit;
-    edssdatalong4: TLabeledEdit;
+    edssbuddy_entry: TLabeledEdit;
+    edsssearch_radius: TLabeledEdit;
     edssdata_flags: TLabeledEdit;
-    edesdatalong3: TLabeledEdit;
-    edesdatalong4: TLabeledEdit;
+    edesbuddy_entry: TLabeledEdit;
+    edessearch_radius: TLabeledEdit;
     edesdata_flags: TLabeledEdit;
     edcmscript_id: TLabeledEdit;
     tsCreatureMovementScript: TTabSheet;
     btcmsAdd: TSpeedButton;
     btcmsDel: TSpeedButton;
-    btcmsButtonScript: TButton;
+    btcmsShowFullScript: TButton;
     btcmsUpd: TSpeedButton;
     edcmscommand: TJvComboEdit;
     edcmsdata_flags: TLabeledEdit;
     edcmsdataint: TLabeledEdit;
     edcmsdatalong: TLabeledEdit;
     edcmsdatalong2: TLabeledEdit;
-    edcmsdatalong3: TLabeledEdit;
-    edcmsdatalong4: TLabeledEdit;
+    edcmsbuddy_entry: TLabeledEdit;
+    edcmssearch_radius: TLabeledEdit;
     edcmsdelay: TLabeledEdit;
     edcmsid: TLabeledEdit;
     edcmso: TLabeledEdit;
@@ -1652,6 +1651,16 @@ type
     lbctflags_extra: TLabel;
     edctunit_flags2: TJvComboEdit;
     Label7: TLabel;
+    edgtdata24: TLabeledEdit;
+    edgtdata25: TLabeledEdit;
+    edgtdata26: TLabeledEdit;
+    edgtdata27: TLabeledEdit;
+    edgtdata28: TLabeledEdit;
+    edgtdata29: TLabeledEdit;
+    edgtdata30: TLabeledEdit;
+    edgtdata31: TLabeledEdit;
+    edgtunk2: TLabeledEdit;
+    edqtReqItemCount3: TLabeledEdit;
     procedure FormActivate(Sender: TObject);
     procedure btSearchClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -2009,7 +2018,7 @@ type
     procedure btcmsDelClick(Sender: TObject);
     procedure lvcmsCreatureMovementScriptChange(Sender: TObject; Item: TListItem; Change: TItemChange);
     procedure lvcmsCreatureMovementScriptSelectItem(Sender: TObject; Item: TListItem; Selected: Boolean);
-    procedure btcmsButtonScriptClick(Sender: TObject);
+    procedure btcmsShowFullScriptClick(Sender: TObject);
     procedure lvcvtNPCVendorSelectItem(Sender: TObject; Item: TListItem; Selected: Boolean);
     procedure btVendorTemplateAddClick(Sender: TObject);
     procedure btVendorTemplateUpdClick(Sender: TObject);
@@ -2025,6 +2034,7 @@ type
     procedure btTrainerTemplateUpdClick(Sender: TObject);
     procedure btTrainerTemplateDelClick(Sender: TObject);
     procedure GetUnitFlags2(Sender: TObject);
+    procedure NPCTextLoc1btnpctextClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -2228,12 +2238,7 @@ type
 
     procedure EditMouseWheelUp(Sender: TObject; Shift: TShiftState; MousePos: TPoint; var Handled: Boolean);
     procedure EditMouseWheelDown(Sender: TObject; Shift: TShiftState; MousePos: TPoint; var Handled: Boolean);
-
   end;
-
-  { Funcktionlib.dll }
-function LoadLocales(): string; external 'Functionlib.dll';
-procedure ShowHourGlassCursor; external 'Functionlib.dll';
 
 var
   MainForm: TMainForm;
@@ -2743,7 +2748,7 @@ begin
       QuotedStr(lvList.Items[i].SubItems[15])]);
     Result := Format('DELETE FROM `%0:s` WHERE `id`=%1:s;'#13#10 +
       'INSERT INTO `%0:s` (`id`, `delay`, `command`, `datalong`, `datalong2`, ' +
-      '`datalong3`, `datalong4`, `data_flags`,`dataint`,`dataint2`,`dataint3`,`dataint4`, `x`, `y`, `z`, `o`,`comments`) VALUES '#13#10'%2:s'#13#10,
+      '`buddy_entry`, `search_radius`, `data_flags`,`dataint`,`dataint2`,`dataint3`,`dataint4`, `x`, `y`, `z`, `o`,`comments`) VALUES '#13#10'%2:s'#13#10,
       [tn, id, Result]);
   end;
 end;
@@ -3255,6 +3260,11 @@ end;
 procedure TMainForm.nExitClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TMainForm.NPCTextLoc1btnpctextClick(Sender: TObject);
+begin
+  NPCTextLoc1.btNPCTextClick(Sender);
 end;
 
 procedure TMainForm.nAboutClick(Sender: TObject);
@@ -3775,74 +3785,98 @@ begin
   if MessageBox(Application.Handle, PChar(dmMain.Text[140]), 'Uninstall', MB_ICONQUESTION or MB_YESNOCANCEL) <>
     ID_YES then
     Exit;
-  with TRegistry.Create do
-    try
-      RootKey := HKEY_CURRENT_USER;
-      S := 'Software\' + SoftwareCompany + '\' + Trim(ProgramName) + '\';
-      DeleteKey(S + 'lvSearchItem\Columns');
-      DeleteKey(S + 'lvSearchItem\Sort');
-      DeleteKey(S + 'lvSearchItem');
-      DeleteKey(S + 'QuestList');
-      DeleteKey(S + 'servers\localhost');
-      DeleteKey(S + 'servers');
-      DeleteKey(S);
-      S := dmMain.ProgramDir;
-      DeleteFile(S + 'CSV\');
-      DeleteFile(S + 'CSV\AreaTable.csv');
-      DeleteFile(S + 'CSV\CreatureFamily.csv');
-      DeleteFile(S + 'CSV\CreatureType.csv');
-      DeleteFile(S + 'CSV\Emotes.csv');
-      DeleteFile(S + 'CSV\Faction.csv');
-      DeleteFile(S + 'CSV\FactionTemplate.csv');
-      DeleteFile(S + 'CSV\GameObjectType.csv');
-      DeleteFile(S + 'CSV\GemProperties.csv');
-      DeleteFile(S + 'CSV\ItemBagFamily.csv');
-      DeleteFile(S + 'CSV\ItemBonding.csv');
-      DeleteFile(S + 'CSV\ItemClass.csv');
-      DeleteFile(S + 'CSV\ItemDmgType.csv');
-      DeleteFile(S + 'CSV\ItemInventoryType.csv');
-      DeleteFile(S + 'CSV\ItemMaterial.csv');
-      DeleteFile(S + 'CSV\ItemPageMaterial.csv');
-      DeleteFile(S + 'CSV\ItemPetFood.csv');
-      DeleteFile(S + 'CSV\ItemQuality.csv');
-      DeleteFile(S + 'CSV\ItemRequiredReputationRank.csv');
-      DeleteFile(S + 'CSV\ItemSet.csv');
-      DeleteFile(S + 'CSV\ItemSheath.csv');
-      DeleteFile(S + 'CSV\ItemStatType.csv');
-      DeleteFile(S + 'CSV\ItemSubClass.csv');
-      DeleteFile(S + 'CSV\Language.csv');
-      DeleteFile(S + 'CSV\Map.csv');
-      DeleteFile(S + 'CSV\QuestInfo.csv');
-      DeleteFile(S + 'CSV\QuestSort.csv');
-      DeleteFile(S + 'CSV\Rank.csv');
-      DeleteFile(S + 'CSV\ScriptCommand.csv');
-      DeleteFile(S + 'CSV\SkillLine.csv');
-      DeleteFile(S + 'CSV\SpellItemEnchantment.csv');
-      DeleteFile(S + 'CSV\Spell.csv');
-      DeleteFile(S + 'CSV\useSpells.csv');
-      DeleteFile(S + 'CSV\class.csv');
-      DeleteFile(S + 'CSV\race.csv');
-      DeleteFile(S + 'CSV\trainer_type.csv');
-      DeleteFile(S + 'CSV\spawnMaskFlags.csv');
-      RemoveDir(S + 'CSV');
-      DeleteFile(S + 'LANG\Default.lng');
-      DeleteFile(S + 'LANG\German.lng');
-      DeleteFile(S + 'LANG\Russian.lng');
-      RemoveDir(S + 'LANG');
-      DeleteFile(S + 'Quice.sql');
-      with TStringList.Create do
-      begin
-        Add(':try');
-        Add('del /Q Quice.exe');
-        Add('if exist Quice.exe goto try');
-        Add('del /Q uninstall.bat');
-        SaveToFile(S + 'uninstall.bat');
-      end;
-      winexec(PAnsiChar(S + 'uninstall.bat'), SW_HIDE);
-      Application.Terminate;
-    finally
-      Free;
-    end;
+  {with TRegistry.Create do
+  try
+    RootKey := HKEY_CURRENT_USER;
+    S := 'Software\' + SoftwareCompany + '\' + Trim(ProgramName) + '\';
+    DeleteKey(S + 'lvSearchItem\Columns');
+    DeleteKey(S + 'lvSearchItem\Sort');
+    DeleteKey(S + 'lvSearchItem');
+    DeleteKey(S + 'QuestList');
+    DeleteKey(S + 'servers\localhost');
+    DeleteKey(S + 'servers');
+    DeleteKey(S);
+  finally
+    Free;
+  end;  }
+  S := dmMain.ProgramDir;
+ { DeleteFile(S + 'CSV\ActionType.csv');
+  DeleteFile(S + 'CSV\AreaTable.csv');
+  DeleteFile(S + 'CSV\class.csv');
+  DeleteFile(S + 'CSV\Classes.csv');
+  DeleteFile(S + 'CSV\CreatureDynamicFlags.csv');
+  DeleteFile(S + 'CSV\CreatureFamily.csv');
+  DeleteFile(S + 'CSV\CreatureFlags.csv');
+  DeleteFile(S + 'CSV\CreatureFlags2.csv');
+  DeleteFile(S + 'CSV\CreatureInhabitType.csv');
+  DeleteFile(S + 'CSV\CreatureMovementType.csv');
+  DeleteFile(S + 'CSV\CreatureTypeFlags.csv');
+  DeleteFile(S + 'CSV\CreatureType.csv');
+  DeleteFile(S + 'CSV\Emotes.csv');
+  DeleteFile(S + 'CSV\EventType.csv');
+  DeleteFile(S + 'CSV\Faction.csv');
+  DeleteFile(S + 'CSV\FactionTemplate.csv');
+  DeleteFile(S + 'CSV\FlagsExtra.csv');
+  DeleteFile(S + 'CSV\GameObjectFlags.csv');
+  DeleteFile(S + 'CSV\GameObjectType.csv');
+  DeleteFile(S + 'CSV\GemProperties.csv');
+  DeleteFile(S + 'CSV\ItemBagFamily.csv');
+  DeleteFile(S + 'CSV\ItemBonding.csv');
+  DeleteFile(S + 'CSV\ItemClass.csv');
+  DeleteFile(S + 'CSV\ItemDmgType.csv');
+  DeleteFile(S + 'CSV\ItemExtendedCost.csv');
+  DeleteFile(S + 'CSV\ItemInventoryType.csv');
+  DeleteFile(S + 'CSV\ItemFlags.csv');
+  DeleteFile(S + 'CSV\ItemMaterial.csv');
+  DeleteFile(S + 'CSV\ItemPageMaterial.csv');
+  DeleteFile(S + 'CSV\ItemPetFood.csv');
+  DeleteFile(S + 'CSV\ItemQuality.csv');
+  DeleteFile(S + 'CSV\ItemRequiredReputationRank.csv');
+  DeleteFile(S + 'CSV\ItemSet.csv');
+  DeleteFile(S + 'CSV\ItemSheath.csv');
+  DeleteFile(S + 'CSV\ItemStatType.csv');
+  DeleteFile(S + 'CSV\ItemSubClass.csv');
+  DeleteFile(S + 'CSV\Language.csv');
+  DeleteFile(S + 'CSV\LootCondition.csv');
+  DeleteFile(S + 'CSV\Map.csv');
+  DeleteFile(S + 'CSV\Mechanic.csv');
+  DeleteFile(S + 'CSV\NPCFlags.csv');
+  DeleteFile(S + 'CSV\QuestFlags.csv');
+  DeleteFile(S + 'CSV\QuestInfo.csv');
+  DeleteFile(S + 'CSV\QuestSort.csv');
+  DeleteFile(S + 'CSV\race.csv');
+  DeleteFile(S + 'CSV\Races.csv');
+  DeleteFile(S + 'CSV\Rank.csv');
+  DeleteFile(S + 'CSV\ScriptCommand.csv');
+  DeleteFile(S + 'CSV\SkillLine.csv');
+  DeleteFile(S + 'CSV\SpawnMaskFlags.csv');
+  DeleteFile(S + 'CSV\SpecialFlags.csv');
+  DeleteFile(S + 'CSV\Spell.csv');
+  DeleteFile(S + 'CSV\SpellTrigger.csv');
+  DeleteFile(S + 'CSV\SpellItemEnchantment.csv');
+  DeleteFile(S + 'CSV\trainer_type.csv');
+  DeleteFile(S + 'CSV\useSpells.csv');
+  RemoveDir(S + 'CSV');
+  DeleteFile(S + 'LANG\Default.lng');
+  DeleteFile(S + 'LANG\German.lng');
+  DeleteFile(S + 'LANG\Russian.lng');
+  DeleteFile(S + 'LANG\Czech.lng');
+  RemoveDir(S + 'LANG');
+  DeleteFile(S + 'Quice.sql');  }
+
+  with TStringList.Create do
+  try
+    Add(':try');
+    Add('del /Q Quice.exe');
+    Add('if exist Quice.exe goto try');
+    Add('del /Q uninstall.bat');
+    SaveToFile(S + 'uninstall.bat');
+  finally
+    Free;
+  end;
+  S := S + 'uninstall.bat';
+  WinExec(PAnsiChar(S), SW_HIDE);
+  Close;
 end;
 
 procedure TMainForm.btBrowseSiteClick(Sender: TObject);
@@ -4559,37 +4593,39 @@ begin
     2:
       CompleteCreatureLocationScript;
     3:
-      CompleteCreatureModelInfoScript;
+      CompleteCreatureMovementScript;
     4:
-      CompleteCreatureEquipTemplateScript;
+      {CompleteCreatureMovementScriptScript};
     5:
-      CompleteCreatureLootScript;
+      CompleteCreatureModelInfoScript;
     6:
-      CompletePickpocketLootScript;
+      CompleteCreatureEquipTemplateScript;
     7:
-      CompleteSkinLootScript;
+      CompleteCreatureLootScript;
     8:
-      CompleteNPCVendorScript;
+      CompletePickpocketLootScript;
     9:
-      CompleteNPCTrainerScript;
+      CompleteSkinLootScript;
     10:
-      CompleteCreatureTemplateAddonScript;
+      CompleteNPCVendorScript;
     11:
-      CompleteCreatureAddonScript;
+      CompleteNPCTrainerScript;
     12:
+      CompleteCreatureTemplateAddonScript;
+    13:
+      CompleteCreatureAddonScript;
+    14:
       begin
         mectScript.Clear;
         CompleteNPCgossipScript;
       end;
-    13:
-      CompleteCreatureMovementScript;
-    14:
+    15:
       CompleteCreatureOnKillReputationScript;
-    15: { involved in tab - do nothing }
+    16: { involved in tab - do nothing }
       ;
-    16:
+    17:
       CompleteCreatureEventAIScript;
-    20:
+    19:
       CompleteNPCVendorTemplateScript;
   end;
 end;
@@ -8823,10 +8859,10 @@ begin
   ScriptAdd('edcms', lvcmsCreatureMovementScript);
 end;
 
-procedure TMainForm.btcmsButtonScriptClick(Sender: TObject);
+procedure TMainForm.btcmsShowFullScriptClick(Sender: TObject);
 begin
-  mectScript.Text := ScriptSQLScript(lvcmsCreatureMovementScript, 'creature_movement_scripts', edcmsid.Text);
   PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
+  mectScript.Text := ScriptSQLScript(lvcmsCreatureMovementScript, 'creature_movement_scripts', edcmsid.Text);
 end;
 
 procedure TMainForm.btcmsDelClick(Sender: TObject);
@@ -10607,8 +10643,8 @@ begin
       TCustomEdit(FindComponent(pfx + 'command')).Text := SubItems[1];
       TCustomEdit(FindComponent(pfx + 'datalong')).Text := SubItems[2];
       TCustomEdit(FindComponent(pfx + 'datalong2')).Text := SubItems[3];
-      TCustomEdit(FindComponent(pfx + 'datalong3')).Text := SubItems[4];
-      TCustomEdit(FindComponent(pfx + 'datalong4')).Text := SubItems[5];
+      TCustomEdit(FindComponent(pfx + 'buddy_entry')).Text := SubItems[4];
+      TCustomEdit(FindComponent(pfx + 'search_radius')).Text := SubItems[5];
       TCustomEdit(FindComponent(pfx + 'data_flags')).Text := SubItems[6];
       TCustomEdit(FindComponent(pfx + 'dataint')).Text := SubItems[7];
       TCustomEdit(FindComponent(pfx + 'dataint2')).Text := SubItems[8];
@@ -10632,8 +10668,8 @@ begin
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'command')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'datalong')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'datalong2')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'datalong3')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'datalong4')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'buddy_entry')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'search_radius')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'data_flags')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'dataint')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'dataint2')).Text);
@@ -10658,8 +10694,8 @@ begin
       SubItems[1] := TCustomEdit(FindComponent(pfx + 'command')).Text;
       SubItems[2] := TCustomEdit(FindComponent(pfx + 'datalong')).Text;
       SubItems[3] := TCustomEdit(FindComponent(pfx + 'datalong2')).Text;
-      SubItems[4] := TCustomEdit(FindComponent(pfx + 'datalong3')).Text;
-      SubItems[5] := TCustomEdit(FindComponent(pfx + 'datalong4')).Text;
+      SubItems[4] := TCustomEdit(FindComponent(pfx + 'buddy_entry')).Text;
+      SubItems[5] := TCustomEdit(FindComponent(pfx + 'search_radius')).Text;
       SubItems[6] := TCustomEdit(FindComponent(pfx + 'data_flags')).Text;
       SubItems[7] := TCustomEdit(FindComponent(pfx + 'dataint')).Text;
       SubItems[8] := TCustomEdit(FindComponent(pfx + 'dataint2')).Text;
@@ -11152,3 +11188,4 @@ begin
 end;
 
 end.
+

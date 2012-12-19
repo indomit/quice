@@ -95,7 +95,7 @@ object NPCTextLoc: TNPCTextLoc
       Height = 25
       Caption = 'NPC Text Locales Script'
       TabOrder = 2
-      OnClick = btnpctextClick
+      OnClick = btNPCTextClick
     end
   end
 end

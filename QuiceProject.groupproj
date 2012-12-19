@@ -6,9 +6,6 @@
 			<Projects Include="Quice.dproj">
 				<Dependencies/>
 			</Projects>
-			<Projects Include="Functionlib.dproj">
-				<Dependencies/>
-			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -26,23 +23,14 @@
 		<Target Name="Quice:Make">
 			<MSBuild Projects="Quice.dproj" Targets="Make"/>
 		</Target>
-		<Target Name="Functionlib">
-			<MSBuild Projects="Functionlib.dproj"/>
-		</Target>
-		<Target Name="Functionlib:Clean">
-			<MSBuild Projects="Functionlib.dproj" Targets="Clean"/>
-		</Target>
-		<Target Name="Functionlib:Make">
-			<MSBuild Projects="Functionlib.dproj" Targets="Make"/>
-		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="Quice;Functionlib"/>
+			<CallTarget Targets="Quice"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="Quice:Clean;Functionlib:Clean"/>
+			<CallTarget Targets="Quice:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="Quice:Make;Functionlib:Make"/>
+			<CallTarget Targets="Quice:Make"/>
 		</Target>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
 	</Project>

@@ -20,17 +20,16 @@ TNPCTextLoc = class(TFrame)
     procedure FillLocFields(Query: TZQuery; pfx: string);
     procedure CompleteLocalesNPCText;
     function MakeUpdate(tn: string; pfx: string; KeyName: string; KeyValue: string): string;
-    procedure btnpctextClick(Sender: TObject);
+    procedure btNPCTextClick(Sender: TObject);
   private
     { Private declarations }
   public
    procedure CreateLocalesNPCTextFields;
    procedure EditButtonClick(Sender: TObject);
   end;
-    function LoadLocales():string; external 'Functionlib.dll';
 
 implementation
-uses MainUnit, MyDataModule;
+uses MainUnit, MyDataModule, Functions;
 {$R *.dfm}
 
 procedure TNPCTextLoc.FillLocFields(Query: TZQuery; pfx: string);
@@ -157,10 +156,10 @@ begin
   MainForm.MyTempQuery.Close;
 end;
 
-procedure TNPCTextLoc.btnpctextClick(Sender: TObject);
+procedure TNPCTextLoc.btNPCTextClick(Sender: TObject);
 begin
- MainForm.PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
- CompleteLocalesNPCText;
+  MainForm.PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
+  CompleteLocalesNPCText;
 end;
 
 procedure TNPCTextLoc.CompleteLocalesNPCText;

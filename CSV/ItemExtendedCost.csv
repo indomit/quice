@@ -1,919 +1,1803 @@
-1;13 honor pts, 9 arena pts, Tough Jerky (id=117), 2 Minor Healing Potion (id=118)
-2;
 5;40 Halaa Battle Token (id=26045), 2 Halaa Research Token (id=26044)
-6;20 Halaa Battle Token (id=26045), Halaa Research Token (id=26044)
+6;20 Halaa Battle Token (id=26045), 1 Halaa Research Token (id=26044)
 7;8 Halaa Research Token (id=26044)
 18;100 Halaa Battle Token (id=26045)
-21;978 arena pts
-22;1630 arena pts
-24;1304 arena pts
-26;3261 arena pts
+21;83619 Honor Points
+22;139365 Honor Points
+24;111492 Honor Points
+26;278815 Honor Points
 53;5 Mark of Honor Hold (id=24579)
 54;5 Mark of Thrallmar (id=24581)
 55;10 Mark of Thrallmar (id=24581)
 56;10 Mark of Honor Hold (id=24579)
 65;15 Mark of Thrallmar (id=24581)
-66;1 honor pts, 1 arena pts
+66;102 Honor Points
 69;15 Mark of Honor Hold (id=24579)
 76;30 Mark of Thrallmar (id=24581)
 77;30 Mark of Honor Hold (id=24579)
-94;19125 honor pts
-95;6885 honor pts
-98;22950 honor pts
-99;8500 honor pts
-100;Glowcap (id=24245)
+94;318750 Honor Points
+95;2500 Honor Points
+98;382500 Honor Points
+99;14000 Honor Points
+100;1 Glowcap (id=24245)
 102;2 Glowcap (id=24245)
 103;25 Glowcap (id=24245)
 104;15 Glowcap (id=24245)
-115;16983 honor pts
-125;22950 honor pts, 10 Eye of the Storm Mark of Honor (id=29024)
-127;15300 honor pts, 10 Eye of the Storm Mark of Honor (id=29024)
-129;11934 honor pts, 10 Alterac Valley Mark of Honor (id=20560)
-131;30600 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-133;2283 arena pts
-146;870 arena pts
-148;2739 arena pts
-165;9435 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-169;9435 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-170;9435 honor pts
-171;14280 honor pts, 40 Eye of the Storm Mark of Honor (id=29024)
-172;14280 honor pts, 40 Arathi Basin Mark of Honor (id=20559)
-173;12750 honor pts
+115;283050 Honor Points
+125;12000 Honor Points
+127;9000 Honor Points
+129;5000 Honor Points
+131;29000 Honor Points
+133;195196 Honor Points
+146;74385 Honor Points
+148;234184 Honor Points
+165;7500 Honor Points
+169;172618 Honor Points
+170;157250 Honor Points
+171;261904 Honor Points
+172;261904 Honor Points
+173;212500 Honor Points
 194;18 Spirit Shard (id=28558)
-201;16524 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-202;10098 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-203;16065 honor pts, 30 Alterac Valley Mark of Honor (id=20560)
-204;16065 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-205;10098 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
+201;292261 Honor Points
+202;205900 Honor Points
+203;292261 Honor Points
+204;292261 Honor Points
+205;205900 Honor Points
 293;50 Spirit Shard (id=28558)
 298;8 Spirit Shard (id=28558)
-348;15300 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-359;20400 honor pts
-360;20400 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-386;15300 honor pts
+348;272618 Honor Points
+359;340000 Honor Points
+360;361904 Honor Points
+386;255000 Honor Points
 388;30 Glowcap (id=24245)
-423;30 Alterac Valley Mark of Honor (id=20560), 30 Arathi Basin Mark of Honor (id=20559), 30 Warsong Gulch Mark of Honor (id=20558)
-427;2805 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-428;2805 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-444;4335 honor pts, 30 Alterac Valley Mark of Honor (id=20560)
-460;1 honor pts
-463;13770 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-464;13005 honor pts, 30 Alterac Valley Mark of Honor (id=20560)
-465;8415 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-488;4590 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-489;4590 honor pts, 25 Alterac Valley Mark of Honor (id=20560)
-490;10200 honor pts, 40 Warsong Gulch Mark of Honor (id=20558)
-491;1530 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-492;1530 honor pts, 10 Warsong Gulch Mark of Honor (id=20558)
-495;4590 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-496;2380 honor pts, 10 Alterac Valley Mark of Honor (id=20560)
-497;2720 honor pts, 15 Alterac Valley Mark of Honor (id=20560)
-501;8415 honor pts, 40 Arathi Basin Mark of Honor (id=20559)
-520;2805 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-532;1530 honor pts, 10 Alterac Valley Mark of Honor (id=20560)
-533;1530 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-541;8415 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-542;13005 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-565;15300 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-567;15300 honor pts, 40 Arathi Basin Mark of Honor (id=20559)
-634;2805 honor pts
-652;4590 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-653;4335 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-701;10200 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-702;4760 honor pts, 25 Alterac Valley Mark of Honor (id=20560)
-746;8160 honor pts, 40 Arathi Basin Mark of Honor (id=20559)
-747;5100 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-748;8925 honor pts, 40 Warsong Gulch Mark of Honor (id=20558)
-774;1530 honor pts, 10 Arathi Basin Mark of Honor (id=20559)
-821;428 honor pts, 40 Warsong Gulch Mark of Honor (id=20558)
-822;65 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-823;65 honor pts, 10 Warsong Gulch Mark of Honor (id=20558)
-826;214 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-837;632 honor pts, 40 Warsong Gulch Mark of Honor (id=20558)
-838;95 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-839;95 honor pts, 10 Warsong Gulch Mark of Honor (id=20558)
-841;175 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-855;175 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-871;316 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-883;938 honor pts, 40 Warsong Gulch Mark of Honor (id=20558)
-884;141 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-885;141 honor pts, 10 Warsong Gulch Mark of Honor (id=20558)
-887;258 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-901;258 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-917;469 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-929;1387 honor pts, 40 Warsong Gulch Mark of Honor (id=20558)
-930;208 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-931;208 honor pts, 10 Warsong Gulch Mark of Honor (id=20558)
-933;382 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-947;382 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-968;694 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-986;208 honor pts, 10 Arathi Basin Mark of Honor (id=20559)
-989;422 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-990;624 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-1000;60 Arathi Basin Mark of Honor (id=20559)
-1002;30 Alterac Valley Mark of Honor (id=20560)
-1003;60 Alterac Valley Mark of Honor (id=20560)
-1005;50 Alterac Valley Mark of Honor (id=20560)
-1006;20 Alterac Valley Mark of Honor (id=20560), 20 Arathi Basin Mark of Honor (id=20559), 20 Warsong Gulch Mark of Honor (id=20558)
-1007;3 Arathi Basin Mark of Honor (id=20559), 3 Warsong Gulch Mark of Honor (id=20558)
-1009;60 Warsong Gulch Mark of Honor (id=20558)
-1015;25 Badge of Justice (id=29434)
-1027;41 Badge of Justice (id=29434)
-1037;33 Badge of Justice (id=29434)
-1040;50 Badge of Justice (id=29434)
-1050;95 honor pts, 10 Arathi Basin Mark of Honor (id=20559)
-1054;258 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-1055;118 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-1061;20 Arathi Basin Mark of Honor (id=20559)
-1062;20 Alterac Valley Mark of Honor (id=20560)
+423;200000 Honor Points
+427;8500 Honor Points
+428;6000 Honor Points
+444;10500 Honor Points
+460;100 Honor Points
+463;12500 Honor Points
+464;12500 Honor Points
+465;7000 Honor Points
+488;8500 Honor Points
+489;90773 Honor Points
+490;24500 Honor Points
+491;5500 Honor Points
+492;5500 Honor Points
+495;8500 Honor Points
+496;17500 Honor Points
+497;25000 Honor Points
+501;13000 Honor Points
+520;5500 Honor Points
+532;5000 Honor Points
+533;5000 Honor Points
+541;7000 Honor Points
+542;12500 Honor Points
+565;18500 Honor Points
+567;18500 Honor Points
+634;5500 Honor Points
+652;10500 Honor Points
+653;10500 Honor Points
+701;208900 Honor Points
+702;90773 Honor Points
+746;13000 Honor Points
+747;17000 Honor Points
+748;10500 Honor Points
+774;5500 Honor Points
+821;10000 Honor Points
+822;2000 Honor Points
+823;2000 Honor Points
+826;7000 Honor Points
+837;12500 Honor Points
+838;2500 Honor Points
+839;2500 Honor Points
+841;4500 Honor Points
+855;2500 Honor Points
+871;8500 Honor Points
+883;15500 Honor Points
+884;3500 Honor Points
+885;3500 Honor Points
+887;5500 Honor Points
+901;3500 Honor Points
+917;11000 Honor Points
+929;19500 Honor Points
+930;4500 Honor Points
+931;4500 Honor Points
+933;7000 Honor Points
+947;4500 Honor Points
+968;13500 Honor Points
+986;4500 Honor Points
+989;5500 Honor Points
+990;6500 Honor Points
+1000;17856 Honor Points
+1002;50000 Honor Points
+1003;267900 Honor Points
+1005;200000 Honor Points
+1006;10000 Honor Points
+1007;5000 Honor Points
+1009;17856 Honor Points
+1015;13000 Justice Points
+1027;21300 Justice Points
+1037;17200 Justice Points
+1040;26000 Justice Points
+1050;4000 Honor Points
+1054;3500 Honor Points
+1055;2000 Honor Points
+1061;5952 Honor Points
+1062;55952 Honor Points
 1076;20 Glowcap (id=24245)
 1077;45 Glowcap (id=24245)
-1110;30 Arathi Basin Mark of Honor (id=20559)
-1111;30 Warsong Gulch Mark of Honor (id=20558)
+1110;8928 Honor Points
+1111;8928 Honor Points
 1184;2 Holy Dust (id=29735)
 1188;8 Holy Dust (id=29735)
 1192;2 Arcane Rune (id=29736)
 1196;8 Arcane Rune (id=29736)
-1200;Chestguard of the Fallen Champion (id=29754)
-1203;Gloves of the Fallen Champion (id=29757)
-1206;Helm of the Fallen Champion (id=29760)
-1209;Leggings of the Fallen Champion (id=29766)
-1212;Pauldrons of the Fallen Champion (id=29763)
-1215;Chestguard of the Fallen Hero (id=29755)
-1216;Gloves of the Fallen Hero (id=29756)
-1217;Helm of the Fallen Hero (id=29759)
-1218;Leggings of the Fallen Hero (id=29765)
-1219;Pauldrons of the Fallen Hero (id=29762)
-1235;Chestguard of the Fallen Defender (id=29753)
-1237;Gloves of the Fallen Defender (id=29758)
-1239;Helm of the Fallen Defender (id=29761)
-1241;Leggings of the Fallen Defender (id=29767)
-1243;Pauldrons of the Fallen Defender (id=29764)
-1332;Chestguard of the Vanquished Defender (id=30237)
-1333;Gloves of the Vanquished Defender (id=30240)
-1334;Helm of the Vanquished Defender (id=30243)
-1335;Leggings of the Vanquished Defender (id=30246)
-1336;Pauldrons of the Vanquished Defender (id=30249)
-1342;Chestguard of the Vanquished Champion (id=30236)
-1343;Gloves of the Vanquished Champion (id=30239)
-1344;Helm of the Vanquished Champion (id=30242)
-1345;Leggings of the Vanquished Champion (id=30245)
-1346;Pauldrons of the Vanquished Champion (id=30248)
-1357;Chestguard of the Vanquished Hero (id=30238)
-1358;Gloves of the Vanquished Hero (id=30241)
-1359;Helm of the Vanquished Hero (id=30244)
-1360;Leggings of the Vanquished Hero (id=30247)
-1361;Pauldrons of the Vanquished Hero (id=30250)
-1431;1875 arena pts, 1850 arenarank
-1432;1125 arena pts, 1850 arenarank
-1435;1500 arena pts, 2000 arenarank
-1442;7905 honor pts, 60 Warsong Gulch Mark of Honor (id=20558)
-1452;20 Badge of Justice (id=29434)
-1454;30 Badge of Justice (id=29434)
-1468;8160 honor pts, 60 Alterac Valley Mark of Honor (id=20560)
-1474;Gloves of the Forgotten Protector (id=31094)
-1476;Helm of the Forgotten Protector (id=31095)
-1478;Chestguard of the Forgotten Protector (id=31091)
-1480;Leggings of the Forgotten Protector (id=31100)
-1482;Pauldrons of the Forgotten Protector (id=31103)
-1485;Gloves of the Forgotten Conqueror (id=31092)
-1488;Helm of the Forgotten Conqueror (id=31097)
-1491;Chestguard of the Forgotten Conqueror (id=31089)
-1494;Leggings of the Forgotten Conqueror (id=31098)
-1497;Pauldrons of the Forgotten Conqueror (id=31101)
-1520;Gloves of the Forgotten Vanquisher (id=31093)
-1521;Helm of the Forgotten Vanquisher (id=31096)
-1522;Chestguard of the Forgotten Vanquisher (id=31090)
-1523;Leggings of the Forgotten Vanquisher (id=31099)
-1524;Pauldrons of the Forgotten Vanquisher (id=31102)
-1564;8 honor pts
-1565;5 honor pts
-1642;15 Badge of Justice (id=29434)
-1645;Silken Thread (id=4291)
+1200;1 Chestguard of the Fallen Champion (id=29754)
+1203;1 Gloves of the Fallen Champion (id=29757)
+1206;1 Helm of the Fallen Champion (id=29760)
+1209;1 Leggings of the Fallen Champion (id=29766)
+1212;1 Pauldrons of the Fallen Champion (id=29763)
+1215;1 Chestguard of the Fallen Hero (id=29755)
+1216;1 Gloves of the Fallen Hero (id=29756)
+1217;1 Helm of the Fallen Hero (id=29759)
+1218;1 Leggings of the Fallen Hero (id=29765)
+1219;1 Pauldrons of the Fallen Hero (id=29762)
+1235;1 Chestguard of the Fallen Defender (id=29753)
+1237;1 Gloves of the Fallen Defender (id=29758)
+1239;1 Helm of the Fallen Defender (id=29761)
+1241;1 Leggings of the Fallen Defender (id=29767)
+1243;1 Pauldrons of the Fallen Defender (id=29764)
+1332;1 Chestguard of the Vanquished Defender (id=30237)
+1333;1 Gloves of the Vanquished Defender (id=30240)
+1334;1 Helm of the Vanquished Defender (id=30243)
+1335;1 Leggings of the Vanquished Defender (id=30246)
+1336;1 Pauldrons of the Vanquished Defender (id=30249)
+1342;1 Chestguard of the Vanquished Champion (id=30236)
+1343;1 Gloves of the Vanquished Champion (id=30239)
+1344;1 Helm of the Vanquished Champion (id=30242)
+1345;1 Leggings of the Vanquished Champion (id=30245)
+1346;1 Pauldrons of the Vanquished Champion (id=30248)
+1357;1 Chestguard of the Vanquished Hero (id=30238)
+1358;1 Gloves of the Vanquished Hero (id=30241)
+1359;1 Helm of the Vanquished Hero (id=30244)
+1360;1 Leggings of the Vanquished Hero (id=30247)
+1361;1 Pauldrons of the Vanquished Hero (id=30250)
+1431;1850 arena, 17500 Honor Points
+1432;1850 arena, 10500 Honor Points
+1435;2000 arena, 14000 Honor Points
+1442;151189 Honor Points
+1452;10400 Justice Points
+1454;15600 Justice Points
+1468;167856 Honor Points
+1474;1 Gloves of the Forgotten Protector (id=31094)
+1476;1 Helm of the Forgotten Protector (id=31095)
+1478;1 Chestguard of the Forgotten Protector (id=31091)
+1480;1 Leggings of the Forgotten Protector (id=31100)
+1482;1 Pauldrons of the Forgotten Protector (id=31103)
+1485;1 Gloves of the Forgotten Conqueror (id=31092)
+1488;1 Helm of the Forgotten Conqueror (id=31097)
+1491;1 Chestguard of the Forgotten Conqueror (id=31089)
+1494;1 Leggings of the Forgotten Conqueror (id=31098)
+1497;1 Pauldrons of the Forgotten Conqueror (id=31101)
+1520;1 Gloves of the Forgotten Vanquisher (id=31093)
+1521;1 Helm of the Forgotten Vanquisher (id=31096)
+1522;1 Chestguard of the Forgotten Vanquisher (id=31090)
+1523;1 Leggings of the Forgotten Vanquisher (id=31099)
+1524;1 Pauldrons of the Forgotten Vanquisher (id=31102)
+1564;100 Honor Points
+1565;83 Honor Points
+1642;7800 Justice Points
+1645;1 Silken Thread (id=4291)
 1646;100 Halaa Battle Token (id=26045), 20 Halaa Research Token (id=26044)
 1647;70 Halaa Battle Token (id=26045), 15 Halaa Research Token (id=26044)
-1648;2 Arathi Basin Mark of Honor (id=20559)
-1649;2 Alterac Valley Mark of Honor (id=20560)
-1652;2 Eye of the Storm Mark of Honor (id=29024)
-1653;2 Warsong Gulch Mark of Honor (id=20558)
-1664;3750 arena pts
-1670;2625 arena pts, 1850 arenarank
-1757;3150 arena pts, 1850 arenarank
-1758;1000 arena pts
+1648;3900 Honor Points
+1649;3900 Honor Points
+1652;3900 Honor Points
+1653;200 Honor Points
+1664;35000 Honor Points
+1670;1850 arena, 24500 Honor Points
+1757;1850 arena, 24500 Honor Points
+1758;9500 Honor Points
 1765;2 Halaa Research Token (id=26044)
-1909;10 Badge of Justice (id=29434)
+1909;5200 Justice Points
 1910;35 Apexis Shard (id=32569)
-1911;17850 honor pts, 40 Eye of the Storm Mark of Honor (id=29024)
-1923;17850 honor pts, 40 Arathi Basin Mark of Honor (id=20559)
-1935;11794 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
+1911;14000 Honor Points
+1923;14000 Honor Points
+1935;9000 Honor Points
 1948;3 Apexis Shard (id=32569)
 1949;2 Apexis Shard (id=32569)
 1950;4 Apexis Crystal (id=32572), 100 Apexis Shard (id=32569)
-1952;Apexis Crystal (id=32572), 50 Apexis Shard (id=32569)
+1952;1 Apexis Crystal (id=32572), 50 Apexis Shard (id=32569)
 1958;10 Apexis Shard (id=32569)
-1959;Mark of the Illidari (id=32897)
-1963;Coilfang Armaments (id=24368)
+1959;1 Mark of the Illidari (id=32897)
+1963;1 Coilfang Armaments (id=24368)
 1973;40 Apexis Shard (id=32569)
 1979;160 Apexis Shard (id=32569)
 1981;4 Apexis Crystal (id=32572)
 1985;3 Apexis Crystal (id=32572)
 1992;2 Spirit Shard (id=28558)
 1994;10 Glowcap (id=24245)
-2028;15300 honor pts, 10 Alterac Valley Mark of Honor (id=20560)
-2049;75 Badge of Justice (id=29434)
-2059;60 Badge of Justice (id=29434)
-2060;35 Badge of Justice (id=29434)
+2028;7500 Honor Points
+2049;39000 Justice Points
+2059;31200 Justice Points
+2060;18200 Justice Points
 2236;4 Halaa Research Token (id=26044)
-2237;27000 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-2238;25200 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-2239;18000 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-2240;9000 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-2241;8000 honor pts, 10 Eye of the Storm Mark of Honor (id=29024)
-2242;15000 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-2248;11934 honor pts, 10 Eye of the Storm Mark of Honor (id=29024)
-2249;11424 honor pts, 40 Arathi Basin Mark of Honor (id=20559)
-2250;11424 honor pts, 40 Eye of the Storm Mark of Honor (id=29024)
-2251;7548 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-2252;9547 honor pts, 10 Eye of the Storm Mark of Honor (id=29024)
-2253;9547 honor pts, 10 Alterac Valley Mark of Honor (id=20560)
-2254;19125 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-2255;12240 honor pts, 20 Eye of the Storm Mark of Honor (id=29024)
-2256;38250 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-2257;24480 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-2258;20655 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-2259;13219 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-2260;12622 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-2261;8078 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-2262;20081 honor pts, 30 Alterac Valley Mark of Honor (id=20560)
-2263;12852 honor pts, 30 Alterac Valley Mark of Honor (id=20560)
-2264;20081 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-2265;12852 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-2266;12622 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2267;8078 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2268;11794 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2269;7548 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2270;25500 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-2271;16320 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
+2237;478570 Honor Points
+2238;439285 Honor Points
+2239;322618 Honor Points
+2240;157618 Honor Points
+2241;152976 Honor Points
+2242;255952 Honor Points
+2248;202900 Honor Points
+2249;228570 Honor Points
+2250;228570 Honor Points
+2251;139285 Honor Points
+2252;169642 Honor Points
+2253;5000 Honor Points
+2254;339285 Honor Points
+2255;222618 Honor Points
+2256;661904 Honor Points
+2257;29000 Honor Points
+2258;358928 Honor Points
+2259;258928 Honor Points
+2260;222618 Honor Points
+2261;155952 Honor Points
+2262;358928 Honor Points
+2263;242261 Honor Points
+2264;358928 Honor Points
+2265;242261 Honor Points
+2266;222618 Honor Points
+2267;155952 Honor Points
+2268;222618 Honor Points
+2269;7500 Honor Points
+2270;445237 Honor Points
+2271;295237 Honor Points
 2272;50 Apexis Shard (id=32569)
-2273;600 Brewfest Prize Ticket (id=37829)
-2274;50 Brewfest Prize Ticket (id=37829)
-2275;100 Brewfest Prize Ticket (id=37829)
-2276;200 Brewfest Prize Ticket (id=37829)
-2277;10500 honor pts, 20 Alterac Valley Mark of Honor (id=20560)
-2278;11250 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2279;14500 honor pts, 30 Arathi Basin Mark of Honor (id=20559)
-2280;14500 honor pts, 30 Alterac Valley Mark of Honor (id=20560)
-2281;14500 honor pts, 30 Warsong Gulch Mark of Honor (id=20558)
-2282;3750 arena pts, 1850 arenarank
-2283;1125 arena pts
-2284;3150 arena pts
-2285;1875 arena pts
-2286;1125 arena pts
-2287;2625 arena pts
-2288;1500 arena pts
-2289;30000 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-2290;19125 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2291;12240 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2292;Felfury Legplates (id=34180), Sunmote (id=34664)
-2293;Legplates of the Holy Juggernaut (id=34167), Sunmote (id=34664)
-2294;Chain Links of the Tumultuous Storm (id=34186), Sunmote (id=34664)
-2295;Breeches of Natural Aggression (id=34169), Sunmote (id=34664)
-2296;Leggings of the Immortal Night (id=34188), Sunmote (id=34664)
-2297;Pantaloons of Calming Strife (id=34170), Sunmote (id=34664)
-2298;Pauldrons of Perseverance (id=34192), Sunmote (id=34664)
-2299;Spaulders of the Thalassian Savior (id=34193), Sunmote (id=34664)
-2300;Equilibrium Epaulets (id=34208), Sunmote (id=34664)
-2301;Spaulders of Reclamation (id=34209), Sunmote (id=34664)
-2302;Shoulderpads of Vehemence (id=34195), Sunmote (id=34664)
-2303;Shawl of Wonderment (id=34202), Sunmote (id=34664)
-2304;Warharness of Reckless Fury (id=34215), Sunmote (id=34664)
-2305;Heroic Judicator's Chestguard (id=34216), Sunmote (id=34664)
-2306;Garments of Serene Shores (id=34229), Sunmote (id=34664)
-2307;Harness of Carnal Instinct (id=34211), Sunmote (id=34664)
-2308;Sunglow Vest (id=34212), Sunmote (id=34664)
-2309;Robes of Faltered Light (id=34233), Sunmote (id=34664)
-2310;Crown of Anasterian (id=34345), Sunmote (id=34664)
-2311;Helm of Burning Righteousness (id=34243), Sunmote (id=34664)
-2312;Cowl of Gul'dan (id=34332), Sunmote (id=34664)
-2313;Cover of Ursol the Wise (id=34245), Sunmote (id=34664)
-2314;Duplicitous Guise (id=34244), Sunmote (id=34664)
-2315;Cowl of Light's Purity (id=34339), Sunmote (id=34664)
-2316;Handguards of the Dawn (id=34342), Sunmote (id=34664)
-2317;Tranquil Majesty Wraps (id=34351), Sunmote (id=34664)
-2318;Shadowed Gauntlets of Paroxysm (id=34234), Sunmote (id=34664)
-2319;Gauntlets of the Ancient Shadowmoon (id=34350), Sunmote (id=34664)
-2320;Bracers of the Forgotten Conqueror (id=34848)
-2321;Bracers of the Forgotten Vanquisher (id=34852)
-2322;Belt of the Forgotten Protector (id=34854)
-2323;Bracers of the Forgotten Protector (id=34851)
-2324;Belt of the Forgotten Conqueror (id=34853)
-2325;Belt of the Forgotten Vanquisher (id=34855)
-2326;Boots of the Forgotten Conqueror (id=34856)
-2327;Boots of the Forgotten Vanquisher (id=34858)
-2328;Boots of the Forgotten Protector (id=34857)
-2329;150 Badge of Justice (id=29434)
-2330;125 Badge of Justice (id=29434)
-2331;105 Badge of Justice (id=29434)
-2332;45 Badge of Justice (id=29434)
-2333;100 Badge of Justice (id=29434)
-2334;1875 arena pts, 1650 arenarank
-2335;1125 arena pts, 1550 arenarank
-2336;1875 arena pts, 1750 arenarank
-2337;1875 arena pts, 1600 arenarank
-2338;1125 arena pts, 1750 arenarank
-2339;1000 arena pts, 1750 arenarank
-2340;2150 arena pts, 1700 arenarank
-2341;1110 arena pts, 1700 arenarank
-2342;1125 arena pts
-2343;675 arena pts
-2344;1575 arena pts, 1700 arenarank
-2345;675 arena pts, 1700 arenarank
-2346;1125 arena pts, 1700 arenarank
-2347;40 Badge of Justice (id=29434)
+2273;600 Brewfest Prize Token (id=37829)
+2274;50 Brewfest Prize Token (id=37829)
+2275;100 Brewfest Prize Token (id=37829)
+2276;200 Brewfest Prize Token (id=37829)
+2277;205900 Honor Points
+2278;222618 Honor Points
+2279;258928 Honor Points
+2280;258928 Honor Points
+2281;258928 Honor Points
+2282;1850 arena, 320625 Honor Points
+2283;10500 Honor Points
+2284;24500 Honor Points
+2285;17500 Honor Points
+2286;96187 Honor Points
+2287;24500 Honor Points
+2288;14000 Honor Points
+2289;528570 Honor Points
+2290;339285 Honor Points
+2291;18500 Honor Points
+2292;1 Felfury Legplates (id=34180), 1 Sunmote (id=34664)
+2293;1 Legplates of the Holy Juggernaut (id=34167), 1 Sunmote (id=34664)
+2294;1 Chain Links of the Tumultuous Storm (id=34186), 1 Sunmote (id=34664)
+2295;1 Breeches of Natural Aggression (id=34169), 1 Sunmote (id=34664)
+2296;1 Leggings of the Immortal Night (id=34188), 1 Sunmote (id=34664)
+2297;1 Pantaloons of Calming Strife (id=34170), 1 Sunmote (id=34664)
+2298;1 Pauldrons of Perseverance (id=34192), 1 Sunmote (id=34664)
+2299;1 Spaulders of the Thalassian Savior (id=34193), 1 Sunmote (id=34664)
+2300;1 Equilibrium Epaulets (id=34208), 1 Sunmote (id=34664)
+2301;1 Spaulders of Reclamation (id=34209), 1 Sunmote (id=34664)
+2302;1 Shoulderpads of Vehemence (id=34195), 1 Sunmote (id=34664)
+2303;1 Shawl of Wonderment (id=34202), 1 Sunmote (id=34664)
+2304;1 Warharness of Reckless Fury (id=34215), 1 Sunmote (id=34664)
+2305;1 Heroic Judicator's Chestguard (id=34216), 1 Sunmote (id=34664)
+2306;1 Garments of Serene Shores (id=34229), 1 Sunmote (id=34664)
+2307;1 Harness of Carnal Instinct (id=34211), 1 Sunmote (id=34664)
+2308;1 Sunglow Vest (id=34212), 1 Sunmote (id=34664)
+2309;1 Robes of Faltered Light (id=34233), 1 Sunmote (id=34664)
+2310;1 Crown of Anasterian (id=34345), 1 Sunmote (id=34664)
+2311;1 Helm of Burning Righteousness (id=34243), 1 Sunmote (id=34664)
+2312;1 Cowl of Gul'dan (id=34332), 1 Sunmote (id=34664)
+2313;1 Cover of Ursol the Wise (id=34245), 1 Sunmote (id=34664)
+2314;1 Duplicitous Guise (id=34244), 1 Sunmote (id=34664)
+2315;1 Cowl of Light's Purity (id=34339), 1 Sunmote (id=34664)
+2316;1 Handguards of the Dawn (id=34342), 1 Sunmote (id=34664)
+2317;1 Tranquil Majesty Wraps (id=34351), 1 Sunmote (id=34664)
+2318;1 Shadowed Gauntlets of Paroxysm (id=34234), 1 Sunmote (id=34664)
+2319;1 Gauntlets of the Ancient Shadowmoon (id=34350), 1 Sunmote (id=34664)
+2320;1 Bracers of the Forgotten Conqueror (id=34848)
+2321;1 Bracers of the Forgotten Vanquisher (id=34852)
+2322;1 Belt of the Forgotten Protector (id=34854)
+2323;1 Bracers of the Forgotten Protector (id=34851)
+2324;1 Belt of the Forgotten Conqueror (id=34853)
+2325;1 Belt of the Forgotten Vanquisher (id=34855)
+2326;1 Boots of the Forgotten Conqueror (id=34856)
+2327;1 Boots of the Forgotten Vanquisher (id=34858)
+2328;1 Boots of the Forgotten Protector (id=34857)
+2329;78000 Justice Points
+2330;65000 Justice Points
+2331;54600 Justice Points
+2332;23400 Justice Points
+2333;52000 Justice Points
+2334;1650 arena, 160312 Honor Points
+2335;1550 arena, 96187 Honor Points
+2336;1750 arena, 160312 Honor Points
+2337;1600 arena, 160312 Honor Points
+2338;1750 arena, 96187 Honor Points
+2339;1750 arena, 85500 Honor Points
+2340;1700 arena, 183825 Honor Points
+2341;1700 arena, 94905 Honor Points
+2342;14000 Honor Points
+2343;57712 Honor Points
+2344;1700 arena, 134662 Honor Points
+2345;1700 arena, 57712 Honor Points
+2346;1700 arena, 96187 Honor Points
+2347;20800 Justice Points
 2348;2 Burning Blossom (id=23247)
 2349;5 Burning Blossom (id=23247)
 2350;20 Burning Blossom (id=23247)
 2351;100 Burning Blossom (id=23247)
 2352;200 Burning Blossom (id=23247)
 2353;350 Burning Blossom (id=23247)
-2354;1 honor pts
-2355;Borean Leather (id=33568)
-2356;650 arena pts, 1750 arenarank
-2357;650 arena pts
-2358;1304 arena pts, 1850 arenarank
-2359;1500 arena pts, 2200 arenarank
-2360;3750 arena pts, 2050 arenarank
-2361;3150 arena pts, 2050 arenarank
-2362;2625 arena pts, 2050 arenarank
-2363;1125 arena pts, 2050 arenarank
-2364;1875 arena pts, 2050 arenarank
-2365;1875 arena pts, 1700 arenarank
-2366;1875 arena pts, 1550 arenarank
-2367;2250 arena pts, 1800 arenarank
-2368;1110 arena pts, 1800 arenarank
-2369;1575 arena pts, 1800 arenarank
-2370;1575 arena pts, 1800 arenarank
-2371;675 arena pts, 1800 arenarank
-2372;1125 arena pts, 1800 arenarank
-2373;1304 arena pts, 1950 arenarank
-2374;600 arena pts
-2375;650 arena pts, 2050 arenarank
+2354;16 Honor Points
+2355;1 Borean Leather (id=33568)
+2356;1750 arena, 55575 Honor Points
+2357;55575 Honor Points
+2358;1850 arena, 111492 Honor Points
+2359;2200 arena, 128250 Honor Points
+2360;2050 arena, 320625 Honor Points
+2361;2050 arena, 269325 Honor Points
+2362;2050 arena, 224437 Honor Points
+2363;2050 arena, 96187 Honor Points
+2364;2050 arena, 160312 Honor Points
+2365;1700 arena, 160312 Honor Points
+2366;1550 arena, 160312 Honor Points
+2367;1800 arena, 192375 Honor Points
+2368;1800 arena, 94905 Honor Points
+2369;1800 arena, 134662 Honor Points
+2370;1800 arena, 134662 Honor Points
+2371;1800 arena, 57712 Honor Points
+2372;1800 arena, 96187 Honor Points
+2373;1950 arena, 111492 Honor Points
+2374;51300 Honor Points
+2375;2050 arena, 55575 Honor Points
 2376;4 Borean Leather (id=33568)
-2377;3000 arena pts, 1800 arenarank
-2378;2520 arena pts, 1800 arenarank
-2379;900 arena pts
-2380;800 arena pts
-2381;2100 arena pts, 1800 arenarank
-2382;900 arena pts, 1800 arenarank
-2383;1500 arena pts, 1800 arenarank
-2384;1150 arena pts, 1950 arenarank
-2385;2520 arena pts, 1800 arenarank
-2386;3000 arena pts, 1800 arenarank
-2387;900 arena pts
-2388;800 arena pts
-2389;2100 arena pts, 1800 arenarank
-2390;900 arena pts, 1800 arenarank
-2391;1500 arena pts, 1800 arenarank
-2392;1200 arena pts, 1950 arenarank
-2393;650 arena pts, 2050 arenarank
-2394;200 Venture Coin (id=37836)
-2395;200 Venture Coin (id=37836)
-2396;120 Venture Coin (id=37836)
+2377;1800 arena, 256500 Honor Points
+2378;1800 arena, 215460 Honor Points
+2379;76950 Honor Points
+2380;68400 Honor Points
+2381;1800 arena, 179550 Honor Points
+2382;1800 arena, 76950 Honor Points
+2383;1800 arena, 128250 Honor Points
+2384;1950 arena, 98325 Honor Points
+2385;1800 arena, 215460 Honor Points
+2386;1800 arena, 256500 Honor Points
+2387;76950 Honor Points
+2388;2500 Honor Points
+2389;1800 arena, 179550 Honor Points
+2390;1800 arena, 76950 Honor Points
+2391;1800 arena, 128250 Honor Points
+2392;1950 arena, 102600 Honor Points
+2393;2050 arena, 55575 Honor Points
+2394;60000 Honor Points
+2395;60000 Honor Points
+2396;36000 Honor Points
 2397;200 Brewfest Prize Token (id=37829)
 2398;2 Brewfest Prize Token (id=37829)
 2399;20 Brewfest Prize Token (id=37829)
-2400;17850 honor pts, 40 Eye of the Storm Mark of Honor (id=29024), 1700 arenarank
-2401;11794 honor pts, 20 Warsong Gulch Mark of Honor (id=20558), 1575 arenarank
-2402;15300 honor pts, 10 Alterac Valley Mark of Honor (id=20560), 1650 arenarank
-2403;40000 honor pts
-2404;8000 honor pts
-2405;9199 honor pts, 20 Warsong Gulch Mark of Honor (id=20558)
-2406;13923 honor pts, 40 Eye of the Storm Mark of Honor (id=29024)
+2400;1700 arena, 14000 Honor Points
+2401;1575 arena, 9000 Honor Points
+2402;1650 arena, 9000 Honor Points
+2403;14000 Honor Points
+2404;10000 Honor Points
+2405;159285 Honor Points
+2406;261904 Honor Points
 2407;500 Ethereal Credit (id=38186)
 2408;100 Ethereal Credit (id=38186)
 2409;250 Ethereal Credit (id=38186)
 2410;1000 Ethereal Credit (id=38186)
 2411;50 Ethereal Credit (id=38186)
 2412;25 Ethereal Credit (id=38186)
-2413;Winterfin Clam (id=34597)
+2413;1 Winterfin Clam (id=34597)
 2414;50 Winterfin Clam (id=34597)
 2415;30 Winterfin Clam (id=34597)
 2416;5 Winterfin Clam (id=34597)
 2417;20 Winterfin Clam (id=34597)
 2418;100 Winterfin Clam (id=34597)
 2419;60 Winterfin Clam (id=34597)
-2420;30 Venture Coin (id=37836)
-2421;70 Venture Coin (id=37836)
-2422;50 Venture Coin (id=37836)
-2423;800 arena pts
+2420;9000 Honor Points
+2421;21000 Honor Points
+2422;15000 Honor Points
+2423;68400 Honor Points
 2424;5 Brewfest Prize Token (id=37829)
-2425;9500 honor pts, 10 Alterac Valley Mark of Honor (id=20560)
-2426;1250 honor pts
-2427;35000 honor pts, 40 Alterac Valley Mark of Honor (id=20560)
-2428;20000 honor pts, 20 Arathi Basin Mark of Honor (id=20559)
-2429;3 Dalaran Jewelcrafter's Token (id=41596)
-2430;5 Dalaran Jewelcrafter's Token (id=41596)
-2431;250 arena pts
-2432;400 arena pts
-2433;Dalaran Jewelcrafter's Token (id=41596)
-2434;2 Dalaran Jewelcrafter's Token (id=41596)
-2435;Alterac Valley Mark of Honor (id=20560), Arathi Basin Mark of Honor (id=20559), Eye of the Storm Mark of Honor (id=29024), Warsong Gulch Mark of Honor (id=20558), Strand of the Ancients Mark of Honor (id=42425)
-2436;4 Dalaran Jewelcrafter's Token (id=41596)
+2425;5000 Honor Points
+2426;10000 Honor Points
+2427;14000 Honor Points
+2428;9000 Honor Points
+2429;3 Dalaran Jewelcrafter's Token
+2430;5 Dalaran Jewelcrafter's Token
+2431;21375 Honor Points
+2432;34200 Honor Points
+2433;1 Dalaran Jewelcrafter's Token
+2434;2 Dalaran Jewelcrafter's Token
+2435;1488 Honor Points
+2436;4 Dalaran Jewelcrafter's Token
 2437;100 Oshu'gun Relic (id=25634)
-2438;24000 honor pts, 700 arena pts
-2439;20000 honor pts, 575 arena pts
-2440;12000 honor pts, 350 arena pts
-2441;7200 honor pts, 200 arena pts
-2442;16800 honor pts, 475 arena pts
-2443;7200 honor pts, 200 arena pts
-2444;6400 honor pts, 175 arena pts
-2445;9600 honor pts, 275 arena pts
-2446;24800 honor pts
-2447;15800 honor pts
-2448;19000 honor pts
-2449;24000 honor pts, 1400 arena pts, 1705 arenarank
-2450;20000 honor pts, 1150 arena pts, 1705 arenarank
-2451;12000 honor pts, 700 arena pts, 1675 arenarank
-2452;7200 honor pts, 400 arena pts, 1615 arenarank
-2453;12000 honor pts, 700 arena pts, 1735 arenarank
-2454;12000 honor pts, 700 arena pts, 1645 arenarank
-2455;16800 honor pts, 950 arena pts, 1705 arenarank
-2456;7200 honor pts, 400 arena pts, 1705 arenarank
-2457;6400 honor pts, 350 arena pts, 1705 arenarank
-2458;12000 honor pts, 700 arena pts, 1705 arenarank
-2459;9600 honor pts, 550 arena pts, 1775 arenarank
-2460;4500 arena pts, 1930 arenarank
-2461;3750 arena pts, 1930arenarank
-2462;2250 arena pts, 1870 arenarank
-2463;1350 arena pts, 1750 arenarank
-2464;2250 arena pts, 1990 arenarank
-2465;2250 arena pts, 1810 arenarank
-2466;3150 arena pts, 1930 arenarank
-2467;1350 arena pts, 1930 arenarank
-2468;1200 arena pts, 1930 arenarank
-2469;2250 arena pts, 1930 arenarank
-2470;1750 arena pts, 2050 arenarank
-2471;31000 honor pts, 1630 arenarank
-2472;31000 honor pts, 1720 arenarank
-2473;19700 honor pts, 1660 arenarank
-2474;23700 honor pts, 1750 arenarank
-2475;23700 honor pts, 1600 arenarank
-2476;23700 honor pts, 1690 arenarank
-2477;31000 honor pts, 1800 arenarank
-2478;3 Dalaran Cooking Award (id=43016)
-2479;5 Dalaran Cooking Award (id=43016)
-2480;Dalaran Cooking Award (id=43016)
-2481;12 Stone Keeper's Shard (id=43228)
-2482;24 Stone Keeper's Shard (id=43228)
-2483;12 honor pts
-2484;10 Emblem of Heroism (id=40752)
-2485;Chestguard of the Lost Vanquisher (id=40612)
-2486;Gloves of the Lost Vanquisher (id=40615)
-2487;Helm of the Lost Vanquisher (id=40618)
-2488;Leggings of the Lost Vanquisher (id=40621)
-2489;Spaulders of the Lost Vanquisher (id=40624)
-2490;Helm of the Lost Conqueror (id=40616)
-2491;Chestguard of the Lost Conqueror (id=40610)
-2492;Leggings of the Lost Conqueror (id=40619)
-2493;Spaulders of the Lost Conqueror (id=40622)
-2494;Gloves of the Lost Conqueror (id=40613)
-2495;Chestguard of the Lost Protector (id=40611)
-2496;Gloves of the Lost Protector (id=40614)
-2497;Helm of the Lost Protector (id=40617)
-2498;Leggings of the Lost Protector (id=40620)
-2499;Spaulders of the Lost Protector (id=40623)
+2438;459850 Honor Points
+2439;382495 Honor Points
+2440;229925 Honor Points
+2441;137100 Honor Points
+2442;320612 Honor Points
+2443;137100 Honor Points
+2444;121629 Honor Points
+2445;183512 Honor Points
+2446;413333 Honor Points
+2447;263333 Honor Points
+2448;316666 Honor Points
+2449;1705 arena, 519700 Honor Points
+2450;1705 arena, 431658 Honor Points
+2451;1675 arena, 259850 Honor Points
+2452;1615 arena, 154200 Honor Points
+2453;1735 arena, 259850 Honor Points
+2454;1645 arena, 259850 Honor Points
+2455;1705 arena, 361225 Honor Points
+2456;1705 arena, 154200 Honor Points
+2457;1705 arena, 136591 Honor Points
+2458;1705 arena, 259850 Honor Points
+2459;1775 arena, 207000 Honor Points
+2460;1930 arena, 384750 Honor Points
+2461;1930 arena, 320625 Honor Points
+2462;1870 arena, 192375 Honor Points
+2463;1750 arena, 115425 Honor Points
+2464;1990 arena, 192375 Honor Points
+2465;1810 arena, 192375 Honor Points
+2466;1930 arena, 269325 Honor Points
+2467;1930 arena, 115425 Honor Points
+2468;1930 arena, 102600 Honor Points
+2469;1930 arena, 192375 Honor Points
+2470;2050 arena, 149625 Honor Points
+2471;1630 arena, 516666 Honor Points
+2472;1720 arena, 516666 Honor Points
+2473;1660 arena, 328333 Honor Points
+2474;1750 arena, 395000 Honor Points
+2475;1600 arena, 395000 Honor Points
+2476;1690 arena, 395000 Honor Points
+2477;1800 arena, 516666 Honor Points
+2478;3 Dalaran Cooking Award
+2479;5 Dalaran Cooking Award
+2480;1 Dalaran Cooking Award
+2481;1900 Honor Points
+2482;3800 Honor Points
+2483;200 Honor Points
+2484;11000 Justice Points
+2485;1 Chestguard of the Lost Vanquisher (id=40612)
+2486;1 Gloves of the Lost Vanquisher (id=40615)
+2487;1 Helm of the Lost Vanquisher (id=40618)
+2488;1 Leggings of the Lost Vanquisher (id=40621)
+2489;1 Spaulders of the Lost Vanquisher (id=40624)
+2490;1 Helm of the Lost Conqueror (id=40616)
+2491;1 Chestguard of the Lost Conqueror (id=40610)
+2492;1 Leggings of the Lost Conqueror (id=40619)
+2493;1 Spaulders of the Lost Conqueror (id=40622)
+2494;1 Gloves of the Lost Conqueror (id=40613)
+2495;1 Chestguard of the Lost Protector (id=40611)
+2496;1 Gloves of the Lost Protector (id=40614)
+2497;1 Helm of the Lost Protector (id=40617)
+2498;1 Leggings of the Lost Protector (id=40620)
+2499;1 Spaulders of the Lost Protector (id=40623)
 2500;10 Relic of Ulduar (id=42780)
 2501;2 Relic of Ulduar (id=42780)
 2502;250 Relic of Ulduar (id=42780)
-2503;Gauntlets of the Lost Conqueror (id=40628)
-2504;Breastplate of the Lost Conqueror (id=40625)
-2505;Crown of the Lost Conqueror (id=40631)
-2506;Legplates of the Lost Conqueror (id=40634)
-2507;Mantle of the Lost Conqueror (id=40637)
-2508;Breastplate of the Lost Protector (id=40626)
-2509;Crown of the Lost Protector (id=40632)
-2510;Gauntlets of the Lost Protector (id=40629)
-2511;Legplates of the Lost Protector (id=40635)
-2512;Mantle of the Lost Protector (id=40638)
-2513;Breastplate of the Lost Vanquisher (id=40627)
-2514;Crown of the Lost Vanquisher (id=40633)
-2515;Gauntlets of the Lost Vanquisher (id=40630)
-2516;Legplates of the Lost Vanquisher (id=40636)
-2517;Mantle of the Lost Vanquisher (id=40639)
+2503;1 Gauntlets of the Lost Conqueror (id=40628)
+2504;1 Breastplate of the Lost Conqueror (id=40625)
+2505;1 Crown of the Lost Conqueror (id=40631)
+2506;1 Legplates of the Lost Conqueror (id=40634)
+2507;1 Mantle of the Lost Conqueror (id=40637)
+2508;1 Breastplate of the Lost Protector (id=40626)
+2509;1 Crown of the Lost Protector (id=40632)
+2510;1 Gauntlets of the Lost Protector (id=40629)
+2511;1 Legplates of the Lost Protector (id=40635)
+2512;1 Mantle of the Lost Protector (id=40638)
+2513;1 Breastplate of the Lost Vanquisher (id=40627)
+2514;1 Crown of the Lost Vanquisher (id=40633)
+2515;1 Gauntlets of the Lost Vanquisher (id=40630)
+2516;1 Legplates of the Lost Vanquisher (id=40636)
+2517;1 Mantle of the Lost Vanquisher (id=40639)
 2518;15 Necrotic Rune (id=22484)
 2519;20 Necrotic Rune (id=22484)
 2520;8 Necrotic Rune (id=22484)
 2521;30 Necrotic Rune (id=22484)
 2522;40 Necrotic Rune (id=22484)
-2523;25 Emblem of Heroism (id=40752)
-2524;40 Emblem of Heroism (id=40752)
-2525;15 Emblem of Heroism (id=40752)
-2526;60 Emblem of Heroism (id=40752)
-2527;75 Emblem of Heroism (id=40752)
-2528;45 Emblem of Heroism (id=40752)
-2529;30 Emblem of Heroism (id=40752)
-2530;100 Emblem of Heroism (id=40752)
-2531;35 Emblem of Heroism (id=40752)
-2532;50 Emblem of Heroism (id=40752)
-2533;80 Emblem of Heroism (id=40752)
-2534;25 Emblem of Valor (id=40753)
-2535;60 Emblem of Valor (id=40753)
-2536;40 Emblem of Valor (id=40753)
-2537;60 Emblem of Valor (id=40753)
-2538;75 Emblem of Valor (id=40753)
-2539;45 Emblem of Valor (id=40753)
-2540;30 Emblem of Valor (id=40753)
-2541;10 Dalaran Cooking Award (id=43016)
-2542;200 Stone Keeper's Shard (id=43228)
-2543;325 Stone Keeper's Shard (id=43228)
-2544;250 Stone Keeper's Shard (id=43228)
-2545;20 Stone Keeper's Shard (id=43228)
-2546;30 Stone Keeper's Shard (id=43228)
-2547;15 Stone Keeper's Shard (id=43228)
-2548;100 Stone Keeper's Shard (id=43228)
-2549;40 Stone Keeper's Shard (id=43228)
-2550;200 Emblem of Heroism (id=40752)
-2551;65 Emblem of Heroism (id=40752)
-2552;300 Stone Keeper's Shard (id=43228)
+2523;29000 Justice Points
+2524;34800 Justice Points
+2525;17400 Justice Points
+2526;34800 Justice Points
+2527;81500 Justice Points
+2528;55000 Justice Points
+2529;34800 Justice Points
+2530;108700 Justice Points
+2531;34800 Justice Points
+2532;55000 Justice Points
+2533;55000 Justice Points
+2534;20800 Justice Points
+2535;34700 Justice Points
+2536;41700 Justice Points
+2537;75000 Justice Points
+2538;66000 Justice Points
+2539;66000 Justice Points
+2540;41700 Justice Points
+2541;10 Dalaran Cooking Award
+2542;217500 Honor Points
+2543;350000 Honor Points
+2544;272500 Honor Points
+2545;16500 Honor Points
+2546;5000 Honor Points
+2547;2400 Honor Points
+2548;16000 Honor Points
+2549;6500 Honor Points
+2550;217500 Justice Points
+2551;350000 Justice Points
+2552;100000 Honor Points
 2553;4 Dream Shard (id=34052)
 2554;10 Dream Shard (id=34052)
 2555;3 Heavy Borean Leather (id=38425)
 2556;2 Arctic Fur (id=44128)
-2557;2500 honor pts
-2558;6 Dalaran Jewelcrafter's Token (id=41596)
-2559;49600 honor pts
-2560;31600 honor pts
-2561;38000 honor pts
-2562;62000 honor pts, 1630 arenarank
-2563;62000 honor pts, 1720 arenarank
-2564;39400 honor pts, 1660 arenarank
-2565;47400 honor pts, 1750 arenarank
-2566;47400 honor pts, 1600 arenarank
-2567;47400 honor pts, 1690 arenarank
-2568;62000 honor pts, 1800 arenarank
-2569;60000 honor pts
-2570;50000 honor pts
+2557;41666 Honor Points
+2558;6 Dalaran Jewelcrafter's Token
+2559;826666 Honor Points
+2560;526666 Honor Points
+2561;633333 Honor Points
+2562;1630 arena, 1033333 Honor Points
+2563;1720 arena, 1033333 Honor Points
+2564;1660 arena, 656666 Honor Points
+2565;1750 arena, 790000 Honor Points
+2566;1600 arena, 790000 Honor Points
+2567;1690 arena, 790000 Honor Points
+2568;1800 arena, 1033333 Honor Points
+2569;1000000 Honor Points
+2570;200000 Honor Points
 2571;10 Noblegarden Chocolate (id=44791)
 2572;25 Noblegarden Chocolate (id=44791)
 2573;50 Noblegarden Chocolate (id=44791)
 2574;100 Noblegarden Chocolate (id=44791)
 2575;5 Noblegarden Chocolate (id=44791)
-2576;9 Wintergrasp Mark of Honor (id=43589)
-2577;15 Wintergrasp Mark of Honor (id=43589)
-2578;25 Wintergrasp Mark of Honor (id=43589)
-2579;40 Wintergrasp Mark of Honor (id=43589)
-2580;Coin of Ancestry (id=21100)
+2576;17172 Honor Points
+2577;28000 Honor Points
+2578;28000 Honor Points
+2579;49000 Honor Points
+2580;1 Coin of Ancestry (id=21100)
 2581;5 Coin of Ancestry (id=21100)
-2582;Ink of the Sea (id=43126)
-2583;10 Ink of the Sea (id=43126)
+2582;1 Blackfallow Ink (id=61978)
+2583;10 Blackfallow Ink (id=61978)
 2584;5 Abyss Crystal (id=34057)
 2585;2 Winterfin Clam (id=34597)
 2586;2 Winterfin Clam (id=34597)
 2587;10 Winterfin Clam (id=34597)
-2588;10000 honor pts
-2589;Emblem of Valor (id=40753)
-2590;100 honor pts, 200 arena pts, 2 Emblem of Heroism (id=40752), 2 Emblem of Valor (id=40753), 2 Stone Keeper's Shard (id=43228)
-2591;Band of the Kirin Tor (id=40586)
-2592;Band of the Kirin Tor (id=40586)
-2593;Loop of the Kirin Tor (id=44934)
-2594;Ring of the Kirin Tor (id=44935)
-2595;Signet of the Kirin Tor (id=40585)
-2596;100 arena pts
-2597;15 Champion's Seal (id=44990)
-2598;50 Champion's Seal (id=44990)
-2599;40 Champion's Seal (id=44990)
-2600;100 Champion's Seal (id=44990)
-2601;25 Champion's Seal (id=44990)
-2602;10 Champion's Seal (id=44990)
-2603;150 Champion's Seal (id=44990)
-2604;18 Emblem of Conquest (id=45624)
-2605;30400 honor pts
-2606;19 Emblem of Conquest (id=45624)
-2607;28 Emblem of Conquest (id=45624)
-2608;6400 honor pts, 350 arena pts, 700 arenarank
-2609;7200 honor pts, 400 arena pts, 800 arenarank
-2610;12000 honor pts, 700 arena pts, 900 arenarank
-2611;12000 honor pts, 700 arena pts, 1000 arenarank
-2612;12000 honor pts, 700 arena pts, 1100 arenarank
-2613;9600 honor pts, 550 arena pts, 1350 arenarank
-2614;39400 honor pts, 1400 arenarank
-2615;62000 honor pts, 1450 arenarank
-2616;62000 honor pts, 1500 arenarank
-2617;47400 honor pts, 1550 arenarank
-2618;47400 honor pts, 1650 arenarank
-2619;47400 honor pts, 2000 arenarank
-2620;58 Emblem of Conquest (id=45624)
-2621;1300 arena pts, 1600 arenarank
-2622;2150 arena pts, 1750 arenarank
-2623;50000 honor pts, 1400 arena pts, 1850 arenarank
-2624;35000 honor pts, 1200 arena pts, 1850 arenarank
-2625;35000 honor pts, 1200 arena pts, 1850 arenarank
-2626;15000 honor pts, 1100 arena pts, 1850 arenarank
-2627;1066 arena pts, 1850 arenarank
-2628;1950 arena pts, 1850 arenarank
-2629;2150 arena pts, 1900 arenarank
-2630;39 Emblem of Conquest (id=45624)
-2631;46 Emblem of Conquest (id=45624)
-2632;4250 arena pts, 2350 arenarank
-2633;3585 arena pts, 2350 arenarank
-2634;3000 arena pts, 2350 arenarank
-2635;1245 arena pts, 2350 arenarank
-2636;500 arena pts, 2350 arenarank
-2637;Emblem of Conquest (id=45624)
-2638;15 Emblem of Valor (id=40753)
-2639;Champion's Writ (id=46114)
-2640;Gloves of the Wayward Conqueror (id=45644)
-2641;Gauntlets of the Wayward Conqueror (id=45641)
-2642;Spaulders of the Wayward Conqueror (id=45659)
-2643;Mantle of the Wayward Conqueror (id=45656)
-2644;Leggings of the Wayward Conqueror (id=45650)
-2645;Legplates of the Wayward Conqueror (id=45653)
-2646;Chestguard of the Wayward Conqueror (id=45635)
-2647;Breastplate of the Wayward Conqueror (id=45632)
-2648;Helm of the Wayward Conqueror (id=45647)
-2649;Crown of the Wayward Conqueror (id=45638)
-2650;Gloves of the Wayward Protector (id=45645)
-2651;Gauntlets of the Wayward Protector (id=45642)
-2652;Spaulders of the Wayward Protector (id=45660)
-2653;Mantle of the Wayward Protector (id=45657)
-2654;Leggings of the Wayward Protector (id=45651)
-2655;Legplates of the Wayward Protector (id=45654)
-2656;Chestguard of the Wayward Protector (id=45636)
-2657;Breastplate of the Wayward Protector (id=45633)
-2658;Helm of the Wayward Protector (id=45648)
-2659;Crown of the Wayward Protector (id=45639)
-2660;Gloves of the Wayward Vanquisher (id=45646)
-2661;Gauntlets of the Wayward Vanquisher (id=45643)
-2662;Spaulders of the Wayward Vanquisher (id=45661)
-2663;Mantle of the Wayward Vanquisher (id=45658)
-2664;Leggings of the Wayward Vanquisher (id=45652)
-2665;Legplates of the Wayward Vanquisher (id=45655)
-2666;Chestguard of the Wayward Vanquisher (id=45637)
-2667;Breastplate of the Wayward Vanquisher (id=45634)
-2668;Helm of the Wayward Vanquisher (id=45649)
-2669;Crown of the Wayward Vanquisher (id=45640)
-2670;100 Dalaran Cooking Award (id=43016)
-2671;5 Champion's Seal (id=44990)
-2673;60 Champion's Seal (id=44990)
-2674;95 Champion's Seal (id=44990)
-2675;75 Champion's Seal (id=44990)
-2676;2000 arena pts, 1850 arenarank
-2677;2000 arena pts, 1850 arenarank(1)
-2678;2000 arena pts, 1850 arenarank(2)
-2679;Regalia of the Grand Conqueror  (id=47557)
-2680;Regalia of the Grand Protector (id=47558)
-2681;Regalia of the Grand Vanquisher (id=47559)
-2682;25 Emblem of Triumph (id=47241)
-2683;75 Emblem of Triumph (id=47241), Trophy of the Crusade (id=47242)
-2684;45 Emblem of Triumph (id=47241), Trophy of the Crusade (id=47242)
-2685;35 Emblem of Triumph (id=47241)
-2686;50 Emblem of Triumph (id=47241)
-2687;30 Emblem of Triumph (id=47241)
-2688;2150 arena pts, 1600 arenarank
-2689;1300 arena pts, 1400 arenarank
-2690;2150 arena pts, 1900 arenarank
-2691;2150 arena pts, 1550 arenarank
-2692;1750 arena pts, 2000 arenarank(1)
-2693;50000 honor pts, 1400 arena pts, 1800 arenarank
-2694;4250 arena pts, 2200 arenarank(1)
-2695;35000 honor pts, 1200 arena pts, 1800 arenarank
-2696;3585 arena pts, 2200 arenarank(1)
-2697;3000 arena pts, 2200 arenarank(1)
-2698;15000 honor pts, 1100 arena pts, 1800 arenarank
-2699;1245 arena pts, 2200 arenarank(1)
-2700;1150 arena pts, 1800 arenarank
-2701;300 arena pts, 1800 arenarank
-2702;Inscribed Band of the Kirin Tor (id=45688)
-2703;Inscribed Loop of the Kirin Tor (id=45689)
-2704;Inscribed Ring of the Kirin Tor (id=45690)
-2705;Inscribed Signet of the Kirin Tor (id=45691)
-2706;20 Emblem of Heroism (id=40752)
-2707;Emblem of Triumph (id=47241)
-2708;75 Emblem of Triumph (id=47241)
-2709;45 Emblem of Triumph (id=47241)
+2588;16500 Honor Points
+2589;1200 Justice Points
+2590;4700 Justice Points, 19000 Honor Points
+2591;1 Band of the Kirin Tor (id=40586)
+2592;1 Band of the Kirin Tor (id=40586)
+2593;1 Loop of the Kirin Tor (id=44934)
+2594;1 Ring of the Kirin Tor (id=44935)
+2595;1 Signet of the Kirin Tor (id=40585)
+2596;8550 Honor Points
+2597;15 Champion's Seal
+2598;50 Champion's Seal
+2599;40 Champion's Seal
+2600;100 Champion's Seal
+2601;25 Champion's Seal
+2602;10 Champion's Seal
+2603;150 Champion's Seal
+2604;18600 Justice Points
+2605;506666 Honor Points
+2606;24300 Justice Points
+2607;48700 Justice Points
+2608;700 arena, 55500 Honor Points
+2609;800 arena, 154200 Honor Points
+2610;900 arena, 259850 Honor Points
+2611;1000 arena, 259850 Honor Points
+2612;1100 arena, 259850 Honor Points
+2613;1350 arena, 207000 Honor Points
+2614;1400 arena, 656666 Honor Points
+2615;1450 arena, 1033333 Honor Points
+2616;1500 arena, 1033333 Honor Points
+2617;1550 arena, 790000 Honor Points
+2618;1650 arena, 790000 Honor Points
+2619;2000 arena, 790000 Honor Points
+2620;77000 Justice Points
+2621;1600 arena, 111150 Honor Points
+2622;1750 arena, 183825 Honor Points
+2623;1850 arena, 953033 Honor Points
+2624;1850 arena, 685933 Honor Points
+2625;1850 arena, 685933 Honor Points
+2626;1850 arena, 344050 Honor Points
+2627;1850 arena, 91143 Honor Points
+2628;1850 arena, 166725 Honor Points
+2629;1900 arena, 183825 Honor Points
+2630;77000 Justice Points
+2631;48700 Justice Points
+2632;2350 arena, 363375 Honor Points
+2633;2350 arena, 306517 Honor Points
+2634;2350 arena, 256500 Honor Points
+2635;2350 arena, 106447 Honor Points
+2636;2350 arena, 42750 Honor Points
+2637;2100 Justice Points
+2638;18800 Justice Points
+2639;1 Champion's Writ (id=46114)
+2640;1 Gloves of the Wayward Conqueror (id=45644)
+2641;1 Gauntlets of the Wayward Conqueror (id=45641)
+2642;1 Spaulders of the Wayward Conqueror (id=45659)
+2643;1 Mantle of the Wayward Conqueror (id=45656)
+2644;1 Leggings of the Wayward Conqueror (id=45650)
+2645;1 Legplates of the Wayward Conqueror (id=45653)
+2646;1 Chestguard of the Wayward Conqueror (id=45635)
+2647;1 Breastplate of the Wayward Conqueror (id=45632)
+2648;1 Helm of the Wayward Conqueror (id=45647)
+2649;1 Crown of the Wayward Conqueror (id=45638)
+2650;1 Gloves of the Wayward Protector (id=45645)
+2651;1 Gauntlets of the Wayward Protector (id=45642)
+2652;1 Spaulders of the Wayward Protector (id=45660)
+2653;1 Mantle of the Wayward Protector (id=45657)
+2654;1 Leggings of the Wayward Protector (id=45651)
+2655;1 Legplates of the Wayward Protector (id=45654)
+2656;1 Chestguard of the Wayward Protector (id=45636)
+2657;1 Breastplate of the Wayward Protector (id=45633)
+2658;1 Helm of the Wayward Protector (id=45648)
+2659;1 Crown of the Wayward Protector (id=45639)
+2660;1 Gloves of the Wayward Vanquisher (id=45646)
+2661;1 Gauntlets of the Wayward Vanquisher (id=45643)
+2662;1 Spaulders of the Wayward Vanquisher (id=45661)
+2663;1 Mantle of the Wayward Vanquisher (id=45658)
+2664;1 Leggings of the Wayward Vanquisher (id=45652)
+2665;1 Legplates of the Wayward Vanquisher (id=45655)
+2666;1 Chestguard of the Wayward Vanquisher (id=45637)
+2667;1 Breastplate of the Wayward Vanquisher (id=45634)
+2668;1 Helm of the Wayward Vanquisher (id=45649)
+2669;1 Crown of the Wayward Vanquisher (id=45640)
+2670;100 Dalaran Cooking Award
+2671;5 Champion's Seal
+2673;60 Champion's Seal
+2674;95 Champion's Seal
+2675;75 Champion's Seal
+2676;1850 arena, 171000 Honor Points
+2677;1850 arena, 171000 Honor Points
+2678;1850 arena, 171000 Honor Points
+2679;1 Regalia of the Grand Conqueror (id=47557)
+2680;1 Regalia of the Grand Protector (id=47558)
+2681;1 Regalia of the Grand Vanquisher (id=47559)
+2682;29500 Justice Points
+2683;1 Trophy of the Crusade (id=47242), 119600 Justice Points
+2684;1 Trophy of the Crusade (id=47242), 71700 Justice Points
+2685;49200 Justice Points
+2686;59100 Justice Points
+2687;47800 Justice Points
+2688;1600 arena, 183825 Honor Points
+2689;1400 arena, 111150 Honor Points
+2690;1900 arena, 183825 Honor Points
+2691;1550 arena, 183825 Honor Points
+2692;2000 arena, 149625 Honor Points
+2693;1800 arena, 953033 Honor Points
+2694;2200 arena, 363375 Honor Points
+2695;1800 arena, 685933 Honor Points
+2696;2200 arena, 306517 Honor Points
+2697;2200 arena, 256500 Honor Points
+2698;1800 arena, 344050 Honor Points
+2699;2200 arena, 106447 Honor Points
+2700;1800 arena, 98325 Honor Points
+2701;1800 arena, 25650 Honor Points
+2702;1 Inscribed Band of the Kirin Tor (id=45688)
+2703;1 Inscribed Loop of the Kirin Tor (id=45689)
+2704;1 Inscribed Ring of the Kirin Tor (id=45690)
+2705;1 Inscribed Signet of the Kirin Tor (id=45691)
+2706;22000 Justice Points
+2707;1600 Justice Points
+2708;93500 Justice Points
+2709;59100 Justice Points
 2710;10 Titanium Powder (id=46849)
-2711;75 Emblem of Conquest (id=45624)
-2712;62000 honor pts, 1250 arenarank
-2713;62000 honor pts, 1300 arenarank
-2714;39400 honor pts, 1200 arenarank
-2715;47400 honor pts, 1750 arenarank
-2716;47400 honor pts, 1450 arenarank
-2717;47400 honor pts, 1500 arenarank
-2718;62000 honor pts, 1650 arenarank
-2719;1100 arena pts, 1850 arenarank
-2720;300 arena pts, 1800 arenarank
-2721;1100 arena pts, 1850 arenarank
-2722;500 arena pts, 2350 arenarank
-2723;15 Emblem of Triumph (id=47241)
+2711;154700 Justice Points
+2712;1250 arena, 1033333 Honor Points
+2713;1300 arena, 1033333 Honor Points
+2714;1200 arena, 656666 Honor Points
+2715;1750 arena, 790000 Honor Points
+2716;1450 arena, 790000 Honor Points
+2717;1500 arena, 790000 Honor Points
+2718;1650 arena, 1033333 Honor Points
+2719;1850 arena, 94050 Honor Points
+2720;1800 arena, 25650 Honor Points
+2721;1850 arena, 94050 Honor Points
+2722;2350 arena, 42750 Honor Points
+2723;22600 Justice Points
 2724;10 Heavy Borean Leather (id=38425)
-2725;Love Token (id=49927)
+2725;1 Love Token (id=49927)
 2726;10 Love Token (id=49927)
 2727;5 Love Token (id=49927)
 2728;2 Love Token (id=49927)
 2729;40 Love Token (id=49927)
-2730;Lovely Charm Bracelet (id=49916)
-2731;Primordial Saronite (id=49908)
+2730;1 Lovely Charm Bracelet (id=49916)
+2731;1 Primordial Saronite (id=49908)
 2732;30 Love Token (id=49927)
 2733;20 Love Token (id=49927)
-2734;Emblem of Triumph (id=47241)
-2735;Etched Signet of the Kirin Tor (id=48957)
-2736;Etched Ring of the Kirin Tor (id=48956)
-2737;Etched Loop of the Kirin Tor (id=48955)
-2738;Etched Band of the Kirin Tor (id=48954)
-2739;30 Emblem of Frost (id=49426)
-2740;60 Emblem of Frost (id=49426)
-2741;50 Emblem of Frost (id=49426)
-2742;95 Emblem of Frost (id=49426)
-2743;Emblem of Frost (id=49426)
-2744;23 Emblem of Frost (id=49426)
-2745;Vanquisher's Mark of Sanctification (id=52025), Bloodmage Shoulderpads (id=50279)
-2746;Vanquisher's Mark of Sanctification (id=52025), Bloodmage Robe (id=50278)
-2747;Vanquisher's Mark of Sanctification (id=52025), Bloodmage Leggings (id=50277)
-2748;Vanquisher's Mark of Sanctification (id=52025), Bloodmage Hood (id=50276)
-2749;Vanquisher's Mark of Sanctification (id=52025), Bloodmage Gloves (id=50275)
-2750;Vanquisher's Mark of Sanctification (id=52028), Sanctified Bloodmage Gloves (id=51159)
-2751;Vanquisher's Mark of Sanctification (id=52028), Sanctified Bloodmage Hood (id=51158)
-2752;Vanquisher's Mark of Sanctification (id=52028), Sanctified Bloodmage Leggings (id=51157)
-2753;Vanquisher's Mark of Sanctification (id=52028), Sanctified Bloodmage Robe (id=51156)
-2754;Vanquisher's Mark of Sanctification (id=52028), Sanctified Bloodmage Shoulderpads (id=51155)
-2755;Vanquisher's Mark of Sanctification (id=52025), Shadowblade Pauldrons (id=50105)
-2756;Vanquisher's Mark of Sanctification (id=52025), Shadowblade Legplates (id=50090)
-2757;Vanquisher's Mark of Sanctification (id=52025), Shadowblade Helmet (id=50089)
-2758;Vanquisher's Mark of Sanctification (id=52025), Shadowblade Gauntlets (id=50088)
-2759;Vanquisher's Mark of Sanctification (id=52025), Shadowblade Breastplate (id=50087)
-2760;Vanquisher's Mark of Sanctification (id=52028), Sanctified Shadowblade Breastplate (id=51189)
-2761;Vanquisher's Mark of Sanctification (id=52028), Sanctified Shadowblade Gauntlets (id=51188)
-2762;Vanquisher's Mark of Sanctification (id=52028), Sanctified Shadowblade Helmet (id=51187)
-2763;Vanquisher's Mark of Sanctification (id=52028), Sanctified Shadowblade Legplates (id=51186)
-2764;Vanquisher's Mark of Sanctification (id=52028), Sanctified Shadowblade Pauldrons (id=51185)
-2765;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Pauldrons (id=50113)
-2766;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Legplates (id=50109)
-2767;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Helmet (id=50108)
-2768;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Gauntlets (id=50107)
-2769;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Robes (id=50106)
-2770;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Robes (id=51139)
-2771;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Gauntlets (id=51138)
-2772;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Helmet (id=51137)
-2773;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Legplates (id=51136)
-2774;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Pauldrons (id=51135)
-2775;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Vestment (id=50823)
-2776;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Trousers (id=50820)
-2777;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Mantle (id=50819)
-2778;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Gloves (id=50822)
-2779;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Cover (id=50821)
-2780;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Cover (id=51149)
-2781;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Gloves (id=51148)
-2782;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Mantle (id=51147)
-2783;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Trousers (id=51146)
-2784;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Vestment (id=51145)
-2785;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Shoulderpads (id=50824)
-2786;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Raiment (id=50828)
-2787;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Legguards (id=50825)
-2788;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Headguard (id=50826)
-2789;Vanquisher's Mark of Sanctification (id=52025), Lasherweave Handgrips (id=50827)
-2790;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Handgrips (id=51144)
-2791;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Headguard (id=51143)
-2792;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Legguards (id=51142)
-2793;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Raiment (id=51141)
-2794;Vanquisher's Mark of Sanctification (id=52028), Sanctified Lasherweave Shoulderpads (id=51140)
-2795;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Shoulderplates (id=50098)
-2796;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Legplates (id=50097)
-2797;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Helmet (id=50096)
-2798;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Gauntlets (id=50095)
-2799;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Battleplate (id=50094)
-2800;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Battleplate (id=51129)
-2801;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Gauntlets (id=51128)
-2802;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Helmet (id=51127)
-2803;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Legplates (id=51126)
-2804;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Shoulderplates (id=51125)
-2805;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Pauldrons (id=50853)
-2806;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Legguards (id=50854)
-2807;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Handguards (id=50856)
-2808;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Faceguard (id=50855)
-2809;Vanquisher's Mark of Sanctification (id=52025), Scourgelord Chestguard (id=50857)
-2810;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Chestguard (id=51134)
-2811;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Faceguard (id=51133)
-2812;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Handguards (id=51132)
-2813;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Legguards (id=51131)
-2814;Vanquisher's Mark of Sanctification (id=52028), Sanctified Scourgelord Pauldrons (id=51130)
-2815;Conqueror's Mark of Sanctification (id=52027), Lightsworn Tunic (id=50869)
-2816;Conqueror's Mark of Sanctification (id=52027), Lightsworn Spaulders (id=50865)
-2817;Conqueror's Mark of Sanctification (id=52027), Lightsworn Headpiece (id=50867)
-2818;Conqueror's Mark of Sanctification (id=52027), Lightsworn Greaves (id=50866)
-2819;Conqueror's Mark of Sanctification (id=52027), Lightsworn Gloves (id=50868)
-2820;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Gloves (id=51169)
-2821;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Greaves (id=51168)
-2822;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Headpiece (id=51167)
-2823;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Spaulders (id=51166)
-2824;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Tunic (id=51165)
-2825;Conqueror's Mark of Sanctification (id=52027), Lightsworn Shoulderplates (id=50324)
-2826;Conqueror's Mark of Sanctification (id=52027), Lightsworn Legplates (id=50325)
-2827;Conqueror's Mark of Sanctification (id=52027), Lightsworn Helmet (id=50326)
-2828;Conqueror's Mark of Sanctification (id=52027), Lightsworn Gauntlets (id=50327)
-2829;Conqueror's Mark of Sanctification (id=52027), Lightsworn Battleplate (id=50328)
-2830;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Battleplate (id=51164)
-2831;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Gauntlets (id=51163)
-2832;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Helmet (id=51162)
-2833;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Legplates (id=51161)
-2834;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Shoulderplates (id=51160)
-2835;Conqueror's Mark of Sanctification (id=52027), Lightsworn Shoulderguards (id=50860)
-2836;Conqueror's Mark of Sanctification (id=52027), Lightsworn Legguards (id=50861)
-2837;Conqueror's Mark of Sanctification (id=52027), Lightsworn Handguards (id=50863)
-2838;Conqueror's Mark of Sanctification (id=52027), Lightsworn Faceguard (id=50862)
-2839;Conqueror's Mark of Sanctification (id=52027), Lightsworn Chestguard (id=50864)
-2840;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Chestguard (id=51174)
-2841;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Faceguard (id=51173)
-2842;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Handguards (id=51172)
-2843;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Legguards (id=51171)
-2844;Conqueror's Mark of Sanctification (id=52030), Sanctified Lightsworn Shoulderguards (id=51170)
-2845;Conqueror's Mark of Sanctification (id=52027), Dark Coven Shoulderpads (id=50244)
-2846;Conqueror's Mark of Sanctification (id=52027), Dark Coven Robe (id=50243)
-2847;Conqueror's Mark of Sanctification (id=52027), Dark Coven Leggings (id=50242)
-2848;Conqueror's Mark of Sanctification (id=52027), Dark Coven Hood (id=50241)
-2849;Conqueror's Mark of Sanctification (id=52027), Dark Coven Gloves (id=50240)
-2850;Conqueror's Mark of Sanctification (id=52030), Sanctified Dark Coven Gloves (id=51209)
-2851;Conqueror's Mark of Sanctification (id=52030), Sanctified Dark Coven Hood (id=51208)
-2852;Conqueror's Mark of Sanctification (id=52030), Sanctified Dark Coven Leggings (id=51207)
-2853;Conqueror's Mark of Sanctification (id=52030), Sanctified Dark Coven Robe (id=51206)
-2854;Conqueror's Mark of Sanctification (id=52030), Sanctified Dark Coven Shoulderpads (id=51205)
-2855;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Shoulderpads (id=50767)
-2856;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Robe (id=50768)
-2857;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Leggings (id=50769)
-2858;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Hood (id=50765)
-2859;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Gloves (id=50766)
-2860;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Gloves (id=51179)
-2861;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Hood (id=51178)
-2862;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Leggings (id=51177)
-2863;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Robe (id=51176)
-2864;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Shoulderpads (id=51175)
-2865;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Raiments (id=50394)
-2866;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Pants (id=50393)
-2867;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Mantle (id=50396)
-2868;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Handwraps (id=50391)
-2869;Conqueror's Mark of Sanctification (id=52027), Crimson Acolyte Cowl (id=50392)
-2870;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Cowl (id=51184)
-2871;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Handwraps (id=51183)
-2872;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Mantle (id=51182)
-2873;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Pants (id=51181)
-2874;Conqueror's Mark of Sanctification (id=52030), Sanctified Crimson Acolyte Raiments (id=51180)
-2875;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Shoulderplates (id=50082)
-2876;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Legplates (id=50081)
-2877;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Helmet (id=50080)
-2878;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Gauntlets (id=50079)
-2879;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Battleplate (id=50078)
-2880;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Battleplate (id=51214)
-2881;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Gauntlets (id=51213)
-2882;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Helmet (id=51212)
-2883;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Legplates (id=51211)
-2884;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Shoulderplates (id=51210)
-2885;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Pauldrons (id=50846)
-2886;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Legguards (id=50847)
-2887;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Handguards (id=50849)
-2888;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Greathelm (id=50848)
-2889;Protector's Mark of Sanctification (id=52026), Ymirjar Lord's Breastplate (id=50850)
-2890;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Breastplate (id=51219)
-2891;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Greathelm (id=51218)
-2892;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Handguards (id=51217)
-2893;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Legguards (id=51216)
-2894;Protector's Mark of Sanctification (id=52029), Sanctified Ymirjar Lord's Pauldrons (id=51215)
-2895;Protector's Mark of Sanctification (id=52026), Ahn'Kahar Blood Hunter's Tunic (id=50118)
-2896;Protector's Mark of Sanctification (id=52026), Ahn'Kahar Blood Hunter's Spaulders (id=50117)
-2897;Protector's Mark of Sanctification (id=52026), Ahn'Kahar Blood Hunter's Legguards (id=50116)
-2898;Protector's Mark of Sanctification (id=52026), Ahn'Kahar Blood Hunter's Headpiece (id=50115)
-2899;Protector's Mark of Sanctification (id=52026), Ahn'Kahar Blood Hunter's Handguards (id=50114)
-2900;Protector's Mark of Sanctification (id=52029), Sanctified Ahn'Kahar Blood Hunter's Handguards (id=51154)
-2901;Protector's Mark of Sanctification (id=52029), Sanctified Ahn'Kahar Blood Hunter's Headpiece (id=51153)
-2902;Protector's Mark of Sanctification (id=52029), Sanctified Ahn'Kahar Blood Hunter's Legguards (id=51152)
-2903;Protector's Mark of Sanctification (id=52029), Sanctified Ahn'Kahar Blood Hunter's Spaulders (id=51151)
-2904;Protector's Mark of Sanctification (id=52029), Sanctified Ahn'Kahar Blood Hunter's Tunic (id=51150)
-2905;Protector's Mark of Sanctification (id=52026), Frost Witch's Tunic (id=50835)
-2906;Protector's Mark of Sanctification (id=52026), Frost Witch's Handguards (id=50836)
-2907;Protector's Mark of Sanctification (id=52026), Frost Witch's Headpiece (id=50837)
-2908;Protector's Mark of Sanctification (id=52026), Frost Witch's Legguards (id=50838)
-2909;Protector's Mark of Sanctification (id=52026), Frost Witch's Spaulders (id=50839)
-2910;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Tunic (id=51190)
-2911;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Handguards (id=51191)
-2912;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Headpiece (id=51192)
-2913;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Legguards (id=51193)
-2914;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Spaulders (id=51194)
-2915;Protector's Mark of Sanctification (id=52026), Frost Witch's Chestguard (id=50830)
-2916;Protector's Mark of Sanctification (id=52026), Frost Witch's Grips (id=50831)
-2917;Protector's Mark of Sanctification (id=52026), Frost Witch's Faceguard (id=50832)
-2918;Protector's Mark of Sanctification (id=52026), Frost Witch's War-Kilt (id=50833)
-2919;Protector's Mark of Sanctification (id=52026), Frost Witch's Shoulderguards (id=50834)
-2920;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Chestguard (id=51195)
-2921;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Grips (id=51196)
-2922;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Faceguard (id=51197)
-2923;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's War-Kilt (id=51198)
-2924;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's War-Kilt (id=51198)
-2925;Protector's Mark of Sanctification (id=52026), Frost Witch's Hauberk (id=50841)
-2926;Protector's Mark of Sanctification (id=52026), Frost Witch's Gloves (id=50842)
-2927;Protector's Mark of Sanctification (id=52026), Frost Witch's Helm (id=50843)
-2928;Protector's Mark of Sanctification (id=52026), Frost Witch's Kilt (id=50844)
-2929;Protector's Mark of Sanctification (id=52026), Frost Witch's Shoulderpads (id=50845)
-2930;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Hauberk (id=51200)
-2931;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Gloves (id=51201)
-2932;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Helm (id=51202)
-2933;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Kilt (id=51203)
-2934;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Shoulderpads (id=51204)
-2935;Protector's Mark of Sanctification (id=52029), Sanctified Frost Witch's Shoulderguards (id=51199)
+2734;1600 Justice Points
+2735;1 Etched Signet of the Kirin Tor (id=48957)
+2736;1 Etched Ring of the Kirin Tor (id=48956)
+2737;1 Etched Loop of the Kirin Tor (id=48955)
+2738;1 Etched Band of the Kirin Tor (id=48954)
+2739;34700 Justice Points
+2740;69500 Justice Points
+2741;57900 Justice Points
+2742;110000 Justice Points
+2743;1100 Justice Points
+2744;26600 Justice Points
+2745;1 Vanquisher's Mark of Sanctification (id=52025), 1 Bloodmage Shoulderpads (id=50279)
+2746;1 Vanquisher's Mark of Sanctification (id=52025), 1 Bloodmage Robe (id=50278)
+2747;1 Vanquisher's Mark of Sanctification (id=52025), 1 Bloodmage Leggings (id=50277)
+2748;1 Vanquisher's Mark of Sanctification (id=52025), 1 Bloodmage Hood (id=50276)
+2749;1 Vanquisher's Mark of Sanctification (id=52025), 1 Bloodmage Gloves (id=50275)
+2750;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Bloodmage Gloves (id=51159)
+2751;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Bloodmage Hood (id=51158)
+2752;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Bloodmage Leggings (id=51157)
+2753;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Bloodmage Robe (id=51156)
+2754;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Bloodmage Shoulderpads (id=51155)
+2755;1 Vanquisher's Mark of Sanctification (id=52025), 1 Shadowblade Pauldrons (id=50105)
+2756;1 Vanquisher's Mark of Sanctification (id=52025), 1 Shadowblade Legplates (id=50090)
+2757;1 Vanquisher's Mark of Sanctification (id=52025), 1 Shadowblade Helmet (id=50089)
+2758;1 Vanquisher's Mark of Sanctification (id=52025), 1 Shadowblade Gauntlets (id=50088)
+2759;1 Vanquisher's Mark of Sanctification (id=52025), 1 Shadowblade Breastplate (id=50087)
+2760;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Shadowblade Breastplate (id=51189)
+2761;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Shadowblade Gauntlets (id=51188)
+2762;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Shadowblade Helmet (id=51187)
+2763;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Shadowblade Legplates (id=51186)
+2764;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Shadowblade Pauldrons (id=51185)
+2765;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Pauldrons (id=50113)
+2766;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Legplates (id=50109)
+2767;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Helmet (id=50108)
+2768;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Gauntlets (id=50107)
+2769;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Robes (id=50106)
+2770;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Robes (id=51139)
+2771;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Gauntlets (id=51138)
+2772;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Helmet (id=51137)
+2773;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Legplates (id=51136)
+2774;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Pauldrons (id=51135)
+2775;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Vestment (id=50823)
+2776;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Trousers (id=50820)
+2777;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Mantle (id=50819)
+2778;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Gloves (id=50822)
+2779;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Cover (id=50821)
+2780;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Cover (id=51149)
+2781;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Gloves (id=51148)
+2782;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Mantle (id=51147)
+2783;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Trousers (id=51146)
+2784;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Vestment (id=51145)
+2785;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Shoulderpads (id=50824)
+2786;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Raiment (id=50828)
+2787;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Legguards (id=50825)
+2788;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Headguard (id=50826)
+2789;1 Vanquisher's Mark of Sanctification (id=52025), 1 Lasherweave Handgrips (id=50827)
+2790;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Handgrips (id=51144)
+2791;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Headguard (id=51143)
+2792;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Legguards (id=51142)
+2793;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Raiment (id=51141)
+2794;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Lasherweave Shoulderpads (id=51140)
+2795;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Shoulderplates (id=50098)
+2796;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Legplates (id=50097)
+2797;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Helmet (id=50096)
+2798;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Gauntlets (id=50095)
+2799;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Battleplate (id=50094)
+2800;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Battleplate (id=51129)
+2801;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Gauntlets (id=51128)
+2802;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Helmet (id=51127)
+2803;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Legplates (id=51126)
+2804;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Shoulderplates (id=51125)
+2805;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Pauldrons (id=50853)
+2806;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Legguards (id=50854)
+2807;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Handguards (id=50856)
+2808;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Faceguard (id=50855)
+2809;1 Vanquisher's Mark of Sanctification (id=52025), 1 Scourgelord Chestguard (id=50857)
+2810;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Chestguard (id=51134)
+2811;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Faceguard (id=51133)
+2812;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Handguards (id=51132)
+2813;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Legguards (id=51131)
+2814;1 Vanquisher's Mark of Sanctification (id=52028), 1 Sanctified Scourgelord Pauldrons (id=51130)
+2815;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Tunic (id=50869)
+2816;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Spaulders (id=50865)
+2817;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Headpiece (id=50867)
+2818;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Greaves (id=50866)
+2819;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Gloves (id=50868)
+2820;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Gloves (id=51169)
+2821;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Greaves (id=51168)
+2822;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Headpiece (id=51167)
+2823;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Spaulders (id=51166)
+2824;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Tunic (id=51165)
+2825;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Shoulderplates (id=50324)
+2826;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Legplates (id=50325)
+2827;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Helmet (id=50326)
+2828;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Gauntlets (id=50327)
+2829;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Battleplate (id=50328)
+2830;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Battleplate (id=51164)
+2831;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Gauntlets (id=51163)
+2832;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Helmet (id=51162)
+2833;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Legplates (id=51161)
+2834;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Shoulderplates (id=51160)
+2835;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Shoulderguards (id=50860)
+2836;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Legguards (id=50861)
+2837;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Handguards (id=50863)
+2838;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Faceguard (id=50862)
+2839;1 Conqueror's Mark of Sanctification (id=52027), 1 Lightsworn Chestguard (id=50864)
+2840;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Chestguard (id=51174)
+2841;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Faceguard (id=51173)
+2842;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Handguards (id=51172)
+2843;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Legguards (id=51171)
+2844;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Lightsworn Shoulderguards (id=51170)
+2845;1 Conqueror's Mark of Sanctification (id=52027), 1 Dark Coven Shoulderpads (id=50244)
+2846;1 Conqueror's Mark of Sanctification (id=52027), 1 Dark Coven Robe (id=50243)
+2847;1 Conqueror's Mark of Sanctification (id=52027), 1 Dark Coven Leggings (id=50242)
+2848;1 Conqueror's Mark of Sanctification (id=52027), 1 Dark Coven Hood (id=50241)
+2849;1 Conqueror's Mark of Sanctification (id=52027), 1 Dark Coven Gloves (id=50240)
+2850;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Dark Coven Gloves (id=51209)
+2851;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Dark Coven Hood (id=51208)
+2852;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Dark Coven Leggings (id=51207)
+2853;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Dark Coven Robe (id=51206)
+2854;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Dark Coven Shoulderpads (id=51205)
+2855;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Shoulderpads (id=50767)
+2856;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Robe (id=50768)
+2857;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Leggings (id=50769)
+2858;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Hood (id=50765)
+2859;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Gloves (id=50766)
+2860;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Gloves (id=51179)
+2861;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Hood (id=51178)
+2862;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Leggings (id=51177)
+2863;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Robe (id=51176)
+2864;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Shoulderpads (id=51175)
+2865;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Raiments (id=50394)
+2866;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Pants (id=50393)
+2867;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Mantle (id=50396)
+2868;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Handwraps (id=50391)
+2869;1 Conqueror's Mark of Sanctification (id=52027), 1 Crimson Acolyte Cowl (id=50392)
+2870;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Cowl (id=51184)
+2871;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Handwraps (id=51183)
+2872;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Mantle (id=51182)
+2873;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Pants (id=51181)
+2874;1 Conqueror's Mark of Sanctification (id=52030), 1 Sanctified Crimson Acolyte Raiments (id=51180)
+2875;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Shoulderplates (id=50082)
+2876;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Legplates (id=50081)
+2877;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Helmet (id=50080)
+2878;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Gauntlets (id=50079)
+2879;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Battleplate (id=50078)
+2880;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Battleplate (id=51214)
+2881;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Gauntlets (id=51213)
+2882;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Helmet (id=51212)
+2883;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Legplates (id=51211)
+2884;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Shoulderplates (id=51210)
+2885;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Pauldrons (id=50846)
+2886;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Legguards (id=50847)
+2887;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Handguards (id=50849)
+2888;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Greathelm (id=50848)
+2889;1 Protector's Mark of Sanctification (id=52026), 1 Ymirjar Lord's Breastplate (id=50850)
+2890;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Breastplate (id=51219)
+2891;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Greathelm (id=51218)
+2892;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Handguards (id=51217)
+2893;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Legguards (id=51216)
+2894;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ymirjar Lord's Pauldrons (id=51215)
+2895;1 Protector's Mark of Sanctification (id=52026), 1 Ahn'Kahar Blood Hunter's Tunic (id=50118)
+2896;1 Protector's Mark of Sanctification (id=52026), 1 Ahn'Kahar Blood Hunter's Spaulders (id=50117)
+2897;1 Protector's Mark of Sanctification (id=52026), 1 Ahn'Kahar Blood Hunter's Legguards (id=50116)
+2898;1 Protector's Mark of Sanctification (id=52026), 1 Ahn'Kahar Blood Hunter's Headpiece (id=50115)
+2899;1 Protector's Mark of Sanctification (id=52026), 1 Ahn'Kahar Blood Hunter's Handguards (id=50114)
+2900;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ahn'Kahar Blood Hunter's Handguards (id=51154)
+2901;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ahn'Kahar Blood Hunter's Headpiece (id=51153)
+2902;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ahn'Kahar Blood Hunter's Legguards (id=51152)
+2903;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ahn'Kahar Blood Hunter's Spaulders (id=51151)
+2904;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Ahn'Kahar Blood Hunter's Tunic (id=51150)
+2905;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Tunic (id=50835)
+2906;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Handguards (id=50836)
+2907;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Headpiece (id=50837)
+2908;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Legguards (id=50838)
+2909;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Spaulders (id=50839)
+2910;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Tunic (id=51190)
+2911;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Handguards (id=51191)
+2912;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Headpiece (id=51192)
+2913;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Legguards (id=51193)
+2914;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Spaulders (id=51194)
+2915;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Chestguard (id=50830)
+2916;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Grips (id=50831)
+2917;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Faceguard (id=50832)
+2918;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's War-Kilt (id=50833)
+2919;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Shoulderguards (id=50834)
+2920;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Chestguard (id=51195)
+2921;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Grips (id=51196)
+2922;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Faceguard (id=51197)
+2923;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's War-Kilt (id=51198)
+2924;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's War-Kilt (id=51198)
+2925;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Hauberk (id=50841)
+2926;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Gloves (id=50842)
+2927;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Helm (id=50843)
+2928;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Kilt (id=50844)
+2929;1 Protector's Mark of Sanctification (id=52026), 1 Frost Witch's Shoulderpads (id=50845)
+2930;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Hauberk (id=51200)
+2931;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Gloves (id=51201)
+2932;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Helm (id=51202)
+2933;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Kilt (id=51203)
+2934;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Shoulderpads (id=51204)
+2935;1 Protector's Mark of Sanctification (id=52029), 1 Sanctified Frost Witch's Shoulderguards (id=51199)
+2936;255000 Honor Points
+2937;2350 arena, 47025 Honor Points
+2938;2300 arena, 45000 Honor Points
+2939;2200 arena, 399285 Honor Points
+2940;2200 arena, 323500 Honor Points
+2941;1800 arena, 1048336 Honor Points
+2942;2200 arena, 382500 Honor Points
+2943;183000 Honor Points
+2944;2200 arena, 274500 Honor Points
+2945;178500 Honor Points
+2946;76000 Honor Points
+2947;2200 arena, 114000 Honor Points
+2948;104000 Honor Points
+2949;165000 Honor Points
+2950;19000 Honor Points
+2951;26000 Honor Points
+2952;165000 Honor Points
+2953;165000 Honor Points
+2954;104000 Honor Points
+2955;69500 Honor Points
+2956;110000 Honor Points
+2957;69500 Honor Points
+2958;46500 Honor Points
+2959;73500 Honor Points
+2960;46500 Honor Points
+2961;94500 Honor Points
+2962;94500 Honor Points
+2963;60000 Honor Points
+2964;72500 Honor Points
+2965;94500 Honor Points
+2966;63000 Honor Points
+2967;40000 Honor Points
+2968;48500 Honor Points
+2969;37000 Honor Points
+2970;3 Illustrious Jewelcrafter's Token
+2971;4 Illustrious Jewelcrafter's Token
+2972;2 Illustrious Jewelcrafter's Token
+2973;5 Illustrious Jewelcrafter's Token
+2974;1 Ashen Band of Endless Vengeance (id=50402)
+2975;1 Ashen Band of Unmatched Vengeance (id=50401)
+2976;1 Ashen Band of Greater Vengeance (id=50387)
+2977;1 Ashen Band of Vengeance (id=50376)
+2978;1 Ashen Band of Might (id=52569)
+2979;1 Ashen Band of Greater Might (id=52570)
+2980;1 Ashen Band of Unmatched Might (id=52571)
+2981;1 Ashen Band of Endless Might (id=52572)
+2982;1 Ashen Band of Endless Might (id=52572)
+2985;1 Frozen Orb (id=43102)
+2986;6 Frozen Orb (id=43102)
+2987;4 Frozen Orb (id=43102)
+2988;8 Bolt of Embersilk Cloth (id=53643)
+2989;1 Dreamcloth (id=54440)
+2990;5 Dreamcloth (id=54440)
+2991;297 Honor Points
+2992;297 Honor Points
+2993;297 Honor Points
+2994;297 Honor Points
+2995;297 Honor Points
+2996;297 Honor Points
+2997;35100 Justice Points
+2999;1 Conqueror's Mark of Sanctification (id=52027), 1 Sanctified Shadowblade Legplates (id=51186), 1800 arena, 1157 Justice Points, 5108 Honor Points
+3005;1 Shroud of Cooperation (id=63352)
+3006;1 Shroud of Cooperation (id=63353)
+3007;85 Tol Barad Commendation
+3008;600 Justice Points
+3009;10 Tol Barad Commendation
+3010;2 Tol Barad Commendation
+3011;200 Tol Barad Commendation
+3012;50 Tol Barad Commendation
+3013;40 Tol Barad Commendation
+3014;125 Tol Barad Commendation
+3015;5 Tol Barad Commendation
+3016;5 Heavenly Shard (id=52721)
+3017;5 Maelstrom Crystal (id=52722)
+3022;165 Tol Barad Commendation
+3023;5 Chef's Award
+3024;2 Chef's Award
+3033;220000 Justice Points
+3034;165000 Justice Points
+3035;125000 Justice Points
+3036;95000 Justice Points
+3037;70000 Justice Points
+3038;220000 Justice Points
+3039;165000 Justice Points
+3040;125000 Justice Points
+3041;95000 Justice Points
+3042;70000 Justice Points
+3043;1 Mantle of the Forlorn Vanquisher (id=64314)
+3044;1 Mantle of the Forlorn Conqueror (id=64315)
+3045;1 Mantle of the Forlorn Protector (id=64316)
+3046;1 Shoulders of the Forlorn Vanquisher (id=65089)
+3047;1 Shoulders of the Forlorn Conqueror (id=65088)
+3048;1 Shoulders of the Forlorn Protector (id=65087)
+3049;1 Helm of the Forlorn Vanquisher (id=63682)
+3050;1 Helm of the Forlorn Conqueror (id=63683)
+3051;1 Helm of the Forlorn Protector (id=63684)
+3052;1 Crown of the Forlorn Protector (id=65000), 1 Headpiece of the Raging Elements (id=60315)
+3053;1 Crown of the Forlorn Protector (id=65000), 1 Helmet of the Raging Elements (id=60320)
+3054;1 Crown of the Forlorn Vanquisher (id=65002)
+3055;1 Crown of the Forlorn Conqueror (id=65001)
+3056;1 Crown of the Forlorn Protector (id=65000)
+3057;1 Crown of the Forlorn Protector (id=65000), 1 Faceguard of the Raging Elements (id=60308)
+3058;1 Crown of the Forlorn Vanquisher (id=65002), 1 Wind Dancer's Helmet (id=60299)
+3059;1 Crown of the Forlorn Conqueror (id=65001), 1 Mercurial Hood (id=60256)
+3060;1 Crown of the Forlorn Conqueror (id=65001), 1 Reinforced Sapphirium Faceguard (id=60356)
+3061;1 Crown of the Forlorn Conqueror (id=65001), 1 Reinforced Sapphirium Headguard (id=60359)
+3062;1 Crown of the Forlorn Conqueror (id=65001), 1 Reinforced Sapphirium Helmet (id=60346)
+3063;1 Crown of the Forlorn Vanquisher (id=65002), 1 Firelord's Hood (id=60243)
+3064;1 Crown of the Forlorn Protector (id=65000), 1 Lightning-Charged Headguard (id=60303)
+3065;1 Crown of the Forlorn Vanquisher (id=65002), 1 Stormrider's Cover (id=60282)
+3066;1 Crown of the Forlorn Vanquisher (id=65002), 1 Stormrider's Helm (id=60277)
+3067;1 Crown of the Forlorn Vanquisher (id=65002), 1 Stormrider's Headpiece (id=60286)
+3068;1 Crown of the Forlorn Vanquisher (id=65002), 1 Magma Plated Faceguard (id=60351)
+3069;1 Crown of the Forlorn Vanquisher (id=65002), 1 Magma Plated Helmet (id=60341)
+3070;1 Crown of the Forlorn Protector (id=65000), 1 Earthen Faceguard (id=60328)
+3071;1 Crown of the Forlorn Protector (id=65000), 1 Earthen Helmet (id=60325)
+3072;1 Crown of the Forlorn Conqueror (id=65001), 1 Shadowflame Hood (id=60249)
+3073;1 Chest of the Forlorn Vanquisher (id=67425)
+3074;1 Chest of the Forlorn Conqueror (id=67423)
+3075;1 Chest of the Forlorn Protector (id=67424)
+3076;1 Chest of the Forlorn Protector (id=67424), 1 Hauberk of the Raging Elements (id=60313)
+3077;1 Chest of the Forlorn Protector (id=67424), 1 Cuirass of the Raging Elements (id=60318)
+3078;1 Chest of the Forlorn Protector (id=67424), 1 Tunic of the Raging Elements (id=60309)
+3079;1 Chest of the Forlorn Vanquisher (id=67425), 1 Wind Dancer's Tunic (id=60301)
+3080;1 Chest of the Forlorn Conqueror (id=67423), 1 Reinforced Sapphirium Chestguard (id=60354)
+3081;1 Chest of the Forlorn Conqueror (id=67423), 1 Reinforced Sapphirium Breastplate (id=60360)
+3082;1 Chest of the Forlorn Conqueror (id=67423), 1 Reinforced Sapphirium Battleplate (id=60344)
+3083;1 Chest of the Forlorn Protector (id=67424), 1 Lightning-Charged Tunic (id=60304)
+3084;1 Chest of the Forlorn Vanquisher (id=67425), 1 Magma Plated Chestguard (id=60349)
+3085;1 Chest of the Forlorn Vanquisher (id=67425), 1 Magma Plated Battleplate (id=60339)
+3086;1 Chest of the Forlorn Protector (id=67424), 1 Earthen Chestguard (id=60329)
+3087;1 Chest of the Forlorn Protector (id=67424), 1 Earthen Battleplate (id=60323)
+3088;1 Chest of the Forlorn Conqueror (id=67423), 1 Mercurial Vestment (id=60254)
+3089;1 Chest of the Forlorn Conqueror (id=67423), 1 Mercurial Robes (id=60259)
+3090;1 Chest of the Forlorn Vanquisher (id=67425), 1 Firelord's Robes (id=60244)
+3091;1 Chest of the Forlorn Vanquisher (id=67425), 1 Stormrider's Vestment (id=60281)
+3092;1 Chest of the Forlorn Vanquisher (id=67425), 1 Stormrider's Robes (id=60276)
+3093;1 Chest of the Forlorn Vanquisher (id=67425), 1 Stormrider's Raiment (id=60287)
+3094;1 Chest of the Forlorn Conqueror (id=67423), 1 Shadowflame Robes (id=60251)
+3095;1 Leggings of the Forlorn Vanquisher (id=67426)
+3096;1 Leggings of the Forlorn Conqueror (id=67428)
+3097;1 Leggings of the Forlorn Protector (id=67427), 1 Earthen Legguards (id=60330)
+3098;1 Leggings of the Forlorn Protector (id=67427), 1 Kilt of the Raging Elements (id=60316)
+3099;1 Leggings of the Forlorn Protector (id=67427), 1 Legguards of the Raging Elements (id=60321)
+3100;1 Leggings of the Forlorn Protector (id=67427), 1 Legwraps of the Raging Elements (id=60310)
+3101;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Wind Dancer's Legguards (id=60300)
+3102;1 Leggings of the Forlorn Conqueror (id=67428), 1 Mercurial Leggings (id=60255)
+3103;1 Leggings of the Forlorn Conqueror (id=67428), 1 Mercurial Legwraps (id=60261)
+3104;1 Leggings of the Forlorn Conqueror (id=67428), 1 Reinforced Sapphirium Legguards (id=60357)
+3105;1 Leggings of the Forlorn Conqueror (id=67428), 1 Reinforced Sapphirium Greaves (id=60361)
+3106;1 Leggings of the Forlorn Conqueror (id=67428), 1 Reinforced Sapphirium Legplates (id=60347)
+3107;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Firelord's Leggings (id=60245)
+3108;1 Leggings of the Forlorn Protector (id=67427), 1 Lightning-Charged Legguards (id=60305)
+3109;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Stormrider's Leggings (id=60283)
+3110;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Stormrider's Legwraps (id=60278)
+3111;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Stormrider's Legguards (id=60288)
+3112;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Magma Plated Legguards (id=60352)
+3113;1 Leggings of the Forlorn Vanquisher (id=67426), 1 Magma Plated Legplates (id=60342)
+3114;1 Leggings of the Forlorn Protector (id=67427), 1 Earthen Legguards (id=60330)
+3115;1 Leggings of the Forlorn Protector (id=67427), 1 Earthen Legplates (id=60324)
+3116;1 Leggings of the Forlorn Conqueror (id=67428), 1 Shadowflame Leggings (id=60250)
+3117;1 Crown of the Forlorn Conqueror (id=65001), 1 Mercurial Cowl (id=60258)
+3118;1 Shoulders of the Forlorn Vanquisher (id=65089)
+3119;1 Shoulders of the Forlorn Conqueror (id=65088)
+3120;1 Shoulders of the Forlorn Protector (id=65087)
+3121;1 Shoulders of the Forlorn Protector (id=65087), 1 Shoulderwraps of the Raging Elements (id=60317)
+3122;1 Shoulders of the Forlorn Protector (id=65087), 1 Spaulders of the Raging Elements (id=60322)
+3123;1 Shoulders of the Forlorn Protector (id=65087), 1 Mantle of the Raging Elements (id=60311)
+3124;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Wind Dancer's Spaulders (id=60302)
+3125;1 Shoulders of the Forlorn Conqueror (id=65088), 1 Mercurial Shoulderwraps (id=60253)
+3126;1 Shoulders of the Forlorn Conqueror (id=65088), 1 Mercurial Mantle (id=60262)
+3127;1 Shoulders of the Forlorn Conqueror (id=65088), 1 Reinforced Sapphirium Shoulderguards (id=60358)
+3128;1 Shoulders of the Forlorn Conqueror (id=65088), 1 Reinforced Sapphirium Mantle (id=60362)
+3129;1 Shoulders of the Forlorn Conqueror (id=65088), 1 Reinforced Sapphirium Pauldrons (id=60348)
+3130;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Firelord's Mantle (id=60246)
+3131;1 Shoulders of the Forlorn Protector (id=65087), 1 Lightning-Charged Spaulders (id=60306)
+3132;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Stormrider's Shoulderwraps (id=60284)
+3133;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Stormrider's Mantle (id=60279)
+3134;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Stormrider's Spaulders (id=60289)
+3135;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Magma Plated Shoulderguards (id=60353)
+3136;1 Shoulders of the Forlorn Vanquisher (id=65089), 1 Magma Plated Pauldrons (id=60343)
+3137;1 Shoulders of the Forlorn Protector (id=65087), 1 Earthen Shoulderguards (id=60331)
+3138;1 Shoulders of the Forlorn Protector (id=65087), 1 Earthen Pauldrons (id=60327)
+3139;1 Shoulders of the Forlorn Conqueror (id=65088), 1 Shadowflame Mantle (id=60252)
+3140;1 Gauntlets of the Forlorn Vanquisher (id=67431)
+3141;1 Gauntlets of the Forlorn Conqueror (id=67429)
+3142;1 Gauntlets of the Forlorn Protector (id=67430)
+3143;1 Gauntlets of the Forlorn Conqueror (id=67429), 1 Shadowflame Handwraps (id=60248)
+3144;1 Gauntlets of the Forlorn Protector (id=67430), 1 Gloves of the Raging Elements (id=60314)
+3145;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Magma Plated Gauntlets (id=60340)
+3146;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Magma Plated Handguards (id=60350)
+3147;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Stormrider's Grips (id=60290)
+3148;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Stormrider's Handwraps (id=60280)
+3149;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Stormrider's Gloves (id=60285)
+3150;1 Gauntlets of the Forlorn Protector (id=67430), 1 Lightning-Charged Gloves (id=60307)
+3151;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Firelord's Gloves (id=60247)
+3152;1 Gauntlets of the Forlorn Conqueror (id=67429), 1 Reinforced Sapphirium Gauntlets (id=60345)
+3153;1 Gauntlets of the Forlorn Conqueror (id=67429), 1 Reinforced Sapphirium Gloves (id=60363)
+3154;1 Gauntlets of the Forlorn Conqueror (id=67429), 1 Reinforced Sapphirium Handguards (id=60355)
+3155;1 Gauntlets of the Forlorn Conqueror (id=67429), 1 Mercurial Handwraps (id=60275)
+3156;1 Gauntlets of the Forlorn Conqueror (id=67429), 1 Mercurial Gloves (id=60257)
+3157;1 Gauntlets of the Forlorn Vanquisher (id=67431), 1 Wind Dancer's Gloves (id=60298)
+3158;1 Gauntlets of the Forlorn Protector (id=67430), 1 Handwraps of the Raging Elements (id=60312)
+3159;1 Gauntlets of the Forlorn Protector (id=67430), 1 Grips of the Raging Elements (id=60319)
+3160;1 Gauntlets of the Forlorn Protector (id=67430), 1 Earthen Gauntlets (id=60326)
+3161;1 Gauntlets of the Forlorn Protector (id=67430), 1 Earthen Handguards (id=60332)
+3162;220000 Honor Points
+3163;165000 Honor Points
+3164;125000 Honor Points
+3165;95000 Honor Points
+3166;70000 Honor Points
+3167;70000 Conquest Points
+3168;125000 Conquest Points
+3169;165000 Conquest Points
+3170;220000 Conquest Points
+3171;95000 Conquest Points
+3172;245000 Conquest Points
+3173;340000 Conquest Points
+3174;1 Vicious Gladiator's Barrier (id=61360), 2200 arena, 95000 Conquest Points
+3175;1 Vicious Gladiator's Battle Staff (id=61341), 2200 arena, 340000 Conquest Points
+3176;1 Vicious Gladiator's Bonegrinder (id=61339), 2200 arena, 340000 Conquest Points
+3177;1 Vicious Gladiator's Bonegrinder (id=61339), 2200 arena, 340000 Conquest Points
+3178;1 Vicious Gladiator's Decapitator (id=61326), 2200 arena, 340000 Conquest Points
+3179;1 Vicious Gladiator's Energy Staff (id=61342), 2200 arena, 340000 Conquest Points
+3180;1 Vicious Gladiator's Greatsword (id=61346), 2200 arena, 340000 Conquest Points
+3181;1 Vicious Gladiator's Pike (id=61340), 2200 arena, 340000 Conquest Points
+3182;1 Vicious Gladiator's Staff (id=61343), 2200 arena, 340000 Conquest Points
+3183;1 Vicious Gladiator's Endgame (id=61357), 2200 arena, 95000 Conquest Points
+3184;1 Vicious Gladiator's Reprieve (id=61358), 2200 arena, 95000 Conquest Points
+3185;1 Vicious Gladiator's Gavel (id=61338), 2200 arena, 245000 Conquest Points
+3186;1 Vicious Gladiator's Right Render (id=61333), 2200 arena, 245000 Conquest Points
+3187;1 Vicious Gladiator's Right Ripper (id=61330), 2200 arena, 245000 Conquest Points
+3188;1 Vicious Gladiator's Spellblade (id=61329), 2200 arena, 245000 Conquest Points
+3189;1 Vicious Gladiator's Left Render (id=61332), 2200 arena, 95000 Conquest Points
+3190;1 Vicious Gladiator's Left Ripper (id=61331), 2200 arena, 95000 Conquest Points
+3191;1 Vicious Gladiator's Shiv (id=61328), 2200 arena, 95000 Conquest Points
+3192;1 Vicious Gladiator's Longbow (id=61353), 2200 arena, 340000 Conquest Points
+3193;1 Vicious Gladiator's Baton of Light (id=61351), 2200 arena, 70000 Conquest Points
+3194;1 Vicious Gladiator's Heavy Crossbow (id=61355), 2200 arena, 340000 Conquest Points
+3195;1 Vicious Gladiator's Rifle (id=61354), 2200 arena, 340000 Conquest Points
+3196;1 Vicious Gladiator's Touch of Defeat (id=61350), 2200 arena, 70000 Conquest Points
+3197;1 Vicious Gladiator's Redoubt (id=61361), 2200 arena, 95000 Conquest Points
+3198;1 Vicious Gladiator's Shield Wall (id=61359), 2200 arena, 95000 Conquest Points
+3199;1 Vicious Gladiator's Hatchet (id=61348), 2200 arena, 70000 Conquest Points
+3200;1 Vicious Gladiator's War Edge (id=61347), 2200 arena, 70000 Conquest Points
+3201;1 Vicious Gladiator's Bonecracker (id=61336), 2200 arena, 245000 Conquest Points
+3202;1 Vicious Gladiator's Cleaver (id=61324), 2200 arena, 245000 Conquest Points
+3203;1 Vicious Gladiator's Hacker (id=61325), 2200 arena, 245000 Conquest Points
+3204;1 Ruthless Gladiator's Pummeler (id=70221), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3205;1 Vicious Gladiator's Quickblade (id=61345), 2200 arena, 245000 Conquest Points
+3206;1 Vicious Gladiator's Shanker (id=61327), 2200 arena, 245000 Conquest Points
+3207;1 Vicious Gladiator's Slicer (id=61344), 2200 arena, 245000 Conquest Points
+3208;1 Vicious Gladiator's Dreadplate Chestpiece (id=60408), 2200 arena
+3209;1 Vicious Gladiator's Dreadplate Gauntlets (id=60409), 2200 arena
+3210;1 Vicious Gladiator's Dreadplate Helm (id=60410), 2200 arena
+3211;1 Vicious Gladiator's Dreadplate Legguards (id=60411), 2200 arena
+3212;1 Vicious Gladiator's Dreadplate Shoulders (id=60412), 2200 arena
+3213;1 Vicious Gladiator's Greaves of Alacrity (id=60516), 2200 arena
+3214;1 Vicious Gladiator's Greaves of Meditation (id=60540), 2200 arena
+3215;1 Vicious Gladiator's Ornamented Chestguard (id=60601), 2200 arena
+3216;1 Vicious Gladiator's Ornamented Gloves (id=60602), 2200 arena
+3217;1 Vicious Gladiator's Ornamented Headcover (id=60603), 2200 arena
+3218;1 Vicious Gladiator's Ornamented Legplates (id=60604), 2200 arena
+3219;1 Vicious Gladiator's Ornamented Spaulders (id=60605), 2200 arena
+3220;1 Vicious Gladiator's Plate Chestpiece (id=60418), 2200 arena
+3221;1 Vicious Gladiator's Plate Gauntlets (id=60419), 2200 arena
+3222;1 Vicious Gladiator's Plate Helm (id=60420), 2200 arena
+3223;1 Vicious Gladiator's Plate Legguards (id=60421), 2200 arena
+3224;1 Vicious Gladiator's Plate Shoulders (id=60422), 2200 arena
+3225;1 Vicious Gladiator's Scaled Chestpiece (id=60413), 2200 arena
+3226;1 Vicious Gladiator's Scaled Gauntlets (id=60414), 2200 arena
+3227;1 Vicious Gladiator's Scaled Helm (id=60415), 2200 arena
+3228;1 Vicious Gladiator's Scaled Legguards (id=60416), 2200 arena
+3229;1 Vicious Gladiator's Scaled Shoulders (id=60417), 2200 arena
+3230;1 Vicious Gladiator's Warboots of Alacrity (id=60513), 2200 arena
+3231;1 Vicious Gladiator's Warboots of Cruelty (id=60509), 2200 arena
+3232;1 Illustrious Jewelcrafter's Token
+3233;1 Vicious Gladiator's Sabatons of Cruelty (id=60554), 2200 arena
+3234;1 Vicious Gladiator's Sabatons of Alacrity (id=60557), 2200 arena
+3235;1 Vicious Gladiator's Chain Armor (id=60423), 2200 arena
+3236;1 Vicious Gladiator's Chain Gauntlets (id=60424), 2200 arena
+3237;1 Vicious Gladiator's Chain Helm (id=60425), 2200 arena
+3238;1 Vicious Gladiator's Chain Leggings (id=60426), 2200 arena
+3239;1 Vicious Gladiator's Chain Spaulders (id=60427), 2200 arena
+3240;1 Vicious Gladiator's Sabatons of Alacrity (id=60567), 2200 arena
+3241;1 Vicious Gladiator's Sabatons of Meditation (id=60534), 2200 arena
+3242;1 Vicious Gladiator's Ringmail Armor (id=60428), 2200 arena
+3243;1 Vicious Gladiator's Ringmail Gauntlets (id=60429), 2200 arena
+3244;1 Vicious Gladiator's Ringmail Helm (id=60430), 2200 arena
+3245;1 Vicious Gladiator's Ringmail Leggings (id=60431), 2200 arena
+3246;1 Vicious Gladiator's Ringmail Spaulders (id=60432), 2200 arena
+3247;1 Vicious Gladiator's Linked Armor (id=60433), 2200 arena
+3248;1 Vicious Gladiator's Linked Gauntlets (id=60434), 2200 arena
+3249;1 Vicious Gladiator's Linked Helm (id=60435), 2200 arena
+3250;1 Vicious Gladiator's Linked Leggings (id=60436), 2200 arena
+3251;1 Vicious Gladiator's Linked Spaulders (id=60437), 2200 arena
+3252;1 Vicious Gladiator's Mail Armor (id=60438), 2200 arena
+3253;1 Vicious Gladiator's Mail Gauntlets (id=60439), 2200 arena
+3254;1 Vicious Gladiator's Mail Helm (id=60440), 2200 arena
+3255;1 Vicious Gladiator's Mail Leggings (id=60441), 2200 arena
+3256;1 Vicious Gladiator's Mail Spaulders (id=60442), 2200 arena
+3257;1 Vicious Gladiator's Dragonhide Gloves (id=60443), 2200 arena
+3258;1 Vicious Gladiator's Dragonhide Helm (id=60444), 2200 arena
+3259;1 Vicious Gladiator's Dragonhide Legguards (id=60445), 2200 arena
+3260;1 Vicious Gladiator's Dragonhide Robes (id=60446), 2200 arena
+3261;1 Vicious Gladiator's Dragonhide Spaulders (id=60447), 2200 arena
+3262;1 Vicious Gladiator's Footguards of Meditation (id=60581), 2200 arena
+3263;1 Vicious Gladiator's Kodohide Gloves (id=60448), 2200 arena
+3264;1 Vicious Gladiator's Kodohide Helm (id=60449), 2200 arena
+3265;1 Vicious Gladiator's Kodohide Legguards (id=60450), 2200 arena
+3266;1 Vicious Gladiator's Kodohide Robes (id=60451), 2200 arena
+3267;1 Vicious Gladiator's Kodohide Spaulders (id=60452), 2200 arena
+3268;1 Vicious Gladiator's Footguards of Alacrity (id=60607), 2200 arena
+3269;1 Vicious Gladiator's Wyrmhide Gloves (id=60453), 2200 arena
+3270;1 Vicious Gladiator's Wyrmhide Helm (id=60454), 2200 arena
+3271;1 Vicious Gladiator's Wyrmhide Legguards (id=60455), 2200 arena
+3272;1 Vicious Gladiator's Wyrmhide Robes (id=60456), 2200 arena
+3273;1 Vicious Gladiator's Wyrmhide Spaulders (id=60457), 2200 arena
+3274;1 Vicious Gladiator's Boots of Cruelty (id=60587), 2200 arena
+3275;1 Vicious Gladiator's Boots of Alacrity (id=60593), 2200 arena
+3276;1 Vicious Gladiator's Leather Tunic (id=60458), 2200 arena
+3277;1 Vicious Gladiator's Leather Gloves (id=60459), 2200 arena
+3278;1 Vicious Gladiator's Leather Helm (id=60460), 2200 arena
+3279;1 Vicious Gladiator's Leather Legguards (id=60461), 2200 arena
+3280;1 Vicious Gladiator's Leather Spaulders (id=60462), 2200 arena
+3281;1 Vicious Gladiator's Treads of Cruelty (id=60613), 2200 arena
+3282;1 Vicious Gladiator's Treads of Alacrity (id=60630), 2200 arena
+3283;1 Vicious Gladiator's Treads of Meditation (id=60636), 2200 arena
+3284;1 Vicious Gladiator's Silk Handguards (id=60463), 2200 arena
+3285;1 Vicious Gladiator's Silk Cowl (id=60464), 2200 arena
+3286;1 Vicious Gladiator's Silk Trousers (id=60465), 2200 arena
+3287;1 Vicious Gladiator's Silk Robe (id=60466), 2200 arena
+3288;1 Vicious Gladiator's Silk Amice (id=60467), 2200 arena
+3289;1 Vicious Gladiator's Mooncloth Gloves (id=60468), 2200 arena
+3290;1 Vicious Gladiator's Mooncloth Helm (id=60469), 2200 arena
+3291;1 Vicious Gladiator's Mooncloth Leggings (id=60470), 2200 arena
+3292;1 Vicious Gladiator's Mooncloth Robe (id=60471), 2200 arena
+3293;1 Vicious Gladiator's Mooncloth Mantle (id=60472), 2200 arena
+3294;1 Vicious Gladiator's Satin Gloves (id=60473), 2200 arena
+3295;1 Vicious Gladiator's Satin Hood (id=60474), 2200 arena
+3296;1 Vicious Gladiator's Satin Leggings (id=60475), 2200 arena
+3297;1 Vicious Gladiator's Satin Robe (id=60476), 2200 arena
+3298;1 Vicious Gladiator's Satin Mantle (id=60477), 2200 arena
+3299;1 Vicious Gladiator's Felweave Handguards (id=60478), 2200 arena
+3300;1 Vicious Gladiator's Felweave Cowl (id=60479), 2200 arena
+3301;1 Vicious Gladiator's Felweave Trousers (id=60480), 2200 arena
+3302;1 Vicious Gladiator's Felweave Raiment (id=60481), 2200 arena
+3303;1 Vicious Gladiator's Felweave Amice (id=60482), 2200 arena
+3305;1 Volatile Seaforium Blastpack (id=60853)
+3306;1 Authentic Jr. Engineer Goggles (id=60222)
+3307;1 Elementium Toolbox (id=60217)
+3308;1 Goblin Barbecue (id=60858)
+3309;1 Volatile Energy Converter (id=60852)
+3310;1 Lure Master Tackle Box (id=60218)
+3311;4 Handful of Obsidium Bolts (id=60224)
+3312;20 Elementium Bar (id=52186)
+3313;2 Hardened Elementium Bar (id=53039)
+3314;5 Pyrium Bar (id=51950)
+3316;41700 Justice Points
+3317;34700 Justice Points
+3318;217500 Justice Points
+3319;272500 Justice Points
+3320;40500 Justice Points
+3321;9000 Honor Points
+3322;3 Chef's Award
+3323;1 Chef's Award
+3325;1 Heavenly Shard (id=52721)
+3326;20 Hypnotic Dust (id=52555)
+3327;50000 Honor Points
+3329;1 Essence of the Forlorn (id=66998)
+3330;10 Heavy Savage Leather (id=56516)
+3331;32500 Honor Points
+3332;43500 Honor Points
+3333;38000 Honor Points
+3338;10000 Honor Points
+3339;40000 Honor Points
+3340;60000 Honor Points
+3341;37500 Honor Points
+3342;100000 Honor Points
+3343;150000 Honor Points
+3344;125000 Honor Points
+3345;10000 Justice Points
+3346;40000 Justice Points
+3347;60000 Justice Points
+3348;37500 Justice Points
+3349;100000 Justice Points
+3350;150000 Justice Points
+3351;125000 Justice Points
+3352;80 Tol Barad Commendation
+3353;20000 Justice Points
+3354;40000 Justice Points
+3355;60000 Justice Points
+3356;80000 Justice Points
+3357;100000 Justice Points
+3358;120000 Justice Points
+3359;140000 Justice Points
+3360;160000 Justice Points
+3361;180000 Justice Points
+3362;200000 Justice Points
+3363;220000 Justice Points
+3364;240000 Justice Points
+3365;260000 Justice Points
+3366;280000 Justice Points
+3367;300000 Justice Points
+3368;320000 Justice Points
+3369;340000 Justice Points
+3370;360000 Justice Points
+3371;380000 Justice Points
+3372;20000 Honor Points
+3373;40000 Honor Points
+3374;60000 Honor Points
+3375;80000 Honor Points
+3376;100000 Honor Points
+3377;120000 Honor Points
+3378;140000 Honor Points
+3379;160000 Honor Points
+3380;180000 Honor Points
+3381;200000 Honor Points
+3382;220000 Honor Points
+3383;240000 Honor Points
+3384;260000 Honor Points
+3385;280000 Honor Points
+3386;300000 Honor Points
+3387;320000 Honor Points
+3388;340000 Honor Points
+3389;360000 Honor Points
+3390;380000 Honor Points
+3392;3 Electrified Ether (id=67749)
+3393;5 Savage Leather (id=52976)
+3394;10 Savage Leather (id=52976)
+3395;15 Savage Leather (id=52976)
+3396;20 Savage Leather (id=52976)
+3397;3 Heavy Savage Leather (id=56516)
+3399;5 Heavy Savage Leather (id=56516)
+3400;20 Heavy Savage Leather (id=56516)
+3403;5 Tricky Treat (id=33226)
+3404;2 Tricky Treat (id=33226)
+3405;600000 Conquest Points, 340000 Conquest Points
+3406;375000 Justice Points
+3407;375000 Honor Points
+3408;37500 Justice Points
+3410;37500 Honor Points
+3411;25000 Valor Points
+3412;30 Mark of the World Tree
+3413;2 Tricky Treat (id=33226)
+3415;340000 Conquest Points, 780000 Conquest Points
+3416;245000 Conquest Points, 780000 Conquest Points
+3417;95000 Conquest Points, 780000 Conquest Points
+3418;1 Ruthless Gladiator's Barrier (id=70242), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3419;1 Ruthless Gladiator's Battle Staff (id=70226), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3420;1 Ruthless Gladiator's Bonegrinder (id=70224), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3421;1 Ruthless Gladiator's Decapitator (id=70213), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3422;1 Ruthless Gladiator's Energy Staff (id=70227), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3423;1 Ruthless Gladiator's Greatsword (id=70231), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3424;1 Ruthless Gladiator's Pike (id=70225), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3425;1 Ruthless Gladiator's Staff (id=70228), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3426;1 Ruthless Gladiator's Endgame (id=70239), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3427;1 Ruthless Gladiator's Reprieve (id=70240), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3428;1 Ruthless Gladiator's Gavel (id=70223), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3429;1 Ruthless Gladiator's Right Render (id=70220), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3430;1 Ruthless Gladiator's Right Ripper (id=70217), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3431;1 Ruthless Gladiator's Spellblade (id=70216), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3432;1 Ruthless Gladiator's Left Render (id=70219), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3433;1 Ruthless Gladiator's Left Ripper (id=70218), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3434;1 Ruthless Gladiator's Shiv (id=70215), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3435;1 Ruthless Gladiator's Longbow (id=70236), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3436;1 Ruthless Gladiator's Baton of Light (id=70235), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3437;1 Ruthless Gladiator's Heavy Crossbow (id=70238), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3438;1 Ruthless Gladiator's Rifle (id=70237), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3439;1 Ruthless Gladiator's Touch of Defeat (id=70234), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3440;1 Ruthless Gladiator's Redoubt (id=70243), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3441;1 Ruthless Gladiator's Shield Wall (id=70241), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3442;1 Ruthless Gladiator's Hatchet (id=70233), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3443;1 Ruthless Gladiator's War Edge (id=70232), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3444;1 Ruthless Gladiator's Bonecracker (id=70222), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3445;1 Ruthless Gladiator's Cleaver (id=70211), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3446;1 Ruthless Gladiator's Hacker (id=70212), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3447;1 Ruthless Gladiator's Quickblade (id=70230), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3448;1 Ruthless Gladiator's Shanker (id=70214), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3449;1 Ruthless Gladiator's Slicer (id=70229), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3450;1 Ruthless Gladiator's Dreadplate Chestpiece (id=70244), 2200 arena
+3451;1 Ruthless Gladiator's Dreadplate Gauntlets (id=70245), 2200 arena
+3452;1 Ruthless Gladiator's Dreadplate Helm (id=70246), 2200 arena
+3453;1 Ruthless Gladiator's Dreadplate Legguards (id=70247), 2200 arena
+3454;1 Ruthless Gladiator's Dreadplate Shoulders (id=70248), 2200 arena
+3455;1 Ruthless Gladiator's Greaves of Alacrity (id=70324), 2200 arena
+3456;1 Ruthless Gladiator's Greaves of Meditation (id=70333), 2200 arena
+3457;1 Ruthless Gladiator's Ornamented Chestguard (id=70353), 2200 arena
+3458;1 Ruthless Gladiator's Ornamented Gloves (id=70354), 2200 arena
+3459;1 Ruthless Gladiator's Ornamented Headcover (id=70355), 2200 arena
+3460;1 Ruthless Gladiator's Ornamented Legplates (id=70356), 2200 arena
+3461;1 Ruthless Gladiator's Ornamented Spaulders (id=70357), 2200 arena
+3462;1 Ruthless Gladiator's Plate Chestpiece (id=70254), 2200 arena
+3463;1 Ruthless Gladiator's Plate Gauntlets (id=70255), 2200 arena
+3464;1 Ruthless Gladiator's Plate Helm (id=70256), 2200 arena
+3465;1 Ruthless Gladiator's Plate Legguards (id=70257), 2200 arena
+3466;1 Ruthless Gladiator's Plate Shoulders (id=70258), 2200 arena
+3467;1 Ruthless Gladiator's Scaled Chestpiece (id=70249), 2200 arena
+3468;1 Ruthless Gladiator's Scaled Gauntlets (id=70250), 2200 arena
+3469;1 Ruthless Gladiator's Scaled Helm (id=70251), 2200 arena
+3470;1 Ruthless Gladiator's Scaled Legguards (id=70252), 2200 arena
+3471;1 Ruthless Gladiator's Scaled Shoulders (id=70253), 2200 arena
+3472;1 Ruthless Gladiator's Warboots of Alacrity (id=70323), 2200 arena
+3473;1 Ruthless Gladiator's Warboots of Cruelty (id=70321), 2200 arena
+3474;1 Ruthless Gladiator's Sabatons of Cruelty (id=70335), 2200 arena
+3475;1 Ruthless Gladiator's Sabatons of Alacrity (id=70337), 2200 arena
+3476;1 Ruthless Gladiator's Chain Armor (id=70259), 2200 arena
+3477;1 Ruthless Gladiator's Chain Gauntlets (id=70260), 2200 arena
+3478;1 Ruthless Gladiator's Chain Helm (id=70261), 2200 arena
+3479;1 Ruthless Gladiator's Chain Leggings (id=70262), 2200 arena
+3480;1 Ruthless Gladiator's Chain Spaulders (id=70263), 2200 arena
+3481;1 Ruthless Gladiator's Sabatons of Alacrity (id=70341), 2200 arena
+3482;1 Ruthless Gladiator's Sabatons of Meditation (id=70329), 2200 arena
+3483;1 Ruthless Gladiator's Ringmail Armor (id=70264), 2200 arena
+3484;1 Ruthless Gladiator's Ringmail Gauntlets (id=70265), 2200 arena
+3485;1 Ruthless Gladiator's Ringmail Helm (id=70266), 2200 arena
+3486;1 Ruthless Gladiator's Ringmail Leggings (id=70267), 2200 arena
+3487;1 Ruthless Gladiator's Ringmail Spaulders (id=70268), 2200 arena
+3488;1 Ruthless Gladiator's Linked Armor (id=70269), 2200 arena
+3489;1 Ruthless Gladiator's Linked Gauntlets (id=70270), 2200 arena
+3490;1 Ruthless Gladiator's Linked Helm (id=70271), 2200 arena
+3491;1 Ruthless Gladiator's Linked Leggings (id=70272), 2200 arena
+3492;1 Ruthless Gladiator's Linked Spaulders (id=70273), 2200 arena
+3493;1 Ruthless Gladiator's Mail Armor (id=70274), 2200 arena
+3494;1 Ruthless Gladiator's Mail Gauntlets (id=70275), 2200 arena
+3495;1 Ruthless Gladiator's Mail Helm (id=70276), 2200 arena
+3496;1 Ruthless Gladiator's Mail Leggings (id=70277), 2200 arena
+3497;1 Ruthless Gladiator's Mail Spaulders (id=70278), 2200 arena
+3498;1 Ruthless Gladiator's Dragonhide Gloves (id=70279), 2200 arena
+3499;1 Ruthless Gladiator's Dragonhide Helm (id=70280), 2200 arena
+3500;1 Ruthless Gladiator's Dragonhide Legguards (id=70281), 2200 arena
+3501;1 Ruthless Gladiator's Dragonhide Robes (id=70282), 2200 arena
+3502;1 Ruthless Gladiator's Dragonhide Spaulders (id=70283), 2200 arena
+3503;1 Ruthless Gladiator's Footguards of Meditation (id=70344), 2200 arena
+3504;1 Ruthless Gladiator's Kodohide Gloves (id=70284), 2200 arena
+3505;1 Ruthless Gladiator's Kodohide Helm (id=70285), 2200 arena
+3506;1 Ruthless Gladiator's Kodohide Legguards (id=70286), 2200 arena
+3507;1 Ruthless Gladiator's Kodohide Robes (id=70287), 2200 arena
+3508;1 Ruthless Gladiator's Kodohide Spaulders (id=70288), 2200 arena
+3509;1 Ruthless Gladiator's Footguards of Alacrity (id=70358), 2200 arena
+3510;1 Ruthless Gladiator's Wyrmhide Gloves (id=70289), 2200 arena
+3511;1 Ruthless Gladiator's Wyrmhide Helm (id=70290), 2200 arena
+3512;1 Ruthless Gladiator's Wyrmhide Legguards (id=70291), 2200 arena
+3513;1 Ruthless Gladiator's Wyrmhide Robes (id=70292), 2200 arena
+3514;1 Ruthless Gladiator's Wyrmhide Spaulders (id=70293), 2200 arena
+3515;1 Ruthless Gladiator's Boots of Cruelty (id=70348), 2200 arena
+3516;1 Ruthless Gladiator's Boots of Alacrity (id=70351), 2200 arena
+3517;1 Ruthless Gladiator's Leather Tunic (id=70294), 2200 arena
+3518;1 Ruthless Gladiator's Leather Gloves (id=70295), 2200 arena
+3519;1 Ruthless Gladiator's Leather Helm (id=70296), 2200 arena
+3520;1 Ruthless Gladiator's Leather Legguards (id=70297), 2200 arena
+3521;1 Ruthless Gladiator's Leather Spaulders (id=70298), 2200 arena
+3522;1 Ruthless Gladiator's Treads of Cruelty (id=70361), 2200 arena
+3523;1 Ruthless Gladiator's Treads of Alacrity (id=70364), 2200 arena
+3524;1 Ruthless Gladiator's Treads of Meditation (id=70367), 2200 arena
+3525;1 Ruthless Gladiator's Silk Handguards (id=70299), 2200 arena
+3526;1 Ruthless Gladiator's Silk Cowl (id=70300), 2200 arena
+3527;1 Ruthless Gladiator's Silk Trousers (id=70301), 2200 arena
+3528;1 Ruthless Gladiator's Silk Robe (id=70302), 2200 arena
+3529;1 Ruthless Gladiator's Silk Amice (id=70303), 2200 arena
+3530;1 Ruthless Gladiator's Mooncloth Gloves (id=70304), 2200 arena
+3531;1 Ruthless Gladiator's Mooncloth Helm (id=70305), 2200 arena
+3532;1 Ruthless Gladiator's Mooncloth Leggings (id=70306), 2200 arena
+3533;1 Ruthless Gladiator's Mooncloth Robe (id=70307), 2200 arena
+3534;1 Ruthless Gladiator's Mooncloth Mantle (id=70308), 2200 arena
+3535;1 Ruthless Gladiator's Satin Gloves (id=70309), 2200 arena
+3536;1 Ruthless Gladiator's Satin Hood (id=70310), 2200 arena
+3537;1 Ruthless Gladiator's Satin Leggings (id=70311), 2200 arena
+3538;1 Ruthless Gladiator's Satin Robe (id=70312), 2200 arena
+3539;1 Ruthless Gladiator's Satin Mantle (id=70313), 2200 arena
+3540;1 Ruthless Gladiator's Felweave Handguards (id=70314), 2200 arena
+3541;1 Ruthless Gladiator's Felweave Cowl (id=70315), 2200 arena
+3542;1 Ruthless Gladiator's Felweave Trousers (id=70316), 2200 arena
+3543;1 Ruthless Gladiator's Felweave Raiment (id=70317), 2200 arena
+3544;1 Ruthless Gladiator's Felweave Amice (id=70318), 2200 arena
+3545;150 Tricky Treat (id=33226)
+3546;150 Tricky Treat (id=33226)
+3547;150 Tricky Treat (id=33226)
+3549;245000 Honor Points, 725000 Honor Points
+3550;340000 Honor Points, 725000 Honor Points
+3551;95000 Honor Points, 725000 Honor Points
+3552;70000 Honor Points, 725000 Honor Points
+3553;70000 Valor Points
+3554;95000 Valor Points
+3555;125000 Valor Points
+3556;165000 Valor Points
+3557;220000 Valor Points
+3558;1 Shoulders of the Fiery Conqueror (id=71680)
+3559;1 Shoulders of the Fiery Protector (id=71687)
+3560;1 Shoulders of the Fiery Vanquisher (id=71673)
+3561;1 Crown of the Fiery Conqueror (id=71677)
+3562;1 Crown of the Fiery Protector (id=71684)
+3563;1 Crown of the Fiery Vanquisher (id=71670)
+3564;1 Helm of the Fiery Conqueror (id=71675)
+3565;1 Helm of the Fiery Protector (id=71682)
+3566;1 Helm of the Fiery Vanquisher (id=71668)
+3567;1 Mantle of the Fiery Conqueror (id=71681)
+3568;1 Mantle of the Fiery Protector (id=71688)
+3569;1 Mantle of the Fiery Vanquisher (id=71674)
+3570;1 Elementium Deathplate Greaves (id=71061), 1 Leggings of the Fiery Vanquisher (id=71671)
+3571;1 Elementium Deathplate Legguards (id=70952), 1 Leggings of the Fiery Vanquisher (id=71671)
+3572;1 Obsidian Arborweave Legguards (id=71099), 1 Leggings of the Fiery Vanquisher (id=71671)
+3573;1 Obsidian Arborweave Legwraps (id=71104), 1 Leggings of the Fiery Vanquisher (id=71671)
+3574;1 Obsidian Arborweave Leggings (id=71109), 1 Leggings of the Fiery Vanquisher (id=71671)
+3575;1 Firehawk Leggings (id=71288), 1 Leggings of the Fiery Vanquisher (id=71671)
+3576;1 Dark Phoenix Legguards (id=71048), 1 Leggings of the Fiery Vanquisher (id=71671)
+3577;1 Flamewaker's Legguards (id=71052), 1 Leggings of the Fiery Protector (id=71685)
+3578;1 Erupting Volcanic Legwraps (id=71299), 1 Leggings of the Fiery Protector (id=71685)
+3579;1 Erupting Volcanic Legguards (id=71304), 1 Leggings of the Fiery Protector (id=71685)
+3580;1 Erupting Volcanic Kilt (id=71294), 1 Leggings of the Fiery Protector (id=71685)
+3581;1 Legplates of the Molten Giant (id=71071), 1 Leggings of the Fiery Protector (id=71685)
+3582;1 Legguards of the Molten Giant (id=70942), 1 Leggings of the Fiery Protector (id=71685)
+3583;1 Immolation Legplates (id=71066), 1 Leggings of the Fiery Conqueror (id=71678)
+3584;1 Immolation Greaves (id=71094), 1 Leggings of the Fiery Conqueror (id=71678)
+3585;1 Immolation Legguards (id=70947), 1 Leggings of the Fiery Conqueror (id=71678)
+3586;1 Legwraps of the Cleansing Flame (id=71273), 1 Leggings of the Fiery Conqueror (id=71678)
+3587;1 Leggings of the Cleansing Flame (id=71278), 1 Leggings of the Fiery Conqueror (id=71678)
+3588;1 Balespider's Leggings (id=71283), 1 Leggings of the Fiery Conqueror (id=71678)
+3589;1 Elementium Deathplate Gauntlets (id=71059), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3590;1 Elementium Deathplate Handguards (id=70953), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3591;1 Obsidian Arborweave Grips (id=71097), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3592;1 Obsidian Arborweave Handwraps (id=71102), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3593;1 Obsidian Arborweave Gloves (id=71107), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3594;1 Firehawk Gloves (id=71286), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3595;1 Dark Phoenix Gloves (id=71046), 1 Gauntlets of the Fiery Vanquisher (id=71669)
+3596;1 Flamewaker's Gloves (id=71050), 1 Gauntlets of the Fiery Protector (id=71683)
+3597;1 Erupting Volcanic Handwraps (id=71297), 1 Gauntlets of the Fiery Protector (id=71683)
+3598;1 Erupting Volcanic Grips (id=71302), 1 Gauntlets of the Fiery Protector (id=71683)
+3599;1 Erupting Volcanic Gloves (id=71292), 1 Gauntlets of the Fiery Protector (id=71683)
+3600;1 Gauntlets of the Molten Giant (id=71069), 1 Gauntlets of the Fiery Protector (id=71683)
+3601;1 Handguards of the Molten Giant (id=70943), 1 Gauntlets of the Fiery Protector (id=71683)
+3602;1 Immolation Gauntlets (id=71064), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3603;1 Immolation Gloves (id=71092), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3604;1 Immolation Handguards (id=70949), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3605;1 Handwraps of the Cleansing Flame (id=71271), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3606;1 Gloves of the Cleansing Flame (id=71276), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3607;1 Balespider's Handwraps (id=71281), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3608;1 Gloves of the Cleansing Flame (id=71276), 1 Gauntlets of the Fiery Conqueror (id=71676)
+3609;1 Elementium Deathplate Breastplate (id=71058), 1 Chest of the Fiery Vanquisher (id=71672)
+3610;1 Elementium Deathplate Chestguard (id=70955), 1 Chest of the Fiery Vanquisher (id=71672)
+3611;1 Obsidian Arborweave Raiment (id=71100), 1 Chest of the Fiery Vanquisher (id=71672)
+3612;1 Dark Phoenix Tunic (id=71045), 1 Chest of the Fiery Vanquisher (id=71672)
+3613;1 Obsidian Arborweave Robes (id=71105), 1 Chest of the Fiery Vanquisher (id=71672)
+3614;1 Obsidian Arborweave Vestment (id=71110), 1 Chest of the Fiery Vanquisher (id=71672)
+3615;1 Firehawk Robes (id=71289), 1 Chest of the Fiery Vanquisher (id=71672)
+3616;1 Immolation Chestguard (id=70950), 1 Chest of the Fiery Conqueror (id=71679)
+3617;1 Robes of the Cleansing Flame (id=71274), 1 Chest of the Fiery Conqueror (id=71679)
+3618;1 Vestment of the Cleansing Flame (id=71279), 1 Chest of the Fiery Conqueror (id=71679)
+3619;1 Balespider's Robes (id=71284), 1 Chest of the Fiery Conqueror (id=71679)
+3620;1 Immolation Battleplate (id=71063), 1 Chest of the Fiery Conqueror (id=71679)
+3621;1 Immolation Breastplate (id=71091), 1 Chest of the Fiery Conqueror (id=71679)
+3622;1 Flamewaker's Tunic (id=71054), 1 Chest of the Fiery Protector (id=71686)
+3623;1 Erupting Volcanic Tunic (id=71296), 1 Chest of the Fiery Protector (id=71686)
+3624;1 Erupting Volcanic Cuirass (id=71301), 1 Chest of the Fiery Protector (id=71686)
+3625;1 Erupting Volcanic Hauberk (id=71291), 1 Chest of the Fiery Protector (id=71686)
+3626;1 Battleplate of the Molten Giant (id=71068), 1 Chest of the Fiery Protector (id=71686)
+3627;1 Chestguard of the Molten Giant (id=70945), 1 Chest of the Fiery Protector (id=71686)
+3628;1 Immolation Battleplate (id=71063), 1 Chest of the Fiery Conqueror (id=71679)
+3629;1 Ranseur of Hatred (id=71361), 1 Crystallized Firestone (id=71617)
+3630;1 Lava Bolt Crossbow (id=71366), 1 Crystallized Firestone (id=71617)
+3631;1 Spire of Scarlet Pain (id=71360), 1 Crystallized Firestone (id=71617)
+3632;1 Chelley's Sterilized Scalpel (id=71359), 1 Crystallized Firestone (id=71617)
+3633;1 Riplimb's Lost Collar (id=71640), 1 Crystallized Firestone (id=71617)
+3634;1 Hide-Bound Chains (id=71365), 1 Crystallized Firestone (id=71617)
+3635;1 Obsidium Cleaver (id=71362), 1 Crystallized Firestone (id=71617)
+3636;1 Firebound Gorget (id=70929), 1 Crystallized Firestone (id=71617)
+3637;1 Theck's Emberseal (id=71367), 1 Crystallized Firestone (id=71617)
+3638;1 Apparatus of Khaz'goroth (id=68972), 1 Crystallized Firestone (id=71617)
+3639;1 Scales of Life (id=68915), 1 Crystallized Firestone (id=71617)
+3640;1 Trail of Embers (id=71151), 1 Crystallized Firestone (id=71617)
+3641;1 Scorchvine Wand (id=71150), 1 Crystallized Firestone (id=71617)
+3642;1 Covenant of the Flame (id=71146), 1 Crystallized Firestone (id=71617)
+3643;1 Singed Plume of Aviana (id=71149), 1 Crystallized Firestone (id=71617)
+3644;1 Soulflame Vial (id=71148), 1 Crystallized Firestone (id=71617)
+3645;1 Relic of the Elemental Lords (id=71147), 1 Crystallized Firestone (id=71617)
+3646;1 Deathclutch Figurine (id=70939), 1 Crystallized Firestone (id=71617)
+3647;1 Morningstar Shard (id=71152), 1 Crystallized Firestone (id=71617)
+3648;1 Deflecting Star (id=71218), 1 Crystallized Firestone (id=71617)
+3649;1 Giantslicer (id=71154), 1 Crystallized Firestone (id=71617)
+3650;250000 Justice Points
+3651;250000 Honor Points
+3652;70000 Conquest Points, 780000 Conquest Points
+3654;1 Durable Flamewrath Greatcloak (id=70930), 1 Crystallized Firestone (id=71617)
+3655;1 Cataclysmic Gladiator's Battle Staff (id=73466), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3656;1 Cataclysmic Gladiator's Bonegrinder (id=73476), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3657;1 Cataclysmic Gladiator's Pike (id=73456), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3658;1 Cataclysmic Gladiator's Energy Staff (id=73457), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3659;1 Cataclysmic Gladiator's Staff (id=73462), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3660;1 Cataclysmic Gladiator's Decapitator (id=73477), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3661;1 Cataclysmic Gladiator's Greatsword (id=73475), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3662;1 Cataclysmic Gladiator's Reprieve (id=73465), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3663;1 Cataclysmic Gladiator's Endgame (id=73469), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3664;1 Cataclysmic Gladiator's Right Render (id=73452), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3665;1 Cataclysmic Gladiator's Right Ripper (id=73454), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3666;1 Cataclysmic Gladiator's Gavel (id=73459), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3667;1 Cataclysmic Gladiator's Spellblade (id=73467), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3668;1 Cataclysmic Gladiator's Shiv (id=73461), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3669;1 Cataclysmic Gladiator's Left Render (id=73451), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3670;1 Cataclysmic Gladiator's Left Ripper (id=73453), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3671;1 Cataclysmic Gladiator's Longbow (id=73470), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3672;1 Cataclysmic Gladiator's Baton of Light (id=73450), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3673;1 Cataclysmic Gladiator's Rifle (id=73460), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3674;1 Cataclysmic Gladiator's Heavy Crossbow (id=73463), 2200 arena, 340000 Conquest Points, 1570000 Conquest Points
+3675;1 Cataclysmic Gladiator's Touch of Defeat (id=73464), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3676;1 Cataclysmic Gladiator's Shield Wall (id=73446), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3677;1 Cataclysmic Gladiator's Barrier (id=73468), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3678;1 Cataclysmic Gladiator's Redoubt (id=73458), 2200 arena, 95000 Conquest Points, 1570000 Conquest Points
+3679;1 Cataclysmic Gladiator's Hatchet (id=73471), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3680;1 Cataclysmic Gladiator's War Edge (id=73445), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3681;1 Cataclysmic Gladiator's Quickblade (id=73472), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3682;1 Cataclysmic Gladiator's Pummeler (id=73473), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3683;1 Cataclysmic Gladiator's Slicer (id=73447), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3684;1 Cataclysmic Gladiator's Bonecracker (id=73448), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3685;1 Cataclysmic Gladiator's Hacker (id=73449), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3686;1 Cataclysmic Gladiator's Cleaver (id=73474), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3687;1 Cataclysmic Gladiator's Shanker (id=73455), 2200 arena, 245000 Conquest Points, 1570000 Conquest Points
+3688;500 Burning Blossom (id=23247)
+3689;500 Noblegarden Chocolate (id=44791)
+3690;270 Love Token (id=49927)
+3691;50 Coin of Ancestry (id=21100)
+3695;1 Cataclysmic Gladiator's Relic of Conquest (id=73490), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3696;1 Cataclysmic Gladiator's Relic of Salvation (id=73594), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3697;1 Cataclysmic Gladiator's Relic of Dominance (id=73624), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3698;1 Cataclysmic Gladiator's Relic of Triumph (id=73642), 2200 arena, 70000 Conquest Points, 1570000 Conquest Points
+3699;1 Maelstrom Crystal (id=52722)
+3700;90 Darkmoon Prize Ticket
+3701;180 Darkmoon Prize Ticket
+3704;300000 Conquest Points
+3705;1 Cataclysmic Gladiator's Dreadplate Chestpiece (id=73620), 2200 arena
+3706;1 Cataclysmic Gladiator's Dreadplate Gauntlets (id=73619), 2200 arena
+3707;1 Cataclysmic Gladiator's Dreadplate Helm (id=73618), 2200 arena
+3708;1 Cataclysmic Gladiator's Dreadplate Legguards (id=73617), 2200 arena
+3709;1 Cataclysmic Gladiator's Dreadplate Shoulders (id=73616), 2200 arena
+3710;1 Cataclysmic Gladiator's Greaves of Alacrity (id=73564), 2200 arena
+3711;1 Cataclysmic Gladiator's Greaves of Meditation (id=73563), 2200 arena
+3712;1 Cataclysmic Gladiator's Ornamented Chestguard (id=73560), 2200 arena
+3713;1 Cataclysmic Gladiator's Ornamented Gloves (id=73559), 2200 arena
+3714;1 Cataclysmic Gladiator's Ornamented Headcover (id=73558), 2200 arena
+3715;1 Cataclysmic Gladiator's Ornamented Legplates (id=73557), 2200 arena
+3716;1 Cataclysmic Gladiator's Ornamented Spaulders (id=73556), 2200 arena
+3717;1 Cataclysmic Gladiator's Plate Chestpiece (id=73482), 2200 arena
+3718;1 Cataclysmic Gladiator's Plate Gauntlets (id=73481), 2200 arena
+3719;1 Cataclysmic Gladiator's Plate Helm (id=73480), 2200 arena
+3720;1 Cataclysmic Gladiator's Plate Legguards (id=73479), 2200 arena
+3721;1 Cataclysmic Gladiator's Plate Shoulders (id=73478), 2200 arena
+3722;1 Cataclysmic Gladiator's Scaled Chestpiece (id=73571), 2200 arena
+3723;1 Cataclysmic Gladiator's Scaled Gauntlets (id=73570), 2200 arena
+3724;1 Cataclysmic Gladiator's Scaled Helm (id=73569), 2200 arena
+3725;1 Cataclysmic Gladiator's Scaled Legguards (id=73568), 2200 arena
+3726;1 Cataclysmic Gladiator's Scaled Shoulders (id=73567), 2200 arena
+3727;1 Cataclysmic Gladiator's Warboots of Alacrity (id=73552), 2200 arena
+3728;1 Cataclysmic Gladiator's Warboots of Cruelty (id=73553), 2200 arena
+3729;1 Cataclysmic Gladiator's Sabatons of Cruelty (id=73588), 2200 arena
+3730;1 Cataclysmic Gladiator's Sabatons of Alacrity (id=73587), 2200 arena
+3731;1 Cataclysmic Gladiator's Chain Armor (id=73584), 2200 arena
+3732;1 Cataclysmic Gladiator's Chain Gauntlets (id=73583), 2200 arena
+3733;1 Cataclysmic Gladiator's Chain Helm (id=73582), 2200 arena
+3734;1 Cataclysmic Gladiator's Chain Leggings (id=73581), 2200 arena
+3735;1 Cataclysmic Gladiator's Chain Spaulders (id=73580), 2200 arena
+3736;1 Cataclysmic Gladiator's Sabatons of Alacrity (id=73521), 2200 arena
+3737;1 Cataclysmic Gladiator's Sabatons of Meditation (id=73520), 2200 arena
+3738;1 Cataclysmic Gladiator's Ringmail Armor (id=73517), 2200 arena
+3739;1 Cataclysmic Gladiator's Ringmail Gauntlets (id=73516), 2200 arena
+3740;1 Cataclysmic Gladiator's Ringmail Helm (id=73515), 2200 arena
+3741;1 Cataclysmic Gladiator's Ringmail Leggings (id=73514), 2200 arena
+3742;1 Cataclysmic Gladiator's Ringmail Spaulders (id=73513), 2200 arena
+3743;1 Cataclysmic Gladiator's Linked Armor (id=73512), 2200 arena
+3744;1 Cataclysmic Gladiator's Linked Gauntlets (id=73511), 2200 arena
+3745;1 Cataclysmic Gladiator's Linked Helm (id=73510), 2200 arena
+3746;1 Cataclysmic Gladiator's Linked Leggings (id=73509), 2200 arena
+3747;1 Cataclysmic Gladiator's Linked Spaulders (id=73508), 2200 arena
+3748;1 Cataclysmic Gladiator's Mail Armor (id=73506), 2200 arena
+3749;1 Cataclysmic Gladiator's Mail Gauntlets (id=73505), 2200 arena
+3750;1 Cataclysmic Gladiator's Mail Helm (id=73504), 2200 arena
+3751;1 Cataclysmic Gladiator's Mail Leggings (id=73503), 2200 arena
+3752;1 Cataclysmic Gladiator's Mail Spaulders (id=73502), 2200 arena
+3753;1 Cataclysmic Gladiator's Dragonhide Gloves (id=73615), 2200 arena
+3754;1 Cataclysmic Gladiator's Dragonhide Helm (id=73614), 2200 arena
+3755;1 Cataclysmic Gladiator's Dragonhide Legguards (id=73613), 2200 arena
+3756;1 Cataclysmic Gladiator's Dragonhide Robes (id=73612), 2200 arena
+3757;1 Cataclysmic Gladiator's Dragonhide Spaulders (id=73611), 2200 arena
+3758;1 Cataclysmic Gladiator's Footguards of Meditation (id=73609), 2200 arena
+3759;1 Cataclysmic Gladiator's Footguards of Alacrity (id=73601), 2200 arena
+3760;1 Cataclysmic Gladiator's Kodohide Gloves (id=73607), 2200 arena
+3761;1 Cataclysmic Gladiator's Kodohide Helm (id=73606), 2200 arena
+3762;1 Cataclysmic Gladiator's Kodohide Legguards (id=73605), 2200 arena
+3763;1 Cataclysmic Gladiator's Kodohide Robes (id=73604), 2200 arena
+3764;1 Cataclysmic Gladiator's Kodohide Spaulders (id=73603), 2200 arena
+3765;1 Cataclysmic Gladiator's Wyrmhide Gloves (id=73599), 2200 arena
+3766;1 Cataclysmic Gladiator's Wyrmhide Helm (id=73598), 2200 arena
+3767;1 Cataclysmic Gladiator's Wyrmhide Legguards (id=73597), 2200 arena
+3768;1 Cataclysmic Gladiator's Wyrmhide Robes (id=73596), 2200 arena
+3769;1 Cataclysmic Gladiator's Wyrmhide Spaulders (id=73595), 2200 arena
+3770;1 Cataclysmic Gladiator's Boots of Cruelty (id=73531), 2200 arena
+3771;1 Cataclysmic Gladiator's Boots of Alacrity (id=73530), 2200 arena
+3772;1 Cataclysmic Gladiator's Leather Tunic (id=73527), 2200 arena
+3773;1 Cataclysmic Gladiator's Leather Gloves (id=73526), 2200 arena
+3774;1 Cataclysmic Gladiator's Leather Helm (id=73525), 2200 arena
+3775;1 Cataclysmic Gladiator's Leather Legguards (id=73524), 2200 arena
+3776;1 Cataclysmic Gladiator's Leather Spaulders (id=73523), 2200 arena
+3777;1 Cataclysmic Gladiator's Treads of Cruelty (id=73636), 2200 arena
+3778;1 Cataclysmic Gladiator's Treads of Alacrity (id=73635), 2200 arena
+3779;1 Cataclysmic Gladiator's Treads of Meditation (id=73634), 2200 arena
+3780;1 Cataclysmic Gladiator's Silk Handguards (id=73576), 2200 arena
+3781;1 Cataclysmic Gladiator's Silk Cowl (id=73575), 2200 arena
+3782;1 Cataclysmic Gladiator's Silk Trousers (id=73574), 2200 arena
+3783;1 Cataclysmic Gladiator's Silk Robe (id=73573), 2200 arena
+3784;1 Cataclysmic Gladiator's Silk Amice (id=73572), 2200 arena
+3785;1 Cataclysmic Gladiator's Mooncloth Gloves (id=73549), 2200 arena
+3786;1 Cataclysmic Gladiator's Mooncloth Helm (id=73548), 2200 arena
+3787;1 Cataclysmic Gladiator's Mooncloth Leggings (id=73547), 2200 arena
+3788;1 Cataclysmic Gladiator's Mooncloth Robe (id=73546), 2200 arena
+3789;1 Cataclysmic Gladiator's Mooncloth Mantle (id=73545), 2200 arena
+3790;1 Cataclysmic Gladiator's Satin Gloves (id=73544), 2200 arena
+3791;1 Cataclysmic Gladiator's Satin Hood (id=73543), 2200 arena
+3792;1 Cataclysmic Gladiator's Satin Leggings (id=73542), 2200 arena
+3793;1 Cataclysmic Gladiator's Satin Robe (id=73541), 2200 arena
+3794;1 Cataclysmic Gladiator's Satin Mantle (id=73540), 2200 arena
+3795;1 Cataclysmic Gladiator's Felweave Handguards (id=73487), 2200 arena
+3796;1 Cataclysmic Gladiator's Felweave Cowl (id=73486), 2200 arena
+3797;1 Cataclysmic Gladiator's Felweave Trousers (id=73485), 2200 arena
+3798;1 Cataclysmic Gladiator's Felweave Raiment (id=73484), 2200 arena
+3799;1 Cataclysmic Gladiator's Felweave Amice (id=73483), 2200 arena
+3806;110 Darkmoon Prize Ticket
+3811;160 Darkmoon Prize Ticket
+3812;130 Darkmoon Prize Ticket
+3813;55 Darkmoon Prize Ticket
+3814;75 Darkmoon Prize Ticket
+3815;20 Darkmoon Prize Ticket
+3816;1 Darkmoon Prize Ticket
+3817;10 Darkmoon Prize Ticket
+3818;1 Darkmoon Prize Ticket
+3819;1 Mote of Darkness
+3820;1 Essence of Corrupted Deathwing
+3821;150000 Valor Points
+3822;150000 Conquest Points
+3823;100000 Honor Points
+3824;75000 Honor Points
+3825;150000 Honor Points
+3826;1 Chest of the Corrupted Vanquisher (id=78862)
+3827;1 Crown of the Corrupted Vanquisher (id=78868)
+3828;1 Leggings of the Corrupted Vanquisher (id=78871)
+3829;1 Gauntlets of the Corrupted Vanquisher (id=78865)
+3830;1 Shoulders of the Corrupted Vanquisher (id=78874)
+3831;1 Crown of the Corrupted Conqueror (id=78869)
+3832;1 Chest of the Corrupted Conqueror (id=78863)
+3833;1 Leggings of the Corrupted Conqueror (id=78872)
+3834;1 Gauntlets of the Corrupted Conqueror (id=78866)
+3835;1 Shoulders of the Corrupted Conqueror (id=78875)
+3836;1 Shoulders of the Corrupted Protector (id=78876)
+3837;1 Crown of the Corrupted Protector (id=78870)
+3838;1 Leggings of the Corrupted Protector (id=78873)
+3839;1 Gauntlets of the Corrupted Protector (id=78867)
+3840;1 Chest of the Corrupted Protector (id=78864)
+3841;1 Shoulders of the Corrupted Conqueror (id=78180)
+3842;1 Leggings of the Corrupted Conqueror (id=78181)
+3843;1 Crown of the Corrupted Conqueror (id=78182)
+3844;1 Gauntlets of the Corrupted Conqueror (id=78183)
+3845;1 Chest of the Corrupted Conqueror (id=78184)
+3846;1 Shoulders of the Corrupted Protector (id=78175)
+3847;1 Leggings of the Corrupted Protector (id=78176)
+3848;1 Crown of the Corrupted Protector (id=78177)
+3849;1 Gauntlets of the Corrupted Protector (id=78178)
+3850;1 Chest of the Corrupted Protector (id=78179)
+3851;1 Shoulders of the Corrupted Vanquisher (id=78170)
+3852;1 Leggings of the Corrupted Vanquisher (id=78171)
+3853;1 Crown of the Corrupted Vanquisher (id=78172)
+3854;1 Crown of the Corrupted Vanquisher (id=78172)
+3855;1 Gauntlets of the Corrupted Vanquisher (id=78173)
+3856;1 Chest of the Corrupted Vanquisher (id=78174)
+3857;1 Chest of the Corrupted Vanquisher (id=78849)
+3858;1 Crown of the Corrupted Vanquisher (id=78852)
+3859;1 Gauntlets of the Corrupted Vanquisher (id=78855)
+3860;1 Leggings of the Corrupted Vanquisher (id=78858)
+3861;1 Shoulders of the Corrupted Vanquisher (id=78861)
+3862;1 Chest of the Corrupted Conqueror (id=78847)
+3863;1 Crown of the Corrupted Conqueror (id=78850)
+3864;1 Gauntlets of the Corrupted Conqueror (id=78853)
+3865;1 Leggings of the Corrupted Conqueror (id=78856)
+3866;1 Shoulders of the Corrupted Conqueror (id=78859)
+3867;1 Chest of the Corrupted Protector (id=78848)
+3868;1 Crown of the Corrupted Protector (id=78851)
+3869;1 Gauntlets of the Corrupted Protector (id=78854)
+3870;1 Leggings of the Corrupted Protector (id=78857)
+3871;1 Shoulders of the Corrupted Protector (id=78860)
+3872;75000 Conquest Points

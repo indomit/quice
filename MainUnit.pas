@@ -15,17 +15,20 @@ const
   REV = '12309';
   VERSION_1 = '1';
   VERSION_2 = '3';
-  VERSION_3 = '1';
+  VERSION_3 = '2';
   VERSION_EXE = VERSION_1 + '.' + VERSION_2 + '.' + VERSION_3;
 
   SCRIPT_TAB_NO_QUEST = 8;
-  SCRIPT_TAB_NO_CREATURE = 21;
+  SCRIPT_TAB_NO_CREATURE = 22;
   SCRIPT_TAB_NO_GAMEOBJECT = 6;
   SCRIPT_TAB_NO_ITEM = 10;
   SCRIPT_TAB_NO_OTHER = 3;
   SCRIPT_TAB_NO_CHARACTER = 3;
+
+  TAB_NO_NPC_GOSSIP = 14;
   TAB_NO_NPC_VENDOR_TEMPLATE = 19;
   TAB_NO_NPC_TRAINER_TEMPLATE = 20;
+  TAB_NO_NPC_GOSSIP_MENU = 21;
 
   WM_FREEQL = WM_USER + 1;
 
@@ -41,6 +44,8 @@ const
   PFX_CREATURE_MOVEMENT_SCRIPTS = 'cms';
   PFX_CREATURE_LOOT_TEMPLATE = 'co';
   PFX_CREATURE_EVENTAI = 'cn';
+  PFX_CREATURE_GOSSIP_MENU = 'cgm';
+  PFX_CREATURE_GOSSIP_MENU_OPTION = 'cgmo';
   PFX_PICKPOCKETING_LOOT_TEMPLATE = 'cp';
   PFX_SKINNING_LOOT_TEMPLATE = 'cs';
   PFX_NPC_VENDOR = 'cv';
@@ -1661,6 +1666,55 @@ type
     edgtdata31: TLabeledEdit;
     edgtunk2: TLabeledEdit;
     edqtReqItemCount3: TLabeledEdit;
+    tsGossipMenu: TTabSheet;
+    Panel25: TPanel;
+    Label8: TLabel;
+    Label10: TLabel;
+    edcgmtext_id: TJvComboEdit;
+    edcgmscript_id: TJvComboEdit;
+    edcgmcondition_id: TJvComboEdit;
+    btShowGossipMenuScript: TButton;
+    edcgmcond_1: TLabeledEdit;
+    edcgmcond_1_val_1: TLabeledEdit;
+    edcgmcond_1_val_2: TLabeledEdit;
+    edcgmcond_2: TLabeledEdit;
+    edcgmcond_2_val_1: TLabeledEdit;
+    edcgmcond_2_val_2: TLabeledEdit;
+    edcgmentry: TJvComboEdit;
+    Label11: TLabel;
+    lvcgmOptions: TJvListView;
+    btGossipMenuOptionAdd: TSpeedButton;
+    btGossipMenuOptionUpd: TSpeedButton;
+    btGossipMenuOptionDel: TSpeedButton;
+    edcgmomenu_id: TLabeledEdit;
+    Label9: TLabel;
+    Label13: TLabel;
+    edcgmoid: TLabeledEdit;
+    edcgmooption_text: TLabeledEdit;
+    edcgmooption_id: TLabeledEdit;
+    edcgmonpc_option_npcflag: TLabeledEdit;
+    edcgmoaction_poi_id: TLabeledEdit;
+    edcgmoaction_script_id: TLabeledEdit;
+    edcgmobox_coded: TLabeledEdit;
+    edcgmobox_money: TLabeledEdit;
+    edcgmobox_text: TLabeledEdit;
+    edcgmocond_1: TLabeledEdit;
+    edcgmocond_1_val_1: TLabeledEdit;
+    edcgmocond_1_val_2: TLabeledEdit;
+    edcgmocond_2: TLabeledEdit;
+    edcgmocond_2_val_1: TLabeledEdit;
+    edcgmocond_2_val_2: TLabeledEdit;
+    edcgmocond_3: TLabeledEdit;
+    edcgmocond_3_val_1: TLabeledEdit;
+    edcgmocond_3_val_2: TLabeledEdit;
+    edcgmocondition_id: TJvComboEdit;
+    btShowGossipMenuOptionsScript: TButton;
+    Label14: TLabel;
+    Label12: TLabel;
+    edcgmooption_icon: TJvComboEdit;
+    Label15: TLabel;
+    edcgmoaction_menu_id: TJvComboEdit;
+    lbcgmoaction_menu_id: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btSearchClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -2035,6 +2089,19 @@ type
     procedure btTrainerTemplateDelClick(Sender: TObject);
     procedure GetUnitFlags2(Sender: TObject);
     procedure NPCTextLoc1btnpctextClick(Sender: TObject);
+    procedure edctgossip_menu_idButtonClick(Sender: TObject);
+    procedure edcgmentryButtonClick(Sender: TObject);
+    procedure tsGossipMenuShow(Sender: TObject);
+    procedure tsCreatureShow(Sender: TObject);
+    procedure edcgmtext_idButtonClick(Sender: TObject);
+    procedure btGossipMenuOptionDelClick(Sender: TObject);
+    procedure lvcgmOptionsChange(Sender: TObject; Item: TListItem; Change: TItemChange);
+    procedure lvcgmOptionsSelectItem(Sender: TObject; Item: TListItem; Selected: Boolean);
+    procedure btGossipMenuOptionUpdClick(Sender: TObject);
+    procedure btGossipMenuOptionAddClick(Sender: TObject);
+    procedure btShowGossipMenuOptionsScriptClick(Sender: TObject);
+    procedure GetOptionIcon(Sender: TObject);
+    procedure edcgmoaction_menu_idButtonClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -2207,6 +2274,9 @@ type
     function ScriptSQLScript(lvList: TJvListView; tn, id: string): string;
     procedure GetSomeFlags(Sender: TObject; What: string);
     function GetActionParamHint(ActionType, ParamNo: Integer): string;
+    procedure LoadGossipMenu(entry: Integer);
+    procedure CompleteGossipMenuScript;
+    procedure ClearCGMOptionsFields;
 
   public
     SplashForm: TAboutBox;
@@ -3720,11 +3790,11 @@ end;
 
 procedure TMainForm.edirentryButtonClick(Sender: TObject);
 begin
-{  ClearFields(ttItem);
-  LoadQueryToListView(Format('SELECT rlt.*, i.`name` FROM `reference_loot_template`' +
+  { ClearFields(ttItem);
+    LoadQueryToListView(Format('SELECT rlt.*, i.`name` FROM `reference_loot_template`' +
     ' rlt LEFT OUTER JOIN `item_template` i ON i.`entry` = rlt.`item` WHERE (rlt.`entry`=%d)',
     [StrToIntDef(edirentry.Text, 0)]), lvitReferenceLoot);
-}
+  }
 end;
 
 procedure TMainForm.JvHttpUrlGrabberDoneStream(Sender: TObject; Stream: TStream; StreamSize: Integer; Url: string);
@@ -3786,19 +3856,19 @@ begin
     ID_YES then
     Exit;
   with TRegistry.Create do
-  try
-    RootKey := HKEY_CURRENT_USER;
-    S := 'Software\' + SoftwareCompany + '\' + Trim(ProgramName) + '\';
-    DeleteKey(S + 'lvSearchItem\Columns');
-    DeleteKey(S + 'lvSearchItem\Sort');
-    DeleteKey(S + 'lvSearchItem');
-    DeleteKey(S + 'QuestList');
-    DeleteKey(S + 'servers\localhost');
-    DeleteKey(S + 'servers');
-    DeleteKey(S);
-  finally
-    Free;
-  end;
+    try
+      RootKey := HKEY_CURRENT_USER;
+      S := 'Software\' + SoftwareCompany + '\' + Trim(ProgramName) + '\';
+      DeleteKey(S + 'lvSearchItem\Columns');
+      DeleteKey(S + 'lvSearchItem\Sort');
+      DeleteKey(S + 'lvSearchItem');
+      DeleteKey(S + 'QuestList');
+      DeleteKey(S + 'servers\localhost');
+      DeleteKey(S + 'servers');
+      DeleteKey(S);
+    finally
+      Free;
+    end;
   S := dmMain.ProgramDir;
   DeleteFile(S + 'CSV\ActionType.csv');
   DeleteFile(S + 'CSV\AreaTable.csv');
@@ -3865,15 +3935,15 @@ begin
   DeleteFile(S + 'Quice.sql');
 
   with TStringList.Create do
-  try
-    Add(':try');
-    Add('del /Q Quice.exe');
-    Add('if exist Quice.exe goto try');
-    Add('del /Q uninstall.bat');
-    SaveToFile(S + 'uninstall.bat');
-  finally
-    Free;
-  end;
+    try
+      Add(':try');
+      Add('del /Q Quice.exe');
+      Add('if exist Quice.exe goto try');
+      Add('del /Q uninstall.bat');
+      SaveToFile(S + 'uninstall.bat');
+    finally
+      Free;
+    end;
   S := S + 'uninstall.bat';
   WinExec(PAnsiChar(S), SW_HIDE);
   Close;
@@ -3909,13 +3979,13 @@ end;
 procedure TMainForm.btDelQuestGiverClick(Sender: TObject);
 begin
   if Assigned(lvqtGiverTemplate.Selected) then
-    lvqtGiverTemplate.Selected.Delete;
+    lvqtGiverTemplate.DeleteSelected;
 end;
 
 procedure TMainForm.btDelQuestTakerClick(Sender: TObject);
 begin
   if Assigned(lvqtTakerTemplate.Selected) then
-    lvqtTakerTemplate.Selected.Delete;
+    lvqtTakerTemplate.DeleteSelected;
 end;
 
 procedure TMainForm.edSearchChange(Sender: TObject);
@@ -4285,7 +4355,7 @@ end;
 procedure TMainForm.LoadCreature(entry: Integer);
 var
   i: Integer;
-  isvendor, istrainer, isEventAI, isEquip: Boolean;
+  isvendor, istrainer, isEventAI, isEquip, isGossipMenu: Boolean;
   npcflag: Integer;
 begin
   ShowHourGlassCursor;
@@ -4310,21 +4380,14 @@ begin
       isvendor := false;
 
     // is creature trainer?
-    if npcflag and 16 = 16 then
-      istrainer := true
-    else
-      istrainer := false;
+    istrainer := npcflag and 16 = 16;
 
     // is eventAI ?
-    if MyQuery.FieldByName('AIName').AsString = mob_eventai then
-      isEventAI := true
-    else
-      isEventAI := false;
+    isEventAI := MyQuery.FieldByName('AIName').AsString = mob_eventai;
 
-    if MyQuery.FieldByName('equipment_id').AsInteger <> 0 then
-      isEquip := true
-    else
-      isEquip := false;
+    isEquip := MyQuery.FieldByName('equipment_id').AsInteger <> 0;
+
+    isGossipMenu := MyQuery.FieldByName('gossip_menu_id').AsInteger <> 0;
 
     MyQuery.Close;
 
@@ -4385,6 +4448,10 @@ begin
     for i := 0 to lvcrtNPCTrainer.Items.Count - 1 do
       lvcrtNPCTrainer.Items[i].SubItems.Add
         (SpellsForm.GetSpellName(StrToIntDef(lvcrtNPCTrainer.Items[i].SubItems[0], 0)));
+
+    // load gossip_menu
+    if isGossipMenu then
+      LoadGossipMenu(StrToIntDef(edctgossip_menu_id.Text, 0));
 
     tsNPCTrainer.TabVisible := istrainer;
     LoadCreatureTemplateAddon(entry);
@@ -4595,7 +4662,7 @@ begin
     3:
       CompleteCreatureMovementScript;
     4:
-      {CompleteCreatureMovementScriptScript};
+      { CompleteCreatureMovementScriptScript };
     5:
       CompleteCreatureModelInfoScript;
     6:
@@ -4627,7 +4694,14 @@ begin
       CompleteCreatureEventAIScript;
     19:
       CompleteNPCVendorTemplateScript;
+    TAB_NO_NPC_GOSSIP_MENU:
+      CompleteGossipMenuScript;
   end;
+end;
+
+procedure TMainForm.tsCreatureShow(Sender: TObject);
+begin
+  edSearchCreatureEntry.SetFocus;
 end;
 
 procedure TMainForm.tsCreatureTemplateAddonShow(Sender: TObject);
@@ -5118,6 +5192,11 @@ begin
   GetValueFromSimpleList(Sender, 84, 'CreatureFamily', false);
 end;
 
+procedure TMainForm.edctgossip_menu_idButtonClick(Sender: TObject);
+begin
+  PageControl3.ActivePageIndex := TAB_NO_NPC_GOSSIP_MENU;
+end;
+
 procedure TMainForm.GetMechanicImmuneMask(Sender: TObject);
 begin
   GetSomeFlags(Sender, 'Mechanic');
@@ -5302,6 +5381,32 @@ end;
 procedure TMainForm.GetRace(Sender: TObject);
 begin
   GetValueFromSimpleList(Sender, 142, 'ChrRaces', false);
+end;
+
+procedure TMainForm.edcgmentryButtonClick(Sender: TObject);
+begin
+  LoadGossipMenu(StrToIntDef(edcgmentry.Text, 0));
+end;
+
+procedure TMainForm.edcgmoaction_menu_idButtonClick(Sender: TObject);
+begin
+  if edcgmoaction_menu_id.Text <> '0' then
+  begin
+    edcgmentry.Text := edcgmoaction_menu_id.Text;
+    edcgmentry.Button.Click;
+  end;
+end;
+
+procedure TMainForm.GetOptionIcon(Sender: TObject);
+begin
+  GetValueFromSimpleList(Sender, 158, 'OptionIcon', false);
+end;
+
+procedure TMainForm.edcgmtext_idButtonClick(Sender: TObject);
+begin
+  PageControl3.ActivePageIndex := TAB_NO_NPC_GOSSIP;
+  edcgtextid.Text := edcgmtext_id.Text;
+  edcgtextid.Button.Click;
 end;
 
 procedure TMainForm.edcgtextidButtonClick(Sender: TObject);
@@ -5973,12 +6078,58 @@ end;
 
 procedure TMainForm.GetUnitFlags2(Sender: TObject);
 begin
-    GetSomeFlags(Sender, 'CreatureFlags2');
+  GetSomeFlags(Sender, 'CreatureFlags2');
 end;
 
 procedure TMainForm.edctvendor_idButtonClick(Sender: TObject);
 begin
   PageControl3.ActivePageIndex := TAB_NO_NPC_VENDOR_TEMPLATE;
+end;
+
+procedure TMainForm.lvcgmOptionsChange(Sender: TObject; Item: TListItem; Change: TItemChange);
+begin
+  btGossipMenuOptionUpd.Enabled := Assigned(lvcgmOptions.Selected);
+  btGossipMenuOptionDel.Enabled := Assigned(lvcgmOptions.Selected);
+end;
+
+procedure TMainForm.lvcgmOptionsSelectItem(Sender: TObject; Item: TListItem; Selected: Boolean);
+var
+  i: integer;
+  FieldName : string;
+  Ctrl: TComponent;
+begin
+  if Selected then
+  begin
+    for i := 0 to TJvListView(Sender).Columns.Count - 1 do
+    begin
+      FieldName := TJvListView(Sender).Columns[i].Caption;
+      Ctrl := FindComponent('ed'+ PFX_CREATURE_GOSSIP_MENU_OPTION + FieldName);
+      if Assigned(Ctrl) and (Ctrl is TCustomEdit) then
+      begin
+        if i = 0 then
+          TCustomEdit(Ctrl).Text := TJvListView(Sender).Selected.Caption
+        else
+          TCustomEdit(Ctrl).Text := TJvListView(Sender).Selected.SubItems[i-1];
+      end;
+    end;
+  end;
+end;
+
+procedure TMainForm.ClearCGMOptionsFields();
+var
+  i: integer;
+  FieldName : string;
+  Ctrl: TComponent;
+begin
+  for i := 0 to lvcgmOptions.Columns.Count - 1 do
+  begin
+    FieldName := lvcgmOptions.Columns[i].Caption;
+    Ctrl := FindComponent('ed'+ PFX_CREATURE_GOSSIP_MENU_OPTION + FieldName);
+    if Assigned(Ctrl) and (Ctrl is TCustomEdit) then
+    begin
+      TCustomEdit(Ctrl).Text := '';
+    end;
+  end;
 end;
 
 procedure TMainForm.lvCharacterInventoryChange(Sender: TObject; Item: TListItem; Change: TItemChange);
@@ -6179,6 +6330,26 @@ begin
   end;
 end;
 
+procedure TMainForm.LoadGossipMenu(entry: Integer);
+begin
+  if entry < 1 then
+    Exit;
+  MyQuery.SQL.Text := Format('SELECT * FROM `gossip_menu` WHERE (`entry`=%d)', [entry]);
+  MyQuery.Open;
+  try
+    FillFields(MyQuery, PFX_CREATURE_GOSSIP_MENU);
+    MyQuery.Close;
+  except
+    on E: Exception do
+      raise Exception.Create(dmMain.Text[139] + #10#13 + E.Message);
+  end;
+
+  LoadQueryToListView(Format('select * from gossip_menu_option where menu_id=%d', [entry]), lvcgmOptions);
+  ClearCGMOptionsFields();
+  if lvcgmOptions.Items.Count > 0  then lvcgmOptions.Items[0].Selected := true;
+
+end;
+
 procedure TMainForm.btScriptCreatureClick(Sender: TObject);
 begin
   PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
@@ -6253,6 +6424,19 @@ begin
   SetFieldsAndValues(Fields, Values, 'creature_equip_template', PFX_CREATURE_EQUIP_TEMPLATE, mectLog);
   mectScript.Text := Format('DELETE FROM `creature_equip_template` WHERE (`entry`=%s);'#13#10 +
     'INSERT INTO `creature_equip_template` (%s) VALUES (%s);'#13#10, [caguid, Fields, Values]);
+end;
+
+procedure TMainForm.CompleteGossipMenuScript;
+var
+  entry, Fields, Values: string;
+begin
+  mectLog.Clear;
+  entry := edcgmentry.Text;
+  if entry = '' then
+    Exit;
+  SetFieldsAndValues(Fields, Values, 'gossip_menu', PFX_CREATURE_GOSSIP_MENU, mectLog);
+  mectScript.Text := Format('DELETE FROM `gossip_menu` WHERE (`entry`=%s);'#13#10 +
+    'INSERT INTO `gossip_menu` (%s) VALUES (%s);'#13#10, [entry, Fields, Values]);
 end;
 
 procedure TMainForm.CompleteLocalesQuest;
@@ -7088,6 +7272,12 @@ end;
 procedure TMainForm.tsGOShow(Sender: TObject);
 begin
   PageControl4.ActivePageIndex := 0;
+end;
+
+procedure TMainForm.tsGossipMenuShow(Sender: TObject);
+begin
+  edcgmentry.Text := edctgossip_menu_id.Text;
+  edcgmentry.Button.Click;
 end;
 
 procedure TMainForm.btExecuteGOScriptClick(Sender: TObject);
@@ -8219,7 +8409,7 @@ end;
 procedure TMainForm.LootDel(lvList: TJvListView);
 begin
   if Assigned(lvList.Selected) then
-    lvList.Selected.Delete;
+    lvList.DeleteSelected;
 end;
 
 procedure TMainForm.SetLootEditFields(pfx: string; lvList: TJvListView);
@@ -8480,6 +8670,57 @@ begin
   LootUpd('edgo', lvgoGOLoot);
 end;
 
+procedure TMainForm.btGossipMenuOptionAddClick(Sender: TObject);
+var
+  i: integer;
+  FieldName : string;
+  Ctrl: TComponent;
+begin
+  with lvcgmOptions.Items.Add do
+  begin
+    for i := 0 to lvcgmOptions.Columns.Count - 1 do
+    begin
+      FieldName := lvcgmOptions.Columns[i].Caption;
+      Ctrl := FindComponent('ed'+ PFX_CREATURE_GOSSIP_MENU_OPTION + FieldName);
+      if Assigned(Ctrl) and (Ctrl is TCustomEdit) then
+      begin
+        if i = 0 then
+          Caption := TCustomEdit(Ctrl).Text
+        else
+          SubItems.Add(TCustomEdit(Ctrl).Text);
+      end
+      else
+        SubItems.Add('');
+    end;
+  end;
+end;
+
+procedure TMainForm.btGossipMenuOptionDelClick(Sender: TObject);
+begin
+  if Assigned(lvcgmOptions.Selected) then
+    lvcgmOptions.DeleteSelected;
+end;
+
+procedure TMainForm.btGossipMenuOptionUpdClick(Sender: TObject);
+var
+  i: integer;
+  FieldName : string;
+  Ctrl: TComponent;
+begin
+  for i := 0 to lvcgmOptions.Columns.Count - 1 do
+  begin
+    FieldName := lvcgmOptions.Columns[i].Caption;
+    Ctrl := FindComponent('ed'+ PFX_CREATURE_GOSSIP_MENU_OPTION + FieldName);
+    if Assigned(Ctrl) and (Ctrl is TCustomEdit) then
+    begin
+      if i = 0 then
+        lvcgmOptions.Selected.Caption := TCustomEdit(Ctrl).Text
+      else
+        lvcgmOptions.Selected.SubItems[i-1] := TCustomEdit(Ctrl).Text;
+    end;
+  end;
+end;
+
 procedure TMainForm.btGOLootDelClick(Sender: TObject);
 begin
   LootDel(lvgoGOLoot);
@@ -8541,6 +8782,55 @@ begin
   // ShowFullLootScript('item_loot_template', lvitItemLoot, meitScript, editentry.Text);
 end;
 
+procedure TMainForm.btShowGossipMenuOptionsScriptClick(Sender: TObject);
+var
+  i: Integer;
+  menu_id, Values: string;
+begin
+  PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
+  menu_id := edcgmentry.Text;
+  mectScript.Clear;
+  Values := '';
+  if lvcgmOptions.Items.Count <> 0 then
+  begin
+    for i := 0 to lvcgmOptions.Items.Count - 2 do
+    begin
+      Values := Values +
+        Format('(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s),'#13#10, [
+        lvcgmOptions.Items[i].Caption, lvcgmOptions.Items[i].SubItems[0], lvcgmOptions.Items[i].SubItems[1],
+        QuotedStr(lvcgmOptions.Items[i].SubItems[2]), lvcgmOptions.Items[i].SubItems[3], lvcgmOptions.Items[i].SubItems[4],
+        lvcgmOptions.Items[i].SubItems[5], lvcgmOptions.Items[i].SubItems[6], lvcgmOptions.Items[i].SubItems[7],
+        lvcgmOptions.Items[i].SubItems[8], lvcgmOptions.Items[i].SubItems[9], QuotedStr(lvcgmOptions.Items[i].SubItems[10]),
+        lvcgmOptions.Items[i].SubItems[11], lvcgmOptions.Items[i].SubItems[12], lvcgmOptions.Items[i].SubItems[13],
+        lvcgmOptions.Items[i].SubItems[14], lvcgmOptions.Items[i].SubItems[15], lvcgmOptions.Items[i].SubItems[16],
+        lvcgmOptions.Items[i].SubItems[17], lvcgmOptions.Items[i].SubItems[18], lvcgmOptions.Items[i].SubItems[19],
+        lvcgmOptions.Items[i].SubItems[20]]);
+  end;
+    i := lvcgmOptions.Items.Count - 1;
+      Values := Values +
+        Format('(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'#13#10, [
+        lvcgmOptions.Items[i].Caption, lvcgmOptions.Items[i].SubItems[0], lvcgmOptions.Items[i].SubItems[1],
+        QuotedStr(lvcgmOptions.Items[i].SubItems[2]), lvcgmOptions.Items[i].SubItems[3], lvcgmOptions.Items[i].SubItems[4],
+        lvcgmOptions.Items[i].SubItems[5], lvcgmOptions.Items[i].SubItems[6], lvcgmOptions.Items[i].SubItems[7],
+        lvcgmOptions.Items[i].SubItems[8], lvcgmOptions.Items[i].SubItems[9], QuotedStr(lvcgmOptions.Items[i].SubItems[10]),
+        lvcgmOptions.Items[i].SubItems[11], lvcgmOptions.Items[i].SubItems[12], lvcgmOptions.Items[i].SubItems[13],
+        lvcgmOptions.Items[i].SubItems[14], lvcgmOptions.Items[i].SubItems[15], lvcgmOptions.Items[i].SubItems[16],
+        lvcgmOptions.Items[i].SubItems[17], lvcgmOptions.Items[i].SubItems[18], lvcgmOptions.Items[i].SubItems[19],
+        lvcgmOptions.Items[i].SubItems[20]]);
+  end;
+  if Values <> '' then
+  begin
+    mectScript.Text := Format('DELETE FROM `gossip_menu_option` WHERE (`menu_id`=%s);'#13#10 +
+      'INSERT INTO `gossip_menu_option` (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, '+
+      'action_menu_id, action_poi_id, action_script_id, box_coded, box_money, box_text, '+
+      'cond_1, cond_1_val_1, cond_1_val_2, cond_2, cond_2_val_1, cond_2_val_2, cond_3, cond_3_val_1, cond_3_val_2, '+
+      'condition_id) VALUES '#13#10'%s',
+      [menu_id, Values])
+  end
+  else
+    mectScript.Text := Format('DELETE FROM `gossip_menu_option` WHERE (`menu_id`=%s);', [menu_id]);
+end;
+
 procedure TMainForm.btFullCreatureMovementScriptClick(Sender: TObject);
 begin
   PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
@@ -8557,7 +8847,7 @@ end;
 procedure TMainForm.btVendorDelClick(Sender: TObject);
 begin
   if Assigned(lvcvNPCVendor.Selected) then
-    lvcvNPCVendor.Selected.Delete;
+    lvcvNPCVendor.DeleteSelected;
 end;
 
 procedure TMainForm.btVendorTemplateAddClick(Sender: TObject);
@@ -8575,7 +8865,7 @@ end;
 procedure TMainForm.btVendorTemplateDelClick(Sender: TObject);
 begin
   if Assigned(lvcvtNPCVendor.Selected) then
-    lvcvtNPCVendor.Selected.Delete;
+    lvcvtNPCVendor.DeleteSelected;
 end;
 
 procedure TMainForm.btVendorTemplateUpdClick(Sender: TObject);
@@ -8725,7 +9015,7 @@ end;
 procedure TMainForm.btTrainerDelClick(Sender: TObject);
 begin
   if Assigned(lvcrNPCTrainer.Selected) then
-    lvcrNPCTrainer.Selected.Delete;
+    lvcrNPCTrainer.DeleteSelected;
 end;
 
 procedure TMainForm.btTrainerTemplateAddClick(Sender: TObject);
@@ -8744,7 +9034,7 @@ end;
 procedure TMainForm.btTrainerTemplateDelClick(Sender: TObject);
 begin
   if Assigned(lvcrtNPCTrainer.Selected) then
-    lvcrtNPCTrainer.Selected.Delete;
+    lvcrtNPCTrainer.DeleteSelected;
 end;
 
 procedure TMainForm.btTrainerTemplateUpdClick(Sender: TObject);
@@ -9973,7 +10263,7 @@ end;
 procedure TMainForm.btgeCreatureGuidDelClick(Sender: TObject);
 begin
   if Assigned(lvGameEventCreature.Selected) then
-    lvGameEventCreature.Selected.Delete;
+    lvGameEventCreature.DeleteSelected;
 end;
 
 procedure TMainForm.btgeCreatureGuidInvClick(Sender: TObject);
@@ -9997,7 +10287,7 @@ end;
 procedure TMainForm.btgeGOguidDelClick(Sender: TObject);
 begin
   if Assigned(lvGameEventGO.Selected) then
-    lvGameEventGO.Selected.Delete;
+    lvGameEventGO.DeleteSelected;
 end;
 
 procedure TMainForm.btgeGOGuidInvClick(Sender: TObject);
@@ -10713,7 +11003,7 @@ end;
 procedure TMainForm.ScriptDel(lvList: TJvListView);
 begin
   if Assigned(lvList.Selected) then
-    lvList.Selected.Delete;
+    lvList.DeleteSelected;
 end;
 
 procedure TMainForm.btssAddClick(Sender: TObject);
@@ -11138,7 +11428,7 @@ end;
 procedure TMainForm.btCharInvDelClick(Sender: TObject);
 begin
   if Assigned(lvCharacterInventory.Selected) then
-    lvCharacterInventory.Selected.Delete;
+    lvCharacterInventory.DeleteSelected;
 end;
 
 procedure TMainForm.btCharInvUpdClick(Sender: TObject);
@@ -11188,4 +11478,3 @@ begin
 end;
 
 end.
-

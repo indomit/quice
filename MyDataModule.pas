@@ -377,7 +377,8 @@ begin
   Text[154]:='The error has accured while loading the Character:';
   Text[155]:='AreaTrigger';
   Text[156]:='LootCondition';
-  Text[157]:='The error has accured while loading Creature EventAI:';  
+  Text[157]:='The error has accured while loading Creature EventAI:';
+  Text[158]:='Option Icon';
 end;
 
 procedure TdmMain.SetLanguage(const Value: string);

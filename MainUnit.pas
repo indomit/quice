@@ -8813,7 +8813,7 @@ begin
         lvcrtNPCTrainer.Items[i].SubItems[2], lvcrtNPCTrainer.Items[i].SubItems[3],
         lvcrtNPCTrainer.Items[i].SubItems[4]]);
     end;
-    i := lvcrNPCTrainer.Items.Count - 1;
+    i := lvcrtNPCTrainer.Items.Count - 1;
     Values := Values + Format('(%s, %s, %s, %s, %s, %s);', [lvcrtNPCTrainer.Items[i].Caption,
       lvcrtNPCTrainer.Items[i].SubItems[0], lvcrtNPCTrainer.Items[i].SubItems[1], lvcrtNPCTrainer.Items[i].SubItems[2],
       lvcrtNPCTrainer.Items[i].SubItems[3], lvcrtNPCTrainer.Items[i].SubItems[4]]);

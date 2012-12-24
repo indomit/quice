@@ -7203,7 +7203,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsNPCVendorTemplate
+        ActivePage = tsSearchCreature
         Align = alClient
         MultiLine = True
         TabOrder = 0
@@ -28798,7 +28798,6 @@ object MainForm: TMainForm
               item
                 Width = 50
               end>
-            ExplicitTop = 635
           end
         end
         object tsCharacter: TTabSheet

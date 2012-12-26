@@ -26,7 +26,7 @@ object MainForm: TMainForm
     Top = 0
     Width = 1008
     Height = 710
-    ActivePage = tsCreature
+    ActivePage = tsItem
     Align = alClient
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -52,7 +52,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsQuestPart1
+        ActivePage = tsQuestPart2
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -5111,9 +5111,9 @@ object MainForm: TMainForm
           end
           object gbAreatrigger: TGroupBox
             Left = 455
-            Top = 437
+            Top = 431
             Width = 534
-            Height = 188
+            Height = 186
             Caption = 'Other'
             TabOrder = 3
             object lbAreatrigger: TLabel
@@ -16951,7 +16951,6 @@ object MainForm: TMainForm
               Top = 42
               Width = 97
               Height = 21
-              ButtonWidth = 22
               ClickKey = 13
               Glyph.Data = {
                 36030000424D3603000000000000360000002800000010000000100000000100
@@ -16988,7 +16987,6 @@ object MainForm: TMainForm
               Top = 42
               Width = 97
               Height = 21
-              ButtonWidth = 22
               ClickKey = 13
               Glyph.Data = {
                 36030000424D3603000000000000360000002800000010000000100000000100
@@ -17484,7 +17482,6 @@ object MainForm: TMainForm
             Top = 531
             Width = 97
             Height = 21
-            ButtonWidth = 22
             ClickKey = 13
             Glyph.Data = {
               36030000424D3603000000000000360000002800000010000000100000000100
@@ -17687,7 +17684,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsSearchGO
+        ActivePage = tsEditGO
         Align = alClient
         TabOrder = 0
         object tsSearchGO: TTabSheet
@@ -20594,7 +20591,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsReferenceLoot
+        ActivePage = tsItemTemplate
         Align = alClient
         TabOrder = 1
         object tsSearchItem: TTabSheet
@@ -21563,7 +21560,7 @@ object MainForm: TMainForm
           object editdescription: TLabeledEdit
             Left = 530
             Top = 18
-            Width = 341
+            Width = 425
             Height = 21
             Hint = 
               'Brief description of this item, appears in orange at the bottom ' +
@@ -23036,6 +23033,19 @@ object MainForm: TMainForm
               EditLabel.ParentBiDiMode = False
               TabOrder = 41
             end
+            object editScalingStatValue: TLabeledEdit
+              Left = 143
+              Top = 283
+              Width = 105
+              Height = 21
+              Hint = 'ScalingStatValue'
+              EditLabel.Width = 81
+              EditLabel.Height = 13
+              EditLabel.BiDiMode = bdLeftToRight
+              EditLabel.Caption = 'ScalingStatValue'
+              EditLabel.ParentBiDiMode = False
+              TabOrder = 42
+            end
           end
           object gbitsocket: TGroupBox
             Left = 551
@@ -23551,7 +23561,7 @@ object MainForm: TMainForm
           end
           object gbitAmmo: TGroupBox
             Left = 344
-            Top = 81
+            Top = 85
             Width = 201
             Height = 186
             Caption = 'weapons'
@@ -23686,7 +23696,7 @@ object MainForm: TMainForm
             end
             object editDamageType: TJvComboEdit
               Left = 12
-              Top = 158
+              Top = 154
               Width = 112
               Height = 21
               Hint = 'dmg_type1'
@@ -23721,6 +23731,42 @@ object MainForm: TMainForm
                 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
               TabOrder = 5
               OnButtonClick = GetDmgType
+            end
+            object editammo_type: TLabeledEdit
+              Left = 100
+              Top = 114
+              Width = 80
+              Height = 21
+              Hint = '2 = Arrows'#13#10'3 = Bullets'
+              EditLabel.Width = 54
+              EditLabel.Height = 13
+              EditLabel.Caption = 'ammo_type'
+              TabOrder = 6
+              Visible = False
+            end
+            object editarmor: TLabeledEdit
+              Left = 12
+              Top = 154
+              Width = 80
+              Height = 21
+              Hint = 'Armor for this item.'
+              EditLabel.Width = 26
+              EditLabel.Height = 13
+              EditLabel.Caption = 'armor'
+              TabOrder = 7
+              Visible = False
+            end
+            object editblock: TLabeledEdit
+              Left = 100
+              Top = 154
+              Width = 80
+              Height = 21
+              Hint = 'Shield'#39's chance to block an attack.'
+              EditLabel.Width = 26
+              EditLabel.Height = 13
+              EditLabel.Caption = 'block'
+              TabOrder = 8
+              Visible = False
             end
           end
           object gbitOther: TGroupBox
@@ -24292,6 +24338,142 @@ object MainForm: TMainForm
               EditLabel.Caption = 'ExtraFlags'
               TabOrder = 23
             end
+            object gbitDamage: TGroupBox
+              Left = 771
+              Top = 19
+              Width = 177
+              Height = 87
+              Caption = 'damage'
+              TabOrder = 24
+              Visible = False
+              object lbitdmg_type: TLabel
+                Left = 8
+                Top = 13
+                Width = 46
+                Height = 13
+                Caption = 'dmg_type'
+              end
+              object editdmg_min1: TLabeledEdit
+                Left = 64
+                Top = 29
+                Width = 50
+                Height = 21
+                Hint = 'dmg_min1'
+                EditLabel.Width = 42
+                EditLabel.Height = 13
+                EditLabel.Caption = 'dmg_min'
+                TabOrder = 1
+              end
+              object editdmg_max1: TLabeledEdit
+                Left = 117
+                Top = 29
+                Width = 50
+                Height = 21
+                Hint = 'dmg_max1'
+                EditLabel.Width = 45
+                EditLabel.Height = 13
+                EditLabel.Caption = 'dmg_max'
+                TabOrder = 2
+              end
+              object editdmg_min2: TLabeledEdit
+                Left = 64
+                Top = 53
+                Width = 50
+                Height = 21
+                Hint = 'dmg_min2'
+                EditLabel.Width = 3
+                EditLabel.Height = 13
+                EditLabel.Caption = ' '
+                TabOrder = 4
+              end
+              object editdmg_max2: TLabeledEdit
+                Left = 117
+                Top = 53
+                Width = 50
+                Height = 21
+                Hint = 'dmg_max2'
+                EditLabel.Width = 3
+                EditLabel.Height = 13
+                EditLabel.Caption = ' '
+                TabOrder = 5
+              end
+              object editdmg_type1: TJvComboEdit
+                Left = 9
+                Top = 29
+                Width = 53
+                Height = 21
+                Hint = 'dmg_type1'
+                ButtonWidth = 22
+                ClickKey = 13
+                Glyph.Data = {
+                  36030000424D3603000000000000360000002800000010000000100000000100
+                  18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                  DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                  FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                  B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                  D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                  52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                  8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+                TabOrder = 0
+                OnButtonClick = GetDmgType
+              end
+              object editdmg_type2: TJvComboEdit
+                Left = 9
+                Top = 53
+                Width = 53
+                Height = 21
+                Hint = 'dmg_type2'
+                ButtonWidth = 22
+                ClickKey = 13
+                Glyph.Data = {
+                  36030000424D3603000000000000360000002800000010000000100000000100
+                  18000000000000030000120B0000120B00000000000000000000FFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD79C64
+                  DB9E63FFFFFFFFFFFFFFFFFFFFFFFFDA9E63D89D65FFFFFFFFFFFFFFFFFFFFFF
+                  FFD79C64DB9E63FFFFFFC2773FEBB36FEDB570D19059FFFFFFFFFFFFC57D44ED
+                  B571EBB26ECC9164FFFFFFFFFFFFC27840EBB36FECB470D1915AC48355D5955B
+                  D89960CA8C5FFFFFFFFFFFFFC68457D8995FD6965BCE9974FFFFFFFFFFFFC380
+                  52D6975DD99A61CB8D5FFFFFFFC68A65C17F54FFFFFFFFFFFFFFFFFFFFFFFFC2
+                  8157C58963FFFFFFFFFFFFFFFFFFFFFFFFC68B65C17F54FFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                  FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+                TabOrder = 3
+                OnButtonClick = GetDmgType
+              end
+            end
           end
           object editQuality: TJvComboEdit
             Left = 92
@@ -24542,6 +24724,91 @@ object MainForm: TMainForm
             EditLabel.Height = 13
             EditLabel.Caption = 'Unknown400_2'
             TabOrder = 27
+          end
+          object gbitResistance: TGroupBox
+            Left = 522
+            Top = 266
+            Width = 190
+            Height = 151
+            Caption = 'resistance'
+            TabOrder = 28
+            Visible = False
+            object editholy_res: TLabeledEdit
+              Left = 12
+              Top = 34
+              Width = 50
+              Height = 21
+              Hint = 'Holy resistance.'
+              EditLabel.Width = 39
+              EditLabel.Height = 13
+              EditLabel.Caption = 'holy_res'
+              TabOrder = 0
+            end
+            object editfire_res: TLabeledEdit
+              Left = 12
+              Top = 74
+              Width = 50
+              Height = 21
+              Hint = 'Fire resistance.'
+              EditLabel.Width = 34
+              EditLabel.Height = 13
+              EditLabel.Caption = 'fire_res'
+              TabOrder = 2
+            end
+            object editnature_res: TLabeledEdit
+              Left = 12
+              Top = 114
+              Width = 50
+              Height = 21
+              Hint = 'Nature resistance.'
+              EditLabel.Width = 50
+              EditLabel.Height = 13
+              EditLabel.Caption = 'nature_res'
+              TabOrder = 4
+            end
+            object editfrost_res: TLabeledEdit
+              Left = 76
+              Top = 34
+              Width = 50
+              Height = 21
+              Hint = 'Frost resistance.'
+              EditLabel.Width = 40
+              EditLabel.Height = 13
+              EditLabel.Caption = 'frost_res'
+              TabOrder = 1
+            end
+            object editshadow_res: TLabeledEdit
+              Left = 76
+              Top = 74
+              Width = 50
+              Height = 21
+              Hint = 'Shadow resistance.'
+              EditLabel.Width = 57
+              EditLabel.Height = 13
+              EditLabel.Caption = 'shadow_res'
+              TabOrder = 3
+            end
+            object editarcane_res: TLabeledEdit
+              Left = 76
+              Top = 114
+              Width = 50
+              Height = 21
+              Hint = 'Arcane resistance.'
+              EditLabel.Width = 53
+              EditLabel.Height = 13
+              EditLabel.Caption = 'arcane_res'
+              TabOrder = 5
+            end
+          end
+          object editStatsCount: TLabeledEdit
+            Left = 880
+            Top = 58
+            Width = 75
+            Height = 21
+            EditLabel.Width = 52
+            EditLabel.Height = 13
+            EditLabel.Caption = 'StatsCount'
+            TabOrder = 29
           end
         end
         object tsItemLoot: TTabSheet

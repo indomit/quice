@@ -12,10 +12,18 @@ uses
   ZDataset, ZConnection, ZSqlProcessor, LocNPCFrame, ZAbstractConnection;
 
 const
+{$IFDEF CMANGOS}
+  REV = '12279';
+  VERSION_1 = '1';
+  VERSION_2 = '2';
+  VERSION_3 = '62';
+{$ELSE}
   REV = '12309';
   VERSION_1 = '1';
   VERSION_2 = '3';
   VERSION_3 = '2';
+{$ENDIF}
+
   VERSION_EXE = VERSION_1 + '.' + VERSION_2 + '.' + VERSION_3;
 
   SCRIPT_TAB_NO_QUEST = 8;
@@ -1715,6 +1723,26 @@ type
     Label15: TLabel;
     edcgmoaction_menu_id: TJvComboEdit;
     lbcgmoaction_menu_id: TLabel;
+    gbitDamage: TGroupBox;
+    lbitdmg_type: TLabel;
+    editdmg_min1: TLabeledEdit;
+    editdmg_max1: TLabeledEdit;
+    editdmg_min2: TLabeledEdit;
+    editdmg_max2: TLabeledEdit;
+    editdmg_type1: TJvComboEdit;
+    editdmg_type2: TJvComboEdit;
+    gbitResistance: TGroupBox;
+    editholy_res: TLabeledEdit;
+    editfire_res: TLabeledEdit;
+    editnature_res: TLabeledEdit;
+    editfrost_res: TLabeledEdit;
+    editshadow_res: TLabeledEdit;
+    editarcane_res: TLabeledEdit;
+    editammo_type: TLabeledEdit;
+    editarmor: TLabeledEdit;
+    editblock: TLabeledEdit;
+    editScalingStatValue: TLabeledEdit;
+    editStatsCount: TLabeledEdit;
     procedure FormActivate(Sender: TObject);
     procedure btSearchClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -2277,6 +2305,8 @@ type
     procedure LoadGossipMenu(entry: Integer);
     procedure CompleteGossipMenuScript;
     procedure ClearCGMOptionsFields;
+    procedure SetVisibleForMangosOnlyFields(IsVisible: Boolean);
+    procedure SetVisibleForCMangosOnlyFields(IsVisible: Boolean);
 
   public
     SplashForm: TAboutBox;
@@ -2538,6 +2568,99 @@ begin
   end;
 end;
 
+procedure TMainForm.SetVisibleForMangosOnlyFields(IsVisible: Boolean);
+begin
+  // quest
+  edqtPortraitGiverName.Visible := IsVisible;
+  edqtPortraitGiverText.Visible := IsVisible;
+  edqtPortraitTurnInName.Visible := IsVisible;
+  edqtPortraitTurnInText.Visible := IsVisible;
+  edqtPortraitGiver.Visible := IsVisible;
+  edqtPortraitTurnIn.Visible := IsVisible;
+  lbqtPortraitGiver.Visible := IsVisible;
+  lbqtPortraitTurnIn.Visible := IsVisible;
+
+  edqtReqCurrencyId1.Visible := IsVisible;
+  edqtReqCurrencyId2.Visible := IsVisible;
+  edqtReqCurrencyId3.Visible := IsVisible;
+  edqtReqCurrencyId4.Visible := IsVisible;
+  edqtReqCurrencyCount1.Visible := IsVisible;
+  edqtReqCurrencyCount2.Visible := IsVisible;
+  edqtReqCurrencyCount3.Visible := IsVisible;
+  edqtReqCurrencyCount4.Visible := IsVisible;
+  lbqtReqCurrencyId1.Visible := IsVisible;
+
+  edqtRewCurrencyId1.Visible := IsVisible;
+  edqtRewCurrencyId2.Visible := IsVisible;
+  edqtRewCurrencyId3.Visible := IsVisible;
+  edqtRewCurrencyId4.Visible := IsVisible;
+  edqtRewCurrencyCount1.Visible := IsVisible;
+  edqtRewCurrencyCount2.Visible := IsVisible;
+  edqtRewCurrencyCount3.Visible := IsVisible;
+  edqtRewCurrencyCount4.Visible := IsVisible;
+  lbqtRewCurrencyId1.Visible := IsVisible;
+
+  edqtRewSkill.Visible := IsVisible;
+  edqtRewSkillValue.Visible := IsVisible;
+  lbqtRewSkill.Visible := IsVisible;
+
+  edqtSoundAccept.Visible := IsVisible;
+  edqtSoundTurnIn.Visible := IsVisible;
+
+  // go
+  edgtdata24.Visible := IsVisible;
+  edgtdata25.Visible := IsVisible;
+  edgtdata26.Visible := IsVisible;
+  edgtdata27.Visible := IsVisible;
+  edgtdata28.Visible := IsVisible;
+  edgtdata29.Visible := IsVisible;
+  edgtdata30.Visible := IsVisible;
+  edgtdata31.Visible := IsVisible;
+
+  // item
+  editstat_unk1_1.Visible := IsVisible;
+  editstat_unk1_2.Visible := IsVisible;
+  editstat_unk1_3.Visible := IsVisible;
+  editstat_unk1_4.Visible := IsVisible;
+  editstat_unk1_5.Visible := IsVisible;
+  editstat_unk1_6.Visible := IsVisible;
+  editstat_unk1_7.Visible := IsVisible;
+  editstat_unk1_8.Visible := IsVisible;
+  editstat_unk1_9.Visible := IsVisible;
+  editstat_unk1_10.Visible := IsVisible;
+
+  editstat_unk2_1.Visible := IsVisible;
+  editstat_unk2_2.Visible := IsVisible;
+  editstat_unk2_3.Visible := IsVisible;
+  editstat_unk2_4.Visible := IsVisible;
+  editstat_unk2_5.Visible := IsVisible;
+  editstat_unk2_6.Visible := IsVisible;
+  editstat_unk2_7.Visible := IsVisible;
+  editstat_unk2_8.Visible := IsVisible;
+  editstat_unk2_9.Visible := IsVisible;
+  editstat_unk2_10.Visible := IsVisible;
+  editStatScalingFactor.Visible := IsVisible;
+
+  editDamageType.Visible := IsVisible;
+  lbitDamageType.Visible := IsVisible;
+  editUnknown.Visible := IsVisible;
+  editUnknown1.Visible := IsVisible;
+  editUnknown2.Visible := IsVisible;
+  editUnknown400_1.Visible := IsVisible;
+  editUnknown400_2.Visible := IsVisible;
+end;
+
+procedure  TMainForm.SetVisibleForCMangosOnlyFields(IsVisible: Boolean);
+begin
+  gbitResistance.Visible := IsVisible;
+  gbitDamage.Visible := IsVisible;
+  editammo_type.Visible := IsVisible;
+  editarmor.Visible := IsVisible;
+  editblock.Visible := IsVisible;
+  editScalingStatValue.Visible := IsVisible;
+  editStatsCount.Visible := IsVisible;
+end;
+
 procedure TMainForm.FormCreate(Sender: TObject);
   procedure ApplyDBuf(form: TForm; bl: Boolean);
   var
@@ -2553,7 +2676,13 @@ procedure TMainForm.FormCreate(Sender: TObject);
 
 var
   i: Integer;
+  IsCMangos: boolean;
 begin
+
+  IsCMangos := {$IFDEF CMANGOS}True{$ELSE}False{$ENDIF};
+  SetVisibleForMangosOnlyFields(not IsCMangos);
+  SetVisibleForCMangosOnlyFields(IsCMangos);
+
   FormatSettings.DecimalSeparator := '.';
 {$IFDEF DEBUG}
   ReportMemoryLeaksOnShutdown := true;
@@ -3136,9 +3265,11 @@ begin
   loc := LoadLocales();
   MyQuery.SQL.Text := Format('SELECT Title%0:s, Details%0:s, Objectives%0:s, OfferRewardText%0:s,' +
     'RequestItemsText%0:s, EndText%0:s, CompletedText%0:s,' +
-    'ObjectiveText1%0:s, ObjectiveText2%0:s, ObjectiveText3%0:s, ObjectiveText4%0:s,' +
-    'PortraitGiverName%0:s, PortraitGiverText%0:s, PortraitTurnInName%0:s, PortraitTurnInText%0:s ' +
-    'FROM locales_quest WHERE entry=%1:d', [loc, QuestID]);
+    'ObjectiveText1%0:s, ObjectiveText2%0:s, ObjectiveText3%0:s, ObjectiveText4%0:s ' +
+{$IFNDEF CMANGOS}
+   ', PortraitGiverName%0:s, PortraitGiverText%0:s, PortraitTurnInName%0:s, PortraitTurnInText%0:s ' +
+{$ENDIF}
+   'FROM locales_quest WHERE entry=%1:d', [loc, QuestID]);
   MyQuery.Open;
   edlqTitle.EditLabel.Caption := 'Title' + loc;
   l2Details.Caption := 'Details' + loc;
@@ -3152,7 +3283,14 @@ begin
   edlqObjectiveText3.EditLabel.Caption := 'ObjectiveText3' + loc;
   edlqObjectiveText4.EditLabel.Caption := 'ObjectiveText4' + loc;
 
-  while not MyQuery.Eof do
+{$IFDEF CMANGOS}
+  edlqPortraitGiverName.Visible := False;
+  edlqPortraitGiverText.Visible := False;
+  edlqPortraitTurnInName.Visible := False;
+  edlqPortraitTurnInText.Visible := False;
+{$ENDIF}
+
+  if not MyQuery.Eof then
   begin
     edlqTitle.Text := MyQuery.Fields[0].AsString;
     edlqDetails.Text := MyQuery.Fields[1].AsString;
@@ -3165,10 +3303,12 @@ begin
     edlqObjectiveText2.Text := MyQuery.Fields[8].AsString;
     edlqObjectiveText3.Text := MyQuery.Fields[9].AsString;
     edlqObjectiveText4.Text := MyQuery.Fields[10].AsString;
+{$IFNDEF CMANGOS}
     edlqPortraitGiverName.Text := MyQuery.Fields[11].AsString;
     edlqPortraitGiverText.Text := MyQuery.Fields[12].AsString;
     edlqPortraitTurnInName.Text := MyQuery.Fields[13].AsString;
     edlqPortraitTurnInText.Text := MyQuery.Fields[14].AsString;
+{$ENDIF}
     MyQuery.Next;
   end;
   MyQuery.Close;

@@ -26,7 +26,7 @@ object MainForm: TMainForm
     Top = 0
     Width = 1008
     Height = 710
-    ActivePage = tsItem
+    ActivePage = tsCreature
     Align = alClient
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -52,7 +52,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsQuestPart2
+        ActivePage = tsQuestPart1
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -1521,7 +1521,7 @@ object MainForm: TMainForm
               Height = 13
               Caption = 'ReqMaxRepFaction'
             end
-            object Label5: TLabel
+            object lbRequiredSkill: TLabel
               Left = 8
               Top = 16
               Width = 62
@@ -8324,7 +8324,7 @@ object MainForm: TMainForm
               Height = 13
               Caption = 'flags_extra'
             end
-            object Label7: TLabel
+            object lbctunit_flags2: TLabel
               Left = 295
               Top = 167
               Width = 51
@@ -11958,7 +11958,7 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbcolootcondition: TLabel
-            Left = 430
+            Left = 534
             Top = 524
             Width = 60
             Height = 13
@@ -12144,7 +12144,7 @@ object MainForm: TMainForm
             OnClick = btFullScriptCreatureLootClick
           end
           object edcocondition_value1: TLabeledEdit
-            Left = 517
+            Left = 621
             Top = 540
             Width = 121
             Height = 21
@@ -12154,7 +12154,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edcocondition_value2: TLabeledEdit
-            Left = 645
+            Left = 749
             Top = 540
             Width = 121
             Height = 21
@@ -12164,7 +12164,7 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edcolootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 540
             Width = 80
             Height = 21
@@ -12201,7 +12201,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edcocondition_id: TLabeledEdit
-            Left = 770
+            Left = 430
             Top = 540
             Width = 98
             Height = 21
@@ -12407,7 +12407,7 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbcplootcondition: TLabel
-            Left = 430
+            Left = 534
             Top = 519
             Width = 60
             Height = 13
@@ -12592,7 +12592,7 @@ object MainForm: TMainForm
             OnClick = btFullScriptPickpocketLootClick
           end
           object edcpcondition_value1: TLabeledEdit
-            Left = 515
+            Left = 619
             Top = 535
             Width = 121
             Height = 21
@@ -12602,7 +12602,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edcpcondition_value2: TLabeledEdit
-            Left = 643
+            Left = 747
             Top = 535
             Width = 121
             Height = 21
@@ -12612,7 +12612,7 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edcplootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 535
             Width = 80
             Height = 21
@@ -12649,7 +12649,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edcpcondition_id: TLabeledEdit
-            Left = 771
+            Left = 430
             Top = 535
             Width = 98
             Height = 21
@@ -12855,7 +12855,7 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbcslootcondition: TLabel
-            Left = 431
+            Left = 535
             Top = 520
             Width = 60
             Height = 13
@@ -13040,7 +13040,7 @@ object MainForm: TMainForm
             OnClick = btFullScriptSkinLootClick
           end
           object edcscondition_value2: TLabeledEdit
-            Left = 643
+            Left = 747
             Top = 536
             Width = 121
             Height = 21
@@ -13050,7 +13050,7 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edcscondition_value1: TLabeledEdit
-            Left = 515
+            Left = 619
             Top = 536
             Width = 121
             Height = 21
@@ -13060,7 +13060,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edcslootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 536
             Width = 80
             Height = 21
@@ -13097,8 +13097,8 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edcscondition_id: TLabeledEdit
-            Left = 770
-            Top = 535
+            Left = 430
+            Top = 536
             Width = 98
             Height = 21
             EditLabel.Width = 57
@@ -15893,7 +15893,7 @@ object MainForm: TMainForm
           DesignSize = (
             992
             593)
-          object Label6: TLabel
+          object lbNpcVendorTemplateInfo: TLabel
             Left = 8
             Top = 8
             Width = 256
@@ -16822,28 +16822,21 @@ object MainForm: TMainForm
             NumGlyphs = 2
             OnClick = btGossipMenuOptionDelClick
           end
-          object Label9: TLabel
-            Left = 721
-            Top = 515
+          object lbcgmocondition_id: TLabel
+            Left = 508
+            Top = 476
             Width = 57
             Height = 13
             Caption = 'condition_id'
           end
-          object Label14: TLabel
-            Left = 10
-            Top = 8
-            Width = 219
-            Height = 13
-            Caption = 'creature_template.gossip_menu_id links to this'
-          end
-          object Label12: TLabel
+          object lbGossipMenuOption: TLabel
             Left = 12
             Top = 85
             Width = 96
             Height = 13
             Caption = 'Gossip Menu Option'
           end
-          object Label15: TLabel
+          object lbcgmooption_icon: TLabel
             Left = 176
             Top = 437
             Width = 55
@@ -16865,33 +16858,40 @@ object MainForm: TMainForm
             Align = alTop
             BevelOuter = bvNone
             TabOrder = 0
-            object Label8: TLabel
+            object lbcgmscript_id: TLabel
               Left = 213
-              Top = 24
+              Top = 26
               Width = 39
               Height = 13
               Caption = 'script_id'
             end
-            object Label10: TLabel
+            object lbedcgmtext_id: TLabel
               Left = 97
-              Top = 24
+              Top = 26
               Width = 31
               Height = 13
               Caption = 'text_id'
             end
-            object Label11: TLabel
+            object lbcgmentry: TLabel
               Left = 10
-              Top = 28
+              Top = 26
               Width = 24
               Height = 13
               Caption = 'Entry'
             end
-            object Label13: TLabel
-              Left = 790
+            object lbcgmcondition_id: TLabel
+              Left = 316
               Top = 26
               Width = 57
               Height = 13
               Caption = 'condition_id'
+            end
+            object lbGossipMenuInfo: TLabel
+              Left = 10
+              Top = 8
+              Width = 219
+              Height = 13
+              Caption = 'creature_template.gossip_menu_id links to this'
             end
             object edcgmtext_id: TJvComboEdit
               Left = 97
@@ -16983,7 +16983,7 @@ object MainForm: TMainForm
               TabOrder = 1
             end
             object edcgmcondition_id: TJvComboEdit
-              Left = 790
+              Left = 316
               Top = 42
               Width = 97
               Height = 21
@@ -17019,7 +17019,7 @@ object MainForm: TMainForm
               TabOrder = 2
             end
             object edcgmcond_1: TLabeledEdit
-              Left = 316
+              Left = 419
               Top = 42
               Width = 73
               Height = 21
@@ -17031,7 +17031,7 @@ object MainForm: TMainForm
               TabOrder = 3
             end
             object edcgmcond_1_val_1: TLabeledEdit
-              Left = 395
+              Left = 498
               Top = 42
               Width = 73
               Height = 21
@@ -17043,7 +17043,7 @@ object MainForm: TMainForm
               TabOrder = 4
             end
             object edcgmcond_1_val_2: TLabeledEdit
-              Left = 474
+              Left = 577
               Top = 42
               Width = 73
               Height = 21
@@ -17055,7 +17055,7 @@ object MainForm: TMainForm
               TabOrder = 5
             end
             object edcgmcond_2: TLabeledEdit
-              Left = 553
+              Left = 656
               Top = 42
               Width = 73
               Height = 21
@@ -17067,7 +17067,7 @@ object MainForm: TMainForm
               TabOrder = 6
             end
             object edcgmcond_2_val_1: TLabeledEdit
-              Left = 632
+              Left = 735
               Top = 42
               Width = 73
               Height = 21
@@ -17079,7 +17079,7 @@ object MainForm: TMainForm
               TabOrder = 7
             end
             object edcgmcond_2_val_2: TLabeledEdit
-              Left = 711
+              Left = 814
               Top = 42
               Width = 73
               Height = 21
@@ -17478,8 +17478,8 @@ object MainForm: TMainForm
             TabOrder = 21
           end
           object edcgmocondition_id: TJvComboEdit
-            Left = 721
-            Top = 531
+            Left = 508
+            Top = 491
             Width = 97
             Height = 21
             ClickKey = 13
@@ -17684,7 +17684,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsEditGO
+        ActivePage = tsButtonScript
         Align = alClient
         TabOrder = 0
         object tsSearchGO: TTabSheet
@@ -19531,8 +19531,8 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbgolootcondition: TLabel
-            Left = 432
-            Top = 533
+            Left = 536
+            Top = 534
             Width = 60
             Height = 13
             Caption = 'lootcondition'
@@ -19632,7 +19632,7 @@ object MainForm: TMainForm
           end
           object edgogroupid: TLabeledEdit
             Left = 140
-            Top = 549
+            Top = 550
             Width = 105
             Height = 21
             EditLabel.Width = 59
@@ -19716,8 +19716,8 @@ object MainForm: TMainForm
             OnClick = btFullScriptGOLootClick
           end
           object edgocondition_value2: TLabeledEdit
-            Left = 645
-            Top = 549
+            Left = 749
+            Top = 550
             Width = 121
             Height = 21
             EditLabel.Width = 105
@@ -19726,8 +19726,8 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edgocondition_value1: TLabeledEdit
-            Left = 518
-            Top = 549
+            Left = 622
+            Top = 550
             Width = 121
             Height = 21
             EditLabel.Width = 105
@@ -19736,8 +19736,8 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edgolootcondition: TJvComboEdit
-            Left = 431
-            Top = 549
+            Left = 535
+            Top = 550
             Width = 80
             Height = 21
             ButtonWidth = 22
@@ -19773,8 +19773,8 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edgocondition_id: TLabeledEdit
-            Left = 771
-            Top = 549
+            Left = 431
+            Top = 550
             Width = 98
             Height = 21
             EditLabel.Width = 57
@@ -20591,7 +20591,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsItemTemplate
+        ActivePage = tsItemLootedFrom
         Align = alClient
         TabOrder = 1
         object tsSearchItem: TTabSheet
@@ -25014,7 +25014,7 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbillootcondition: TLabel
-            Left = 430
+            Left = 534
             Top = 532
             Width = 60
             Height = 13
@@ -25199,7 +25199,7 @@ object MainForm: TMainForm
             OnClick = btFullScriptItemLootClick
           end
           object edilcondition_value2: TLabeledEdit
-            Left = 644
+            Left = 748
             Top = 548
             Width = 121
             Height = 21
@@ -25209,7 +25209,7 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edilcondition_value1: TLabeledEdit
-            Left = 517
+            Left = 621
             Top = 548
             Width = 121
             Height = 21
@@ -25219,7 +25219,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edillootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 548
             Width = 80
             Height = 21
@@ -25256,7 +25256,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edilcondition_id: TLabeledEdit
-            Left = 771
+            Left = 430
             Top = 548
             Width = 98
             Height = 21
@@ -25469,7 +25469,7 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbidlootcondition: TLabel
-            Left = 430
+            Left = 534
             Top = 532
             Width = 60
             Height = 13
@@ -25654,7 +25654,7 @@ object MainForm: TMainForm
             OnClick = btFullScriptDisLootClick
           end
           object edidcondition_value2: TLabeledEdit
-            Left = 644
+            Left = 748
             Top = 548
             Width = 121
             Height = 21
@@ -25664,7 +25664,7 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edidcondition_value1: TLabeledEdit
-            Left = 517
+            Left = 621
             Top = 548
             Width = 121
             Height = 21
@@ -25674,7 +25674,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edidlootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 548
             Width = 80
             Height = 21
@@ -25711,7 +25711,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edidcondition_id: TLabeledEdit
-            Left = 771
+            Left = 430
             Top = 548
             Width = 98
             Height = 21
@@ -25924,7 +25924,7 @@ object MainForm: TMainForm
             ParentColor = False
           end
           object lbiplootcondition: TLabel
-            Left = 430
+            Left = 534
             Top = 532
             Width = 60
             Height = 13
@@ -26109,7 +26109,7 @@ object MainForm: TMainForm
             OnClick = btFullScriptProsLootClick
           end
           object edipcondition_value2: TLabeledEdit
-            Left = 644
+            Left = 748
             Top = 548
             Width = 121
             Height = 21
@@ -26119,7 +26119,7 @@ object MainForm: TMainForm
             TabOrder = 9
           end
           object edipcondition_value1: TLabeledEdit
-            Left = 517
+            Left = 621
             Top = 548
             Width = 121
             Height = 21
@@ -26129,7 +26129,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object ediplootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 548
             Width = 80
             Height = 21
@@ -26166,7 +26166,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edipcondition_id: TLabeledEdit
-            Left = 771
+            Left = 430
             Top = 548
             Width = 98
             Height = 21
@@ -26183,15 +26183,15 @@ object MainForm: TMainForm
           DesignSize = (
             992
             629)
-          object Label2: TLabel
+          object lbimitem: TLabel
             Left = 96
             Top = 484
             Width = 19
             Height = 13
             Caption = 'item'
           end
-          object Label3: TLabel
-            Left = 430
+          object lbimlootcondition: TLabel
+            Left = 534
             Top = 532
             Width = 60
             Height = 13
@@ -26537,7 +26537,7 @@ object MainForm: TMainForm
             TabOrder = 6
           end
           object edimlootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 548
             Width = 80
             Height = 21
@@ -26574,7 +26574,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edimcondition_value1: TLabeledEdit
-            Left = 517
+            Left = 621
             Top = 548
             Width = 121
             Height = 21
@@ -26584,7 +26584,7 @@ object MainForm: TMainForm
             TabOrder = 8
           end
           object edimcondition_value2: TLabeledEdit
-            Left = 644
+            Left = 748
             Top = 548
             Width = 121
             Height = 21
@@ -26612,7 +26612,7 @@ object MainForm: TMainForm
             OnClick = btScriptItemLootClick
           end
           object edimcondition_id: TLabeledEdit
-            Left = 771
+            Left = 430
             Top = 548
             Width = 98
             Height = 21
@@ -26628,7 +26628,7 @@ object MainForm: TMainForm
           DesignSize = (
             992
             629)
-          object Label1: TLabel
+          object lbiritem: TLabel
             Left = 96
             Top = 484
             Width = 19
@@ -26814,8 +26814,8 @@ object MainForm: TMainForm
             NumGlyphs = 2
             OnClick = btReferenceLootDelClick
           end
-          object Label4: TLabel
-            Left = 430
+          object lbirlootcondition: TLabel
+            Left = 534
             Top = 532
             Width = 60
             Height = 13
@@ -26979,7 +26979,7 @@ object MainForm: TMainForm
             TabOrder = 5
           end
           object edirlootcondition: TJvComboEdit
-            Left = 430
+            Left = 534
             Top = 548
             Width = 80
             Height = 21
@@ -27016,7 +27016,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edircondition_value1: TLabeledEdit
-            Left = 517
+            Left = 621
             Top = 548
             Width = 121
             Height = 21
@@ -27026,7 +27026,7 @@ object MainForm: TMainForm
             TabOrder = 7
           end
           object edircondition_value2: TLabeledEdit
-            Left = 644
+            Left = 748
             Top = 548
             Width = 121
             Height = 21
@@ -27107,7 +27107,7 @@ object MainForm: TMainForm
             OnButtonClick = edirentryButtonClick
           end
           object edircondition_id: TLabeledEdit
-            Left = 771
+            Left = 430
             Top = 548
             Width = 98
             Height = 21
@@ -27433,10 +27433,10 @@ object MainForm: TMainForm
               item
               end
               item
-                Width = 150
               end
               item
-                Width = 150
+              end
+              item
               end>
             Groups = <>
             HideSelection = False
@@ -27445,8 +27445,10 @@ object MainForm: TMainForm
             TabOrder = 0
             ViewStyle = vsReport
             OnDblClick = lvitItemLootedFromDblClick
-            ColumnsOrder = '0=50,1=50,2=60,3=60,4=60,5=60,6=60,7=50,8=50,9=150,10=150'
+            ColumnsOrder = '0=50,1=50,2=60,3=60,4=60,5=60,6=60,7=50,8=50,9=50,10=50,11=50'
             ExtendedColumns = <
+              item
+              end
               item
               end
               item
@@ -27851,7 +27853,7 @@ object MainForm: TMainForm
         Top = 25
         Width = 1000
         Height = 657
-        ActivePage = tsGameEvents
+        ActivePage = tsFishingLoot
         Align = alClient
         TabOrder = 1
         object tsFishingLoot: TTabSheet
@@ -28061,7 +28063,7 @@ object MainForm: TMainForm
             Caption = 'Choose Zone for fishing loot:'
           end
           object lbotlootcondition: TLabel
-            Left = 421
+            Left = 525
             Top = 548
             Width = 60
             Height = 13
@@ -28319,7 +28321,7 @@ object MainForm: TMainForm
             OnClick = btGetLootForZoneClick
           end
           object edotcondition_value2: TLabeledEdit
-            Left = 635
+            Left = 739
             Top = 562
             Width = 121
             Height = 21
@@ -28329,7 +28331,7 @@ object MainForm: TMainForm
             TabOrder = 11
           end
           object edotcondition_value1: TLabeledEdit
-            Left = 508
+            Left = 612
             Top = 562
             Width = 121
             Height = 21
@@ -28339,7 +28341,7 @@ object MainForm: TMainForm
             TabOrder = 10
           end
           object edotlootcondition: TJvComboEdit
-            Left = 421
+            Left = 525
             Top = 562
             Width = 80
             Height = 21
@@ -28376,7 +28378,7 @@ object MainForm: TMainForm
             OnButtonClick = GetLootCondition
           end
           object edotcondition_id: TLabeledEdit
-            Left = 762
+            Left = 421
             Top = 562
             Width = 98
             Height = 21
@@ -31061,7 +31063,6 @@ object MainForm: TMainForm
     ClientCodepage = 'utf8'
     Properties.Strings = (
       'codepage=utf8')
-    BeforeConnect = MyMangosConnectionBeforeConnect
     SQLHourGlass = True
     Port = 3306
     Database = 'mangos'

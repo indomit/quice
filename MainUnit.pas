@@ -16,7 +16,7 @@ const
   REV = '12279';
   VERSION_1 = '1';
   VERSION_2 = '2';
-  VERSION_3 = '62';
+  VERSION_3 = '63';
 {$ELSE}
   REV = '12309';
   VERSION_1 = '1';
@@ -25,6 +25,26 @@ const
 {$ENDIF}
 
   VERSION_EXE = VERSION_1 + '.' + VERSION_2 + '.' + VERSION_3;
+
+{$IFDEF CMANGOS}
+  SCRIPT_TABLE_CREATURE_MOVEMENT = 'dbscripts_on_creature_movement';
+  SCRIPT_TABLE_EVENT = 'dbscripts_on_event';
+  SCRIPT_TABLE_GO = 'dbscripts_on_go_use';
+  SCRIPT_TABLE_GO_TEMPLATE = 'dbscripts_on_go_template_use';
+  SCRIPT_TABLE_GOSSIP = 'dbscripts_on_gossip';
+  SCRIPT_TABLE_QUEST_END = 'dbscripts_on_quest_end';
+  SCRIPT_TABLE_QUEST_START =  'dbscripts_on_quest_start';
+  SCRIPT_TABLE_SPELL = 'dbscripts_on_spell';
+{$ELSE}
+  SCRIPT_TABLE_CREATURE_MOVEMENT = 'creature_movement_scripts';
+  SCRIPT_TABLE_EVENT = 'event_scripts';
+  SCRIPT_TABLE_GO = 'gameobject_scripts';
+  SCRIPT_TABLE_GO_TEMPLATE = 'gameobject_template_scripts';
+  SCRIPT_TABLE_GOSSIP = 'gossip_scripts';
+  SCRIPT_TABLE_QUEST_END = 'quest_end_scripts';
+  SCRIPT_TABLE_QUEST_START =  'quest_start_scripts';
+  SCRIPT_TABLE_SPELL = 'spell_scripts';
+{$ENDIF}
 
   SCRIPT_TAB_NO_QUEST = 8;
   SCRIPT_TAB_NO_CREATURE = 22;
@@ -1370,13 +1390,13 @@ type
     lvitMillingLoot: TJvListView;
     edimitem: TJvComboEdit;
     edimentry: TLabeledEdit;
-    Label2: TLabel;
+    lbimitem: TLabel;
     edimChanceOrQuestChance: TLabeledEdit;
     edimgroupid: TLabeledEdit;
     edimmincountOrRef: TLabeledEdit;
     edimmaxcount: TLabeledEdit;
     edimlootcondition: TJvComboEdit;
-    Label3: TLabel;
+    lbimlootcondition: TLabel;
     edimcondition_value1: TLabeledEdit;
     edimcondition_value2: TLabeledEdit;
     btMillingLootAdd: TSpeedButton;
@@ -1440,7 +1460,7 @@ type
     PageControl5: TPageControl;
     lvitReferenceLoot: TJvListView;
     ediritem: TJvComboEdit;
-    Label1: TLabel;
+    lbiritem: TLabel;
     btReferenceLootAdd: TSpeedButton;
     btReferenceLootUpd: TSpeedButton;
     btReferenceLootDel: TSpeedButton;
@@ -1449,7 +1469,7 @@ type
     edirmincountOrRef: TLabeledEdit;
     edirmaxcount: TLabeledEdit;
     edirlootcondition: TJvComboEdit;
-    Label4: TLabel;
+    lbirlootcondition: TLabel;
     edircondition_value1: TLabeledEdit;
     edircondition_value2: TLabeledEdit;
     btScriptReferenceLoot: TButton;
@@ -1537,9 +1557,9 @@ type
     edqtRequiredRaces: TJvComboEdit;
     lbRequiredRaces: TLabel;
     lbRequiredClasses: TLabel;
-    Label5: TLabel;
+    lbRequiredSkill: TLabel;
     tsNPCVendorTemplate: TTabSheet;
-    Label6: TLabel;
+    lbNpcVendorTemplateInfo: TLabel;
     btVendorTemplateDel: TSpeedButton;
     btVendorTemplateUpd: TSpeedButton;
     btVendorTemplateAdd: TSpeedButton;
@@ -1663,7 +1683,7 @@ type
     edctflags_extra: TJvComboEdit;
     lbctflags_extra: TLabel;
     edctunit_flags2: TJvComboEdit;
-    Label7: TLabel;
+    lbctunit_flags2: TLabel;
     edgtdata24: TLabeledEdit;
     edgtdata25: TLabeledEdit;
     edgtdata26: TLabeledEdit;
@@ -1676,8 +1696,8 @@ type
     edqtReqItemCount3: TLabeledEdit;
     tsGossipMenu: TTabSheet;
     Panel25: TPanel;
-    Label8: TLabel;
-    Label10: TLabel;
+    lbcgmscript_id: TLabel;
+    lbedcgmtext_id: TLabel;
     edcgmtext_id: TJvComboEdit;
     edcgmscript_id: TJvComboEdit;
     edcgmcondition_id: TJvComboEdit;
@@ -1689,14 +1709,14 @@ type
     edcgmcond_2_val_1: TLabeledEdit;
     edcgmcond_2_val_2: TLabeledEdit;
     edcgmentry: TJvComboEdit;
-    Label11: TLabel;
+    lbcgmentry: TLabel;
     lvcgmOptions: TJvListView;
     btGossipMenuOptionAdd: TSpeedButton;
     btGossipMenuOptionUpd: TSpeedButton;
     btGossipMenuOptionDel: TSpeedButton;
     edcgmomenu_id: TLabeledEdit;
-    Label9: TLabel;
-    Label13: TLabel;
+    lbcgmocondition_id: TLabel;
+    lbcgmcondition_id: TLabel;
     edcgmoid: TLabeledEdit;
     edcgmooption_text: TLabeledEdit;
     edcgmooption_id: TLabeledEdit;
@@ -1717,10 +1737,9 @@ type
     edcgmocond_3_val_2: TLabeledEdit;
     edcgmocondition_id: TJvComboEdit;
     btShowGossipMenuOptionsScript: TButton;
-    Label14: TLabel;
-    Label12: TLabel;
+    lbGossipMenuOption: TLabel;
     edcgmooption_icon: TJvComboEdit;
-    Label15: TLabel;
+    lbcgmooption_icon: TLabel;
     edcgmoaction_menu_id: TJvComboEdit;
     lbcgmoaction_menu_id: TLabel;
     gbitDamage: TGroupBox;
@@ -1743,6 +1762,7 @@ type
     editblock: TLabeledEdit;
     editScalingStatValue: TLabeledEdit;
     editStatsCount: TLabeledEdit;
+    lbGossipMenuInfo: TLabel;
     procedure FormActivate(Sender: TObject);
     procedure btSearchClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -1829,7 +1849,6 @@ type
     procedure pmSiteClick(Sender: TObject);
     procedure lvcvNPCVendorSelectItem(Sender: TObject; Item: TListItem; Selected: Boolean);
     procedure lvcrNPCTrainerSelectItem(Sender: TObject; Item: TListItem; Selected: Boolean);
-    procedure MyMangosConnectionBeforeConnect(Sender: TObject);
     procedure btCreatureLootAddClick(Sender: TObject);
     procedure btCreatureLootUpdClick(Sender: TObject);
     procedure btCreatureLootDelClick(Sender: TObject);
@@ -2255,7 +2274,7 @@ type
     procedure SetEventAIEditFields(pfx: string; lvList: TJvListView);
     procedure EventAIAdd(pfx: string; lvList: TJvListView);
     procedure EventAIUpd(pfx: string; lvList: TJvListView);
-    procedure EventAiDel(lvList: TJvListView);
+    procedure EventAIDel(lvList: TJvListView);
     procedure ShowFullEventAiScript(TableName: string; lvList: TJvListView; memo: TMemo; entry: string);
 
     { other }
@@ -2607,6 +2626,9 @@ begin
   edqtSoundAccept.Visible := IsVisible;
   edqtSoundTurnIn.Visible := IsVisible;
 
+  //creature
+  gbSpells.Visible := IsVisible;
+
   // go
   edgtdata24.Visible := IsVisible;
   edgtdata25.Visible := IsVisible;
@@ -2648,6 +2670,75 @@ begin
   editUnknown2.Visible := IsVisible;
   editUnknown400_1.Visible := IsVisible;
   editUnknown400_2.Visible := IsVisible;
+
+  // loot
+  lbcolootcondition.Visible := IsVisible;
+  edcolootcondition.Visible := IsVisible;
+  edcocondition_value1.Visible := IsVisible;
+  edcocondition_value2.Visible := IsVisible;
+
+  lbcplootcondition.Visible := IsVisible;
+  edcplootcondition.Visible := IsVisible;
+  edcpcondition_value1.Visible := IsVisible;
+  edcpcondition_value2.Visible := IsVisible;
+
+  lbcslootcondition.Visible := IsVisible;
+  edcslootcondition.Visible := IsVisible;
+  edcscondition_value1.Visible := IsVisible;
+  edcscondition_value2.Visible := IsVisible;
+
+  lbgolootcondition.Visible := IsVisible;
+  edgolootcondition.Visible := IsVisible;
+  edgocondition_value1.Visible := IsVisible;
+  edgocondition_value2.Visible := IsVisible;
+
+  lbillootcondition.Visible := IsVisible;
+  edillootcondition.Visible := IsVisible;
+  edilcondition_value1.Visible := IsVisible;
+  edilcondition_value2.Visible := IsVisible;
+
+  lbidlootcondition.Visible := IsVisible;
+  edidlootcondition.Visible := IsVisible;
+  edidcondition_value1.Visible := IsVisible;
+  edidcondition_value2.Visible := IsVisible;
+
+  lbiplootcondition.Visible := IsVisible;
+  ediplootcondition.Visible := IsVisible;
+  edipcondition_value1.Visible := IsVisible;
+  edipcondition_value2.Visible := IsVisible;
+
+  lbimlootcondition.Visible := IsVisible;
+  edimlootcondition.Visible := IsVisible;
+  edimcondition_value1.Visible := IsVisible;
+  edimcondition_value2.Visible := IsVisible;
+
+  lbirlootcondition.Visible := IsVisible;
+  edirlootcondition.Visible := IsVisible;
+  edircondition_value1.Visible := IsVisible;
+  edircondition_value2.Visible := IsVisible;
+
+  lbotlootcondition.Visible := IsVisible;
+  edotlootcondition.Visible := IsVisible;
+  edotcondition_value1.Visible := IsVisible;
+  edotcondition_value2.Visible := IsVisible;
+
+  // gossip
+  edcgmcond_1.Visible := IsVisible;
+  edcgmcond_1_val_1.Visible := IsVisible;
+  edcgmcond_1_val_2.Visible := IsVisible;
+  edcgmcond_2.Visible := IsVisible;
+  edcgmcond_2_val_1.Visible := IsVisible;
+  edcgmcond_2_val_2.Visible := IsVisible;
+
+  edcgmocond_1.Visible := IsVisible;
+  edcgmocond_1_val_1.Visible := IsVisible;
+  edcgmocond_1_val_2.Visible := IsVisible;
+  edcgmocond_2.Visible := IsVisible;
+  edcgmocond_2_val_1.Visible := IsVisible;
+  edcgmocond_2_val_2.Visible := IsVisible;
+  edcgmocond_3.Visible := IsVisible;
+  edcgmocond_3_val_1.Visible := IsVisible;
+  edcgmocond_3_val_2.Visible := IsVisible;
 end;
 
 procedure  TMainForm.SetVisibleForCMangosOnlyFields(IsVisible: Boolean);
@@ -3004,8 +3095,8 @@ begin
           [s2, id, quest])
     end;
 
-  s5 := ScriptSQLScript(lvqtStartScript, 'quest_start_scripts', edqtStartScript.Text);
-  s6 := ScriptSQLScript(lvqtEndScript, 'quest_end_scripts', edqtCompleteScript.Text);
+  s5 := ScriptSQLScript(lvqtStartScript, SCRIPT_TABLE_QUEST_START, edqtStartScript.Text);
+  s6 := ScriptSQLScript(lvqtEndScript, SCRIPT_TABLE_QUEST_END, edqtCompleteScript.Text);
 
   SetFieldsAndValues(Fields, Values, 'quest_template', PFX_QUEST_TEMPLATE, meqtLog);
 
@@ -4426,7 +4517,7 @@ end;
 
 procedure TMainForm.LoadButtonScript(GUID: Integer);
 begin
-  LoadQueryToListView(Format('SELECT * FROM `gameobject_scripts` WHERE (`id`=%d)', [GUID]), lvgbButtonScript);
+  LoadQueryToListView(Format('SELECT * FROM `%s` WHERE (`id`=%d)', [SCRIPT_TABLE_GO, GUID]), lvgbButtonScript);
 end;
 
 procedure TMainForm.LoadCharacter(GUID: Integer);
@@ -4675,7 +4766,7 @@ end;
 
 procedure TMainForm.btEventAIDelClick(Sender: TObject);
 begin
-  EventAiDel(lvcnEventAI);
+  EventAIDel(lvcnEventAI);
 end;
 
 procedure TMainForm.btEventAIUpdClick(Sender: TObject);
@@ -6315,8 +6406,8 @@ begin
     SetMvmntEditFields('edcm', lvcmMovement);
 
   if edcmscript_id.Text <> '0' then
-    LoadQueryToListView(Format('SELECT * FROM `creature_movement_scripts` WHERE (`id`=%d)',
-      [StrToIntDef(edcmscript_id.Text, 0)]), lvcmsCreatureMovementScript);
+    LoadQueryToListView(Format('SELECT * FROM `%s` WHERE (`id`=%d)',
+      [SCRIPT_TABLE_CREATURE_MOVEMENT, StrToIntDef(edcmscript_id.Text, 0)]), lvcmsCreatureMovementScript);
 end;
 
 procedure TMainForm.lvcmsCreatureMovementScriptChange(Sender: TObject; Item: TListItem; Change: TItemChange);
@@ -6473,7 +6564,10 @@ end;
 procedure TMainForm.LoadGossipMenu(entry: Integer);
 begin
   if entry < 1 then
+  begin
+    lvcgmOptions.Items.Clear;
     Exit;
+  end;
   MyQuery.SQL.Text := Format('SELECT * FROM `gossip_menu` WHERE (`entry`=%d)', [entry]);
   MyQuery.Open;
   try
@@ -6502,7 +6596,7 @@ end;
 
 procedure TMainForm.CompleteButtonScriptScript;
 begin
-  megoScript.Text := ScriptSQLScript(lvgbButtonScript, 'gameobject_scripts', edgtentry.Text);
+  megoScript.Text := ScriptSQLScript(lvgbButtonScript, SCRIPT_TABLE_GO, edgtentry.Text);
 end;
 
 procedure TMainForm.CompleteCharacterInventoryScript;
@@ -7882,7 +7976,7 @@ end;
 
 procedure TMainForm.LoadLoot(var lvList: TJvListView; Key: string);
 var
-  i: Integer;
+  i, LastColumn: Integer;
   id: string;
   table: string;
   S: string;
@@ -7913,90 +8007,75 @@ begin
   try
     lvList.Clear;
     // load creature loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`, ' +
+    MyQuery.SQL.Text := Format('SELECT *, ' +
       '''creature_loot_template'' as `table` ' + 'FROM `creature_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load gameobject loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`, ' +
+    MyQuery.SQL.Text := Format('SELECT *, ' +
       '''gameobject_loot_template'' as `table` ' + 'FROM `gameobject_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load item loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''item_loot_template'' as `table` ' + 'FROM `item_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load pickpocketing loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''pickpocketing_loot_template'' as `table` ' + 'FROM `pickpocketing_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load skinning loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''skinning_loot_template'' as `table` ' + 'FROM `skinning_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load enchanting loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''disenchant_loot_template'' as `table` ' + 'FROM `disenchant_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load fishing loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''fishing_loot_template'' as `table` ' + 'FROM `fishing_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load prospecting loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''prospecting_loot_template'' as `table` ' + 'FROM `prospecting_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load milling loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''milling_loot_template'' as `table` ' + 'FROM `milling_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load reference loot
-    MyQuery.SQL.Text := Format('SELECT `entry`, `item`, `ChanceOrQuestChance`, ' +
-      '`groupid`, `mincountOrRef`, `maxcount`, ' +
-      '`lootcondition`, `condition_value1`, `condition_value2`, `condition_id`,  ' +
+    MyQuery.SQL.Text := Format('SELECT *,  ' +
       '''reference_loot_template'' as `table` ' + 'FROM `reference_loot_template` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
 
     // load npc_vendor
     MyQuery.SQL.Text := Format('SELECT `entry`, `item`,  '''' as `ChanceOrQuestChance`, ' +
       ''''' as `groupid`, '''' as `mincountOrRef`, `maxcount`, ' +
-      ''''' as `lootcondition`, '''' as `condition_value1`, ' + ''''' as `condition_value2`, ''npc_vendor'' as `table` '
+{$IFNDEF CMANGOS}''''' as `lootcondition`, '''' as `condition_value1`, ' + ''''' as `condition_value2`, '+{$ENDIF}
+      ''''' as `condition_id`, ''npc_vendor'' as `table` '
       + 'FROM `npc_vendor` WHERE (`item`=%s)', [Key]);
     QueryResult_AddToList;
   finally
     lvList.Items.EndUpdate;
   end;
 
-  lvList.Columns[10].Caption := 'name';
-  for i := 0 to lvList.Items.Count - 1 do
+  LastColumn := {$IFDEF CMANGOS}8{$ELSE}11{$ENDIF};
+
+  lvList.Columns[LastColumn].Caption := 'name';
+  lvList.Columns[LastColumn].Width := 150;
+  lvList.Columns[LastColumn-1].Width := 150;
+  for i := 0 to LastColumn do
   begin
     id := lvList.Items[i].Caption;
-    table := lvList.Items[i].SubItems[8];
+    table := lvList.Items[i].SubItems[LastColumn-2];
     MyQuery.SQL.Text := '';
     if table = 'creature_loot_template' then
       MyQuery.SQL.Text := Format('SELECT `name` FROM `creature_template` WHERE `lootid` = %s', [id]);
@@ -8353,16 +8432,6 @@ begin
   end;
 end;
 
-procedure TMainForm.MvmntDel(lvList: TJvListView);
-begin
-  LootDel(lvList);
-end;
-
-procedure TMainForm.EventAiDel(lvList: TJvListView);
-begin
-  LootDel(lvList);
-end;
-
 procedure TMainForm.MvmntUpd(pfx: string; lvList: TJvListView);
 begin
   if Assigned(lvList.Selected) then
@@ -8388,6 +8457,41 @@ begin
       SubItems[15] := TCustomEdit(FindComponent(pfx + 'model1')).Text;
       SubItems[16] := TCustomEdit(FindComponent(pfx + 'model2')).Text;
     end;
+  end;
+end;
+
+procedure TMainForm.MvmntDel(lvList: TJvListView);
+begin
+  LootDel(lvList);
+end;
+
+procedure TMainForm.EventAIAdd(pfx: string; lvList: TJvListView);
+begin
+  with lvList.Items.Add do
+  begin
+    Caption := TCustomEdit(FindComponent(pfx + 'id')).Text;
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'creature_id')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_type')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_inverse_phase_mask')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_chance')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_flags')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param1')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param2')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param3')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param4')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_type')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_param1')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_param2')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_param3')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_type')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_param1')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_param2')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_param3')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_type')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_param1')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_param2')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_param3')).Text);
+    SubItems.Add(TCustomEdit(FindComponent(pfx + 'comment')).Text);
   end;
 end;
 
@@ -8424,18 +8528,9 @@ begin
   end;
 end;
 
-procedure TMainForm.MyMangosConnectionBeforeConnect(Sender: TObject);
+procedure TMainForm.EventAIDel(lvList: TJvListView);
 begin
-  try
-    // MyMangosConnection.Options.Charset := ReadFromRegistry(CurrentUser, '', 'Charset', tpString);
-  except
-    // MyMangosConnection.Options.Charset := '';
-  end;
-  try
-    // MyMangosConnection.Options.UseUnicode := ReadFromRegistry(CurrentUser, '', 'Unicode', tpBool);
-  except
-    // MyMangosConnection.Options.UseUnicode := false;
-  end;
+  LootDel(lvList);
 end;
 
 procedure TMainForm.btCreatureLootAddClick(Sender: TObject);
@@ -8489,40 +8584,12 @@ begin
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'groupid')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'mincountOrRef')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'maxcount')).Text);
+{$IFNDEF CMANGOS}
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'lootcondition')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'condition_value1')).Text);
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'condition_value2')).Text);
+{$ENDIF}
     SubItems.Add(TCustomEdit(FindComponent(pfx + 'condition_id')).Text);
-  end;
-end;
-
-procedure TMainForm.EventAIAdd(pfx: string; lvList: TJvListView);
-begin
-  with lvList.Items.Add do
-  begin
-    Caption := TCustomEdit(FindComponent(pfx + 'id')).Text;
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'creature_id')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_type')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_inverse_phase_mask')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_chance')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_flags')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param1')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param2')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param3')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'event_param4')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_type')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_param1')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_param2')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action1_param3')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_type')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_param1')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_param2')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action2_param3')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_type')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_param1')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_param2')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'action3_param3')).Text);
-    SubItems.Add(TCustomEdit(FindComponent(pfx + 'comment')).Text);
   end;
 end;
 
@@ -8538,10 +8605,14 @@ begin
       SubItems[2] := TCustomEdit(FindComponent(pfx + 'groupid')).Text;
       SubItems[3] := TCustomEdit(FindComponent(pfx + 'mincountOrRef')).Text;
       SubItems[4] := TCustomEdit(FindComponent(pfx + 'maxcount')).Text;
+{$IFDEF CMANGOS}
+      SubItems[5] := TCustomEdit(FindComponent(pfx + 'condition_id')).Text;
+{$ELSE}
       SubItems[5] := TCustomEdit(FindComponent(pfx + 'lootcondition')).Text;
       SubItems[6] := TCustomEdit(FindComponent(pfx + 'condition_value1')).Text;
       SubItems[7] := TCustomEdit(FindComponent(pfx + 'condition_value2')).Text;
       SubItems[8] := TCustomEdit(FindComponent(pfx + 'condition_id')).Text;
+{$ENDIF}
     end;
   end;
 end;
@@ -8564,10 +8635,14 @@ begin
       TCustomEdit(FindComponent(pfx + 'groupid')).Text := SubItems[2];
       TCustomEdit(FindComponent(pfx + 'mincountOrRef')).Text := SubItems[3];
       TCustomEdit(FindComponent(pfx + 'maxcount')).Text := SubItems[4];
+{$IFDEF CMANGOS}
+      TCustomEdit(FindComponent(pfx + 'condition_id')).Text := SubItems[5];
+{$ELSE}
       TCustomEdit(FindComponent(pfx + 'lootcondition')).Text := SubItems[5];
       TCustomEdit(FindComponent(pfx + 'condition_value1')).Text := SubItems[6];
       TCustomEdit(FindComponent(pfx + 'condition_value2')).Text := SubItems[7];
       TCustomEdit(FindComponent(pfx + 'condition_id')).Text := SubItems[8];
+{$ENDIF}
     end;
   end;
 end;
@@ -9292,7 +9367,7 @@ end;
 procedure TMainForm.btcmsShowFullScriptClick(Sender: TObject);
 begin
   PageControl3.ActivePageIndex := SCRIPT_TAB_NO_CREATURE;
-  mectScript.Text := ScriptSQLScript(lvcmsCreatureMovementScript, 'creature_movement_scripts', edcmsid.Text);
+  mectScript.Text := ScriptSQLScript(lvcmsCreatureMovementScript, SCRIPT_TABLE_CREATURE_MOVEMENT, edcmsid.Text);
 end;
 
 procedure TMainForm.btcmsDelClick(Sender: TObject);
@@ -10996,12 +11071,12 @@ end;
 
 procedure TMainForm.LoadQuestCompleteScript(id: Integer);
 begin
-  LoadQueryToListView(Format('SELECT * FROM `quest_end_scripts` WHERE (`id`=%d)', [id]), lvqtEndScript);
+  LoadQueryToListView(Format('SELECT * FROM `%s` WHERE (`id`=%d)', [SCRIPT_TABLE_QUEST_END, id]), lvqtEndScript);
 end;
 
 procedure TMainForm.LoadQuestStartScript(id: Integer);
 begin
-  LoadQueryToListView(Format('SELECT * FROM `quest_start_scripts` WHERE (`id`=%d)', [id]), lvqtStartScript);
+  LoadQueryToListView(Format('SELECT * FROM `%s` WHERE (`id`=%d)', [SCRIPT_TABLE_QUEST_START, id]), lvqtStartScript);
 end;
 
 procedure TMainForm.lvqtStartScriptChange(Sender: TObject; Item: TListItem; Change: TItemChange);

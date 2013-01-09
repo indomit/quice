@@ -11683,7 +11683,11 @@ begin
   end;
   JvHttpUrlGrabber.ProxyUserName := dmMain.ProxyUser;
   JvHttpUrlGrabber.ProxyPassword := dmMain.ProxyPass;
+{$IFDEF CMANGOS}
+  JvHttpUrlGrabber.Url := 'http://quice.indomit.ru/lastver.php?cmangos';
+{$ELSE}
   JvHttpUrlGrabber.Url := 'http://quice.indomit.ru/lastver.php';
+{$ENDIF}
   try
     IsFirst := true;
     JvHttpUrlGrabber.Start;

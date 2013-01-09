@@ -3,7 +3,7 @@
 			<ProjectGuid>{4D89962B-583A-46BD-973A-7ED5821EDD12}</ProjectGuid>
 			<MainSource>Quice.dpr</MainSource>
 			<Base>True</Base>
-			<Config Condition="'$(Config)'==''">Release</Config>
+			<Config Condition="'$(Config)'==''">Debug</Config>
 			<Platform>Win32</Platform>
 			<AppType>Application</AppType>
 			<FrameworkType>VCL</FrameworkType>
@@ -142,7 +142,7 @@
 						<VersionInfo Name="MajorVer">1</VersionInfo>
 						<VersionInfo Name="MinorVer">2</VersionInfo>
 						<VersionInfo Name="Release">63</VersionInfo>
-						<VersionInfo Name="Build">1197</VersionInfo>
+						<VersionInfo Name="Build">1199</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">False</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -154,7 +154,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">indomit®</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Quice - MaNGOS DB Editor</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">1.2.63.1197</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">1.2.63.1199</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName">Quice</VersionInfoKeys>
 						<VersionInfoKeys Name="LegalCopyright">© indomit, 2012</VersionInfoKeys>
 						<VersionInfoKeys Name="LegalTrademarks">indomit™</VersionInfoKeys>
